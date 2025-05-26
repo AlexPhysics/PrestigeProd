@@ -16,7 +16,12 @@ import {
   logo3Img,
 } from "../utils";
 
-export const navLists = ["Portfolio", "Services", "Contact"];
+export const navLists = [
+  { label: 'Home',      path: '/' },
+  { label: 'Portfolio', path: '/portfolio' },
+  { label: 'Services',  path: '/services' },
+  { label: 'Contact',   path: '/contact' },
+];
 
 export const hightlightsSlides = [
   {
@@ -93,6 +98,52 @@ export const footerLinks = [
 
 export const expCards = [
   {
+    logoPath: "assets/images/logo2.png",
+    title: 'Discovery & Brief',
+    responsibilities: [
+      "We start with a deep dive into your vision: objectives target audience, and key messages. ",
+      "This happens over a relaxed call or coffee—your goals become our blueprint."
+,
+    ],},
+    {logoPath: "assets/images/logo2.png",
+    title: 'Script & Storyboard',
+    responsibilities: [
+      "We start with a deep dive into your vision: objectives target audience, and key messages. ",
+      "This happens over a relaxed call or coffee—your goals become our blueprint."
+,
+    ],},
+    {logoPath: "assets/images/logo2.png",
+    title: 'Pre-Production & Logistics',
+    responsibilities: [
+      "We start with a deep dive into your vision: objectives target audience, and key messages. ",
+      "This happens over a relaxed call or coffee—your goals become our blueprint."
+,
+    ],},
+    {logoPath: "assets/images/logo2.png",
+    title: 'Filming & Capture',
+    responsibilities: [
+      "We start with a deep dive into your vision: objectives target audience, and key messages. ",
+      "This happens over a relaxed call or coffee—your goals become our blueprint."
+,
+    ],},
+    {logoPath: "assets/images/logo2.png",
+    title: 'Post-Production & Feedback',
+    responsibilities: [
+      "We start with a deep dive into your vision: objectives target audience, and key messages. ",
+      "This happens over a relaxed call or coffee—your goals become our blueprint."
+,
+    ],},
+    {logoPath: "assets/images/logo2.png",
+    title: 'Delivery & Distribution',
+    responsibilities: [
+      "We start with a deep dive into your vision: objectives target audience, and key messages. ",
+      "This happens over a relaxed call or coffee—your goals become our blueprint."
+,
+    ],},
+];
+
+/*export const expCards = [
+  {
     review: "Prestige Production team is a true professional in the field of media production. Their attention to detail and creativity made our event coverage exceptional. The final product exceeded our expectations.",
     imgPath: "assets/images/exp2.png",
     logoPath: "assets/images/logo2.png",
@@ -128,4 +179,4 @@ export const expCards = [
       "Point 3",
     ],
   },
-];
+];*/

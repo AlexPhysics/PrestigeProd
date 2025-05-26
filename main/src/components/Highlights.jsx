@@ -6,8 +6,13 @@ import VideoCarousel from './VideoCarousel';
 
 const Highlights = () => {
   useGSAP(() => {
-    gsap.to('#title', { opacity: 1, y: 0 })
-    gsap.to('.link', { opacity: 1, y: 0, duration: 1, stagger: 0.25 })
+    // Create a timeline for better control
+    const tl = gsap.timeline({ defaults: { opacity: 0, y: 20, duration: 1 } });
+    
+    // Animate the title first
+    tl.to('#title', { opacity: 1, y: 0 })
+      // Animate all link elements with stagger
+      .to('.link', { opacity: 1, y: 0, stagger: 0.5 }, "-=0.5"); // Overlap a bit for a smoother transition
   }, [])
 
   return (
