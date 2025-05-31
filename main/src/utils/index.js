@@ -1,43 +1,44 @@
 // videos
-import hmv from "/assets/videos/hero.mp4";
-import smallmv from "/assets/videos/smallHero.mp4";
-import highlight1 from "/assets/videos/highlight1.mp4";
-import highlight2 from "/assets/videos/soroush_touring_penthouse.mp4";
-import highlight3 from "/assets/videos/hightlight3.mp4";
-import highlight4 from "/assets/videos/hightlight4.mp4";
-import highlight5 from "/assets/videos/hightlight5.mp4";
-import exploremv from "/assets/videos/explore.mp4";
-import framemv from "/assets/videos/frame.mp4";
-import reelsoroush from "/assets/videos/reel_soroush.mp4";
+import hmv from '/assets/videos/hero.mp4';
+import smallmv from '/assets/videos/smallHero.mp4';
+import highlight1 from '/assets/videos/highlight1.mp4';
+import highlight2 from '/assets/videos/soroush_touring_penthouse.mp4';
+import highlight3 from '/assets/videos/hightlight3.mp4';
+import highlight4 from '/assets/videos/hightlight4.mp4';
+import highlight5 from '/assets/videos/hightlight5.mp4';
+import exploremv from '/assets/videos/explore.mp4';
+import framemv from '/assets/videos/frame.mp4';
+import reelsoroush from '/assets/videos/reel_soroush.mp4';
 
 // images
-import logo from "/assets/images/logo.svg";
-import apple from "/assets/images/apple.svg";
-import search from "/assets/images/search.svg";
-import bag from "/assets/images/bag.svg";
-import watch from "/assets/images/watch.svg";
-import right from "/assets/images/right.svg";
-import replay from "/assets/images/replay.svg";
-import play from "/assets/images/play.svg";
-import pause from "/assets/images/pause.svg";
+import logo from '/assets/images/logo.svg';
+import apple from '/assets/images/apple.svg';
+import search from '/assets/images/search.svg';
+import bag from '/assets/images/bag.svg';
+import watch from '/assets/images/watch.svg';
+import right from '/assets/images/right.svg';
+import replay from '/assets/images/replay.svg';
+import play from '/assets/images/play.svg';
+import pause from '/assets/images/pause.svg';
 
-import yellow from "/assets/images/yellow.jpg";
-import blue from "/assets/images/blue.jpg";
-import white from "/assets/images/white.jpg";
-import black from "/assets/images/black.jpg";
-import explore1 from "/assets/images/explore1.jpg";
-import explore2 from "/assets/images/explore2.jpg";
-import chip from "/assets/images/chip.jpeg";
-import frame from "/assets/images/frame.png";
+import yellow from '/assets/images/yellow.jpg';
+import blue from '/assets/images/blue.jpg';
+import white from '/assets/images/white.jpg';
+import black from '/assets/images/black.jpg';
+import explore1 from '/assets/images/explore1.jpg';
+import explore2 from '/assets/images/explore2.jpg';
+import chip from '/assets/images/chip.jpeg';
+import frame from '/assets/images/frame.png';
 
-import star from "/assets/images/star.png";
-import exp1 from "/assets/images/exp1.png";
-import exp2 from "/assets/images/exp2.png";
-import exp3 from "/assets/images/exp3.png";
-import logo1 from "/assets/images/logo1.png";
-import logo2 from "/assets/images/logo2.png";
-import logo3 from "/assets/images/logo3.png";
-import iphoneframeimg from "/assets/images/Apple iPhone 15 Frame PNG.jpeg"
+import star from '/assets/images/star.png';
+import exp1 from '/assets/images/exp1.png';
+import exp2 from '/assets/images/exp2.png';
+import exp3 from '/assets/images/exp3.png';
+import logo1 from '/assets/images/logo1.png';
+import logo2 from '/assets/images/logo2.png';
+import logo3 from '/assets/images/logo3.png';
+import iphoneframeimg from '/assets/images/Apple iPhone 15 Frame PNG.jpeg';
+import smilogo from '/assets/logos/smi_logo.png';
 
 // declare
 export const heroVideo = hmv;
@@ -78,3 +79,4 @@ export const logo1Img = logo1;
 export const logo2Img = logo2;
 export const logo3Img = logo3;
 export const iphoneFrameImg = iphoneframeimg;
+export const smiLogo = smilogo;

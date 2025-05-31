@@ -1,27 +1,57 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import {
+  PaperAirplaneIcon,
+  EnvelopeIcon,
+  UserIcon,
+  ChatBubbleBottomCenterTextIcon,
+} from '@heroicons/react/24/outline';
 
 const Contact = () => {
+  const formRef = useRef(null);
   const [status, setStatus] = useState(null);
   const [errors, setErrors] = useState({});
 
-  const validateEmail = (email) => {
-    const re = /^\S+@\S+\.\S+$/;
-    return re.test(email);
-  };
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.body.appendChild(script);
 
-  // Real-time validation on change
-  const handleInputChange = (e) => {
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  useGSAP(() => {
+    gsap.from('.fade-in', {
+      opacity: 0,
+      y: 30,
+      duration: 1,
+      stagger: 0.15,
+      ease: 'power2.out',
+    });
+  }, []);
+
+  const validateEmail = email => /^\S+@\S+\.\S+$/.test(email);
+
+  const handleInputChange = e => {
     const { name, value } = e.target;
     let fieldError;
 
     if (name === 'email') {
       if (!value.trim()) fieldError = 'Email is required';
-      else if (!validateEmail(value)) fieldError = 'Please enter a valid email address';
+      else if (!validateEmail(value))
+        fieldError = 'Please enter a valid email address';
     } else {
-      if (!value.trim()) fieldError = `${name.charAt(0).toUpperCase() + name.slice(1)} is required`;
+      if (!value.trim())
+        fieldError = `${
+          name.charAt(0).toUpperCase() + name.slice(1)
+        } is required`;
     }
 
-    setErrors((prev) => {
+    setErrors(prev => {
       const newErrors = { ...prev };
       if (fieldError) newErrors[name] = fieldError;
       else delete newErrors[name];
@@ -29,18 +59,18 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async e => {
     e.preventDefault();
-    const form = e.target;
-    const formData = new FormData(form);
-    const name = formData.get('name').trim();
-    const email = formData.get('email').trim();
-    const message = formData.get('message').trim();
+    const formData = new FormData(formRef.current);
+    const name = formData.get('name')?.trim();
+    const email = formData.get('email')?.trim();
+    const message = formData.get('message')?.trim();
 
     const newErrors = {};
     if (!name) newErrors.name = 'Name is required';
     if (!email) newErrors.email = 'Email is required';
-    else if (!validateEmail(email)) newErrors.email = 'Please enter a valid email address';
+    else if (!validateEmail(email))
+      newErrors.email = 'Please enter a valid email address';
     if (!message) newErrors.message = 'Message is required';
 
     if (Object.keys(newErrors).length) {
@@ -48,121 +78,205 @@ const Contact = () => {
       return;
     }
 
-    setErrors({});
     try {
       const response = await fetch('https://formspree.io/f/mrbqwrvq', {
         method: 'POST',
         body: formData,
-        headers: { 'Accept': 'application/json' }
+        headers: { Accept: 'application/json' },
       });
       if (response.ok) {
         setStatus('SUCCESS');
-        form.reset();
-      } else {
-        setStatus('ERROR');
-      }
+        formRef.current.reset();
+      } else setStatus('ERROR');
     } catch {
       setStatus('ERROR');
     }
   };
 
   return (
-    <section className="w-full min-h-screen bg-black text-white py-16 px-6 sm:px-10">
-      <div className="max-w-3xl mx-auto">
-        <h1 className="text-5xl font-semibold mb-4">Get in Touch</h1>
-        <p className="text-lg mb-8">We’d love to hear about your project. Let’s create something extraordinary together.</p>
+    <section className='w-full min-h-screen bg-black text-white py-20 px-6 sm:px-10'>
+      <div className='max-w-3xl mx-auto'>
+        <h1 className='text-5xl md:text-6xl font-light fade-in mb-6 text-center'>
+          Let’s talk
+        </h1>
+        <p className='text-lg text-center text-white/80 fade-in mb-12'>
+          Tell us about your project. We'll make sure it gets the cinematic
+          treatment it deserves.
+        </p>
 
         {status === 'SUCCESS' ? (
-          <p className="text-green-400 text-center text-xl mb-8">Thank you! Your message has been sent.</p>
+          <p className='text-green-400 text-center text-xl mb-8'>
+            ✅ Thank you! Your message has been sent.
+          </p>
         ) : (
-          <form noValidate onSubmit={handleSubmit} className="space-y-8">
-            <input type="hidden" name="_subject" value="Nouveau message depuis le site Prestige Production" />
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            noValidate
+            className='space-y-8'
+          >
+            <input
+              type='hidden'
+              name='_subject'
+              value='Message from Prestige Production site'
+            />
 
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Your Name"
-                onChange={handleInputChange}
-                className={`w-full bg-transparent border-b focus:outline-none py-2 text-base transition-all ${
-                  errors.name
-                    ? 'border-red-500 ring-1 ring-red-500 ring-opacity-50'
-                    : 'border-gray-600 focus:border-white'
-                }`}
-              />
+            <div className='fade-in'>
+              <label htmlFor='name' className='block text-sm mb-2 font-medium'>
+                Name
+              </label>
+              <div className='relative'>
+                <UserIcon className='w-5 h-5 absolute left-0 top-2.5 text-white/50' />
+                <input
+                  id='name'
+                  name='name'
+                  type='text'
+                  placeholder='Your Name'
+                  onChange={handleInputChange}
+                  className={`pl-7 w-full bg-transparent border-b py-2 text-base focus:outline-none transition-all ${
+                    errors.name
+                      ? 'border-red-500 ring-1 ring-red-500 ring-opacity-50'
+                      : 'border-gray-600 focus:border-white'
+                  }`}
+                />
+              </div>
               {errors.name && (
-                <p className="mt-1 text-sm italic text-red-500">{errors.name}</p>
+                <p className='text-red-500 text-sm mt-1'>{errors.name}</p>
               )}
             </div>
 
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="you@example.com"
-                onChange={handleInputChange}
-                className={`w-full bg-transparent border-b focus:outline-none py-2 text-base transition-all ${
-                  errors.email
-                    ? 'border-red-500 ring-1 ring-red-500 ring-opacity-50'
-                    : 'border-gray-600 focus:border-white'
-                }`}
-              />
+            <div className='fade-in'>
+              <label htmlFor='email' className='block text-sm mb-2 font-medium'>
+                Email
+              </label>
+              <div className='relative'>
+                <EnvelopeIcon className='w-5 h-5 absolute left-0 top-2.5 text-white/50' />
+                <input
+                  id='email'
+                  name='email'
+                  type='email'
+                  placeholder='you@example.com'
+                  onChange={handleInputChange}
+                  className={`pl-7 w-full bg-transparent border-b py-2 text-base focus:outline-none transition-all ${
+                    errors.email
+                      ? 'border-red-500 ring-1 ring-red-500 ring-opacity-50'
+                      : 'border-gray-600 focus:border-white'
+                  }`}
+                />
+              </div>
               {errors.email && (
-                <p className="mt-1 text-sm italic text-red-500">{errors.email}</p>
+                <p className='text-red-500 text-sm mt-1'>{errors.email}</p>
               )}
             </div>
 
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows={6}
-                placeholder="Tell us about your project..."
-                onChange={handleInputChange}
-                className={`w-full bg-transparent border-b focus:outline-none py-2 text-base resize-none transition-all ${
-                  errors.message
-                    ? 'border-red-500 ring-1 ring-red-500 ring-opacity-50'
-                    : 'border-gray-600 focus:border-white'
-                }`}
-              />
+            <div className='fade-in'>
+              <label
+                htmlFor='message'
+                className='block text-sm mb-2 font-medium'
+              >
+                Message
+              </label>
+              <div className='relative'>
+                <ChatBubbleBottomCenterTextIcon className='w-5 h-5 absolute left-0 top-2.5 text-white/50' />
+                <textarea
+                  id='message'
+                  name='message'
+                  rows={5}
+                  placeholder='Tell us more...'
+                  onChange={handleInputChange}
+                  className={`pl-7 w-full bg-transparent border-b py-2 text-base resize-none focus:outline-none transition-all ${
+                    errors.message
+                      ? 'border-red-500 ring-1 ring-red-500 ring-opacity-50'
+                      : 'border-gray-600 focus:border-white'
+                  }`}
+                />
+              </div>
               {errors.message && (
-                <p className="mt-1 text-sm italic text-red-500">{errors.message}</p>
+                <p className='text-red-500 text-sm mt-1'>{errors.message}</p>
               )}
             </div>
 
             {status === 'ERROR' && (
-              <p className="text-red-500 text-sm text-center">Oops! There was a problem submitting your form.</p>
+              <p className='text-red-500 text-center'>
+                Oops! Something went wrong.
+              </p>
             )}
 
-            <button
-              type="submit"
-              className="mt-4 w-full inline-block px-8 py-3 text-base font-medium bg-white text-black rounded-full hover:opacity-90 transition-opacity"
-            >
-              Send Message
-            </button>
+            <div className='relative group fade-in'>
+              <button
+                type='submit'
+                className='w-full px-8 py-3 text-base font-medium bg-white text-black rounded-full relative overflow-hidden'
+              >
+                <PaperAirplaneIcon className='w-5 h-5 inline-block mr-2' />
+                Send Message
+                <span className='absolute left-[-30%] top-0 w-[200%] h-full bg-white opacity-10 group-hover:animate-flare'></span>
+              </button>
+            </div>
           </form>
         )}
 
-        <div className="mt-16 border-t border-gray-700 pt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <div>
-            <p className="text-sm">Email: <a href="mailto:info@prestigeproduction.ch" className="underline">info@prestigeproduction.ch</a></p>
-            <p className="text-sm mt-2">Phone: <a href="tel:+41762021959" className="underline">+41 76 202 19 59</a></p>
+        <div className='mt-20 border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4'>
+          <div className='text-sm space-y-1 text-white/70'>
+            <p>
+              Email:{' '}
+              <a href='mailto:info@prestigeproduction.ch' className='underline'>
+                info@prestigeproduction.ch
+              </a>
+            </p>
+            <p>
+              Phone:{' '}
+              <a href='tel:+41762021959' className='underline'>
+                +41 76 202 19 59
+              </a>
+            </p>
           </div>
           <a
-            href="https://wa.me/41762021959"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-green-500 text-white font-medium rounded-full hover:opacity-90 transition-opacity"
+            href='https://wa.me/41762021959'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='px-6 py-3 bg-green-500 text-white rounded-full hover:scale-105 transition-transform duration-300'
           >
             Chat on WhatsApp
           </a>
         </div>
       </div>
+
+      {/* Calendly CTA */}
+      <div className='max-w-3xl mx-auto mt-24 text-center'>
+        <h2 className='text-3xl font-light mb-4'>
+          Prefer a real conversation?
+        </h2>
+        <p className='text-white/70 mb-6'>
+          Schedule a quick call with us at your convenience.
+        </p>
+
+        {/* Calendly inline widget */}
+        <div
+          className='calendly-inline-widget'
+          data-url='https://calendly.com/dorian-quilfen'
+          style={{ minWidth: '320px', height: '700px' }}
+        ></div>
+      </div>
+
+      {/* Flare Animation Tailwind Keyframes */}
+      <style>{`
+        @keyframes flare {
+          0% {
+            transform: translateX(-100%) skewX(-20deg);
+            opacity: 0.1;
+          }
+          50% {
+            opacity: 0.4;
+          }
+          100% {
+            transform: translateX(100%) skewX(-20deg);
+            opacity: 0;
+          }
+        }
+        .group-hover\\:animate-flare {
+          animation: flare 1.4s ease-in-out forwards;
+        }
+      `}</style>
     </section>
   );
 };
