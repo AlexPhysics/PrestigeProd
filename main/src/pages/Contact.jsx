@@ -7,11 +7,17 @@ import {
   UserIcon,
   ChatBubbleBottomCenterTextIcon,
 } from '@heroicons/react/24/outline';
+import { Canvas } from '@react-three/fiber';
+import Lights from '../components/Lights';
 
 const Contact = () => {
   const formRef = useRef(null);
   const [status, setStatus] = useState(null);
   const [errors, setErrors] = useState({});
+
+  useEffect(() => {
+    document.title = 'Contact | Prestige Production';
+  }, []);
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -94,14 +100,21 @@ const Contact = () => {
   };
 
   return (
-    <section className='w-full min-h-screen bg-black text-white py-20 px-6 sm:px-10'>
+    <section className='relative w-full min-h-screen bg-black text-white py-20 px-6 sm:px-10 overflow-hidden'>
+      {/* Background 3D Light */}
+      <div className='absolute top-0 left-0 w-full h-full -z-10'>
+        <Canvas camera={{ position: [0, 0, 5], fov: 50 }} frameloop='demand'>
+          <Lights />
+        </Canvas>
+      </div>
       <div className='max-w-3xl mx-auto'>
         <h1 className='text-5xl md:text-6xl font-light fade-in mb-6 text-center'>
-          Let’s talk
+          See what Prestige Production can do for you
         </h1>
         <p className='text-lg text-center text-white/80 fade-in mb-12'>
-          Tell us about your project. We'll make sure it gets the cinematic
-          treatment it deserves.
+          Please fill out the form to apply. Our team will review your
+          application and respond within 24 hours. We look forward to learning
+          more about you!
         </p>
 
         {status === 'SUCCESS' ? (
@@ -174,7 +187,7 @@ const Contact = () => {
                 htmlFor='message'
                 className='block text-sm mb-2 font-medium'
               >
-                Message
+                Tell us about your project
               </label>
               <div className='relative'>
                 <ChatBubbleBottomCenterTextIcon className='w-5 h-5 absolute left-0 top-2.5 text-white/50' />
@@ -182,7 +195,7 @@ const Contact = () => {
                   id='message'
                   name='message'
                   rows={5}
-                  placeholder='Tell us more...'
+                  placeholder='Eg. Video Production'
                   onChange={handleInputChange}
                   className={`pl-7 w-full bg-transparent border-b py-2 text-base resize-none focus:outline-none transition-all ${
                     errors.message
@@ -253,7 +266,7 @@ const Contact = () => {
         {/* Calendly inline widget */}
         <div
           className='calendly-inline-widget'
-          data-url='https://calendly.com/dorian-quilfen'
+          data-url='https://calendly.com/dorian-quilfen/30min'
           style={{ minWidth: '320px', height: '700px' }}
         ></div>
       </div>

@@ -2,6 +2,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
+import ScrollProgress from './components/ScrollProgress';
 
 // pages
 import Home from './pages/Home';
@@ -14,6 +16,9 @@ import PenthouseZurichProject from './pages/PenthouseZurichProject';
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
+      <ScrollProgress />
+
       <div className='bg-black min-h-screen flex flex-col scroll-smooth'>
         <Navbar />
 

@@ -9,7 +9,9 @@ gsap.registerPlugin(ScrollTrigger);
 const Portfolio = () => {
   const containerRef = useRef(null);
   const cardsRef = useRef([]);
-
+  useEffect(() => {
+    document.title = 'Our Work | Prestige Production';
+  }, []);
   useEffect(() => {
     const ctx = gsap.context(() => {
       cardsRef.current.forEach((card, index) => {

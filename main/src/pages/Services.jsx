@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { highlightSecondVideo } from '../utils';
 
@@ -21,6 +21,10 @@ const serviceCards = [
 ];
 
 const Services = () => {
+  useEffect(() => {
+    document.title = 'Services | Prestige Production';
+  }, []);
+
   return (
     <main className='bg-black text-white font-sans'>
       {/* Hero */}

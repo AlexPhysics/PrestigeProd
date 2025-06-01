@@ -87,9 +87,9 @@ const SmiProject = () => {
 
         <a
           href='#aftermovie'
-          className='text-xs tracking-wide text-white/40 hover:text-white transition duration-300 underline underline-offset-4'
+          className='text-sm tracking-wide text-white/60 hover:text-white transition duration-300'
         >
-          Watch the official aftermovie
+          Watch the official aftermovie ↓
         </a>
       </div>
 
