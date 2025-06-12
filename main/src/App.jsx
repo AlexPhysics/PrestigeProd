@@ -12,6 +12,7 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import SmiProject from './pages/SmiProject';
 import PenthouseZurichProject from './pages/PenthouseZurichProject';
+import WhyUs from './pages/WhyUs';
 
 const App = () => {
   return (
@@ -29,6 +30,8 @@ const App = () => {
             <Route path='/portfolio' element={<Portfolio />} />
             <Route path='/services' element={<Services />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/why-us' element={<WhyUs />} />
+
 
             {/* individual project routes */}
             <Route path='/portfolio/smi' element={<SmiProject />} />
