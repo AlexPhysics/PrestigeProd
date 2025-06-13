@@ -13,10 +13,17 @@ export default {
         },
         zinc: '#101010',
       },
-    },
-    plugins: [],
-    animation: {
-      'spin-slow': 'spin 12s linear infinite',
+
+      // ▼ nouveau : classe -z-10
+      zIndex: {
+        '-10': '-10',
+      },
+
+      // ▼ replacé ici pour être pris en compte
+      animation: {
+        'spin-slow': 'spin 12s linear infinite',
+      },
     },
   },
+  plugins: [],
 };

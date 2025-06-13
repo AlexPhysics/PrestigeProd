@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import Lights from '../components/Lights';
 
 const teamMembers = [
   {
@@ -10,14 +9,14 @@ const teamMembers = [
     image: 'assets/images/duo.png',
     role: 'Founders of Prestige Production',
     description: [
-      'Two creative minds. One shared vision.',
-      'Dorian & Alex combine their strengths to deliver high-end real estate video experiences — cinematic, effective, and unforgettable.',
-      'Their partnership is built on passion, precision, and a deep understanding of how visuals drive sales in the luxury market.',
+      'We’re Alex and Dorian, co-founders of Prestige Production—a creative studio built on a shared passion for visual storytelling.',
+      'At Prestige Production, we combine technical expertise with a creative mindset to craft videos that not only look great but communicate purpose and meaning.',
+      "Whether it's promotional content, cinematic montages, or brand storytelling—our focus is always on quality, clarity, and lasting impression.",
     ],
   },
   {
     name: 'Dorian',
-    image: '/images/dorian.jpg',
+    image: 'assets/images/dorian.jpg',
     role: 'Creative Director',
     description: [
       'Dorian is the eye behind our cinematic storytelling.',
@@ -37,7 +36,6 @@ const teamMembers = [
   },
 ];
 
-
 const WhyUs = () => {
   useEffect(() => {
     document.title = 'Why Us | Prestige Production';
@@ -53,58 +51,76 @@ const WhyUs = () => {
     });
   }, []);
 
+  const [duo, ...individuals] = teamMembers;
+
   return (
-  <section className='relative w-full min-h-screen bg-black text-white py-20 px-6 sm:px-10 overflow-hidden'>
-    {/* Background Lights */}
-    <div className='absolute top-0 left-0 w-full h-full -z-10'>
-      <Canvas camera={{ position: [0, 0, 5], fov: 50 }} frameloop='demand'>
-        <Lights />
-      </Canvas>
-    </div>
+    <section className='relative w-full min-h-screen bg-black text-white py-20 px-6 sm:px-10 overflow-hidden'>
+      <div className='max-w-6xl mx-auto'>
+        {/* Headline */}
+        <h1 className='text-5xl md:text-6xl font-light fade-in mb-6 text-center'>
+          Why Work With Us?
+        </h1>
+        <p className='text-lg text-center text-white/70 fade-in mb-16'>
+          Prestige Production is more than just a video company — it's a
+          partnership built on vision, creativity, and performance.
+        </p>
 
-    <div className='max-w-5xl mx-auto'>
-      {/* Headline */}
-      <h1 className='text-5xl md:text-6xl font-light fade-in mb-6 text-center'>
-        Why Work With Us?
-      </h1>
-      <p className='text-lg text-center text-white/70 fade-in mb-16'>
-        Prestige Production is more than just a video company — it's a partnership built on vision, creativity, and performance.
-      </p>
-
-      {/* Team Members Loop */}
-      {teamMembers.map(({ name, image, role, description }) => (
-        <div key={name} className='fade-in mb-20 text-center'>
-<div className='rounded-xl mb-4 shadow-lg max-w-3xl mx-auto overflow-hidden'>
-  <img
-    src={image}
-    alt={name}
-    className='w-auto max-w-full max-h-[600px] mx-auto object-contain'
-    loading='lazy'
-  />
-</div>
-
-          <h2 className='text-2xl font-semibold mb-1'>{name}</h2>
-          <h3 className='text-white/60 text-sm mb-4 italic'>{role}</h3>
-          <div className='text-white/70 text-sm space-y-4 max-w-md mx-auto text-left'>
-            {description.map((line, idx) => (
+        {/* Duo Photo */}
+        <div key={duo.name} className='fade-in mb-24 text-center'>
+          <div className='rounded-xl mb-8 shadow-lg overflow-hidden max-w-4xl mx-auto'>
+            <img
+              src={duo.image}
+              alt={duo.name}
+              className='w-full h-auto max-h-[700px] object-contain'
+              loading='lazy'
+            />
+          </div>
+          <h2 className='text-2xl font-semibold mb-1'>{duo.name}</h2>
+          <h3 className='text-white/60 text-sm mb-8 italic'>{duo.role}</h3>
+          <div className='text-white/70 text-sm space-y-4 max-w-3xl mx-auto'>
+            {duo.description.map((line, idx) => (
               <p key={idx}>{line}</p>
             ))}
           </div>
         </div>
-      ))}
 
-      {/* CTA */}
-      <div className='mt-24 text-center fade-in'>
-        <a
-          href='/contact'
-          className='inline-block px-8 py-4 bg-white text-black text-lg font-medium rounded-full hover:scale-105 transition-transform'
-        >
-          Let’s Work Together
-        </a>
+        {/* Individuals Side-by-Side */}
+        <div className='grid md:grid-cols-2 gap-16 fade-in items-start'>
+          {individuals.map(({ name, image, role, description }) => (
+            <div key={name} className='flex flex-col items-center text-center'>
+              {/* Fixed-ratio container so both pics keep identical size */}
+              <div className='w-full relative h-full rounded-xl shadow-lg overflow-hidden mb-6'>
+                <img
+                  src={image}
+                  alt={name}
+                  className='w-full h-auto max-h-[700px] object-contain rounded-xl'
+                  loading='lazy'
+                />
+              </div>
+
+              <h2 className='text-2xl font-semibold mb-1'>{name}</h2>
+              <h3 className='text-white/60 text-sm mb-6 italic'>{role}</h3>
+              <div className='text-white/70 text-sm space-y-4 max-w-md'>
+                {description.map((line, idx) => (
+                  <p key={idx}>{line}</p>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div className='mt-24 text-center fade-in'>
+          <a
+            href='/contact'
+            className='inline-block px-8 py-4 bg-white text-black text-lg font-medium rounded-full hover:scale-105 transition-transform'
+          >
+            Let’s Work Together
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
 };
 
 export default WhyUs;
