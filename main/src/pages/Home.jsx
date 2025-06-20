@@ -7,7 +7,7 @@ import Partners from '../components/Partners';
 
 const Home = () => {
   useEffect(() => {
-    document.title = 'Home | Prestige Production';
+    document.title = 'Real Estate Videos | Prestige Production';
   }, []);
 
   return (

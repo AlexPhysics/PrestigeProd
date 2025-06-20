@@ -6,10 +6,20 @@ import gsap from 'gsap';
 import { Link } from 'react-router-dom';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { smiLogo } from '../utils';
+import Carousel from '../components/Carousel';
+import SmiReel1 from '/assets/videos/teaser 1_smi.mp4';
+import SmiReel2 from '/assets/videos/teaser 2_smi.mp4';
+import SmiReel3 from '/assets/videos/teaser 3_smi.mp4';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const SmiProject = () => {
+  const videos = [
+    { id: 1, src: SmiReel1 },
+    { id: 2, src: SmiReel2 },
+    { id: 3, src: SmiReel3 },
+  ];
+
   const videoRef = useRef();
   const [lightboxSrc, setLightboxSrc] = useState(null);
 
@@ -149,28 +159,8 @@ const SmiProject = () => {
         ))}
       </div>
 
-      {/* Reel in iPhone Frame */}
-      <div className='mt-10 md:mt-20 mb-14'>
-        <div className='relative mx-auto w-[90vw] max-w-[360px] aspect-[9/16]'>
-          {/* iPhone Frame Image */}
-          <img
-            src={frameImg}
-            alt='iPhone Frame'
-            className='absolute top-0 left-0 w-full h-full object-contain transform rotate-90 z-10 pointer-events-none'
-          />
-
-          {/* YouTube Reel positioned and scaled */}
-          <div className='absolute top-[9%] left-[6.5%] w-[87%] h-[82%] rounded-[1.5rem] overflow-hidden z-0'>
-            <iframe
-              src='https://www.youtube.com/embed/ZQ9tmIOj4eY?modestbranding=1&rel=0&controls=1'
-              title='Reel'
-              frameBorder='0'
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-              allowFullScreen
-              className='w-full h-full'
-            ></iframe>
-          </div>
-        </div>
+      <div className='h-[600px] flex items-center justify-center'>
+        <Carousel items={videos} baseWidth={1000} loop round={false} />
       </div>
 
       {/* Description Text */}
@@ -223,11 +213,28 @@ const SmiProject = () => {
         <h2 className='text-3xl font-semibold mb-2 relative inline-block after:block after:h-[2px] after:bg-white/40 after:w-0 after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-700'>
           Featured Interviews
         </h2>
+        {/* New description text */}
+        <p className='mt-4 text-lg text-white/80 max-w-3xl mx-auto'>
+          We&#39;ve had the privilege to sit down with trail-blazing CEOs and
+          forward-thinking investors who are reshaping the mining ecosystem.
+          Dive in for candid insights you won&#39;t hear anywhere else.
+        </p>
         <div className='aspect-video w-full mt-6 rounded-xl overflow-hidden shadow-lg'>
           <iframe
             width='100%'
             height='100%'
             src='https://www.youtube.com/embed/WkSTG_GQUJQ'
+            title='Interview'
+            frameBorder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            allowFullScreen
+          ></iframe>
+        </div>
+        <div className='aspect-video w-full mt-6 rounded-xl overflow-hidden shadow-lg'>
+          <iframe
+            width='100%'
+            height='100%'
+            src='https://www.youtube.com/embed/y2YmLoOGi_w'
             title='Interview'
             frameBorder='0'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'

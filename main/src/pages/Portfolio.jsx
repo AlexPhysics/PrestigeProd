@@ -3,10 +3,14 @@ import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { projects } from '../constants';
+import SplitText from '../components/SplitText';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Portfolio = () => {
+  const handleAnimationComplete = () => {
+    console.log('All letters have animated!');
+  };
   const containerRef = useRef(null);
   const cardsRef = useRef([]);
   useEffect(() => {
@@ -79,7 +83,20 @@ const Portfolio = () => {
             id='section-title'
             className='text-sm font-semibold uppercase tracking-widest text-white mb-2'
           >
-            Our Work
+            <SplitText
+              text='Our Work'
+              className='text-2xl font-semibold text-center'
+              delay={220}
+              duration={2}
+              ease='elastic.out(1,0.3)'
+              splitType='chars'
+              from={{ opacity: 0, y: 40 }}
+              to={{ opacity: 1, y: 0 }}
+              threshold={0.1}
+              rootMargin='-100px'
+              textAlign='center'
+              onLetterAnimationComplete={handleAnimationComplete}
+            />
           </h2>
           <div
             id='underline'
@@ -144,6 +161,51 @@ const Portfolio = () => {
             </div>
           </Link>
         ))}
+      </div>
+      {/* Reels Section */}
+      <div
+        id='reels'
+        className='mt-32 max-w-6xl mx-auto text-center px-4 sm:px-6'
+      >
+        <h2 className='text-3xl sm:text-4xl font-semibold mb-12 tracking-tight'>
+          Social Media Reels
+        </h2>
+
+        {/* 1️⃣: list of video sources (public/ or imported) */}
+        {/*
+    – If the clips live in /public, use "/videos/reel1.mp4", etc.
+    – If you import, do:
+        import reel1 from '../assets/reel1.mp4';
+        const reelSources = [reel1, reel2, reel3];
+  */}
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
+          {[
+            '/assets/videos/smi_reel_tavi.mp4',
+            '/assets/videos/Reel_2_penthouse_speech.mp4',
+            '/assets/videos/Reel_1_penthouse_view.mp4',
+          ].map((src, i) => (
+            <div
+              key={i}
+              ref={el => (cardsRef.current[projects.length + i] = el)}
+              className='rounded-2xl overflow-hidden shadow-lg'
+            >
+              {/* 2️⃣: keep the same 9:16 aspect wrapper */}
+              <div className='aspect-[9/16] w-full'>
+                <video
+                  src={src}
+                  className='w-full h-full object-cover'
+                  playsInline
+                  muted
+                  loop
+                  autoPlay /* remove autoPlay if you prefer controls */
+                  /* controls  // uncomment to show the play bar */
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

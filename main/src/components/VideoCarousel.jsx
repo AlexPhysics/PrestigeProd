@@ -1,12 +1,11 @@
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/all';
+gsap.registerPlugin(ScrollTrigger);
 import { useEffect, useRef, useState } from 'react';
 
 import { hightlightsSlides } from '../constants';
 import { pauseImg, playImg, replayImg } from '../utils';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const VideoCarousel = () => {
   const videoRef = useRef([]);
@@ -55,11 +54,17 @@ const VideoCarousel = () => {
       const anim = gsap.to(span[videoId], {
         onUpdate: () => {
           const progress = Math.ceil(anim.progress() * 100);
+
           if (progress !== currentProgress) {
             currentProgress = progress;
 
             gsap.to(videoDivRef.current[videoId], {
-              width: window.innerWidth < 1200 ? '10vw' : '4vw',
+              width:
+                window.innerWidth < 760
+                  ? '10vw'
+                  : window.innerWidth < 1200
+                  ? '10vw'
+                  : '4vw',
             });
 
             gsap.to(span[videoId], {
@@ -68,6 +73,7 @@ const VideoCarousel = () => {
             });
           }
         },
+
         onComplete: () => {
           if (isPlaying) {
             gsap.to(videoDivRef.current[videoId], {
@@ -106,17 +112,17 @@ const VideoCarousel = () => {
 
   useEffect(() => {
     if (loadedData.length > 3) {
-      const currentVideo = videoRef.current[videoId];
       if (!isPlaying) {
-        currentVideo?.pause();
-      } else if (startPlay) {
-        currentVideo?.play();
+        videoRef.current[videoId].pause();
+      } else {
+        startPlay && videoRef.current[videoId].play();
       }
     }
   }, [startPlay, videoId, isPlaying, loadedData]);
 
   const handleProcess = (type, i) => {
     const resetVideosAndProgress = () => {
+      // Stop any running animations
       progressAnims.current.forEach(anim => {
         if (anim) {
           anim.kill();
@@ -124,15 +130,18 @@ const VideoCarousel = () => {
         }
       });
 
+      // Reset all videos and progress bars
       videoRef.current.forEach((video, idx) => {
-        video?.pause();
-        video.currentTime = 0;
+        if (video) {
+          video.pause();
+          video.currentTime = 0; // Rewind
+        }
 
-        gsap.set(videoSpanRef.current[idx], {
-          width: 0,
-          backgroundColor: '#afafaf',
-        });
-        gsap.set(videoDivRef.current[idx], { width: '12px' });
+        const span = videoSpanRef.current[idx];
+        const div = videoDivRef.current[idx];
+
+        if (span) gsap.set(span, { width: 0, backgroundColor: '#afafaf' });
+        if (div) gsap.set(div, { width: '12px' });
 
         progressAnims.current[idx] = null;
       });
@@ -140,11 +149,13 @@ const VideoCarousel = () => {
 
     switch (type) {
       case 'video-end':
-        setVideo(prev => ({ ...prev, isEnd: true, videoId: i + 1 }));
+        setVideo(pre => ({ ...pre, isEnd: true, videoId: i + 1 }));
         break;
+
       case 'video-last':
-        setVideo(prev => ({ ...prev, isLastVideo: true }));
+        setVideo(pre => ({ ...pre, isLastVideo: true }));
         break;
+
       case 'video-reset':
         resetVideosAndProgress();
         setVideo({
@@ -155,10 +166,12 @@ const VideoCarousel = () => {
           isPlaying: true,
         });
         break;
+
       case 'pause':
       case 'play':
-        setVideo(prev => ({ ...prev, isPlaying: !prev.isPlaying }));
+        setVideo(pre => ({ ...pre, isPlaying: !pre.isPlaying }));
         break;
+
       case 'set-video':
         resetVideosAndProgress();
         setVideo({
@@ -169,57 +182,52 @@ const VideoCarousel = () => {
           isPlaying: true,
         });
         break;
+
       default:
         return video;
     }
   };
 
-  const handleLoadedMetaData = (i, e) => setLoadedData(prev => [...prev, e]);
+  const handleLoadedMetaData = (i, e) => setLoadedData(pre => [...pre, e]);
 
   return (
     <>
-      <div className='w-full overflow-hidden'>
-        <div
-          id='slider'
-          className='flex transition-transform duration-700 ease-in-out'
-          style={{
-            transform: `translateX(-${videoId * 85}vw)`,
-            width: `${hightlightsSlides.length * 85}vw`,
-          }}
-        >
-          {hightlightsSlides.map((list, i) => (
-            <div key={list.id} className='flex-shrink-0 w-[85vw] h-[80vh] px-2'>
-              <div className='relative w-full h-full bg-black rounded-3xl overflow-hidden'>
+      <div className='flex items-center'>
+        {hightlightsSlides.map((list, i) => (
+          <div key={list.id} id='slider' className='sm:pr-20 pr-10'>
+            <div className='video-carousel_container'>
+              <div className='w-full h-full flex-center rounded-3xl overflow-hidden bg-black'>
                 <video
+                  id='video'
                   playsInline
                   preload='auto'
                   muted
+                  className={`pointer-events-none ${
+                    list.id === 2 ? 'translate-x-100' : ''
+                  }`}
                   ref={el => (videoRef.current[i] = el)}
                   onEnded={() =>
                     i !== hightlightsSlides.length - 1
                       ? handleProcess('video-end', i)
                       : handleProcess('video-last')
                   }
-                  onPlay={() =>
-                    setVideo(prev => ({ ...prev, isPlaying: true }))
-                  }
+                  onPlay={() => setVideo(pre => ({ ...pre, isPlaying: true }))}
                   onLoadedMetadata={e => handleLoadedMetaData(i, e)}
-                  className='w-full h-full object-cover'
                 >
                   <source src={list.video} type='video/mp4' />
                 </video>
+              </div>
 
-                <div className='absolute top-12 left-6 z-10 text-white'>
-                  {list.textLists.map((text, idx) => (
-                    <p key={idx} className='md:text-3xl text-xl font-medium'>
-                      {text}
-                    </p>
-                  ))}
-                </div>
+              <div className='absolute top-12 left-[5%] z-10'>
+                {list.textLists.map((text, idx) => (
+                  <p key={idx} className='md:text-3xl text-xl font-medium'>
+                    {text}
+                  </p>
+                ))}
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
 
       <div className='relative flex-center mt-10'>

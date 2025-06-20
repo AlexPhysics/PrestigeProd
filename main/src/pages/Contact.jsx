@@ -7,8 +7,8 @@ import {
   UserIcon,
   ChatBubbleBottomCenterTextIcon,
 } from '@heroicons/react/24/outline';
-import { Canvas } from '@react-three/fiber';
-import Lights from '../components/Lights';
+import { GRADIENT_CLASS } from '../constants';
+import Particles from '../components/Particles';
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -101,20 +101,17 @@ const Contact = () => {
 
   return (
     <section className='relative w-full min-h-screen bg-black text-white py-20 px-6 sm:px-10 overflow-hidden'>
-      {/* Background 3D Light */}
-      <div className='absolute top-0 left-0 w-full h-full -z-10'>
-        <Canvas camera={{ position: [0, 0, 5], fov: 50 }} frameloop='demand'>
-          <Lights />
-        </Canvas>
-      </div>
       <div className='max-w-3xl mx-auto'>
         <h1 className='text-5xl md:text-6xl font-light fade-in mb-6 text-center'>
-          See what Prestige Production can do for you
+          See what{' '}
+          <span className={`${GRADIENT_CLASS} bg-clip-text text-transparent`}>
+            Prestige Production
+          </span>{' '}
+          can do for you
         </h1>
         <p className='text-lg text-center text-white/80 fade-in mb-12'>
-          Please fill out the form to apply. Our team will review your
-          application and respond within 24 hours. We look forward to learning
-          more about you!
+          Please fill out the form. Our team will respond within 24 hours. We
+          look forward to learning more about you and your projects!
         </p>
 
         {status === 'SUCCESS' ? (
@@ -256,10 +253,15 @@ const Contact = () => {
 
       {/* Calendly CTA */}
       <div className='max-w-3xl mx-auto mt-24 text-center'>
-        <h2 className='text-3xl font-light mb-4'>
-          Prefer a real conversation?
+        <h2 className='text-4xl font-light mb-4'>Prefer a live meeting? </h2>
+        <h2 className='text-5xl font-light mb-4'>
+          Reserve your{' '}
+          <span className={`${GRADIENT_CLASS} bg-clip-text text-transparent`}>
+            creative
+          </span>{' '}
+          time
         </h2>
-        <p className='text-white/70 mb-6'>
+        <p className='text-1xl text-white/70 mb-6'>
           Schedule a quick call with us at your convenience.
         </p>
 
@@ -267,7 +269,7 @@ const Contact = () => {
         <div
           className='calendly-inline-widget'
           data-url='https://calendly.com/dorian-quilfen/30min'
-          style={{ minWidth: '320px', height: '700px' }}
+          style={{ minWidth: '320px', height: '100vh' }}
         ></div>
       </div>
 

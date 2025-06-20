@@ -12,6 +12,7 @@ import reelsoroush from '/assets/videos/reel_soroush.mp4';
 
 // images
 import logo from '/assets/images/logo.svg';
+import pplogo from '/assets/images/logo.png';
 import apple from '/assets/images/apple.svg';
 import search from '/assets/images/search.svg';
 import bag from '/assets/images/bag.svg';
@@ -39,7 +40,6 @@ import logo2 from '/assets/images/logo2.png';
 import logo3 from '/assets/images/logo3.png';
 import iphoneframeimg from '/assets/images/Apple iPhone 15 Frame PNG.jpeg';
 import smilogo from '/assets/logos/smi_logo.png';
-
 // declare
 export const heroVideo = hmv;
 export const smallHeroVideo = smallmv;
@@ -53,6 +53,7 @@ export const frameVideo = framemv;
 export const reelSoroush = reelsoroush;
 
 export const logoImg = logo;
+export const ppLogo = pplogo;
 export const appleImg = apple;
 export const searchImg = search;
 export const bagImg = bag;
@@ -80,3 +81,5 @@ export const logo2Img = logo2;
 export const logo3Img = logo3;
 export const iphoneFrameImg = iphoneframeimg;
 export const smiLogo = smilogo;
+export const sonyCameraImg = '/assets/gear/sony_camera.jpg';
+export const droneImg = '/assets/gear/dji_drone.jpg';

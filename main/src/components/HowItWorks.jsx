@@ -1,8 +1,9 @@
-import React, { useRef } from 'react'
-import { chipImg, frameImg, frameVideo } from '../utils'
-import { useGSAP } from '@gsap/react'
+import React, { useRef } from 'react';
+import { chipImg, frameImg, frameVideo } from '../utils';
+import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { animateWithGsap } from '../utils/animations';
+import RotatingText from './RotatingText';
 
 const HowItWorks = () => {
   const videoRef = useRef();
@@ -11,85 +12,109 @@ const HowItWorks = () => {
     gsap.from('#chip', {
       scrollTrigger: {
         trigger: '#chip',
-        start: '20% bottom'
+        start: '20% bottom',
       },
       opacity: 0,
       scale: 2,
       duration: 2,
-      ease: 'power2.inOut'
-    })
+      ease: 'power2.inOut',
+    });
 
     animateWithGsap('.g_fadeIn', {
       opacity: 1,
       y: 0,
       duration: 1,
-      ease: 'power2.inOut'
-    })
+      ease: 'power2.inOut',
+    });
   }, []);
 
   return (
-    <section className="common-padding">
-      <div className="screen-max-width">
-        <div id="chip" className="flex-center w-full my-20">
-          <img src={chipImg} alt="chip" width={180} height={180} />
+    <section className='common-padding'>
+      <div className='screen-max-width'>
+        <div id='chip' className='flex-center w-full my-20'>
+          <img src={chipImg} alt='chip' width={180} height={180} />
         </div>
 
-        <div className="flex flex-col items-center">
-          <h2 className="hiw-title">
-            About us.
+        {/* Rotating headline & subtitle */}
+        <div className='flex flex-col items-center text-center gap-2 md:gap-3'>
+          <h2 className='hiw-title flex items-center justify-center flex-wrap'>
+            Crafted with&nbsp;
+            <RotatingText
+              texts={[
+                'Swiss Precision',
+                'Cinematic Vision',
+                'Digital Innovation',
+                'Human Emotion',
+              ]}
+              mainClassName='inline-block px-2 bg-white text-black border border-black overflow-hidden py-0.5 md:py-1 rounded-lg'
+              staggerFrom='last'
+              initial={{ y: '100%' }}
+              animate={{ y: 0 }}
+              exit={{ y: '-120%' }}
+              staggerDuration={0.03}
+              splitLevelClassName='overflow-hidden pb-0.5 md:pb-1'
+              transition={{ type: 'spring', damping: 30, stiffness: 400 }}
+              rotationInterval={2500}
+            />
           </h2>
 
-          <p className="hiw-subtitle">
-          Quality above everything else.
+          <p className='hiw-subtitle'>Quality above everything else.</p>
+        </div>
+
+        <div className='mt-10 md:mt-20 mb-14'>
+          <div className='relative h-full flex-center'>
+            <div className='overflow-hidden'>
+              <img
+                src={frameImg}
+                alt='frame'
+                className='bg-transparent relative z-10'
+              />
+            </div>
+            <div className='hiw-video'>
+              <video
+                className='pointer-events-none'
+                playsInline
+                preload='none'
+                muted
+                autoPlay
+                ref={videoRef}
+              >
+                <source src={frameVideo} type='video/mp4' />
+              </video>
+            </div>
+          </div>
+          <p className='text-gray font-semibold text-center mt-3'>
+            Honkai: Star Rail
           </p>
         </div>
 
-        <div className="mt-10 md:mt-20 mb-14">
-          <div className="relative h-full flex-center">
-            <div className="overflow-hidden">
-              <img 
-                src={frameImg}
-                alt="frame"
-                className="bg-transparent relative z-10"
-              />
-            </div>
-            <div className="hiw-video">
-                <video className="pointer-events-none" playsInline preload="none" muted autoPlay ref={videoRef}>
-                  <source src={frameVideo} type="video/mp4" />
-                </video>
-              </div>
+        <div className='hiw-text-container'>
+          {/* LEFT COLUMN – storytelling & craft */}
+          <div className='flex flex-1 justify-center flex-col'>
+            <p className='hiw-text g_fadeIn'>
+              We blend <span className='text-white'>Swiss precision</span> with
+              bold cinematic craft to create visuals that stop thumbs and turn
+              heads.
+            </p>
+
+            <p className='hiw-text g_fadeIn'>
+              From the first storyboard to the final colour grade, every frame
+              is engineered to{' '}
+              <span className='text-white'>move audiences</span> and
+              <span className='text-white'> drive results</span>.
+            </p>
           </div>
-          <p className="text-gray font-semibold text-center mt-3">Honkai: Star Rail</p>
+
+          {/* RIGHT COLUMN – quick stats / proof points */}
+          <div className='flex-1 flex justify-center flex-col g_fadeIn'>
+            <p className='hiw-text'>Since</p>
+            <p className='hiw-bigtext'>2025</p>
+            <p className='hiw-text'>10+ projects delivered</p>
           </div>
-
-          <div className="hiw-text-container">
-                <div className="flex flex-1 justify-center flex-col">
-                  <p className="hiw-text g_fadeIn">
-                    A17 Pro is an entirely new class of iPhone chip that delivers our {' '}
-                    <span className="text-white">
-                      best graphic performance by far
-                    </span>.
-                  </p>
-
-                  <p className="hiw-text g_fadeIn">
-                   Mobile {' '}
-                    <span className="text-white">
-                      games will look and feel so immersive
-                    </span>,
-                     with incredibly detailed environments and characters.
-                  </p>
-                </div>
-              
-
-              <div className="flex-1 flex justify-center flex-col g_fadeIn">
-                <p className="hiw-text">New</p>
-                <p className="hiw-bigtext">Pro-class GPU</p>
-                <p className="hiw-text">with 6 cores</p>
-              </div>
-              </div>
-            </div>
+        </div>
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default HowItWorks
+export default HowItWorks;
