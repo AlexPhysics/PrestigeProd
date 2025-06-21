@@ -31,9 +31,9 @@ const HowItWorks = () => {
   return (
     <section className='common-padding'>
       <div className='screen-max-width'>
-        <div id='chip' className='flex-center w-full my-20'>
+        {/*<div id='chip' className='flex-center w-full my-20'>
           <img src={chipImg} alt='chip' width={180} height={180} />
-        </div>
+        </div> */}
 
         {/* Rotating headline & subtitle */}
         <div className='flex flex-col items-center text-center gap-2 md:gap-3'>
@@ -61,18 +61,17 @@ const HowItWorks = () => {
           <p className='hiw-subtitle'>Quality above everything else.</p>
         </div>
 
+        {/*
         <div className='mt-10 md:mt-20 mb-14'>
           <div className='relative h-full flex-center'>
-            <div className='overflow-hidden'>
+            <div className='relative'>
               <img
                 src={frameImg}
                 alt='frame'
-                className='bg-transparent relative z-10'
+                className='bg-transparent relative z-10 block w-full h-auto'
               />
-            </div>
-            <div className='hiw-video'>
               <video
-                className='pointer-events-none'
+                className='absolute top-0 left-0 w-full h-full object-cover z-0 pointer-events-none'
                 playsInline
                 preload='none'
                 muted
@@ -83,10 +82,7 @@ const HowItWorks = () => {
               </video>
             </div>
           </div>
-          <p className='text-gray font-semibold text-center mt-3'>
-            Honkai: Star Rail
-          </p>
-        </div>
+        </div>*/}
 
         <div className='hiw-text-container'>
           {/* LEFT COLUMN – storytelling & craft */}

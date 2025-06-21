@@ -7,7 +7,7 @@ import highlight3 from '/assets/videos/hightlight3.mp4';
 import highlight4 from '/assets/videos/hightlight4.mp4';
 import highlight5 from '/assets/videos/hightlight5.mp4';
 import exploremv from '/assets/videos/explore.mp4';
-import framemv from '/assets/videos/frame.mp4';
+import framemv from '/assets/videos/lowres_short_reel_showcase_v2_1.mp4';
 import reelsoroush from '/assets/videos/reel_soroush.mp4';
 
 // images
