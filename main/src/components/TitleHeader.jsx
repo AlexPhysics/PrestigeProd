@@ -1,15 +1,18 @@
-const TitleHeader = ({ title, sub }) => {
+import React from 'react';
+import { GRADIENT_CLASS } from '../constants';
+
+const TitleHeader = ({ title }) => {
+  // Split around the word 'Prestige'
+  const [before, after] = title.split('Prestige');
+
   return (
-    <div className="flex flex-col items-center gap-5">
-      <div className="hero-badge">
-        <p>{sub}</p>
-      </div>
-      <div>
-        <h1 className="font-semibold md:text-5xl text-3xl text-center">
-          {title}
-        </h1>
-      </div>
-    </div>
+    <h2 className='text-4xl font-light text-center'>
+      {before}
+      <span className={`${GRADIENT_CLASS} bg-clip-text text-transparent`}>
+        Prestige
+      </span>
+      {after}
+    </h2>
   );
 };
 

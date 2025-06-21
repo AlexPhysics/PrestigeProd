@@ -14,7 +14,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/company/prestige-production-agency/" target="_blank" rel="noopener noreferrer" className="underline text-blue">LinkedIn</a> |
         </p>
           <p className="font-semibold text-gray text-xs">
-            Or call +41 76 202 19 59
+            Call +41 76 202 19 59
           </p>
         </div>
 
