@@ -9,15 +9,20 @@ import {
 } from '@heroicons/react/24/outline';
 import { GRADIENT_CLASS } from '../constants';
 import Particles from '../components/Particles';
+import { useTranslation } from 'react-i18next';
+import { useParams } from 'react-router-dom';
 
 const Contact = () => {
   const formRef = useRef(null);
   const [status, setStatus] = useState(null);
   const [errors, setErrors] = useState({});
+  const { t, i18n } = useTranslation();
+  const { lang } = useParams();
+  const currentLang = lang || i18n.language || 'en';
 
   useEffect(() => {
-    document.title = 'Contact | Prestige Production';
-  }, []);
+    document.title = t('contact.pageTitle', 'Contact | Prestige Production');
+  }, [t]);
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -47,14 +52,19 @@ const Contact = () => {
     let fieldError;
 
     if (name === 'email') {
-      if (!value.trim()) fieldError = 'Email is required';
+      if (!value.trim())
+        fieldError = t('contact.emailRequired', 'Email is required');
       else if (!validateEmail(value))
-        fieldError = 'Please enter a valid email address';
+        fieldError = t(
+          'contact.emailInvalid',
+          'Please enter a valid email address',
+        );
     } else {
       if (!value.trim())
-        fieldError = `${
-          name.charAt(0).toUpperCase() + name.slice(1)
-        } is required`;
+        fieldError = t(
+          `contact.${name}Required`,
+          `${name.charAt(0).toUpperCase() + name.slice(1)} is required`,
+        );
     }
 
     setErrors(prev => {
@@ -73,11 +83,16 @@ const Contact = () => {
     const message = formData.get('message')?.trim();
 
     const newErrors = {};
-    if (!name) newErrors.name = 'Name is required';
-    if (!email) newErrors.email = 'Email is required';
+    if (!name) newErrors.name = t('contact.nameRequired', 'Name is required');
+    if (!email)
+      newErrors.email = t('contact.emailRequired', 'Email is required');
     else if (!validateEmail(email))
-      newErrors.email = 'Please enter a valid email address';
-    if (!message) newErrors.message = 'Message is required';
+      newErrors.email = t(
+        'contact.emailInvalid',
+        'Please enter a valid email address',
+      );
+    if (!message)
+      newErrors.message = t('contact.messageRequired', 'Message is required');
 
     if (Object.keys(newErrors).length) {
       setErrors(newErrors);
@@ -103,20 +118,22 @@ const Contact = () => {
     <section className='relative w-full min-h-screen bg-black text-white py-20 px-6 sm:px-10 overflow-hidden'>
       <div className='max-w-3xl mx-auto'>
         <h1 className='text-5xl md:text-6xl font-light fade-in mb-6 text-center'>
-          See what{' '}
-          <span className={`${GRADIENT_CLASS} bg-clip-text text-transparent`}>
-            Prestige Production
-          </span>{' '}
-          can do for you
+          {t('contact.title', "Let's Create Something Exceptional")}
         </h1>
         <p className='text-lg text-center text-white/80 fade-in mb-12'>
-          Please fill out the form. Our team will respond within 24 hours. We
-          look forward to learning more about you and your projects!
+          {t(
+            'contact.subtitle',
+            'Reach out to discuss your project and discover how we can bring it to life.',
+          )}
         </p>
 
         {status === 'SUCCESS' ? (
           <p className='text-green-400 text-center text-xl mb-8'>
-            ✅ Thank you! Your message has been sent.
+            ✅{' '}
+            {t(
+              'contact.successMessage',
+              'Thank you! Your message has been sent.',
+            )}
           </p>
         ) : (
           <form
@@ -128,12 +145,12 @@ const Contact = () => {
             <input
               type='hidden'
               name='_subject'
-              value='Message from Prestige Production site'
+              value={`Message from Prestige Production site (${currentLang})`}
             />
 
             <div className='fade-in'>
               <label htmlFor='name' className='block text-sm mb-2 font-medium'>
-                Name
+                {t('contact.namePlaceholder', 'Name')}
               </label>
               <div className='relative'>
                 <UserIcon className='w-5 h-5 absolute left-0 top-2.5 text-white/50' />
@@ -141,7 +158,7 @@ const Contact = () => {
                   id='name'
                   name='name'
                   type='text'
-                  placeholder='Your Name'
+                  placeholder={t('contact.namePlaceholder', 'Your Name')}
                   onChange={handleInputChange}
                   className={`pl-7 w-full bg-transparent border-b py-2 text-base focus:outline-none transition-all ${
                     errors.name
@@ -157,7 +174,7 @@ const Contact = () => {
 
             <div className='fade-in'>
               <label htmlFor='email' className='block text-sm mb-2 font-medium'>
-                Email
+                {t('contact.emailPlaceholder', 'Email')}
               </label>
               <div className='relative'>
                 <EnvelopeIcon className='w-5 h-5 absolute left-0 top-2.5 text-white/50' />
@@ -165,7 +182,7 @@ const Contact = () => {
                   id='email'
                   name='email'
                   type='email'
-                  placeholder='you@example.com'
+                  placeholder={t('contact.emailPlaceholder', 'you@example.com')}
                   onChange={handleInputChange}
                   className={`pl-7 w-full bg-transparent border-b py-2 text-base focus:outline-none transition-all ${
                     errors.email
@@ -184,7 +201,7 @@ const Contact = () => {
                 htmlFor='message'
                 className='block text-sm mb-2 font-medium'
               >
-                Tell us about your project
+                {t('contact.messagePlaceholder', 'Tell us about your project')}
               </label>
               <div className='relative'>
                 <ChatBubbleBottomCenterTextIcon className='w-5 h-5 absolute left-0 top-2.5 text-white/50' />
@@ -192,7 +209,10 @@ const Contact = () => {
                   id='message'
                   name='message'
                   rows={5}
-                  placeholder='Eg. Video Production'
+                  placeholder={t(
+                    'contact.messagePlaceholder',
+                    'Eg. Video Production',
+                  )}
                   onChange={handleInputChange}
                   className={`pl-7 w-full bg-transparent border-b py-2 text-base resize-none focus:outline-none transition-all ${
                     errors.message
@@ -208,17 +228,18 @@ const Contact = () => {
 
             {status === 'ERROR' && (
               <p className='text-red-500 text-center'>
-                Oops! Something went wrong.
+                {t('contact.errorMessage', 'Oops! Something went wrong.')}
               </p>
             )}
 
+            {/* Bouton d'envoi */}
             <div className='relative group fade-in'>
               <button
                 type='submit'
                 className='w-full px-8 py-3 text-base font-medium bg-white text-black rounded-full relative overflow-hidden'
               >
                 <PaperAirplaneIcon className='w-5 h-5 inline-block mr-2' />
-                Send Message
+                {t('contact.sendButton', 'Send message')}
                 <span className='absolute left-[-30%] top-0 w-[200%] h-full bg-white opacity-10 group-hover:animate-flare'></span>
               </button>
             </div>
@@ -228,13 +249,13 @@ const Contact = () => {
         <div className='mt-20 border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4'>
           <div className='text-sm space-y-1 text-white/70'>
             <p>
-              Email:{' '}
+              {t('contact.email', 'Email')}:{' '}
               <a href='mailto:info@prestigeproduction.ch' className='underline'>
                 info@prestigeproduction.ch
               </a>
             </p>
             <p>
-              Phone:{' '}
+              {t('contact.phone', 'Phone')}:{' '}
               <a href='tel:+41762021959' className='underline'>
                 +41 76 202 19 59
               </a>
@@ -246,23 +267,28 @@ const Contact = () => {
             rel='noopener noreferrer'
             className='px-6 py-3 bg-green-500 text-white rounded-full hover:scale-105 transition-transform duration-300'
           >
-            Chat on WhatsApp
+            {t('contact.whatsapp', 'Chat on WhatsApp')}
           </a>
         </div>
       </div>
 
       {/* Calendly CTA */}
       <div className='max-w-3xl mx-auto mt-24 text-center'>
-        <h2 className='text-4xl font-light mb-4'>Prefer a live meeting? </h2>
+        <h2 className='text-4xl font-light mb-4'>
+          {t('contact.meetingCTA', 'Prefer a live meeting?')}
+        </h2>
         <h2 className='text-5xl font-light mb-4'>
-          Reserve your{' '}
+          {t('contact.reserveTime1', 'Reserve your')}{' '}
           <span className={`${GRADIENT_CLASS} bg-clip-text text-transparent`}>
-            creative
+            {t('contact.creative', 'creative')}
           </span>{' '}
-          time
+          {t('contact.reserveTime2', 'time')}
         </h2>
         <p className='text-1xl text-white/70 mb-6'>
-          Schedule a quick call with us at your convenience.
+          {t(
+            'contact.scheduleCall',
+            'Schedule a quick call with us at your convenience.',
+          )}
         </p>
 
         {/* Calendly inline widget */}

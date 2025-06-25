@@ -1,0 +1,318 @@
+{
+  "meta": {
+    "title": "Prestige Production | Services de vidéo et photographie premium",
+    "description": "Services de production vidéo et de photographie premium pour l'immobilier de luxe, les marques et les événements d'entreprise en Suisse."
+  },
+  "nav": {
+    "home": "Accueil",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "whyUs": "Pourquoi nous",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Le prestige dans chaque projet",
+    "subtitle": "Services premium de production vidéo et photographie",
+    "scrollDown": "Défilez pour découvrir",
+    "mouseover": "Passez votre souris sur chaque mot"
+  },
+  "contactSection": {
+    "cta": "Contactez-nous",
+    "projectInfo": "Parlons de votre projet – sans frais"
+  },
+  "home": {
+    "partnersTitle": "Approuvé par les leaders de l'industrie",
+    "servicesTitle": "Nos Services",
+    "servicesSubtitle": "Du concept à la réalisation, nous offrons des solutions complètes en vidéo et photo.",
+    "videoProductionTitle": "Production Vidéo",
+    "videoProductionDesc": "Création de narratifs cinématiques qui mettent en valeur l'essence et la valeur de votre marque.",
+    "photographyTitle": "Photographie",
+    "photographyDesc": "Images visuelles haut de gamme qui capturent chaque détail avec précision et style.",
+    "featuredProjects": "Projets en vedette",
+    "viewAll": "Voir tous les projets",
+    "processTitle": "Notre Processus",
+    "processSubtitle": "Comment nous donnons vie à votre vision",
+    "testimonials": "Ce que disent nos clients",
+    "pageTitle": "Prestige Production | Services de vidéo et photographie premium"
+  },  "services": {
+    "pageTitle": "Services | Prestige Production",    "hero": {
+      "title": "Narration Visuelle",
+      "highlight": "Impact Stratégique",
+      "subtitle": "Notre contenu visuel transforme la façon dont les audiences perçoivent votre marque, vos produits et vos services — créant des connexions émotionnelles qui génèrent des résultats mesurables.",
+      "cta": "Travaillons ensemble",
+      "primaryCta": "Obtenir un devis personnalisé",
+      "secondaryCta": "Voir les forfaits"
+    },"faq": {
+      "title": "Foire Aux Questions",
+      "subtitle": "Obtenez des réponses aux questions fréquentes sur nos services, notre processus et notre livraison.",
+      "clickToExpand": "Cliquez sur une question pour voir la réponse",
+      "moreQuestions": "Vous avez d'autres questions ? Nous sommes là pour vous aider.",
+      "contactUs": "Contactez notre équipe",
+      "q1": "Dans quels types de projets êtes-vous spécialisés ?",
+      "a1": "Nous sommes spécialisés dans une large gamme de création de contenu visuel, avec une expertise particulière dans l'immobilier de luxe, les événements d'entreprise, la narration de marque et le contenu pour les réseaux sociaux. Notre équipe possède une vaste expérience avec des propriétés haut de gamme, des conférences internationales et des marques premium nécessitant un traitement visuel sophistiqué.",
+      "q2": "Combien de temps prend généralement une production vidéo du début à la fin ?",
+      "a2": "Notre calendrier de production varie en fonction de la complexité du projet. Pour les projets immobiliers, nous livrons généralement le contenu final dans les 5 à 7 jours ouvrables après le tournage. Des projets plus complexes comme les documentaires d'entreprise ou les aftermovies d'événements peuvent prendre 2 à 3 semaines. Nous fournissons toujours un calendrier détaillé lors de notre consultation initiale pour assurer l'alignement avec votre calendrier marketing.",
+      "q3": "Qu'est-ce qui distingue vos vidéos immobilières des visites standard de propriétés ?",
+      "a3": "Contrairement aux visites immobilières standard, nos vidéos incorporent des techniques de narration cinématographique, un éclairage professionnel et une structure narrative stratégique qui met en valeur l'aspect lifestyle des propriétés. Nous nous concentrons sur la création d'une connexion émotionnelle avec les spectateurs en montrant comment il se sent de vivre dans l'espace, pas seulement son apparence—ce qui génère un taux d'engagement et de conversion plus élevé.",
+      "q4": "Fournissez-vous les rushes en plus du contenu édité ?",
+      "a4": "Bien que nos forfaits standard incluent du contenu final entièrement édité et étalonné, nous pouvons fournir certains rushes en option. Nous conservons une archive sécurisée de tous les éléments du projet pendant 6 mois, permettant aux clients de demander des modifications ou formats supplémentaires pendant cette période.",
+      "q5": "Comment gérez-vous le contenu multilingue pour les audiences internationales ?",
+      "a5": "Nous offrons des solutions multilingues complètes, y compris le sous-titrage, la voix off et les services de traduction en anglais, français, allemand et italien. Pour nos clients immobiliers ciblant des acheteurs internationaux, nous recommandons de créer des versions en plusieurs langues pour maximiser la portée du marché et attirer des démographies diverses à travers l'Europe et au-delà."
+    },
+    "offerings": {
+      "title": "Ce Que Nous Proposons",
+      "cards": {
+        "videos": {
+          "title": "Vidéos",
+          "text": "Des histoires immobilières narratives en qualité cinématographique. Idéal pour YouTube et sites web."
+        },
+        "reels": {
+          "title": "Reels pour Réseaux Sociaux",
+          "text": "Courts métrages Instagram & TikTok à fort impact, conçus pour l'engagement et la viralité."
+        },
+        "photos": {
+          "title": "Photos",
+          "text": "Images parfaitement équilibrées utilisant des techniques HDR pour mettre en valeur l'espace et la lumière."
+        }
+      }
+    },
+    "gear": {
+      "title": "Notre Équipement = Votre Avantage Compétitif",
+      "description": "Derrière chaque visuel impressionnant se trouve un équipement de pointe. Nous tournons avec la gamme cinéma professionnelle de Sony pour des détails nets et une plage dynamique étendue, et capturons des perspectives aériennes avec des drones haut de gamme. Notre équipement nous permet de mettre en valeur votre propriété avec précision, échelle et impact cinématographique — vous donnant un avantage concurrentiel sur un marché saturé.",
+      "items": {
+        "sonyAlpha": "Sony Alpha",
+        "djiMavic": "DJI Mavic 3 Pro"
+      }
+    },
+    "portfolio": {
+      "title": "Découvrez Nos Travaux Récents",
+      "description": "Voyez comment nous donnons vie aux espaces grâce à la vidéo, la photographie et le montage.",
+      "cta": "Voir le portfolio"
+    },
+    "cta": {
+      "title": "Prêt à élever votre marque ?",
+      "description": "Laissez-nous transformer vos propriétés en expériences visuelles qui se démarquent.",
+      "button": "Demander un Devis"
+    }
+  },
+  "whyUs": {
+    "pageTitle": "Pourquoi Nous | Prestige Production",
+    "title": "Pourquoi Travailler Avec Nous ?",
+    "subtitle": "Prestige Production est bien plus qu'une simple entreprise de production vidéo — c'est un partenariat fondé sur la vision, la créativité et la performance.",
+    "cta": "Travaillons ensemble",
+    "team": {
+      "duo": {
+        "name": "Dorian & Alex",
+        "role": "Fondateurs de Prestige Production",
+        "description": {
+          "duoDesc1": "Nous sommes Alex et Dorian, co-fondateurs de Prestige Production—un studio créatif construit sur une passion partagée pour la narration visuelle.",
+          "duoDesc2": "Chez Prestige Production, nous combinons expertise technique et approche créative pour réaliser des vidéos qui non seulement ont fière allure, mais communiquent également un but et un sens.",
+          "duoDesc3": "Qu'il s'agisse de contenu promotionnel, de montages cinématographiques ou de storytelling de marque—notre priorité est toujours la qualité, la clarté et l'impact durable."
+        }
+      },
+      "dorian": {
+        "name": "Dorian",
+        "role": "Directeur Créatif",
+        "description": {
+          "dorianDesc1": "Dorian est l'œil derrière notre narration cinématographique.",
+          "dorianDesc2": "Avec une passion pour l'architecture et le design, il transforme les propriétés en récits élégants.",
+          "dorianDesc3": "Il dirige la direction visuelle et s'assure que chaque projet se sent unique, premium et stratégique."
+        }
+      },
+      "alex": {
+        "name": "Alex",
+        "role": "Directeur Technique",
+        "description": {
+          "alexDesc1": "Alex est le cerveau technique de l'opération.",
+          "alexDesc2": "Des drones aux suites de montage, il gère tout — assurant des images nettes, des montages fluides et une livraison impeccable.",
+          "alexDesc3": "Il est obsédé par la qualité et élève chaque vidéo pour répondre aux normes professionnelles."
+        }
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Notre Travail",
+    "subtitle": "Découvrez comment Prestige Production donne vie aux histoires.",
+    "description": "De l'immobilier de luxe aux événements haut de gamme, nous créons des voyages cinématographiques qui élèvent chaque projet.",
+    "categories": {
+      "all": "Tous",
+      "realEstate": "Immobilier",
+      "corporate": "Entreprise",
+      "events": "Événements",
+      "social": "Réseaux Sociaux"
+    },
+    "reelsTitle": "Reels pour Médias Sociaux"
+  },
+  "contact": {
+    "title": "Créons Quelque Chose d'Exceptionnel",
+    "subtitle": "Contactez-nous pour discuter de votre projet et découvrir comment nous pouvons le concrétiser.",
+    "formTitle": "Envoyez-nous un message",
+    "namePlaceholder": "Votre nom",
+    "emailPlaceholder": "Votre email",
+    "messagePlaceholder": "Parlez-nous de votre projet",
+    "sendButton": "Envoyer le message",
+    "successMessage": "Merci ! Nous vous contacterons bientôt.",
+    "errorMessage": "Oups ! Quelque chose s'est mal passé.",
+    "nameRequired": "Le nom est requis",
+    "emailRequired": "L'email est requis",
+    "emailInvalid": "Veuillez entrer une adresse email valide",
+    "messageRequired": "Le message est requis",
+    "locationTitle": "Basé en Suisse",
+    "locationDesc": "Au service de clients dans tout le pays, avec un accent sur Zurich, Genève et Bâle.",
+    "contactInfo": "Informations de Contact",
+    "email": "Email",
+    "phone": "Téléphone",
+    "meetingCTA": "Vous préférez une rencontre en direct ?",
+    "reserveTime1": "Réservez votre",
+    "creative": "moment créatif",
+    "reserveTime2": "",
+    "scheduleCall": "Planifiez un appel rapide avec nous quand cela vous convient",
+    "whatsapp": "Discuter sur WhatsApp"
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "followUs": "Suivez-nous"
+  },
+  "projects": {
+    "penthouseTitle": "L'Histoire d'un Penthouse | Prestige Production",
+    "backToPortfolio": "Retour à nos projets",
+    "browserNotSupported": "Votre navigateur ne prend pas en charge les vidéos.",
+    "penthouse": {
+      "title": "Un Penthouse d'Exception",
+      "location": "Zurich | Immobilier de Prestige",
+      "description": "Nous avons collaboré avec Zurich Sotheby's International Realty pour mettre en valeur l'une des propriétés les plus exceptionnelles de Zurich — un penthouse de 304 m² perché au sommet de la Mobimo Tower. Grâce à des visuels cinématographiques, une narration architecturale et un processus de production minutieux, nous avons créé une suite complète de contenu adaptée au marché du luxe. Des courts reels aux films longs, chaque élément a été conçu pour refléter la sophistication de la propriété et de la marque.",
+      "address": "Turbinenstrasse 18, 8005 Zurich, Suisse",
+      "website": "www.zurichsothebysrealty.com",
+      "thanks": "Un grand merci à Zurich Sotheby's Realty et à Soroush Efati.",
+      "reelTitle": "Reel",
+      "branding": "Une Production Prestige"
+    },
+    "smiTitle": "Swiss Mining Institute | Prestige Production",
+    "smi": {
+      "tagline": "Une question de luxe.",
+      "title": "Swiss Mining Institute 2024",
+      "subtitle": "La conférence minière la plus prestigieuse au monde",
+      "watchAftermovie": "Regarder l'aftermovie officiel",
+      "photoAlt": "Photo SMI",
+      "intro1Part1": "Le Swiss Mining Institute est",
+      "intro1Part2": "la plus grande et la plus exclusive conférence minière d'Europe",
+      "intro1Part3": "Réunissant plus de 1000 investisseurs, 100+ sociétés cotées et plus de 2700 réunions organisées sur 2 jours.",
+      "intro2Part1": "Pendant deux jours, nous avons capturé",
+      "intro2Part2": "tout ce qu'un objectif pouvait saisir",
+      "intro2Part3": "Des",
+      "interviews": "interviews",
+      "panels": "discussions de panel",
+      "and": "et",
+      "the": "l'",
+      "aftermovie": "aftermovie officiel",
+      "to": "aux",
+      "photos": "photos",
+      "social": "contenus pour réseaux sociaux",
+      "andMore": "et plus encore — nous avons tout livré.",
+      "watchOfficialAftermovie": "Regardez l'aftermovie officiel",
+      "aftermovieTitle": "Aftermovie officiel",
+      "featuredInterviews": "Interviews en vedette",
+      "interviewsDesc": "Nous avons eu le privilège de nous entretenir avec des PDG visionnaires et des investisseurs avant-gardistes qui transforment l'écosystème minier. Plongez dans des perspectives authentiques que vous n'entendrez nulle part ailleurs.",
+      "interviewTitle": "Interview",
+      "enlargedImage": "Agrandie",
+      "thanks": "Merci à notre partenaire",
+      "partnerName": "Swiss Mining Institute"
+    }
+  },
+  "highlights": {
+    "takeALook": "Découvrez",
+    "ourWork": "notre travail !",
+    "seeFullPortfolio": "Voir le portfolio complet",
+    "whatDoWeOffer": "Que proposons-nous ?"
+  },
+  "common": {
+    "watch": "voir",
+    "right": "droite"
+  },
+  "howItWorks": {
+    "craftedWith": "Créé avec",
+    "subtitle": "La qualité avant tout.",
+    "rotatingTexts": {
+      "precision": "précision suisse",
+      "vision": "vision cinématographique",
+      "innovation": "innovation digitale",
+      "emotion": "émotion humaine"
+    },
+    "paragraph1": {
+      "part1": "Nous mêlons",
+      "part2": "la précision suisse",
+      "part3": "à un art cinématographique audacieux pour créer des visuels qui captent l'attention et marquent les esprits."
+    },
+    "paragraph2": {
+      "part1": "Du premier storyboard à l'étalonnage final, chaque image est conçue pour",
+      "part2": "émouvoir le public",
+      "part3": "et",
+      "part4": "générer des résultats"
+    },
+    "since": "Depuis",
+    "year": "2025",
+    "projectsDelivered": "Plus de 10 projets réalisés"
+  },
+  "workflow": {
+    "title": "Votre parcours avec Prestige",
+    "logoAlt": "icône de processus",
+    "steps": {
+      "discovery": {
+        "title": "Découverte & Brief",
+        "responsibilities": {
+          "0": "Organiser un atelier avec les parties prenantes pour capturer les objectifs, l'audience et les messages clés.",
+          "1": "Rechercher les tendances du marché et les contenus concurrents pour des insights stratégiques.",
+          "2": "Rédiger un brief créatif complet définissant la portée, les livrables et les délais."
+        }
+      },
+      "script": {
+        "title": "Scénario & Storyboard",
+        "responsibilities": {
+          "0": "Développer une structure narrative captivante et rédiger un scénario détaillé.",
+          "1": "Concevoir des panneaux de storyboard illustrant les scènes clés et les angles de caméra.",
+          "2": "Réviser et affiner le scénario/storyboard avec l'approbation du client à chaque étape."
+        }
+      },
+      "preProduction": {
+        "title": "Pré-production & Logistique",
+        "responsibilities": {
+          "0": "Repérer les lieux, obtenir les permis et planifier la logistique du tournage.",
+          "1": "Coordonner l'équipe, la location d'équipement, le casting et les costumes.",
+          "2": "Créer un planning de tournage et des feuilles de service pour un flux de production fluide."
+        }
+      },
+      "filming": {
+        "title": "Tournage & Captation",
+        "responsibilities": {
+          "0": "Diriger la production sur le plateau, gérer la caméra, l'éclairage et le son.",
+          "1": "Guider la performance des talents et assurer l'alignement avec la vision créative.",
+          "2": "Contrôler et sauvegarder les séquences capturées pour assurer la qualité."
+        }
+      },
+      "postProduction": {
+        "title": "Post-production & Retours",
+        "responsibilities": {
+          "0": "Monter les rushes, appliquer l'étalonnage, le mixage sonore et les graphiques.",
+          "1": "Intégrer les retours du client à travers des cycles de révision itératifs.",
+          "2": "Finaliser la vidéo master et préparer des versions pour différentes plateformes."
+        }
+      },
+      "delivery": {
+        "title": "Livraison & Distribution",
+        "responsibilities": {
+          "0": "Exporter les vidéos dans les formats et résolutions requis.",
+          "1": "Télécharger sur les plateformes d'hébergement et optimiser les métadonnées.",
+          "2": "Développer une stratégie de distribution à travers les canaux propriétaires et payants, suivre les analytics."
+        }
+      }
+    }
+  },
+  "partners": {
+    "title": "Des partenaires dont nous sommes",
+    "proud": "fiers",
+    "of": ".",
+    "partnerAlt": "Partenaire"
+  }
+}

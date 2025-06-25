@@ -13,6 +13,9 @@ export default {
         },
         zinc: '#101010',
       },
+      fontFamily: {
+        sans: ['Montserrat', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+      },
     },
     plugins: [],
     animation: {

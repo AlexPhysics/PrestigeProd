@@ -9,6 +9,7 @@ const TrueFocus = ({
   glowColor = 'rgba(0, 255, 0, 0.6)',
   animationDuration = 0.5,
   pauseBetweenAnimations = 1,
+  preserveCase = true, // Ajoutez cette prop pour contrôler la casse
 }) => {
   const words = sentence.split(' ');
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -67,6 +68,9 @@ const TrueFocus = ({
     >
       {words.map((word, index) => {
         const isActive = index === currentIndex;
+        // Appliquer la transformation de texte conditionnellement
+        const displayWord = preserveCase ? word : word.toUpperCase();
+
         return (
           <span
             key={index}
@@ -87,7 +91,7 @@ const TrueFocus = ({
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
-            {word}
+            {displayWord}
           </span>
         );
       })}

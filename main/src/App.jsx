@@ -1,10 +1,19 @@
 // src/App.jsx
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useLocation,
+  Navigate,
+  useParams,
+} from 'react-router-dom';
+import { useEffect } from 'react'; // Ajoutez cet import
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollProgress from './components/ScrollProgress';
 import Particles from './components/Particles';
+import { useTranslation } from 'react-i18next';
 
 // pages
 import Home from './pages/Home';
@@ -26,13 +35,34 @@ const Background = () => {
         particleColors={['#ffffff', '#ffffff']}
         particleCount={200}
         particleSpread={10}
-        speed={0.1}
-        particleBaseSize={100}
-        moveParticlesOnHover={true}
-        alphaParticles={false}
-        disableRotation={false}
       />
     </div>
+  );
+};
+
+const AppContent = () => {
+  const { i18n } = useTranslation();
+  const currentLang = i18n.language || 'en';
+
+  return (
+    <>
+      <ScrollProgress />
+      <Navbar />
+      <Background />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/portfolio' element={<Portfolio />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/why-us' element={<WhyUs />} />
+        <Route path='/portfolio/smi' element={<SmiProject />} />
+        <Route
+          path='/portfolio/penthouse-zurich'
+          element={<PenthouseZurichProject />}
+        />
+      </Routes>
+      <Footer />
+    </>
   );
 };
 
@@ -40,34 +70,25 @@ const App = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <ScrollProgress />
-      <Background />
-
-      <div className='bg-black min-h-screen flex flex-col scroll-smooth'>
-        <Navbar />
-
-        {/* content area */}
-        <div className='flex-1'>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/portfolio' element={<Portfolio />} />
-            <Route path='/services' element={<Services />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/why-us' element={<WhyUs />} />
-
-            {/* individual project routes */}
-            <Route path='/portfolio/smi' element={<SmiProject />} />
-            <Route
-              path='/portfolio/penthouse-zurich'
-              element={<PenthouseZurichProject />}
-            />
-          </Routes>
-        </div>
-
-        <Footer />
-      </div>
+      <Routes>
+        <Route path='/:lang/*' element={<AppWithLanguage />} />
+        <Route path='*' element={<Navigate to='/en' replace />} />
+      </Routes>
     </BrowserRouter>
   );
+};
+
+const AppWithLanguage = () => {
+  const { i18n } = useTranslation();
+  const { lang } = useParams();
+
+  useEffect(() => {
+    if (lang && i18n.language !== lang) {
+      i18n.changeLanguage(lang);
+    }
+  }, [lang, i18n]);
+
+  return <AppContent />;
 };
 
 export default App;

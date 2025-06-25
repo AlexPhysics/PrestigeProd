@@ -1,15 +1,22 @@
 import { useGSAP } from '@gsap/react';
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { animateWithGsap } from '../utils/animations';
-import { explore1Img, explore2Img, exploreVideo, frameImg } from '../utils';
+import {
+  explore1Img,
+  explore2Img,
+  exploreVideo,
+  frameImg,
+  smoothScrollTo,
+} from '../utils';
 import gsap from 'gsap';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { smiLogo } from '../utils';
 import Carousel from '../components/Carousel';
 import SmiReel1 from '/assets/videos/teaser 1_smi.mp4';
 import SmiReel2 from '/assets/videos/teaser 2_smi.mp4';
 import SmiReel3 from '/assets/videos/teaser 3_smi.mp4';
+import { useTranslation } from 'react-i18next';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,6 +29,16 @@ const SmiProject = () => {
 
   const videoRef = useRef();
   const [lightboxSrc, setLightboxSrc] = useState(null);
+  const { t, i18n } = useTranslation();
+  const { lang } = useParams();
+  const currentLang = lang || i18n.language || 'en';
+
+  useEffect(() => {
+    document.title = t(
+      'projects.smiTitle',
+      'Swiss Mining Institute | Prestige Production',
+    );
+  }, [t]);
 
   useGSAP(() => {
     gsap.to('#exploreVideo', {
@@ -86,20 +103,23 @@ const SmiProject = () => {
 
   return (
     <section className='min-h-screen bg-gradient-to-b from-black via-zinc-900 to-black text-white px-6 pt-20 pb-32 relative'>
-      {/* Back Link + Aftermovie Link */}
+      {/* Back Link + Aftermovie Link - Updated with language prefix */}
       <div className='max-w-6xl mx-auto mb-12 px-2 flex justify-between items-center'>
         <Link
-          to='/portfolio'
+          to={`/${currentLang}/portfolio`}
           className='text-sm text-white/60 hover:text-white transition duration-300'
         >
-          ← Go back to our work
-        </Link>
-
+          ← {t('projects.backToPortfolio', 'Go back to our work')}
+        </Link>{' '}
         <a
           href='#aftermovie'
+          onClick={e => {
+            e.preventDefault();
+            smoothScrollTo('aftermovie');
+          }}
           className='text-sm tracking-wide text-white/60 hover:text-white transition duration-300'
         >
-          Watch the official aftermovie ↓
+          {t('projects.smi.watchAftermovie', 'Watch the official aftermovie')} ↓
         </a>
       </div>
 
@@ -110,14 +130,17 @@ const SmiProject = () => {
           className='text-5xl md:text-6xl font-semibold tracking-tight mb-4 opacity-0 translate-y-6 overflow-hidden'
         >
           <span className='inline-block animate-text-reveal'>
-            It’s all about luxury.
+            {t('projects.smi.tagline', "It's all about luxury.")}
           </span>
         </h1>
         <h2 className='text-3xl lg:text-5xl font-light mb-2'>
-          Swiss Mining Institute 2024
+          {t('projects.smi.title', 'Swiss Mining Institute 2024')}
         </h2>
         <h3 className='text-xl lg:text-2xl text-white/70'>
-          The most prestigious mining conference in the world
+          {t(
+            'projects.smi.subtitle',
+            'The most prestigious mining conference in the world',
+          )}
         </h3>
       </div>
 
@@ -152,7 +175,7 @@ const SmiProject = () => {
           >
             <img
               src={src}
-              alt={`Smi Photo ${i + 1}`}
+              alt={`${t('projects.smi.photoAlt', 'SMI Photo')} ${i + 1}`}
               className='w-full h-full object-cover g_grow hover:scale-105 transition-transform duration-300'
             />
           </div>
@@ -166,24 +189,48 @@ const SmiProject = () => {
       {/* Description Text */}
       <div className='fade-section-3 space-y-12 max-w-3xl mx-auto mb-24 px-4'>
         <p className='text-lg text-white/80 g_text'>
-          The Swiss Mining Institute is{' '}
+          {t('projects.smi.intro1Part1', 'The Swiss Mining Institute is')}{' '}
           <span className='text-white'>
-            the biggest and most exclusive mining conference in Europe
+            {t(
+              'projects.smi.intro1Part2',
+              'the biggest and most exclusive mining conference in Europe',
+            )}
           </span>
-          . Hosting 1000+ investors, 100+ listed companies and over 2700
-          meetings arranged over 2 days.
+          .{' '}
+          {t(
+            'projects.smi.intro1Part3',
+            'Hosting 1000+ investors, 100+ listed companies and over 2700 meetings arranged over 2 days.',
+          )}
         </p>
         <p className='text-lg text-white/80 g_text'>
-          For two days, we captured{' '}
+          {t('projects.smi.intro2Part1', 'For two days, we captured')}{' '}
           <span className='text-white'>
-            everything a camera lens could reach
+            {t(
+              'projects.smi.intro2Part2',
+              'everything a camera lens could reach',
+            )}
           </span>
-          . From <span className='text-white'>interviews</span>,{' '}
-          <span className='text-white'>panel discussions</span> and the{' '}
-          <span className='text-white'>official aftermovie</span> to{' '}
-          <span className='text-white'>photos</span>,{' '}
-          <span className='text-white'>social content</span> and more — we
-          delivered it all.
+          . {t('projects.smi.intro2Part3', 'From')}{' '}
+          <span className='text-white'>
+            {t('projects.smi.interviews', 'interviews')}
+          </span>
+          ,{' '}
+          <span className='text-white'>
+            {t('projects.smi.panels', 'panel discussions')}
+          </span>{' '}
+          {t('projects.smi.and', 'and')} {t('projects.smi.the', 'the')}{' '}
+          <span className='text-white'>
+            {t('projects.smi.aftermovie', 'official aftermovie')}
+          </span>{' '}
+          {t('projects.smi.to', 'to')}{' '}
+          <span className='text-white'>
+            {t('projects.smi.photos', 'photos')}
+          </span>
+          ,{' '}
+          <span className='text-white'>
+            {t('projects.smi.social', 'social content')}
+          </span>{' '}
+          {t('projects.smi.andMore', 'and more — we delivered it all.')}
         </p>
       </div>
 
@@ -193,14 +240,17 @@ const SmiProject = () => {
         className='fade-section-4 max-w-5xl mx-auto mb-24 text-center scroll-mt-40'
       >
         <h2 className='text-3xl font-semibold mb-2 relative inline-block after:block after:h-[2px] after:bg-white/40 after:w-0 after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-700'>
-          Watch the Official Aftermovie
+          {t(
+            'projects.smi.watchOfficialAftermovie',
+            'Watch the Official Aftermovie',
+          )}
         </h2>
         <div className='aspect-video w-full mt-6 rounded-xl overflow-hidden shadow-lg'>
           <iframe
             width='100%'
             height='100%'
             src='https://www.youtube.com/embed/8wwsxj5VIFI'
-            title='Official Aftermovie'
+            title={t('projects.smi.aftermovieTitle', 'Official Aftermovie')}
             frameBorder='0'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
             allowFullScreen
@@ -211,20 +261,21 @@ const SmiProject = () => {
       {/* YouTube Interview */}
       <div className='fade-section-4 max-w-5xl mx-auto text-center mb-24'>
         <h2 className='text-3xl font-semibold mb-2 relative inline-block after:block after:h-[2px] after:bg-white/40 after:w-0 after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-700'>
-          Featured Interviews
+          {t('projects.smi.featuredInterviews', 'Featured Interviews')}
         </h2>
         {/* New description text */}
         <p className='mt-4 text-lg text-white/80 max-w-3xl mx-auto'>
-          We&#39;ve had the privilege to sit down with trail-blazing CEOs and
-          forward-thinking investors who are reshaping the mining ecosystem.
-          Dive in for candid insights you won&#39;t hear anywhere else.
+          {t(
+            'projects.smi.interviewsDesc',
+            "We've had the privilege to sit down with trail-blazing CEOs and forward-thinking investors who are reshaping the mining ecosystem. Dive in for candid insights you won't hear anywhere else.",
+          )}
         </p>
         <div className='aspect-video w-full mt-6 rounded-xl overflow-hidden shadow-lg'>
           <iframe
             width='100%'
             height='100%'
             src='https://www.youtube.com/embed/WkSTG_GQUJQ'
-            title='Interview'
+            title={t('projects.smi.interviewTitle', 'Interview')}
             frameBorder='0'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
             allowFullScreen
@@ -235,7 +286,7 @@ const SmiProject = () => {
             width='100%'
             height='100%'
             src='https://www.youtube.com/embed/y2YmLoOGi_w'
-            title='Interview'
+            title={t('projects.smi.interviewTitle', 'Interview')}
             frameBorder='0'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
             allowFullScreen
@@ -260,7 +311,7 @@ const SmiProject = () => {
             ) : (
               <img
                 src={lightboxSrc}
-                alt='Enlarged'
+                alt={t('projects.smi.enlargedImage', 'Enlarged')}
                 className='w-full h-auto max-h-[90vh] object-contain rounded-xl'
               />
             )}
@@ -271,7 +322,7 @@ const SmiProject = () => {
       <div className='mt-28 text-center pt-12'>
         <div className='mx-auto mb-6 h-[1px] w-32 bg-white/10'></div>
         <p className='text-white/60 uppercase tracking-wider text-xs mb-6'>
-          Thanks to our partner
+          {t('projects.smi.thanks', 'Thanks to our partner')}
         </p>
         <a
           href='https://www.swissmininginstitute.ch/'
@@ -281,7 +332,7 @@ const SmiProject = () => {
         >
           <img
             src={smiLogo}
-            alt='Swiss Mining Institute'
+            alt={t('projects.smi.partnerName', 'Swiss Mining Institute')}
             className='w-32 h-auto mx-auto animate-rotate-3d'
             style={{
               transformStyle: 'preserve-3d',

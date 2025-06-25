@@ -106,54 +106,66 @@ export const footerLinks = [
 
 export const expCards = [
   {
-    logoPath: 'assets/images/consultant-services.png',
-    title: 'Discovery & Brief',
-    responsibilities: [
+    logoPath: '/assets/images/consultant-services.png',
+    titleKey: 'discovery',
+    defaultTitle: 'Discovery & Brief',
+    responsibilityKeys: ['discovery0', 'discovery1', 'discovery2'],
+    defaultResponsibilities: [
       'Conduct stakeholder workshop to capture objectives, audience, and key messages.',
       'Research market trends and competitor content for strategic insights.',
       'Draft a comprehensive creative brief outlining scope, deliverables, and timelines.',
     ],
   },
   {
-    logoPath: 'assets/images/script.png',
-    title: 'Script & Storyboard',
-    responsibilities: [
+    logoPath: '/assets/images/script.png',
+    titleKey: 'script',
+    defaultTitle: 'Script & Storyboard',
+    responsibilityKeys: ['script0', 'script1', 'script2'],
+    defaultResponsibilities: [
       'Develop compelling narrative structure and write detailed script.',
       'Design storyboard panels illustrating key scenes and camera angles.',
       'Review and refine script/storyboard with client approvals at each stage.',
     ],
   },
   {
-    logoPath: 'assets/images/logo2.png',
-    title: 'Pre-Production & Logistics',
-    responsibilities: [
+    logoPath: '/assets/images/logo2.png',
+    titleKey: 'preProduction',
+    defaultTitle: 'Pre-Production & Logistics',
+    responsibilityKeys: ['preProduction0', 'preProduction1', 'preProduction2'],
+    defaultResponsibilities: [
       'Scout locations, acquire permits, and schedule shoot logistics.',
       'Coordinate crew, equipment rental, casting talent, and wardrobe.',
       'Create shooting schedule and call sheets for seamless production flow.',
     ],
   },
   {
-    logoPath: 'assets/images/videography.png',
-    title: 'Filming & Capture',
-    responsibilities: [
+    logoPath: '/assets/images/videography.png',
+    titleKey: 'filming',
+    defaultTitle: 'Filming & Capture',
+    responsibilityKeys: ['filming0', 'filming1', 'filming2'],
+    defaultResponsibilities: [
       'Direct on-set production, manage camera, lighting, and sound.',
       'Guide talent performance and ensure alignment with creative vision.',
       'Monitor and back up captured footage for quality assurance.',
     ],
   },
   {
-    logoPath: 'assets/images/film-editing.png',
-    title: 'Post-Production & Feedback',
-    responsibilities: [
+    logoPath: '/assets/images/film-editing.png',
+    titleKey: 'postProduction',
+    defaultTitle: 'Post-Production & Feedback',
+    responsibilityKeys: ['postProduction0', 'postProduction1', 'postProduction2'],
+    defaultResponsibilities: [
       'Edit raw footage, apply color correction, sound mixing, and graphics.',
       'Integrate client feedback through iterative review cycles.',
       'Finalize video master and prepare versions for different platforms.',
     ],
   },
   {
-    logoPath: 'assets/images/video.png',
-    title: 'Delivery & Distribution',
-    responsibilities: [
+    logoPath: '/assets/images/video.png',
+    titleKey: 'delivery',
+    defaultTitle: 'Delivery & Distribution',
+    responsibilityKeys: ['delivery0', 'delivery1', 'delivery2'],
+    defaultResponsibilities: [
       'Export videos in required formats and resolutions.',
       'Upload to hosting platforms and optimize metadata.',
       'Develop distribution strategy across owned and paid channels, track analytics.',
@@ -165,13 +177,13 @@ export const projects = [
   {
     id: 1,
     title: 'Swiss Mining Institute',
-    video: 'assets/videos/SMI_logo_final.mp4',
+    video: '/assets/videos/SMI_logo_final.mp4',
     link: '/portfolio/smi',
   },
   {
     id: 2,
     title: 'Penthouse Zurich',
-    image: 'assets/images/thumbnail_penthouse.png',
+    image: '/assets/images/thumbnail_penthouse.png',
     link: '/portfolio/penthouse-zurich',
   },
 ];

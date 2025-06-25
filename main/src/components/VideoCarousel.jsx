@@ -1,17 +1,23 @@
+import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/all';
-gsap.registerPlugin(ScrollTrigger);
-import { useEffect, useRef, useState } from 'react';
-
 import { hightlightsSlides } from '../constants';
 import { pauseImg, playImg, replayImg } from '../utils';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const VideoCarousel = () => {
   const videoRef = useRef([]);
   const videoSpanRef = useRef([]);
   const videoDivRef = useRef([]);
   const progressAnims = useRef([]);
+  const sliderRef = useRef(null);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+  const isDragging = useRef(false);
+  const mouseStartX = useRef(0);
+  const mouseEndX = useRef(0);
 
   const [video, setVideo] = useState({
     isEnd: false,
@@ -23,6 +29,67 @@ const VideoCarousel = () => {
 
   const [loadedData, setLoadedData] = useState([]);
   const { isEnd, isLastVideo, startPlay, videoId, isPlaying } = video;
+
+  // Handle touch events
+  const handleTouchStart = e => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = e => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    const swipeThreshold = 50; // Minimum distance required for a swipe
+    const swipeDistance = touchStartX.current - touchEndX.current;
+
+    // If swipe distance is greater than threshold
+    if (Math.abs(swipeDistance) > swipeThreshold) {
+      // Swiped left (next slide)
+      if (swipeDistance > 0 && videoId < hightlightsSlides.length - 1) {
+        handleProcess('set-video', videoId + 1);
+      }
+      // Swiped right (previous slide)
+      else if (swipeDistance < 0 && videoId > 0) {
+        handleProcess('set-video', videoId - 1);
+      }
+    }
+  };
+
+  // Handle mouse events for desktop swiping
+  const handleMouseDown = e => {
+    isDragging.current = true;
+    mouseStartX.current = e.clientX;
+  };
+
+  const handleMouseMove = e => {
+    if (!isDragging.current) return;
+    mouseEndX.current = e.clientX;
+  };
+
+  const handleMouseUp = () => {
+    if (!isDragging.current) return;
+
+    const swipeThreshold = 50; // Same threshold as touch
+    const swipeDistance = mouseStartX.current - mouseEndX.current;
+
+    if (Math.abs(swipeDistance) > swipeThreshold) {
+      // Swiped left (next slide)
+      if (swipeDistance > 0 && videoId < hightlightsSlides.length - 1) {
+        handleProcess('set-video', videoId + 1);
+      }
+      // Swiped right (previous slide)
+      else if (swipeDistance < 0 && videoId > 0) {
+        handleProcess('set-video', videoId - 1);
+      }
+    }
+
+    isDragging.current = false;
+  };
+
+  const handleMouseLeave = () => {
+    isDragging.current = false;
+  };
 
   useGSAP(() => {
     gsap.to('#slider', {
@@ -192,7 +259,19 @@ const VideoCarousel = () => {
 
   return (
     <>
-      <div className='flex items-center'>
+      <div
+        className={`flex items-center ${
+          isDragging.current ? 'cursor-grabbing' : 'cursor-grab'
+        }`}
+        ref={sliderRef}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseLeave}
+      >
         {hightlightsSlides.map((list, i) => (
           <div key={list.id} id='slider' className='sm:pr-20 pr-10'>
             <div className='video-carousel_container'>

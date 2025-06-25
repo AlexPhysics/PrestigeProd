@@ -81,5 +81,24 @@ export const logo2Img = logo2;
 export const logo3Img = logo3;
 export const iphoneFrameImg = iphoneframeimg;
 export const smiLogo = smilogo;
+
+/**
+ * Smoothly scrolls to an element with the given ID
+ * @param {string} elementId - The ID of the element to scroll to
+ * @param {Object} options - Additional options for scrolling
+ * @param {string} options.behavior - The scroll behavior ('auto', 'smooth')
+ * @param {string} options.block - Vertical alignment ('start', 'center', 'end', 'nearest')
+ * @param {string} options.inline - Horizontal alignment ('start', 'center', 'end', 'nearest')
+ */
+export const smoothScrollTo = (
+  elementId,
+  options = { behavior: 'smooth', block: 'start' },
+) => {
+  const element = document.getElementById(elementId);
+  if (element) {
+    element.scrollIntoView(options);
+  }
+};
+
 export const sonyCameraImg = '/assets/gear/sony_camera.jpg';
 export const droneImg = '/assets/gear/dji_drone.jpg';

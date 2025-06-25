@@ -4,9 +4,11 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { animateWithGsap } from '../utils/animations';
 import RotatingText from './RotatingText';
+import { useTranslation } from 'react-i18next';
 
 const HowItWorks = () => {
   const videoRef = useRef();
+  const { t } = useTranslation();
 
   useGSAP(() => {
     gsap.from('#chip', {
@@ -28,6 +30,14 @@ const HowItWorks = () => {
     });
   }, []);
 
+  // Textes rotatifs traduits
+  const rotatingTexts = [
+    t('howItWorks.rotatingTexts.precision', 'swiss precision'),
+    t('howItWorks.rotatingTexts.vision', 'cinematic vision'),
+    t('howItWorks.rotatingTexts.innovation', 'digital innovation'),
+    t('howItWorks.rotatingTexts.emotion', 'human emotion'),
+  ];
+
   return (
     <section className='common-padding'>
       <div className='screen-max-width'>
@@ -38,14 +48,9 @@ const HowItWorks = () => {
         {/* Rotating headline & subtitle */}
         <div className='flex flex-col items-center text-center gap-2 md:gap-3'>
           <h2 className='hiw-title flex items-center justify-center flex-wrap'>
-            Crafted with&nbsp;
+            {t('howItWorks.craftedWith', 'Crafted with')}&nbsp;
             <RotatingText
-              texts={[
-                'Swiss Precision',
-                'Cinematic Vision',
-                'Digital Innovation',
-                'Human Emotion',
-              ]}
+              texts={rotatingTexts}
               mainClassName='inline-block px-2 bg-white text-black border border-black overflow-hidden py-0.5 md:py-1 rounded-lg'
               staggerFrom='last'
               initial={{ y: '100%' }}
@@ -58,7 +63,7 @@ const HowItWorks = () => {
             />
           </h2>
 
-          <p className='hiw-subtitle'>Quality above everything else.</p>
+          <p className='hiw-subtitle'>{t('howItWorks.subtitle', 'Quality above everything else.')}</p>
         </div>
 
         {/*
@@ -88,24 +93,22 @@ const HowItWorks = () => {
           {/* LEFT COLUMN – storytelling & craft */}
           <div className='flex flex-1 justify-center flex-col'>
             <p className='hiw-text g_fadeIn'>
-              We blend <span className='text-white'>Swiss precision</span> with
-              bold cinematic craft to create visuals that stop thumbs and turn
-              heads.
+              {t('howItWorks.paragraph1.part1', 'We blend')} <span className='text-white'>{t('howItWorks.paragraph1.part2', 'Swiss precision')}</span>{' '}
+              {t('howItWorks.paragraph1.part3', 'with bold cinematic craft to create visuals that stop thumbs and turn heads.')}
             </p>
 
             <p className='hiw-text g_fadeIn'>
-              From the first storyboard to the final colour grade, every frame
-              is engineered to{' '}
-              <span className='text-white'>move audiences</span> and
-              <span className='text-white'> drive results</span>.
+              {t('howItWorks.paragraph2.part1', 'From the first storyboard to the final colour grade, every frame is engineered to')}{' '}
+              <span className='text-white'>{t('howItWorks.paragraph2.part2', 'move audiences')}</span> {t('howItWorks.paragraph2.part3', 'and')}
+              <span className='text-white'> {t('howItWorks.paragraph2.part4', 'drive results')}</span>.
             </p>
           </div>
 
           {/* RIGHT COLUMN – quick stats / proof points */}
           <div className='flex-1 flex justify-center flex-col g_fadeIn'>
-            <p className='hiw-text'>Since</p>
-            <p className='hiw-bigtext'>2025</p>
-            <p className='hiw-text'>10+ projects delivered</p>
+            <p className='hiw-text'>{t('howItWorks.since', 'Since')}</p>
+            <p className='hiw-bigtext'>{t('howItWorks.year', '2025')}</p>
+            <p className='hiw-text'>{t('howItWorks.projectsDelivered', '10+ projects delivered')}</p>
           </div>
         </div>
       </div>

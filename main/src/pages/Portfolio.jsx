@@ -1,9 +1,11 @@
 import React, { useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { projects } from '../constants';
 import SplitText from '../components/SplitText';
+import TrueFocus from '../components/TrueFocus';
+import { useTranslation } from 'react-i18next';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,9 +15,13 @@ const Portfolio = () => {
   };
   const containerRef = useRef(null);
   const cardsRef = useRef([]);
+  const { t, i18n } = useTranslation();
+  const { lang } = useParams();
+  const currentLang = lang || i18n.language || 'en';
+
   useEffect(() => {
-    document.title = 'Our Work | Prestige Production';
-  }, []);
+    document.title = t('portfolio.pageTitle', 'Our work | Prestige Production');
+  }, [t]);
   useEffect(() => {
     const ctx = gsap.context(() => {
       cardsRef.current.forEach((card, index) => {
@@ -81,26 +87,22 @@ const Portfolio = () => {
         <div className='inline-block relative mb-6'>
           <h2
             id='section-title'
-            className='text-sm font-semibold uppercase tracking-widest text-white mb-2'
+            className='text-sm font-semibold tracking-widest text-white mb-2 font-sans'
           >
-            <SplitText
-              text='Our Work'
-              className='text-2xl font-semibold text-center'
-              delay={220}
-              duration={2}
-              ease='elastic.out(1,0.3)'
-              splitType='chars'
-              from={{ opacity: 0, y: 40 }}
-              to={{ opacity: 1, y: 0 }}
-              threshold={0.1}
-              rootMargin='-100px'
-              textAlign='center'
-              onLetterAnimationComplete={handleAnimationComplete}
+            <TrueFocus
+              sentence={t('portfolio.title', 'Our work')}
+              manualMode={false}
+              blurAmount={7.5}
+              borderColor='rgba(45, 95, 89, 1)'
+              animationDuration={0.4}
+              pauseBetweenAnimations={3}
+              className='font-sans' // ensure same font family
+              preserveCase={true}
             />
           </h2>
           <div
             id='underline'
-            className='absolute left-1/2 -translate-x-1/2 mt-2 h-[1px] w-48 bg-white/70 origin-center scale-x-0'
+            className='absolute left-1/2 -translate-x-1/2 mt-4 h-[1px] w-48 bg-white/70 origin-center scale-x-0' // underline pushed further down
           />
         </div>
 
@@ -109,18 +111,20 @@ const Portfolio = () => {
           id='main-headline'
           className='text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-white leading-tight mb-6'
         >
-          Discover how{' '}
-          <span className='text-white/90'>Prestige Production</span> brings
-          stories to life.
+          {t('portfolio.subtitle', 'Discover how')}{' '}
+          <span className='text-white/90'>Prestige Production</span>{' '}
+          {t('portfolio.subtitleEnd', 'brings stories to life.')}
         </h1>
 
         {/* Subheadline */}
         <p
-          id='sub-headline'
+          id='sub-head-line'
           className='text-lg sm:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto'
         >
-          From luxury real estate to high-end events, we craft cinematic
-          journeys that elevate every project.
+          {t(
+            'portfolio.description',
+            'From luxury real estate to high-end events, we craft cinematic journeys that elevate every project.',
+          )}
         </p>
       </div>
 
@@ -129,10 +133,13 @@ const Portfolio = () => {
         {projects.map((proj, idx) => (
           <Link
             key={proj.id}
-            to={proj.link}
+            to={`/${currentLang}${proj.link}`}
             className='group block rounded-3xl overflow-hidden relative shadow-lg'
             ref={el => (cardsRef.current[idx] = el)}
           >
+            {/* Ajouter un console.log pour débugger */}
+            {console.log('Project image path:', proj.image)}
+
             {/* 16:9 Aspect Ratio Container */}
             <div className='w-full aspect-video overflow-hidden'>
               {proj.video ? (
@@ -151,6 +158,10 @@ const Portfolio = () => {
                   src={proj.image}
                   alt={proj.title}
                   className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-500'
+                  onError={e => {
+                    console.error('Image failed to load:', proj.image);
+                    e.target.src = '/assets/images/placeholder.jpg'; // Image de remplacement
+                  }}
                 />
               )}
             </div>
@@ -168,16 +179,10 @@ const Portfolio = () => {
         className='mt-32 max-w-6xl mx-auto text-center px-4 sm:px-6'
       >
         <h2 className='text-3xl sm:text-4xl font-semibold mb-12 tracking-tight'>
-          Social Media Reels
+          {t('portfolio.reelsTitle', 'Social Media Reels')}
         </h2>
 
         {/* 1️⃣: list of video sources (public/ or imported) */}
-        {/*
-    – If the clips live in /public, use "/videos/reel1.mp4", etc.
-    – If you import, do:
-        import reel1 from '../assets/reel1.mp4';
-        const reelSources = [reel1, reel2, reel3];
-  */}
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
           {[
             '/assets/videos/smi_reel_tavi.mp4',
@@ -200,7 +205,10 @@ const Portfolio = () => {
                   autoPlay /* remove autoPlay if you prefer controls */
                   /* controls  // uncomment to show the play bar */
                 >
-                  Your browser does not support the video tag.
+                  {t(
+                    'portfolio.browserNotSupported',
+                    'Your browser does not support the video tag.',
+                  )}
                 </video>
               </div>
             </div>
