@@ -51,13 +51,13 @@ const AppContent = () => {
       <Background />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/portfolio' element={<Portfolio />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/why-us' element={<WhyUs />} />
-        <Route path='/portfolio/smi' element={<SmiProject />} />
+        <Route path='portfolio' element={<Portfolio />} />
+        <Route path='services' element={<Services />} />
+        <Route path='contact' element={<Contact />} />
+        <Route path='why-us' element={<WhyUs />} />
+        <Route path='portfolio/smi' element={<SmiProject />} />
         <Route
-          path='/portfolio/penthouse-zurich'
+          path='portfolio/penthouse-zurich'
           element={<PenthouseZurichProject />}
         />
       </Routes>

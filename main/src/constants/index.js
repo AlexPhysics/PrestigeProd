@@ -16,8 +16,7 @@ import {
   logo3Img,
 } from '../utils';
 
-export const GRADIENT_CLASS =
-  'bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500';
+export const GRADIENT_CLASS = 'bg-gradient-to-r from-[#2d5f59] to-[#F4FF78]';
 
 export const navLists = [
   { label: 'Home', path: '/' },
@@ -153,7 +152,11 @@ export const expCards = [
     logoPath: '/assets/images/film-editing.png',
     titleKey: 'postProduction',
     defaultTitle: 'Post-Production & Feedback',
-    responsibilityKeys: ['postProduction0', 'postProduction1', 'postProduction2'],
+    responsibilityKeys: [
+      'postProduction0',
+      'postProduction1',
+      'postProduction2',
+    ],
     defaultResponsibilities: [
       'Edit raw footage, apply color correction, sound mixing, and graphics.',
       'Integrate client feedback through iterative review cycles.',

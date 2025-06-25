@@ -65,11 +65,7 @@ const Services = () => {
       id: 'custom',
       titleKey: 'custom',
       descriptionKey: 'customDesc',
-      featuresKeys: [
-        'customFeature1',
-        'customFeature2',
-        'customFeature3',
-      ],
+      featuresKeys: ['customFeature1', 'customFeature2', 'customFeature3'],
       ctaKey: 'customCta',
       popular: false,
       color: 'amber',
@@ -144,7 +140,9 @@ const Services = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-        >          <h1 className='text-4xl md:text-7xl font-light tracking-tight mb-6'>
+        >
+          {' '}
+          <h1 className='text-4xl md:text-7xl font-light tracking-tight mb-6'>
             {t('services.hero.title', 'Visual Storytelling,')} <br />
             <span
               className={`${GRADIENT_CLASS} bg-clip-text text-transparent font-medium`}
@@ -155,7 +153,7 @@ const Services = () => {
           <p className='text-white/90 text-xl md:text-2xl mb-10 max-w-2xl mx-auto'>
             {t(
               'services.hero.subtitle',
-              "Our visual content transforms how audiences perceive your brand, products, and services—creating emotional connections that drive measurable results.",
+              'Our visual content transforms how audiences perceive your brand, products, and services—creating emotional connections that drive measurable results.',
             )}
           </p>
           <div className='flex flex-col sm:flex-row gap-5 justify-center'>
@@ -176,8 +174,8 @@ const Services = () => {
               {t('services.hero.secondaryCta', 'View Packages')}
             </a>
           </div>
-
-          {/* Key benefits */}          <motion.div
+          {/* Key benefits */}{' '}
+          <motion.div
             className='mt-16 grid grid-cols-1 md:grid-cols-3 gap-8'
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -233,33 +231,34 @@ const Services = () => {
               'services.process.description',
               'Working with us is straightforward. We handle the complexity so you can focus on what matters—growing your business and impressing your clients.',
             )}
-          </p>          <div className='grid md:grid-cols-5 gap-4 md:gap-6 relative'>
+          </p>{' '}
+          <div className='grid md:grid-cols-5 gap-4 md:gap-6 relative'>
             {/* Connecting line */}
             <div className='hidden md:block absolute top-8 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-transparent via-fuchsia-500/30 to-transparent z-0'></div>
-            
+
             {/* Step 1 */}
-            <motion.div 
+            <motion.div
               className='text-center relative z-10'
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true, margin: '-50px' }}
             >
-              <motion.div 
+              <motion.div
                 className='w-16 h-16 rounded-full bg-gradient-to-r from-fuchsia-500 to-pink-600 flex items-center justify-center text-2xl font-bold mx-auto mb-5 relative shadow-lg shadow-fuchsia-500/20'
                 whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 10 }}
               >
                 <motion.div
                   className='absolute inset-0 rounded-full bg-white/20'
-                  animate={{ 
+                  animate={{
                     scale: [1, 1.2, 1],
-                    opacity: [0, 0.5, 0]
+                    opacity: [0, 0.5, 0],
                   }}
-                  transition={{ 
-                    duration: 2, 
+                  transition={{
+                    duration: 2,
                     repeat: Infinity,
-                    ease: "easeInOut" 
+                    ease: 'easeInOut',
                   }}
                 ></motion.div>
                 1
@@ -276,29 +275,29 @@ const Services = () => {
             </motion.div>
 
             {/* Step 2 */}
-            <motion.div 
+            <motion.div
               className='text-center relative z-10'
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true, margin: '-50px' }}
             >
-              <motion.div 
+              <motion.div
                 className='w-16 h-16 rounded-full bg-gradient-to-r from-fuchsia-500 to-pink-600 flex items-center justify-center text-2xl font-bold mx-auto mb-5 relative shadow-lg shadow-fuchsia-500/20'
                 whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 10 }}
               >
                 <motion.div
                   className='absolute inset-0 rounded-full bg-white/20'
-                  animate={{ 
+                  animate={{
                     scale: [1, 1.2, 1],
-                    opacity: [0, 0.5, 0]
+                    opacity: [0, 0.5, 0],
                   }}
-                  transition={{ 
-                    duration: 2, 
+                  transition={{
+                    duration: 2,
                     repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: 0.4
+                    ease: 'easeInOut',
+                    delay: 0.4,
                   }}
                 ></motion.div>
                 2
@@ -309,35 +308,35 @@ const Services = () => {
               <p className='text-white/70 text-sm'>
                 {t(
                   'services.process.step2Desc',
-                  "We develop a creative concept and detailed production plan.",
+                  'We develop a creative concept and detailed production plan.',
                 )}
               </p>
             </motion.div>
 
             {/* Step 3 */}
-            <motion.div 
+            <motion.div
               className='text-center relative z-10'
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4 }}
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true, margin: '-50px' }}
             >
-              <motion.div 
+              <motion.div
                 className='w-16 h-16 rounded-full bg-gradient-to-r from-fuchsia-500 to-pink-600 flex items-center justify-center text-2xl font-bold mx-auto mb-5 relative shadow-lg shadow-fuchsia-500/20'
                 whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 10 }}
               >
                 <motion.div
                   className='absolute inset-0 rounded-full bg-white/20'
-                  animate={{ 
+                  animate={{
                     scale: [1, 1.2, 1],
-                    opacity: [0, 0.5, 0]
+                    opacity: [0, 0.5, 0],
                   }}
-                  transition={{ 
-                    duration: 2, 
+                  transition={{
+                    duration: 2,
                     repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: 0.8
+                    ease: 'easeInOut',
+                    delay: 0.8,
                   }}
                 ></motion.div>
                 3
@@ -352,31 +351,31 @@ const Services = () => {
                 )}
               </p>
             </motion.div>
-            
+
             {/* Step 4 */}
-            <motion.div 
+            <motion.div
               className='text-center relative z-10'
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.6 }}
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true, margin: '-50px' }}
             >
-              <motion.div 
+              <motion.div
                 className='w-16 h-16 rounded-full bg-gradient-to-r from-fuchsia-500 to-pink-600 flex items-center justify-center text-2xl font-bold mx-auto mb-5 relative shadow-lg shadow-fuchsia-500/20'
                 whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 10 }}
               >
                 <motion.div
                   className='absolute inset-0 rounded-full bg-white/20'
-                  animate={{ 
+                  animate={{
                     scale: [1, 1.2, 1],
-                    opacity: [0, 0.5, 0]
+                    opacity: [0, 0.5, 0],
                   }}
-                  transition={{ 
-                    duration: 2, 
+                  transition={{
+                    duration: 2,
                     repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: 1.2
+                    ease: 'easeInOut',
+                    delay: 1.2,
                   }}
                 ></motion.div>
                 4
@@ -393,29 +392,29 @@ const Services = () => {
             </motion.div>
 
             {/* Step 5 */}
-            <motion.div 
+            <motion.div
               className='text-center relative z-10'
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.8 }}
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true, margin: '-50px' }}
             >
-              <motion.div 
+              <motion.div
                 className='w-16 h-16 rounded-full bg-gradient-to-r from-fuchsia-500 to-pink-600 flex items-center justify-center text-2xl font-bold mx-auto mb-5 relative shadow-lg shadow-fuchsia-500/20'
                 whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 10 }}
               >
                 <motion.div
                   className='absolute inset-0 rounded-full bg-white/20'
-                  animate={{ 
+                  animate={{
                     scale: [1, 1.2, 1],
-                    opacity: [0, 0.5, 0]
+                    opacity: [0, 0.5, 0],
                   }}
-                  transition={{ 
-                    duration: 2, 
+                  transition={{
+                    duration: 2,
                     repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: 1.6
+                    ease: 'easeInOut',
+                    delay: 1.6,
                   }}
                 ></motion.div>
                 5
@@ -432,7 +431,8 @@ const Services = () => {
             </motion.div>
           </div>
         </motion.div>
-      </section>      {/* Service Packages - Clear options and collaborative approach */}
+      </section>{' '}
+      {/* Service Packages - Clear options and collaborative approach */}
       <section
         id='packages'
         className='py-24 px-6 bg-gradient-to-b from-[#111111] to-black'
@@ -445,7 +445,7 @@ const Services = () => {
             transition={{ duration: 0.8 }}
           >
             {t('services.packages.title', 'Collaborative Solutions')}
-          </motion.h2>          
+          </motion.h2>
           <p className='text-white/70 text-lg max-w-3xl mx-auto text-center mb-16'>
             {t(
               'services.packages.subtitle',
@@ -456,7 +456,7 @@ const Services = () => {
           <div className='grid md:grid-cols-3 gap-8 relative'>
             {/* Connecting line behind packages */}
             <div className='hidden md:block absolute top-1/2 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-blue-500/30 via-fuchsia-500/40 to-amber-500/30 z-0'></div>
-            
+
             {servicePackages.map((pkg, index) => (
               <motion.div
                 key={pkg.id}
@@ -467,47 +467,97 @@ const Services = () => {
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
               >
                 {/* Color gradient background with animated border */}
-                <div className={`absolute inset-0 rounded-2xl ${
-                  pkg.popular ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
-                } transition-opacity duration-300`}>
-                  <div className={`absolute inset-px rounded-2xl bg-gradient-to-br ${
-                    pkg.color === 'blue' ? 'from-blue-600/20 to-blue-900/20 border-blue-500/30' :
-                    pkg.color === 'fuchsia' ? 'from-fuchsia-600/30 to-fuchsia-900/30 border-fuchsia-500/40' :
-                    'from-amber-600/20 to-amber-900/20 border-amber-500/30'
-                  } border`}>
-                  </div>
+                <div
+                  className={`absolute inset-0 rounded-2xl ${
+                    pkg.popular
+                      ? 'opacity-100'
+                      : 'opacity-0 group-hover:opacity-100'
+                  } transition-opacity duration-300`}
+                >
+                  <div
+                    className={`absolute inset-px rounded-2xl bg-gradient-to-br ${
+                      pkg.color === 'blue'
+                        ? 'from-blue-600/20 to-blue-900/20 border-blue-500/30'
+                        : pkg.color === 'fuchsia'
+                        ? 'from-fuchsia-600/30 to-fuchsia-900/30 border-fuchsia-500/40'
+                        : 'from-amber-600/20 to-amber-900/20 border-amber-500/30'
+                    } border`}
+                  ></div>
                 </div>
-                
+
                 {/* Static background for non-hovered state */}
-                <div className={`absolute inset-0 rounded-2xl bg-white/5 ${pkg.popular ? 'opacity-0' : 'opacity-100 group-hover:opacity-0'} transition-opacity duration-300`}></div>
-                
+                <div
+                  className={`absolute inset-0 rounded-2xl bg-white/5 ${
+                    pkg.popular
+                      ? 'opacity-0'
+                      : 'opacity-100 group-hover:opacity-0'
+                  } transition-opacity duration-300`}
+                ></div>
+
                 {/* Content */}
                 <div className='relative z-10 p-8'>
                   {/* Icon at the top */}
-                  <div className={`w-12 h-12 rounded-full mx-auto mb-6 flex items-center justify-center ${
-                    pkg.color === 'blue' ? 'bg-blue-500/20 text-blue-400' :
-                    pkg.color === 'fuchsia' ? 'bg-fuchsia-500/20 text-fuchsia-400' :
-                    'bg-amber-500/20 text-amber-400'
-                  }`}>
+                  <div
+                    className={`w-12 h-12 rounded-full mx-auto mb-6 flex items-center justify-center ${
+                      pkg.color === 'blue'
+                        ? 'bg-blue-500/20 text-blue-400'
+                        : pkg.color === 'fuchsia'
+                        ? 'bg-fuchsia-500/20 text-fuchsia-400'
+                        : 'bg-amber-500/20 text-amber-400'
+                    }`}
+                  >
                     {pkg.icon === 'photo-video' && (
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        className='h-6 w-6'
+                        fill='none'
+                        viewBox='0 0 24 24'
+                        stroke='currentColor'
+                      >
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth={1.5}
+                          d='M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z'
+                        />
                       </svg>
                     )}
                     {pkg.icon === 'sparkles' && (
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        className='h-6 w-6'
+                        fill='none'
+                        viewBox='0 0 24 24'
+                        stroke='currentColor'
+                      >
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth={1.5}
+                          d='M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z'
+                        />
                       </svg>
                     )}
                     {pkg.icon === 'beaker' && (
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        className='h-6 w-6'
+                        fill='none'
+                        viewBox='0 0 24 24'
+                        stroke='currentColor'
+                      >
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth={1.5}
+                          d='M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z'
+                        />
                       </svg>
                     )}
                   </div>
-                  
+
                   {pkg.popular && (
-                    <motion.div 
+                    <motion.div
                       className='absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-fuchsia-600 to-pink-600 text-white text-xs font-bold px-4 py-1 rounded-full'
                       initial={{ scale: 1 }}
                       animate={{ scale: [1, 1.05, 1] }}
@@ -516,15 +566,19 @@ const Services = () => {
                       {t('services.packages.mostPopular', 'MOST POPULAR')}
                     </motion.div>
                   )}
-                  
-                  <h3 className={`text-2xl font-medium mb-4 text-center ${
-                    pkg.color === 'blue' ? 'group-hover:text-blue-300' :
-                    pkg.color === 'fuchsia' ? 'group-hover:text-fuchsia-300' :
-                    'group-hover:text-amber-300'
-                  } transition-colors duration-300`}>
+
+                  <h3
+                    className={`text-2xl font-medium mb-4 text-center ${
+                      pkg.color === 'blue'
+                        ? 'group-hover:text-blue-300'
+                        : pkg.color === 'fuchsia'
+                        ? 'group-hover:text-fuchsia-300'
+                        : 'group-hover:text-amber-300'
+                    } transition-colors duration-300`}
+                  >
                     {t(`services.packages.${pkg.titleKey}.title`, pkg.titleKey)}
                   </h3>
-                  
+
                   <p className='text-white/70 text-sm mb-8 text-center'>
                     {t(
                       `services.packages.${pkg.titleKey}.${pkg.descriptionKey}`,
@@ -535,12 +589,16 @@ const Services = () => {
                   <div className='mb-8 space-y-4'>
                     {pkg.featuresKeys.map((featureKey, idx) => (
                       <div key={idx} className='flex items-start space-x-3'>
-                        <div className={`flex-shrink-0 p-1 rounded-full ${
-                          pkg.color === 'blue' ? 'bg-blue-500/20 text-blue-400' :
-                          pkg.color === 'fuchsia' ? 'bg-fuchsia-500/20 text-fuchsia-400' :
-                          'bg-amber-500/20 text-amber-400'
-                        }`}>
-                          <CheckCircleIcon className="h-4 w-4" />
+                        <div
+                          className={`flex-shrink-0 p-1 rounded-full ${
+                            pkg.color === 'blue'
+                              ? 'bg-blue-500/20 text-blue-400'
+                              : pkg.color === 'fuchsia'
+                              ? 'bg-fuchsia-500/20 text-fuchsia-400'
+                              : 'bg-amber-500/20 text-amber-400'
+                          }`}
+                        >
+                          <CheckCircleIcon className='h-4 w-4' />
                         </div>
                         <span className='text-white/80 text-sm'>
                           {t(
@@ -551,14 +609,19 @@ const Services = () => {
                       </div>
                     ))}
                   </div>
-                  
-                  <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
+
+                  <motion.div
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
                     <Link
                       to={`/${currentLang}/contact?package=${pkg.id}`}
                       className={`block text-center py-3 px-6 rounded-full text-sm font-medium transition-all duration-300 ${
-                        pkg.color === 'blue' ? 'bg-blue-600/30 text-white hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/30' :
-                        pkg.color === 'fuchsia' ? 'bg-fuchsia-600/30 text-white hover:bg-fuchsia-600 hover:shadow-lg hover:shadow-fuchsia-500/30' :
-                        'bg-amber-600/30 text-white hover:bg-amber-600 hover:shadow-lg hover:shadow-amber-500/30'
+                        pkg.color === 'blue'
+                          ? 'bg-blue-600/30 text-white hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/30'
+                          : pkg.color === 'fuchsia'
+                          ? 'bg-fuchsia-600/30 text-white hover:bg-fuchsia-600 hover:shadow-lg hover:shadow-fuchsia-500/30'
+                          : 'bg-amber-600/30 text-white hover:bg-amber-600 hover:shadow-lg hover:shadow-amber-500/30'
                       }`}
                     >
                       {t(
@@ -571,17 +634,17 @@ const Services = () => {
               </motion.div>
             ))}
           </div>
-          
+
           {/* Additional note for small team */}
-          <motion.p 
-            className="text-center mt-12 text-white/60 text-sm max-w-2xl mx-auto"
+          <motion.p
+            className='text-center mt-12 text-white/60 text-sm max-w-2xl mx-auto'
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             {t(
-              'services.packages.teamNote', 
-              'As a two-person boutique studio, we offer a personalized approach to every project. Our small team means direct communication with the creatives working on your content, ensuring your vision is perfectly captured.'
+              'services.packages.teamNote',
+              'As a two-person boutique studio, we offer a personalized approach to every project. Our small team means direct communication with the creatives working on your content, ensuring your vision is perfectly captured.',
             )}
           </motion.p>
         </div>
@@ -595,13 +658,13 @@ const Services = () => {
           transition={{ duration: 0.8 }}
         >
           {t('services.showcase.title', 'The Results Speak for Themselves')}
-        </motion.h2>        <p className='text-white/70 text-lg max-w-3xl mx-auto text-center mb-20'>
+        </motion.h2>{' '}
+        <p className='text-white/70 text-lg max-w-3xl mx-auto text-center mb-20'>
           {t(
             'services.showcase.subtitle',
             'See how our visual storytelling has transformed brands and accelerated growth for our clients.',
           )}
         </p>
-
         <div className='space-y-24'>
           {showcaseProjects.map((project, idx) => (
             <motion.div
@@ -689,13 +752,13 @@ const Services = () => {
             transition={{ duration: 0.8 }}
           >
             {t('services.offerings.title', 'Premium Content Types')}
-          </motion.h2>          <p className='text-white/70 text-lg max-w-3xl mx-auto text-center mb-16'>
+          </motion.h2>{' '}
+          <p className='text-white/70 text-lg max-w-3xl mx-auto text-center mb-16'>
             {t(
               'services.offerings.subtitle',
-              'Each format is designed to showcase your brand, products, or services from their most engaging angle and capture your target audience\'s attention.',
+              "Each format is designed to showcase your brand, products, or services from their most engaging angle and capture your target audience's attention.",
             )}
           </p>
-
           <div className='grid md:grid-cols-3 gap-x-8 gap-y-16'>
             <motion.div
               className='group'
@@ -703,7 +766,9 @@ const Services = () => {
               initial={{ opacity: 0, y: 30 }}
               transition={{ duration: 0.7 }}
             >
-              <div className='mb-6 overflow-hidden rounded-xl'>                <img
+              <div className='mb-6 overflow-hidden rounded-xl'>
+                {' '}
+                <img
                   src='/assets/services/property-tour.jpg'
                   alt={t(
                     'services.offerings.cinematicVideos.imageAlt',
@@ -711,7 +776,8 @@ const Services = () => {
                   )}
                   className='w-full h-[220px] object-cover group-hover:scale-105 transition duration-700'
                 />
-              </div>              <h3 className='text-xl font-semibold mb-3'>
+              </div>{' '}
+              <h3 className='text-xl font-semibold mb-3'>
                 {t(
                   'services.offerings.propertyTours.title',
                   'Cinematic Videos',
@@ -724,7 +790,6 @@ const Services = () => {
                 )}
               </p>
             </motion.div>
-
             <motion.div
               className='group'
               whileInView={{ opacity: 1, y: 0 }}
@@ -746,14 +811,14 @@ const Services = () => {
                   'services.offerings.aerial.title',
                   'Aerial Photography & Video',
                 )}
-              </h3>              <p className='text-white/70 text-sm'>
+              </h3>{' '}
+              <p className='text-white/70 text-sm'>
                 {t(
                   'services.offerings.aerial.description',
-                  "Showcase scale, surroundings, and perspective with dramatic drone footage and stills.",
+                  'Showcase scale, surroundings, and perspective with dramatic drone footage and stills.',
                 )}
               </p>
             </motion.div>
-
             <motion.div
               className='group'
               whileInView={{ opacity: 1, y: 0 }}
@@ -780,7 +845,6 @@ const Services = () => {
                 )}
               </p>
             </motion.div>
-
             <motion.div
               className='group'
               whileInView={{ opacity: 1, y: 0 }}
@@ -799,13 +863,15 @@ const Services = () => {
               </div>
               <h3 className='text-xl font-semibold mb-3'>
                 {t('services.offerings.hdr.title', 'HDR Photography')}
-              </h3>              <p className='text-white/70 text-sm'>
+              </h3>{' '}
+              <p className='text-white/70 text-sm'>
                 {t(
                   'services.offerings.hdr.description',
                   'High-dynamic-range photos that capture perfect lighting, bringing out the best in your subjects and spaces.',
                 )}
               </p>
-            </motion.div>            <motion.div
+            </motion.div>{' '}
+            <motion.div
               className='group'
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: 30 }}
@@ -822,10 +888,7 @@ const Services = () => {
                 />
               </div>
               <h3 className='text-xl font-semibold mb-3'>
-                {t(
-                  'services.offerings.brandContent.title',
-                  'Brand Content',
-                )}
+                {t('services.offerings.brandContent.title', 'Brand Content')}
               </h3>
               <p className='text-white/70 text-sm'>
                 {t(
@@ -834,7 +897,6 @@ const Services = () => {
                 )}
               </p>
             </motion.div>
-
             <motion.div
               className='group'
               whileInView={{ opacity: 1, y: 0 }}
@@ -850,7 +912,8 @@ const Services = () => {
                   )}
                   className='w-full h-[220px] object-cover group-hover:scale-105 transition duration-700'
                 />
-              </div>              <h3 className='text-xl font-semibold mb-3'>
+              </div>{' '}
+              <h3 className='text-xl font-semibold mb-3'>
                 {t(
                   'services.offerings.floorPlans.title',
                   'Interactive Experiences',
@@ -867,7 +930,9 @@ const Services = () => {
         </div>
       </section>
       {/* Gear Section with more technical details */}
-      <section className='py-32 px-6 max-w-6xl mx-auto'>          <motion.h2
+      <section className='py-32 px-6 max-w-6xl mx-auto'>
+        {' '}
+        <motion.h2
           className='text-center text-3xl sm:text-5xl font-light mb-6 tracking-tight'
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -881,7 +946,6 @@ const Services = () => {
             'We invest in the latest cinema-grade technology to capture your brand, products, and services with exceptional detail, color accuracy, and cinematic quality.',
           )}
         </p>
-
         <div className='grid md:grid-cols-2 gap-16'>
           {gear.map(({ titleKey, image, specKey }, idx) => (
             <motion.div
@@ -905,7 +969,8 @@ const Services = () => {
                   </h3>
                   <p className='text-white/70 text-sm mb-4'>
                     {t(`services.gear.${specKey}`, 'Equipment specifications')}
-                  </p>                  <ul className='text-sm text-white/60 space-y-1'>
+                  </p>{' '}
+                  <ul className='text-sm text-white/60 space-y-1'>
                     {[1, 2, 3].map(i => (
                       <li key={i} className='flex items-center gap-2'>
                         <span className='w-1.5 h-1.5 rounded-full bg-fuchsia-500'></span>
@@ -1040,7 +1105,9 @@ const Services = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-          >            <h2 className='text-3xl sm:text-5xl font-light mb-8'>
+          >
+            {' '}
+            <h2 className='text-3xl sm:text-5xl font-light mb-8'>
               {t(
                 'services.cta.title',
                 'Ready to Transform Your Visual Marketing?',
@@ -1052,7 +1119,9 @@ const Services = () => {
                 'Join successful brands and organizations who are seeing higher engagement and stronger results with our premium visual content.',
               )}
             </p>
-            <div className='flex flex-col sm:flex-row gap-5 justify-center'>              <Link
+            <div className='flex flex-col sm:flex-row gap-5 justify-center'>
+              {' '}
+              <Link
                 to={`/${currentLang}/contact`}
                 className='bg-gradient-to-r from-fuchsia-600 to-pink-600 text-white text-lg font-medium px-10 py-4 rounded-full hover:shadow-lg hover:shadow-fuchsia-500/20 transition'
               >
