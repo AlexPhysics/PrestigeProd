@@ -101,6 +101,91 @@
     "title": "Warum mit uns arbeiten?",
     "subtitle": "Prestige Production ist mehr als nur ein Videoproduktionsunternehmen — es ist eine Partnerschaft, die auf Vision, Kreativität und Leistung aufbaut.",
     "cta": "Lassen Sie uns zusammenarbeiten",
+    "teamLabel": "UNSER TEAM",
+    "meetThe": "Lernen Sie unsere",
+    "creativeMinus": "Kreativen Köpfe kennen",
+    "skills": {
+      "dorian": {
+        "0": "Kreative Leitung",
+        "1": "Kinematografie", 
+        "2": "Markenstrategie"
+      },
+      "alex": {
+        "0": "Technische Produktion",
+        "1": "Nachbearbeitung",
+        "2": "Farbkorrektur"
+      }
+    },
+    "approach": {
+      "title": "Unser",
+      "highlight": "Ansatz",
+      "vision": {
+        "tab": "Vision",
+        "title": "Unsere Vision",
+        "description": "Wir beginnen damit, die einzigartigen Bedürfnisse und Ziele Ihrer Marke tiefgreifend zu verstehen. Jedes Projekt startet mit einer klaren Vision davon, was Erfolg für Sie und Ihr Publikum bedeutet.",
+        "point1": "Tiefgreifende Stakeholder-Interviews zum Verständnis der Bedürfnisse",
+        "point2": "Markt- und Zielgruppenforschung",
+        "point3": "Strategische Ausrichtung an Ihren Geschäftszielen"
+      },
+      "creativity": {
+        "tab": "Kreativität",
+        "title": "Unsere Kreativität",
+        "description": "Unser kreatives Team kombiniert künstlerisches Know-how mit strategischem Denken, um Konzepte zu entwickeln, die sowohl innovativ als auch auf Ihre Ziele abgestimmt sind.",
+        "point1": "Innovative Konzeptentwicklung",
+        "point2": "Expertise im visuellen Storytelling",
+        "point3": "Markenorientierte ästhetische Ausrichtung"
+      },
+      "execution": {
+        "tab": "Umsetzung",
+        "title": "Unsere Umsetzung",
+        "description": "Mit akribischer Planung und technischer Exzellenz erwecken wir Konzepte zum Leben, indem wir Premium-Ausrüstung und Produktionstechniken verwenden.",
+        "point1": "Premium-Ausrüstung und Produktionswerte",
+        "point2": "Expertencrew und technische Exzellenz",
+        "point3": "Gründlicher Qualitätskontrollprozess"
+      },
+      "results": {
+        "tab": "Ergebnisse",
+        "title": "Unsere Ergebnisse",
+        "description": "Wir messen Erfolg durch Zielgruppenengagement, Änderungen der Markenwahrnehmung und Geschäftsergebnisse — liefern Inhalte, die echte Resultate erzielen.",
+        "point1": "Verfolgung von Leistungsmetriken",
+        "point2": "Analyse des Zielgruppenengagements",
+        "point3": "Berichterstattung über greifbare Geschäftsergebnisse"
+      }
+    },
+    "testimonials": {
+      "titlePrefix": "Kunden",
+      "title": "Testimonials",
+      "swipeHint": "← Wischen zum Navigieren →",
+      "clients": {
+        "sophia": {
+          "name": "Sophia Laurent",
+          "role": "Marketing Direktorin, Swiss Luxury Properties",
+          "content": "Prestige Production hat unsere Immobilienpräsentationen in cineastische Erlebnisse verwandelt. Die Liebe zum Detail und das visuelle Storytelling sind in der Branche unübertroffen."
+        },
+        "marco": {
+          "name": "Marco Bernini", 
+          "role": "CEO, Elite Events Switzerland",
+          "content": "Die Zusammenarbeit mit Dorian und Alex war von Anfang bis Ende nahtlos. Sie haben die Essenz unserer Firmenveranstaltung eingefangen und dabei höchste Produktionsstandards eingehalten."
+        },
+        "elise": {
+          "name": "Elise Dubois",
+          "role": "Brand Managerin, Geneva Luxe", 
+          "content": "Das Team von Prestige Production hat ein außergewöhnliches Gespür für Markenstorytelling. Ihre Arbeit hat unsere Markenkampagne aufgewertet und bei unserem Publikum tiefen Anklang gefunden."
+        }
+      }
+    },
+    "ctaSection": {
+      "label": "NÄCHSTEN SCHRITT MACHEN",
+      "title": "Bereit, etwas",
+      "highlight": "Außergewöhnliches zu schaffen?",
+      "description": "Lassen Sie unser kreatives Team Ihre Vision in wirkungsvolle visuelle Inhalte verwandeln, die bei Ihrem Publikum Anklang finden.",
+      "portfolioCta": "Unsere Arbeit ansehen",
+      "trustIndicators": {
+        "quality": "Premium Qualität",
+        "turnaround": "Schnelle Lieferung", 
+        "satisfaction": "Zufriedenheit garantiert"
+      }
+    },
     "team": {
       "duo": {
         "name": "Dorian & Alex",
@@ -133,7 +218,7 @@
   },
   "portfolio": {
     "title": "Unsere Arbeit",
-    "subtitle": "Entdecken Sie, wie Prestige Production Geschichten zum Leben erweckt.",
+    "subtitle": "Entdecken Sie, wie",
     "description": "Von Luxusimmobilien bis hin zu hochwertigen Veranstaltungen schaffen wir filmische Reisen, die jedes Projekt aufwerten.",
     "categories": {
       "all": "Alle",
@@ -142,7 +227,33 @@
       "events": "Veranstaltungen",
       "social": "Soziale Medien"
     },
-    "reelsTitle": "Social Media Reels"
+    "reelsTitle": "Social Media Reels",
+    "reelsSubtitle": "Ansprechende Kurzcontent-Formate für maximale Wirkung in sozialen Medien",
+    "pageTitle": "Unsere Arbeit | Prestige Production",
+    "defaultDescription": "Premium-Filmproduktion mit Aufmerksamkeit für Details und künstlerische Vision.",
+    "viewProject": "Projekt Ansehen",
+    "testimonials": {
+      "title": "Was Unsere Kunden Sagen",
+      "subtitle": "Vertraut von Luxusmarken und anspruchsvollen Kunden weltweit",
+      "client1": {
+        "role": "Luxusimmobilien",
+        "content": "Prestige Production hat unsere Immobilienpräsentationen auf ein völlig neues Niveau gehoben. Ihr filmischer Ansatz und ihre Aufmerksamkeit für Details erfassen perfekt die Essenz von Luxusimmobilien."
+      },
+      "client2": {
+        "role": "Veranstaltungsproduktion",
+        "content": "Die Zusammenarbeit mit Prestige Production war außergewöhnlich. Sie verwandelten unsere Veranstaltung in ein visuelles Meisterwerk, über das unsere Gäste noch Monate später sprechen."
+      },
+      "client3": {
+        "role": "Persönliches Projekt",
+        "content": "Die Professionalität und kreative Vision des Teams haben alle Erwartungen übertroffen. Sie lieferten ein Endprodukt, das unsere Vision mit atemberaubender Qualität einfing."
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihre Vision zu Erschaffen?",
+      "description": "Lassen Sie uns zusammenarbeiten, um Ihre Geschichte mit filmischer Exzellenz und Premium-Produktionswert zum Leben zu erwecken.",
+      "button": "Ihr Projekt Starten"
+    },
+    "browserNotSupported": "Ihr Browser unterstützt das Video-Tag nicht."
   },
   "contact": {
     "title": "Lassen Sie uns etwas Außergewöhnliches schaffen",
@@ -178,15 +289,64 @@
   },
   "projects": {
     "penthouseTitle": "Eine Penthouse-Geschichte | Prestige Production",
+    "penthouseSeoTitle": "Luxus Immobilien Video Produktion Zürich | Penthouse Marketing Schweiz | Prestige Production",
+    "penthouseSeoDescription": "Professionelle Immobilien-Videoproduktion in Zürich, Schweiz. Luxus-Immobilienmarketing mit filmischen Videos, Social Media Content und Premium-Fotografie. Steigern Sie Ihre Immobilienverkäufe mit unseren Expert-Video-Services in der Schweiz.",
+    "penthouseSeoKeywords": "Immobilien Video Zürich, Luxus Immobilien Video Schweiz, Immobilienmarketing Zürich, Immobilien Videoproduktion Schweiz, filmische Immobilienvideos, Schweizer Immobilienfotografie, Luxus Haus Videos Zürich, Immobilien Content Creation Schweiz",
     "backToPortfolio": "Zurück zu unseren Arbeiten",
     "browserNotSupported": "Ihr Browser unterstützt das Video-Tag nicht.",
     "penthouse": {
       "title": "Eine Penthouse-Geschichte",
       "location": "Zürich | Prestige Immobilien",
       "description": "Wir haben mit Zurich Sotheby's International Realty zusammengearbeitet, um eines der außergewöhnlichsten Objekte Zürichs zum Leben zu erwecken — ein 304 m² großes Penthouse auf dem Mobimo Tower. Durch filmische Visualisierungen, architektonisches Storytelling und einen detailorientierten Produktionsprozess haben wir eine vollständige Content-Suite geschaffen, die auf den Luxusmarkt zugeschnitten ist. Von Kurzform-Reels bis hin zu Langfilmen wurde jedes Element gestaltet, um die Raffinesse der Immobilie und der dahinter stehenden Marke widerzuspiegeln.",
-      "address": "Turbinenstrasse 18, 8005 Zürich, Schweiz",
-      "website": "www.zurichsothebysrealty.com",
-      "thanks": "Ein großes Dankeschön an Zurich Sotheby's Realty und Soroush Efati.",
+      "category": "Luxusimmobilien",
+      "projectTitle": "Projektübersicht",
+      "viewResults": "Ergebnisse Anzeigen",
+      "whyVideo": "Warum Video Verkauft",
+      "address": "Turbinenstrasse 18, 8005 Zürich",
+      "website": "zurichsothebysrealty.com",
+      "partner": "Zurich Sotheby's",
+      "mainVideo": "Hauptfilm",
+      "mainVideoDesc": "Erleben Sie die vollständige filmische Reise durch diese außergewöhnliche Immobilie",
+      "reelsTitle": "Social Media Inhalte",
+      "reelsDesc": "Kurze Inhalte optimiert für Social Media Plattformen",
+      "reelBadge": "Social Media",
+      "resultsTitle": "Social Media Ergebnisse",
+      "resultsDesc": "Außergewöhnliches Engagement und Performance auf allen Plattformen",
+      "results": {
+        "views": "Aufrufe Gesamt",
+        "viewsDesc": "Auf allen Plattformen",
+        "likes": "Gefällt mir",
+        "likesDesc": "Hohe Engagement-Rate",
+        "comments": "Kommentare",
+        "commentsDesc": "Aktive Community",
+        "topPerformer": "#2 Bestes Reel",
+        "topPerformerDesc": "Zweithöchstes Engagement auf Zurich Sotheby's Instagram-Seite",
+        "growth": "7x Mehr Aufrufe",
+        "growthDesc": "Als ihr üblicher Content + bedeutendes Follower-Wachstum"
+      },
+      "whyUsTitle": "Warum Premium-Content Immobilien Schneller Verkauft",
+      "whyUsDesc": "Datenbasierte Einblicke darüber, wie professioneller Video-Content Immobilienmarketing transformiert",
+      "whyUs": {
+        "stat1": "Schnellere Verkäufe",
+        "stat1Desc": "Immobilien mit Video",
+        "stat2": "Mehr Anfragen",
+        "stat2Desc": "Als reine Foto-Anzeigen",
+        "benefit1": "Seriöse Käufer Anziehen",
+        "benefit1Desc": "Premium-Content filtert Gelegenheitsbrowser heraus und bringt nur qualifizierte Interessenten",
+        "benefit2": "Höhere Verkaufspreise",
+        "benefit2Desc": "Professionelle Präsentation schafft emotionale Verbindung und rechtfertigt Premium-Preise",
+        "benefit3": "Globale Reichweite",
+        "benefit3Desc": "Social Media Content erreicht internationale Käufer, die traditionelle Anzeigen nie sehen",
+        "benefit4": "Wettbewerbsvorteil",
+        "benefit4Desc": "Heben Sie sich von Maklern mit einfachen Fotos ab - werden Sie die Premium-Wahl für Verkäufer",
+        "proofTitle": "Impact dieses Projekts",
+        "proofDesc": "Echte Ergebnisse unserer Zürich Penthouse Kampagne",
+        "testimonial": "\"Der Video-Content hat verändert, wie Käufer unsere Immobilie wahrgenommen haben. Wir erreichten internationale Kunden, die wir sonst nie gefunden hätten.\"",
+        "testimonialAuthor": "— Zurich Sotheby's International Realty"
+      },
+      "ctaTitle": "Bereit, Ihre Immobilie zu Präsentieren?",
+      "ctaDesc": "Lassen Sie uns Premium-Content erstellen, der Ihre Luxusimmobilien aufwertet und die Aufmerksamkeit anspruchsvoller Käufer auf sich zieht.",
+      "ctaButton": "Ihr Projekt Starten",
       "reelTitle": "Reel",
       "branding": "Eine Prestige Produktion"
     },
@@ -309,11 +469,5 @@
         }
       }
     }
-  },
-  "partners": {
-    "title": "Partner auf die wir",
-    "proud": "stolz",
-    "of": "sind.",
-    "partnerAlt": "Partner"
   }
 }

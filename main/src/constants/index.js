@@ -16,8 +16,7 @@ import {
   logo3Img,
 } from '../utils';
 
-export const GRADIENT_CLASS = 'bg-gradient-to-r from-[#2d5f59] to-[#F4FF78]';
-
+export const GRADIENT_CLASS = 'bg-gradient-to-r from-[#2d5f59] to-[#D82DEB]';
 export const navLists = [
   { label: 'Home', path: '/' },
   { label: 'Portfolio', path: '/portfolio' },
@@ -182,12 +181,16 @@ export const projects = [
     title: 'Swiss Mining Institute',
     video: '/assets/videos/SMI_logo_final.mp4',
     link: '/portfolio/smi',
+    category: 'events',
+    type: 'Event Production'
   },
   {
     id: 2,
     title: 'Penthouse Zurich',
     image: '/assets/images/thumbnail_penthouse.png',
     link: '/portfolio/penthouse-zurich',
+    category: 'realEstate',
+    type: 'Real Estate'
   },
 ];
 

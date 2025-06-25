@@ -23,11 +23,21 @@ const WhyUs = () => {
   const [activeSkill, setActiveSkill] = useState(null);
   const [activeTab, setActiveTab] = useState('vision');
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
 
   // Team member skills to showcase expertise
   const skills = {
-    dorian: ['Creative Direction', 'Cinematography', 'Brand Strategy'],
-    alex: ['Technical Production', 'Post-processing', 'Color Grading'],
+    dorian: [
+      t('whyUs.skills.dorian.0', 'Creative Direction'),
+      t('whyUs.skills.dorian.1', 'Cinematography'),
+      t('whyUs.skills.dorian.2', 'Brand Strategy'),
+    ],
+    alex: [
+      t('whyUs.skills.alex.0', 'Technical Production'),
+      t('whyUs.skills.alex.1', 'Post-processing'),
+      t('whyUs.skills.alex.2', 'Color Grading'),
+    ],
   };
 
   // Helper function to get the appropriate approach point text
@@ -86,28 +96,43 @@ const WhyUs = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Sophia Laurent',
-      role: 'Marketing Director, Swiss Luxury Properties',
-      content:
+      name: t('whyUs.testimonials.clients.sophia.name', 'Sophia Laurent'),
+      role: t(
+        'whyUs.testimonials.clients.sophia.role',
+        'Marketing Director, Swiss Luxury Properties',
+      ),
+      content: t(
+        'whyUs.testimonials.clients.sophia.content',
         'Prestige Production transformed our property showcases into cinematic experiences. The attention to detail and visual storytelling are unmatched in the industry.',
+      ),
       image:
         'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop',
     },
     {
       id: 2,
-      name: 'Marco Bernini',
-      role: 'CEO, Elite Events Switzerland',
-      content:
+      name: t('whyUs.testimonials.clients.marco.name', 'Marco Bernini'),
+      role: t(
+        'whyUs.testimonials.clients.marco.role',
+        'CEO, Elite Events Switzerland',
+      ),
+      content: t(
+        'whyUs.testimonials.clients.marco.content',
         'Working with Dorian and Alex was seamless from start to finish. They captured the essence of our corporate event while maintaining the highest production standards.',
+      ),
       image:
         'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop',
     },
     {
       id: 3,
-      name: 'Elise Dubois',
-      role: 'Brand Manager, Geneva Luxe',
-      content:
+      name: t('whyUs.testimonials.clients.elise.name', 'Elise Dubois'),
+      role: t(
+        'whyUs.testimonials.clients.elise.role',
+        'Brand Manager, Geneva Luxe',
+      ),
+      content: t(
+        'whyUs.testimonials.clients.elise.content',
         'The team at Prestige Production has an exceptional eye for brand storytelling. Their work elevated our brand campaign and resonated deeply with our audience.',
+      ),
       image:
         'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop',
     },
@@ -116,6 +141,63 @@ const WhyUs = () => {
   useEffect(() => {
     document.title = t('whyUs.pageTitle', 'Why Us | Prestige Production');
   }, [t]);
+
+  // Handle touch events for mobile swipe
+  const minSwipeDistance = 50;
+
+  const onTouchStart = e => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = e => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+
+    if (isLeftSwipe) {
+      // Swipe left - next testimonial
+      setCurrentTestimonial(prev =>
+        prev === testimonials.length - 1 ? 0 : prev + 1,
+      );
+    }
+
+    if (isRightSwipe) {
+      // Swipe right - previous testimonial
+      setCurrentTestimonial(prev =>
+        prev === 0 ? testimonials.length - 1 : prev - 1,
+      );
+    }
+  };
+
+  // Ensure testimonial is shown when scrolling to that section
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      entries => {
+        if (entries[0].isIntersecting) {
+          // Reset to first testimonial for better user experience
+          setCurrentTestimonial(0);
+        }
+      },
+      { threshold: 0.3 },
+    );
+
+    if (testimonialsSectionRef.current) {
+      observer.observe(testimonialsSectionRef.current);
+    }
+
+    return () => {
+      if (testimonialsSectionRef.current) {
+        observer.unobserve(testimonialsSectionRef.current);
+      }
+    };
+  }, []);
 
   // Function to smoothly scroll to sections
   const scrollToSection = ref => {
@@ -178,18 +260,7 @@ const WhyUs = () => {
       ease: 'power2.out',
     });
 
-    // Testimonial cards reveal
-    gsap.from('.testimonial-card', {
-      scrollTrigger: {
-        trigger: testimonialsSectionRef.current,
-        start: 'top 80%',
-      },
-      opacity: 0,
-      y: 50,
-      stagger: 0.2,
-      duration: 0.8,
-      ease: 'back.out(1.5)',
-    });
+    // We removed testimonial cards GSAP animation to avoid conflicts with Framer Motion
 
     // Testimonial navigation dots
     gsap.from('.testimonial-dot', {
@@ -276,22 +347,11 @@ const WhyUs = () => {
           transition={{ duration: 0.8 }}
           className='text-center'
         >
-          {/* Accent decorative elements */}
-          <div className='relative mb-12'>
-            <div className='absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-              <div className='relative'>
-                <div className='absolute inset-0 rounded-full w-20 h-1 bg-gradient-to-r from-[#2d5f59] to-[#F4FF78] blur-sm'></div>
-                <div className='w-16 h-px bg-gradient-to-r from-[#2d5f59] to-[#F4FF78]'></div>
-              </div>
-            </div>
-          </div>
-
+          {/* Title heading */}
           <h1 className='text-5xl md:text-7xl font-light fade-in mb-8 text-center relative'>
             {t('whyUs.title', 'Why Work With Us?')}
             <div className='absolute -bottom-4 left-1/2 transform -translate-x-1/2 h-0.5 w-32 bg-gradient-to-r from-transparent via-[#2d5f59] to-transparent'></div>
           </h1>
-
-
 
           <p className='text-xl text-center text-white/70 fade-in mb-6 max-w-3xl mx-auto leading-relaxed'>
             {t(
@@ -314,8 +374,6 @@ const WhyUs = () => {
               </div>
             </div>
           </motion.div>
-
-
         </motion.div>
 
         {/* Duo Photo with enhanced presentation */}
@@ -390,9 +448,9 @@ const WhyUs = () => {
           className='text-center mb-16'
         >
           <h2 className='text-3xl md:text-5xl font-light mb-4'>
-            <span>Meet The </span>
+            <span>{t('whyUs.meetThe', 'Meet The ')} </span>
             <span className={`${GRADIENT_CLASS} bg-clip-text text-transparent`}>
-              Creative Minds
+              {t('whyUs.creativeMinus', 'Creative Minds')}
             </span>
           </h2>
           <div className='w-24 h-0.5 mx-auto bg-gradient-to-r from-transparent via-[#2d5f59]/50 to-transparent'></div>
@@ -410,13 +468,13 @@ const WhyUs = () => {
                 <motion.div
                   whileHover={{
                     y: -5,
-                    boxShadow: '0 25px 50px -12px rgba(192, 38, 211, 0.15)',
+                    boxShadow: '0 25px 50px -12px rgba(45, 95, 89, 0.25)',
                   }}
                   transition={{ duration: 0.3 }}
-                  className={`w-full md:w-2/5 aspect-[3/4] rounded-xl overflow-hidden shadow-lg ${
+                  className={`w-3/4 sm:w-1/2 md:w-2/5 mx-auto md:mx-0 aspect-[3/4] rounded-xl overflow-hidden shadow-lg ${
                     member.nameKey === 'dorian'
                       ? 'bg-gradient-to-br from-[#2d5f59]/40 to-black/20'
-                      : 'bg-gradient-to-br from-blue-900/30 to-black/20'
+                      : 'bg-gradient-to-br from-[#2d5f59]/40 to-black/20'
                   }`}
                 >
                   <img
@@ -433,16 +491,16 @@ const WhyUs = () => {
                   </h3>
                   <p
                     className={`inline-block px-3 py-1 rounded-full text-white text-xs mb-5 ${
-                      member.nameKey === 'dorian'
+                      member.nameKey === 'dorian' || member.nameKey === 'alex'
                         ? 'bg-[#2d5f59]/40'
-                        : 'bg-blue-900/40'
+                        : 'bg-[#2d5f59]/40'
                     }`}
                   >
                     {t(`whyUs.team.${member.nameKey}.role`, 'Role')}
                   </p>
 
                   {/* Expertise areas with interactive pills */}
-                  <div className='flex flex-wrap gap-2 mb-5'>
+                  <div className='flex flex-wrap justify-center md:justify-start gap-2 mb-5'>
                     {skills[member.nameKey]?.map((skill, i) => (
                       <motion.span
                         key={i}
@@ -456,9 +514,7 @@ const WhyUs = () => {
                         }
                         className={`cursor-pointer text-xs px-3 py-1 rounded-full transition-colors duration-300 ${
                           activeSkill === `${member.nameKey}-${i}`
-                            ? member.nameKey === 'dorian'
-                              ? 'bg-[#2d5f59] text-white'
-                              : 'bg-blue-500 text-white'
+                            ? 'bg-[#2d5f59] text-white'
                             : 'bg-white/10 text-white/70 hover:bg-white/20'
                         }`}
                       >
@@ -476,7 +532,7 @@ const WhyUs = () => {
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.2 * i, duration: 0.5 }}
                         viewport={{ once: true }}
-                        className='text-sm leading-relaxed'
+                        className='text-sm leading-relaxed text-center md:text-left'
                       >
                         {t(
                           `whyUs.team.${member.nameKey}.description.${key}`,
@@ -498,22 +554,22 @@ const WhyUs = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className='text-center mb-16'
+            className='text-center mb-6 md:mb-10'
           >
             <h2 className='text-3xl md:text-5xl font-light mb-4'>
-              <span>Our </span>
+              <span>{t('whyUs.approach.title', 'Our ')} </span>
               <span
                 className={`${GRADIENT_CLASS} bg-clip-text text-transparent`}
               >
-                Approach
+                {t('whyUs.approach.highlight', 'Approach')}
               </span>
             </h2>
             <div className='w-24 h-0.5 mx-auto bg-gradient-to-r from-transparent via-[#2d5f59]/50 to-transparent'></div>
           </motion.div>
 
-          <div className='bg-gradient-to-b from-[#2d5f59]/5 to-black/10 rounded-2xl p-4 md:p-8 shadow-xl backdrop-blur-sm'>
+          <div className='bg-gradient-to-b from-[#2d5f59]/5 to-black/10 rounded-2xl p-3 md:p-8 shadow-xl backdrop-blur-sm'>
             {/* Approach Tabs */}
-            <div className='flex flex-wrap justify-center gap-2 md:gap-4 mb-12'>
+            <div className='flex flex-wrap justify-center gap-2 md:gap-4 mb-6 md:mb-12'>
               {approachTabs.map(tab => (
                 <motion.button
                   key={tab.id}
@@ -538,7 +594,7 @@ const WhyUs = () => {
             </div>
 
             {/* Tab Content with illustrations */}
-            <div className='grid md:grid-cols-5 gap-6 items-center'>
+            <div className='grid md:grid-cols-5 gap-4 md:gap-6 items-center'>
               <div className='md:col-span-3 order-2 md:order-1'>
                 <AnimatePresence mode='wait'>
                   <motion.div
@@ -602,11 +658,11 @@ const WhyUs = () => {
                   className='relative bg-gradient-to-br from-white/5 to-transparent p-4 rounded-xl shadow-lg backdrop-blur-sm border border-white/10'
                 >
                   <div
-                    className={`aspect-square rounded-lg overflow-hidden flex items-center justify-center bg-gradient-to-br ${
+                    className={`aspect-square w-3/5 sm:w-4/5 md:w-full mx-auto rounded-lg overflow-hidden flex items-center justify-center bg-gradient-to-br ${
                       approachTabs.find(t => t.id === activeTab).color
                     }/20`}
                   >
-                    <div className='text-7xl md:text-8xl transform transition-transform hover:scale-110 duration-700'>
+                    <div className='text-5xl sm:text-6xl md:text-8xl transform transition-transform hover:scale-110 duration-700'>
                       {approachTabs.find(t => t.id === activeTab).icon}
                     </div>
                   </div>
@@ -626,19 +682,24 @@ const WhyUs = () => {
             className='text-center mb-16'
           >
             <h2 className='text-3xl md:text-5xl font-light mb-4'>
-              <span>Client </span>
+              <span>{t('whyUs.testimonials.titlePrefix', 'Client ')} </span>
               <span
                 className={`${GRADIENT_CLASS} bg-clip-text text-transparent`}
               >
-                Testimonials
+                {t('whyUs.testimonials.title', 'Testimonials')}
               </span>
             </h2>
             <div className='w-24 h-0.5 mx-auto bg-gradient-to-r from-transparent via-[#2d5f59]/50 to-transparent'></div>
           </motion.div>
 
           <div className='max-w-4xl mx-auto px-6'>
-            <div className='relative'>
-              <AnimatePresence mode='wait'>
+            <div
+              className='relative min-h-[350px]'
+              onTouchStart={onTouchStart}
+              onTouchMove={onTouchMove}
+              onTouchEnd={onTouchEnd}
+            >
+              <AnimatePresence mode='wait' initial={false}>
                 <motion.div
                   key={currentTestimonial}
                   initial={{ opacity: 0, x: 50 }}
@@ -678,7 +739,7 @@ const WhyUs = () => {
               </AnimatePresence>
 
               {/* Navigation buttons */}
-              <div className='flex justify-center mt-8 gap-3'>
+              <div className='flex justify-center mt-4 md:mt-8 gap-3'>
                 {testimonials.map((_, idx) => (
                   <motion.button
                     key={idx}
@@ -692,6 +753,13 @@ const WhyUs = () => {
                     whileTap={{ scale: 0.9 }}
                   />
                 ))}
+              </div>
+
+              {/* Mobile swipe hint */}
+              <div className='flex md:hidden justify-center items-center mt-3 text-white/40 text-xs'>
+                <span className='animate-pulse'>
+                  {t('whyUs.testimonials.swipeHint', '← Swipe to navigate →')}
+                </span>
               </div>
 
               {/* Prev/Next buttons */}
@@ -737,73 +805,67 @@ const WhyUs = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className='py-16 px-6 rounded-3xl relative overflow-hidden mt-12 mb-8 text-center'
+          className='py-20 px-6 rounded-3xl relative overflow-hidden mt-16 mb-10 text-center bg-black/30 border border-[#2d5f59]/20 shadow-xl'
         >
           {/* Background elements */}
-          <div className='absolute inset-0 bg-gradient-to-br from-[#2d5f59]/20 via-[#104B45]/10 to-black/30 z-0'></div>
+          <div className='absolute inset-0 bg-gradient-to-b from-[#2d5f59]/10 to-black/20 z-0'></div>
 
           {/* Content wrapper */}
-          <div className='relative z-10 backdrop-blur-sm'>
+          <div className='relative z-10'>
             <motion.span
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
-              className='inline-block px-5 py-2 rounded-full bg-white/10 text-white/90 text-sm font-medium mb-6'
+              className='inline-block px-6 py-2 rounded-full bg-[#2d5f59]/20 text-white/90 text-sm font-medium mb-8 border border-[#2d5f59]/30'
             >
-              {t('whyUs.ctaLabel', 'TAKE THE NEXT STEP')}
+              {t('whyUs.ctaSection.label', 'TAKE THE NEXT STEP')}
             </motion.span>
 
             <h2 className='text-3xl md:text-5xl font-light mb-6'>
-              {t('whyUs.ctaTitle', 'Ready to Create Something')}{' '}
+              {t('whyUs.ctaSection.title', 'Ready to Create Something')}{' '}
               <span
                 className={`${GRADIENT_CLASS} bg-clip-text text-transparent`}
               >
-                {t('whyUs.ctaHighlight', 'Exceptional?')}
+                {t('whyUs.ctaSection.highlight', 'Exceptional?')}
               </span>
             </h2>
 
             <p className='text-white/70 text-lg max-w-2xl mx-auto mb-10'>
               {t(
-                'whyUs.ctaDescription',
+                'whyUs.ctaSection.description',
                 'Let our creative team transform your vision into impactful visual content that resonates with your audience.',
               )}
             </p>
 
             <div className='flex flex-col sm:flex-row gap-5 justify-center'>
               <motion.div
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: '0 20px 25px -5px rgba(192, 38, 211, 0.2)',
-                }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                className='relative'
               >
                 <Link
                   to={`/${currentLang}/contact`}
-                  className={`${GRADIENT_CLASS} text-white text-xl font-medium px-8 py-4 rounded-full hover:shadow-lg hover:shadow-[#2d5f59]/30 transition-all`}
+                  className={`${GRADIENT_CLASS} text-white text-xl font-medium px-10 py-4 rounded-full hover:shadow-lg hover:shadow-[#2d5f59]/30 transition-all inline-flex items-center gap-3`}
                 >
-                  <div className='flex items-center gap-2'>
-                    <span>{t('whyUs.cta', "Let's work together")}</span>
-                    <span className='text-xl'>→</span>
-                  </div>
+                  <span>{t('whyUs.cta', "Let's work together")}</span>
+                  <span className='text-xl'>→</span>
                 </Link>
               </motion.div>
 
               <motion.div
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
-                }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                className='relative'
               >
                 <Link
                   to={`/${currentLang}/portfolio`}
-                  className='bg-white/10 text-white border border-white/20 text-xl font-medium px-8 py-4 rounded-full hover:bg-white/20 transition-all'
+                  className='bg-black/30 backdrop-blur-sm text-white border border-white/10 text-xl font-medium px-10 py-4 rounded-full hover:bg-black/40 transition-all inline-flex items-center gap-3'
                 >
-                  <div className='flex items-center gap-2'>
-                    <span>{t('whyUs.portfolioCta', 'View Our Work')}</span>
-                    <span className='text-xl'>→</span>
-                  </div>
+                  <span>
+                    {t('whyUs.ctaSection.portfolioCta', 'View Our Work')}
+                  </span>
+                  <span className='text-xl'>→</span>
                 </Link>
               </motion.div>
             </div>
@@ -814,16 +876,28 @@ const WhyUs = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
-              className='flex flex-wrap justify-center gap-x-8 gap-y-3 mt-12 text-white/50 text-sm'
+              className='flex flex-wrap justify-center gap-x-10 gap-y-4 mt-16 text-white/70 text-sm'
             >
-              <div className='flex items-center gap-2'>
-                <span className='text-white/80'>✓</span> Premium Quality
+              <div className='flex items-center gap-3'>
+                <span className='text-[#F4FF78]'>✓</span>{' '}
+                {t(
+                  'whyUs.ctaSection.trustIndicators.quality',
+                  'Premium Quality',
+                )}
               </div>
-              <div className='flex items-center gap-2'>
-                <span className='text-white/80'>✓</span> Fast Turnaround
+              <div className='flex items-center gap-3'>
+                <span className='text-[#F4FF78]'>✓</span>{' '}
+                {t(
+                  'whyUs.ctaSection.trustIndicators.turnaround',
+                  'Fast Turnaround',
+                )}
               </div>
-              <div className='flex items-center gap-2'>
-                <span className='text-white/80'>✓</span> Satisfaction Guaranteed
+              <div className='flex items-center gap-3'>
+                <span className='text-[#F4FF78]'>✓</span>{' '}
+                {t(
+                  'whyUs.ctaSection.trustIndicators.satisfaction',
+                  'Satisfaction Guaranteed',
+                )}
               </div>
             </motion.div>
           </div>
@@ -834,9 +908,9 @@ const WhyUs = () => {
       <motion.button
         onClick={() => {
           gsap.to(window, {
-            duration: 1.5,
+            duration: 0.8,
             scrollTo: 0,
-            ease: 'power4.inOut',
+            ease: 'power2.inOut',
           });
         }}
         initial={{ opacity: 0, y: 20 }}

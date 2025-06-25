@@ -178,6 +178,91 @@
     "title": "Why Work With Us?",
     "subtitle": "Prestige Production is more than just a video company — it's a partnership built on vision, creativity, and performance.",
     "cta": "Let's work together",
+    "teamLabel": "OUR TEAM",
+    "meetThe": "Meet The",
+    "creativeMinus": "Creative Minds",
+    "skills": {
+      "dorian": {
+        "0": "Creative Direction",
+        "1": "Cinematography", 
+        "2": "Brand Strategy"
+      },
+      "alex": {
+        "0": "Technical Production",
+        "1": "Post-processing",
+        "2": "Color Grading"
+      }
+    },
+    "approach": {
+      "title": "Our",
+      "highlight": "Approach",
+      "vision": {
+        "tab": "Vision",
+        "title": "Our Vision",
+        "description": "We begin by deeply understanding your brand's unique needs and goals. Every project starts with a clear vision of what success means to you and your audience.",
+        "point1": "Deep stakeholder interviews to understand needs",
+        "point2": "Market and audience research",
+        "point3": "Strategic alignment with your business goals"
+      },
+      "creativity": {
+        "tab": "Creativity",
+        "title": "Our Creativity",
+        "description": "Our creative team combines artistic expertise with strategic thinking to develop concepts that are both innovative and aligned with your objectives.",
+        "point1": "Innovative concept development",
+        "point2": "Visual storytelling expertise",
+        "point3": "Brand-aligned aesthetic direction"
+      },
+      "execution": {
+        "tab": "Execution",
+        "title": "Our Execution",
+        "description": "With meticulous planning and technical excellence, we bring concepts to life using premium equipment and production techniques.",
+        "point1": "Premium equipment and production values",
+        "point2": "Expert crew and technical excellence",
+        "point3": "Thorough quality control process"
+      },
+      "results": {
+        "tab": "Results",
+        "title": "Our Results",
+        "description": "We measure success through audience engagement, brand perception shifts, and business outcomes—delivering content that achieves real results.",
+        "point1": "Performance metrics tracking",
+        "point2": "Audience engagement analysis",
+        "point3": "Tangible business outcome reporting"
+      }
+    },
+    "testimonials": {
+      "titlePrefix": "Client",
+      "title": "Testimonials",
+      "swipeHint": "← Swipe to navigate →",
+      "clients": {
+        "sophia": {
+          "name": "Sophia Laurent",
+          "role": "Marketing Director, Swiss Luxury Properties",
+          "content": "Prestige Production transformed our property showcases into cinematic experiences. The attention to detail and visual storytelling are unmatched in the industry."
+        },
+        "marco": {
+          "name": "Marco Bernini", 
+          "role": "CEO, Elite Events Switzerland",
+          "content": "Working with Dorian and Alex was seamless from start to finish. They captured the essence of our corporate event while maintaining the highest production standards."
+        },
+        "elise": {
+          "name": "Elise Dubois",
+          "role": "Brand Manager, Geneva Luxe", 
+          "content": "The team at Prestige Production has an exceptional eye for brand storytelling. Their work elevated our brand campaign and resonated deeply with our audience."
+        }
+      }
+    },
+    "ctaSection": {
+      "label": "TAKE THE NEXT STEP",
+      "title": "Ready to Create Something",
+      "highlight": "Exceptional?",
+      "description": "Let our creative team transform your vision into impactful visual content that resonates with your audience.",
+      "portfolioCta": "View Our Work",
+      "trustIndicators": {
+        "quality": "Premium Quality",
+        "turnaround": "Fast Turnaround", 
+        "satisfaction": "Satisfaction Guaranteed"
+      }
+    },
     "team": {
       "duo": {
         "name": "Dorian & Alex",
@@ -210,7 +295,7 @@
   },
   "portfolio": {
     "title": "Our Work",
-    "subtitle": "Discover how Prestige Production brings stories to life.",
+    "subtitle": "Discover how",
     "description": "From luxury real estate to high-end events, we craft cinematic journeys that elevate every project.",
     "categories": {
       "all": "All",
@@ -220,7 +305,32 @@
       "social": "Social Media"
     },
     "reelsTitle": "Social Media Reels",
-    "pageTitle": "Our Work | Prestige Production"
+    "reelsSubtitle": "Engaging short-form content designed for maximum social media impact",
+    "pageTitle": "Our Work | Prestige Production",
+    "defaultDescription": "Premium cinematic production crafted with attention to detail and artistic vision.",
+    "viewProject": "View Project",
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "subtitle": "Trusted by luxury brands and discerning clients worldwide",
+      "client1": {
+        "role": "Luxury Real Estate",
+        "content": "Prestige Production elevated our property presentations to an entirely new level. Their cinematic approach and attention to detail perfectly captures the essence of luxury real estate."
+      },
+      "client2": {
+        "role": "Event Production",
+        "content": "Working with Prestige Production was exceptional. They transformed our event into a visual masterpiece that our guests still talk about months later."
+      },
+      "client3": {
+        "role": "Personal Project",
+        "content": "The team's professionalism and creative vision exceeded all expectations. They delivered a final product that truly captured our vision with stunning quality."
+      }
+    },
+    "cta": {
+      "title": "Ready to Create Your Vision?",
+      "description": "Let's collaborate to bring your story to life with cinematic excellence and premium production value.",
+      "button": "Start Your Project"
+    },
+    "browserNotSupported": "Your browser does not support the video tag."
   },
   "contact": {
     "title": "Let's Create Something Exceptional",
@@ -258,11 +368,84 @@
   "projects": {
     "smiTitle": "Swiss Mining Institute | Prestige Production",
     "penthouseTitle": "A Penthouse Story | Prestige Production",
-    "backToPortfolio": "Go back to our work",
+    "penthouseSeoTitle": "Real Estate Video Production Zurich | Property Marketing Switzerland | Prestige Production",
+    "penthouseSeoDescription": "We create videos that sell properties in Zurich and across Switzerland. Professional real estate content that gets results for agents and developers.",
+    "penthouseSeoKeywords": "real estate video Zurich, property video Switzerland, real estate marketing Zurich, property videos Switzerland, real estate photography Zurich, property marketing videos Switzerland",
+    "backToPortfolio": "Back to our work",
     "browserNotSupported": "Your browser does not support the video tag.",
     "penthouse": {
       "title": "A Penthouse Story",
-      "location": "Zurich | Prestige Real Estate",
+      "location": "Zurich | Real Estate",
+      "category": "Real Estate",
+      "projectTitle": "About This Project",
+      "viewResults": "View Results",
+      "whyVideo": "Why Video Sells",
+      "description": "We worked with Zurich Sotheby's to showcase one of Zurich's most impressive properties. This 304 square meter penthouse sits on top of the Mobimo Tower, and we created a complete video package that really captures what makes this place special.",
+      "address": "Turbinenstrasse 18, 8005 Zürich",
+      "website": "zurichsothebysrealty.com",
+      "partner": "Zurich Sotheby's",
+      "stats": {
+        "area": "SQM",
+        "days": "Filming Days",
+        "views": "Views",
+        "likes": "Likes"
+      },
+      "mainVideo": "Featured Film",
+      "mainVideoDesc": "Take a look at the full video walkthrough of this amazing property",
+      "featuresTitle": "Production Highlights",
+      "featuresDesc": "Key elements that made this project exceptional",
+      "features": {
+        "cinematic": "Cinematic Production",
+        "cinematicDesc": "Professional-grade equipment and techniques",
+        "architecture": "Architectural Focus",
+        "architectureDesc": "Highlighting design and spatial flow",
+        "social": "Social Media Ready",
+        "socialDesc": "Optimized content for all platforms",
+        "luxury": "Luxury Market",
+        "luxuryDesc": "Tailored for high-end clientele"
+      },
+      "reelsTitle": "Social Media Content",
+      "reelsDesc": "Quick videos made for Instagram and other social platforms",
+      "reelBadge": "Social Media",
+      "reelTitle": "Reel",
+      "resultsTitle": "Social Media Results",
+      "resultsDesc": "The numbers speak for themselves",
+      "results": {
+        "views": "Total Views",
+        "viewsDesc": "All platforms combined",
+        "likes": "Likes",
+        "likesDesc": "Really strong engagement",
+        "comments": "Comments",
+        "commentsDesc": "People actually responded",
+        "topPerformer": "#2 Best Performing Reel",
+        "topPerformerDesc": "Second best reel ever posted on Zurich Sotheby's Instagram",
+        "growth": "7x More Views",
+        "growthDesc": "Compared to their usual posts, plus lots of new followers"
+      },
+      "whyUsTitle": "Why Video Content Actually Works for Real Estate",
+      "whyUsDesc": "Here's what the data shows about using professional video to sell properties",
+      "whyUs": {
+        "stat1": "Faster Sales",
+        "stat1Desc": "Properties with video",
+        "stat2": "More Inquiries",
+        "stat2Desc": "Than photo-only listings",
+        "benefit1": "Get Serious Buyers",
+        "benefit1Desc": "Good video content weeds out the tire kickers and brings in people who are actually ready to buy",
+        "benefit2": "Sell for More Money",
+        "benefit2Desc": "When people see professional videos, they understand the value better and are willing to pay more",
+        "benefit3": "Reach More People",
+        "benefit3Desc": "Social media videos reach buyers from all over the world who would never see regular listings",
+        "benefit4": "Beat the Competition",
+        "benefit4Desc": "Most agents still use basic photos. Video makes you look way more professional",
+        "proofTitle": "What This Project Actually Did",
+        "proofDesc": "Real numbers from the Zurich penthouse videos",
+        "testimonial": "The video content completely changed how people saw our property. We got inquiries from international buyers we never would have reached otherwise.",
+        "testimonialAuthor": "Zurich Sotheby's International Realty"
+      },
+      "ctaTitle": "Want to Try This for Your Property?",
+      "ctaDesc": "We can create the same kind of content that gets results for your listings and helps you close more deals.",
+      "ctaButton": "Start Your Project",
+      "branding": "A Prestige Production",
       "photos": "photos",
       "social": "social content",
       "andMore": "and more — we delivered it all.",

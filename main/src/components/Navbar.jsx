@@ -123,7 +123,7 @@ const Navbar = () => {
             <Link
               to={`/${currentLang}/contact`}
               onClick={() => setMenuOpen(false)}
-              className='mt-2 border border-white px-8 py-2 rounded-full text-base text-white font-medium hover:bg-white hover:text-black transition-all duration-300 w-full max-w-[200px]'
+              className='mt-2 border border-white px-8 py-2 rounded-full text-base text-white font-medium hover:bg-white hover:text-black transition-all duration-300 w-full max-w-[200px] text-center'
             >
               {t('nav.contact')}
             </Link>
