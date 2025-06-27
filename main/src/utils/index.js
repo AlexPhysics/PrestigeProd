@@ -1,45 +1,47 @@
 // videos
-import hmv from '/assets/videos/hero.mp4';
-import smallmv from '/assets/videos/smallHero.mp4';
-import highlight1 from '/assets/videos/highlight1.mp4';
-import highlight2 from '/assets/videos/soroush_touring_penthouse.mp4';
-import highlight3 from '/assets/videos/hightlight3.mp4';
-import highlight4 from '/assets/videos/hightlight4.mp4';
-import highlight5 from '/assets/videos/hightlight5.mp4';
-import exploremv from '/assets/videos/explore.mp4';
-import framemv from '/assets/videos/lowres_short_reel_showcase_v2_1.mp4';
-import reelsoroush from '/assets/videos/reel_soroush.mp4';
+const CLOUDFRONT_URL = import.meta.env.VITE_CLOUDFRONT_URL;
+
+const hmv = `${CLOUDFRONT_URL}/videos/hero.mp4`;
+const smallmv = `${CLOUDFRONT_URL}/videos/smallHero.mp4`;
+const highlight1 = `${CLOUDFRONT_URL}/videos/highlight1.mp4`;
+const highlight2 = `${CLOUDFRONT_URL}/videos/soroush_touring_penthouse.mp4`;
+const highlight3 = `${CLOUDFRONT_URL}/videos/hightlight3.mp4`;
+const highlight4 = `${CLOUDFRONT_URL}/videos/hightlight4.mp4`;
+const highlight5 = `${CLOUDFRONT_URL}/videos/hightlight5.mp4`;
+const exploremv = `${CLOUDFRONT_URL}/videos/explore.mp4`;
+const framemv = `${CLOUDFRONT_URL}/videos/lowres_short_reel_showcase_v2_1.mp4`;
+const reelsoroush = `${CLOUDFRONT_URL}/videos/reel_soroush.mp4`;
 
 // images
-import logo from '/assets/images/logo.svg';
-import pplogo from '/assets/images/logo.png';
-import apple from '/assets/images/apple.svg';
-import search from '/assets/images/search.svg';
-import bag from '/assets/images/bag.svg';
-import watch from '/assets/images/watch.svg';
-import right from '/assets/images/right.svg';
-import replay from '/assets/images/replay.svg';
-import play from '/assets/images/play.svg';
-import pause from '/assets/images/pause.svg';
+const logo = `${CLOUDFRONT_URL}/images/logo.svg`;
+const pplogo = `${CLOUDFRONT_URL}/images/logo.png`;
+const apple = `${CLOUDFRONT_URL}/images/apple.svg`;
+const search = `${CLOUDFRONT_URL}/images/search.svg`;
+const bag = `${CLOUDFRONT_URL}/images/bag.svg`;
+const watch = `${CLOUDFRONT_URL}/images/watch.svg`;
+const right = `${CLOUDFRONT_URL}/images/right.svg`;
+const replay = `${CLOUDFRONT_URL}/images/replay.svg`;
+const play = `${CLOUDFRONT_URL}/images/play.svg`;
+const pause = `${CLOUDFRONT_URL}/images/pause.svg`;
 
-import yellow from '/assets/images/yellow.jpg';
-import blue from '/assets/images/blue.jpg';
-import white from '/assets/images/white.jpg';
-import black from '/assets/images/black.jpg';
-import explore1 from '/assets/images/explore1.jpg';
-import explore2 from '/assets/images/explore2.jpg';
-import chip from '/assets/images/chip.jpeg';
-import frame from '/assets/images/frame.png';
+const yellow = `${CLOUDFRONT_URL}/images/yellow.jpg`;
+const blue = `${CLOUDFRONT_URL}/images/blue.jpg`;
+const white = `${CLOUDFRONT_URL}/images/white.jpg`;
+const black = `${CLOUDFRONT_URL}/images/black.jpg`;
+const explore1 = `${CLOUDFRONT_URL}/images/explore1.jpg`;
+const explore2 = `${CLOUDFRONT_URL}/images/explore2.jpg`;
+const chip = `${CLOUDFRONT_URL}/images/chip.jpeg`;
+const frame = `${CLOUDFRONT_URL}/images/frame.png`;
 
-import star from '/assets/images/star.png';
-import exp1 from '/assets/images/exp1.png';
-import exp2 from '/assets/images/exp2.png';
-import exp3 from '/assets/images/exp3.png';
-import logo1 from '/assets/images/logo1.png';
-import logo2 from '/assets/images/logo2.png';
-import logo3 from '/assets/images/logo3.png';
-import iphoneframeimg from '/assets/images/Apple iPhone 15 Frame PNG.jpeg';
-import smilogo from '/assets/logos/smi_logo.png';
+const star = `${CLOUDFRONT_URL}/images/star.png`;
+const exp1 = `${CLOUDFRONT_URL}/images/exp1.png`;
+const exp2 = `${CLOUDFRONT_URL}/images/exp2.png`;
+const exp3 = `${CLOUDFRONT_URL}/images/exp3.png`;
+const logo1 = `${CLOUDFRONT_URL}/images/logo1.png`;
+const logo2 = `${CLOUDFRONT_URL}/images/logo2.png`;
+const logo3 = `${CLOUDFRONT_URL}/images/logo3.png`;
+const iphoneframeimg = `${CLOUDFRONT_URL}/images/Apple iPhone 15 Frame PNG.jpeg`;
+const smilogo = `${CLOUDFRONT_URL}/logos/smi_logo.png`;
 // declare
 export const heroVideo = hmv;
 export const smallHeroVideo = smallmv;
@@ -100,5 +102,5 @@ export const smoothScrollTo = (
   }
 };
 
-export const sonyCameraImg = '/assets/gear/sony_camera.jpg';
-export const droneImg = '/assets/gear/dji_drone.jpg';
+export const sonyCameraImg = `${CLOUDFRONT_URL}/gear/sony_camera.jpg`;
+export const droneImg = `${CLOUDFRONT_URL}/gear/dji_drone.jpg`;

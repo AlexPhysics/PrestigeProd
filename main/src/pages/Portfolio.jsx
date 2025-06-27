@@ -43,7 +43,7 @@ const Portfolio = () => {
   const socialReels = [
     {
       id: 'reel-1',
-      src: '/assets/videos/smi_reel_tavi.mp4',
+      src: `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/smi_reel_tavi.mp4`,
       title: 'SMI Event Highlight',
       category: 'social',
       type: 'Instagram Reel',
@@ -52,7 +52,7 @@ const Portfolio = () => {
     },
     {
       id: 'reel-2',
-      src: '/assets/videos/Reel_2_penthouse_speech.mp4',
+      src: `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/Reel_2_penthouse_speech.mp4`,
       title: 'Penthouse Experience',
       category: 'social',
       type: 'Social Media Content',
@@ -61,7 +61,7 @@ const Portfolio = () => {
     },
     {
       id: 'reel-3',
-      src: '/assets/videos/Reel_1_penthouse_view.mp4',
+      src: `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/Reel_1_penthouse_view.mp4`,
       title: 'Penthouse Views',
       category: 'social',
       type: 'Instagram Reel',
@@ -329,7 +329,7 @@ const Portfolio = () => {
                     className='w-full h-full object-cover group-hover:scale-110 transition-transform duration-700'
                     onError={e => {
                       console.error('Image failed to load:', proj.image);
-                      e.target.src = '/assets/images/placeholder.jpg';
+                      e.target.src = `${import.meta.env.VITE_CLOUDFRONT_URL}/images/placeholder.jpg`;
                     }}
                   />
                 )}

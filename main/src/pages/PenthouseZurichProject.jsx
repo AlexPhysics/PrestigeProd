@@ -163,8 +163,8 @@ const PenthouseZurichProject = () => {
   }, []);
 
   const reels = [
-    '/assets/videos/Reel_1_penthouse_view.mp4',
-    '/assets/videos/Reel_2_penthouse_speech.mp4',
+    `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/Reel_1_penthouse_view.mp4`,
+    `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/Reel_2_penthouse_speech.mp4`,
   ];
 
   return (

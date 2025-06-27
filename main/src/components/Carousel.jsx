@@ -1,9 +1,9 @@
 import { useEffect, useState, useRef } from 'react';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 
-import SmiReel1 from '/assets/videos/teaser 1_smi.mp4';
-import SmiReel2 from '/assets/videos/teaser 2_smi.mp4';
-import SmiReel3 from '/assets/videos/teaser 3_smi.mp4';
+const SmiReel1 = `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/teaser 1_smi.mp4`;
+const SmiReel2 = `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/teaser 2_smi.mp4`;
+const SmiReel3 = `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/teaser 3_smi.mp4`;
 
 const DEFAULT_VIDEOS = [
   { id: 1, src: SmiReel1 },

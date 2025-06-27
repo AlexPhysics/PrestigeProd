@@ -101,13 +101,13 @@ const Services = () => {
       titleKey: 'sonyAlpha',
       imageKey: 'sonyAlphaImage',
       specKey: 'sonyAlphaSpec',
-      image: '/assets/gear/sony_camera.jpg',
+      image: `${import.meta.env.VITE_CLOUDFRONT_URL}/gear/sony_camera.jpg`,
     },
     {
       titleKey: 'djiMavic',
       imageKey: 'djiMavicImage',
       specKey: 'djiMavicSpec',
-      image: '/assets/gear/dji_drone.jpg',
+      image: `${import.meta.env.VITE_CLOUDFRONT_URL}/gear/dji_drone.jpg`,
     },
   ];
 

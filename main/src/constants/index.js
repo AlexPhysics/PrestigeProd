@@ -16,6 +16,8 @@ import {
   logo3Img,
 } from '../utils';
 
+const CLOUDFRONT_URL = import.meta.env.VITE_CLOUDFRONT_URL;
+
 export const GRADIENT_CLASS = 'bg-gradient-to-r from-[#2d5f59] to-[#D82DEB]';
 export const navLists = [
   { label: 'Home', path: '/' },
@@ -104,7 +106,7 @@ export const footerLinks = [
 
 export const expCards = [
   {
-    logoPath: '/assets/images/consultant-services.png',
+    logoPath: `${import.meta.env.VITE_CLOUDFRONT_URL}/images/consultant-services.png`,
     titleKey: 'discovery',
     defaultTitle: 'Discovery & Brief',
     responsibilityKeys: ['discovery0', 'discovery1', 'discovery2'],
@@ -115,7 +117,7 @@ export const expCards = [
     ],
   },
   {
-    logoPath: '/assets/images/script.png',
+    logoPath: `${import.meta.env.VITE_CLOUDFRONT_URL}/images/script.png`,
     titleKey: 'script',
     defaultTitle: 'Script & Storyboard',
     responsibilityKeys: ['script0', 'script1', 'script2'],
@@ -126,7 +128,7 @@ export const expCards = [
     ],
   },
   {
-    logoPath: '/assets/images/logo2.png',
+    logoPath: `${import.meta.env.VITE_CLOUDFRONT_URL}/images/logo2.png`,
     titleKey: 'preProduction',
     defaultTitle: 'Pre-Production & Logistics',
     responsibilityKeys: ['preProduction0', 'preProduction1', 'preProduction2'],
@@ -137,7 +139,7 @@ export const expCards = [
     ],
   },
   {
-    logoPath: '/assets/images/videography.png',
+    logoPath: `${import.meta.env.VITE_CLOUDFRONT_URL}/images/videography.png`,
     titleKey: 'filming',
     defaultTitle: 'Filming & Capture',
     responsibilityKeys: ['filming0', 'filming1', 'filming2'],
@@ -148,7 +150,7 @@ export const expCards = [
     ],
   },
   {
-    logoPath: '/assets/images/film-editing.png',
+    logoPath: `${import.meta.env.VITE_CLOUDFRONT_URL}/images/film-editing.png`,
     titleKey: 'postProduction',
     defaultTitle: 'Post-Production & Feedback',
     responsibilityKeys: [
@@ -163,7 +165,7 @@ export const expCards = [
     ],
   },
   {
-    logoPath: '/assets/images/video.png',
+    logoPath: `${import.meta.env.VITE_CLOUDFRONT_URL}/images/video.png`,
     titleKey: 'delivery',
     defaultTitle: 'Delivery & Distribution',
     responsibilityKeys: ['delivery0', 'delivery1', 'delivery2'],
@@ -179,7 +181,7 @@ export const projects = [
   {
     id: 1,
     title: 'Swiss Mining Institute',
-    video: '/assets/videos/SMI_logo_final.mp4',
+    video: `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/SMI_logo_final.mp4`,
     link: '/portfolio/smi',
     category: 'events',
     type: 'Event Production'
@@ -187,7 +189,7 @@ export const projects = [
   {
     id: 2,
     title: 'Penthouse Zurich',
-    image: '/assets/images/thumbnail_penthouse.png',
+    image: `${import.meta.env.VITE_CLOUDFRONT_URL}/images/thumbnail_penthouse.png`,
     link: '/portfolio/penthouse-zurich',
     category: 'realEstate',
     type: 'Real Estate'
