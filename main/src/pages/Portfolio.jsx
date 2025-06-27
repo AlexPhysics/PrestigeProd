@@ -31,12 +31,12 @@ const Portfolio = () => {
       id: 'realEstate',
       label: t('portfolio.categories.realEstate', 'Real Estate'),
     },
+    { id: 'events', label: t('portfolio.categories.events', 'Events') },
+    { id: 'social', label: t('portfolio.categories.social', 'Social Media') },
     {
       id: 'corporate',
       label: t('portfolio.categories.corporate', 'Corporate'),
     },
-    { id: 'events', label: t('portfolio.categories.events', 'Events') },
-    { id: 'social', label: t('portfolio.categories.social', 'Social Media') },
   ];
 
   // Social media reels data with metadata
@@ -49,24 +49,31 @@ const Portfolio = () => {
       type: 'Instagram Reel',
       description: 'Dynamic event coverage for social media',
       tags: ['Event', 'Social Media', 'Short Form'],
+      views: '32k+',
     },
     {
       id: 'reel-2',
-      src: `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/Reel_2_penthouse_speech.mp4`,
+      src: `${
+        import.meta.env.VITE_CLOUDFRONT_URL
+      }/videos/Reel_2_penthouse_speech.mp4`,
       title: 'Penthouse Experience',
       category: 'social',
       type: 'Social Media Content',
       description: 'Luxury real estate social content',
       tags: ['Real Estate', 'Luxury', 'Social Media'],
+      views: '50k+',
     },
     {
       id: 'reel-3',
-      src: `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/Reel_1_penthouse_view.mp4`,
+      src: `${
+        import.meta.env.VITE_CLOUDFRONT_URL
+      }/videos/Reel_1_penthouse_view.mp4`,
       title: 'Penthouse Views',
       category: 'social',
       type: 'Instagram Reel',
       description: 'Stunning property views for social platforms',
       tags: ['Property', 'Views', 'Social Media'],
+      views: '28k+',
     },
   ];
 
@@ -158,7 +165,11 @@ const Portfolio = () => {
   return (
     <section
       ref={containerRef}
-      className='relative py-16 bg-gradient-to-b from-black via-zinc-900 to-black text-white px-6 lg:px-24 font-sans min-h-screen overflow-hidden'
+      className='relative py-16 text-white px-6 lg:px-24 font-sans min-h-screen overflow-hidden'
+      style={{
+        background:
+          'linear-gradient(135deg, #231f20 0%, #1a1617 40%, #205c57 100%)',
+      }}
     >
       {/* Decorative background elements with parallax */}
       <div
@@ -170,119 +181,50 @@ const Portfolio = () => {
         <div className='parallax-element absolute top-1/2 left-1/2 w-24 h-24 bg-gradient-to-r from-[#2d5f59]/15 to-[#F4FF78]/15 rounded-full blur-2xl'></div>
       </div>
 
-      {/* Hero Intro */}
+      {/* Hero Intro - Simplified */}
       <div className='max-w-4xl mx-auto text-center mb-16 px-4 sm:px-6 relative z-10'>
-        {/* Section Title with animated underline */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className='inline-block relative mb-6'
+        <h1
+          className='text-4xl sm:text-5xl md:text-6xl font-extralight tracking-tight leading-tight mb-6'
+          style={{ color: '#eaebec' }}
         >
-          <h2
-            id='section-title'
-            className='text-sm font-semibold tracking-widest text-white/80 mb-2 font-sans uppercase'
-          >
-            <TrueFocus
-              sentence={t('portfolio.title', 'Our work')}
-              manualMode={false}
-              blurAmount={7.5}
-              borderColor='rgba(45, 95, 89, 1)'
-              animationDuration={0.4}
-              pauseBetweenAnimations={3}
-              className='font-sans'
-              preserveCase={true}
-            />
-          </h2>
-          <div
-            id='underline'
-            className='absolute left-1/2 -translate-x-1/2 mt-4 h-[2px] w-48 bg-gradient-to-r from-transparent via-[#2d5f59] to-transparent origin-center scale-x-0'
-          />
-        </motion.div>
+          Our <span style={{ color: '#9eb6a9' }}>portfolio</span>
+        </h1>
 
-        {/* Main headline */}
-        <motion.h1
-          id='main-headline'
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tight text-white leading-tight mb-6'
-        >
-          <span className='bg-gradient-to-r from-[#2d5f59] to-[#F4FF78] bg-clip-text text-transparent font-medium'>
-            Prestige Production
-          </span>{' '}
-          {t('portfolio.subtitle', 'Discover how')}
-        </motion.h1>
-
-        {/* Subheadline */}
-        <motion.p
-          id='sub-headline'
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className='text-lg sm:text-xl text-white/70 leading-relaxed max-w-2xl mx-auto mb-12'
-        >
+        <p className='text-xl text-white/70 font-light max-w-2xl mx-auto leading-relaxed mb-12'>
           {t(
             'portfolio.description',
             'From luxury real estate to high-end events, we craft cinematic journeys that elevate every project.',
           )}
-        </motion.p>
-
-        {/* Stats Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className='flex flex-wrap justify-center gap-8 mb-16'
-        >
-          <div className='text-center'>
-            <div className='text-3xl font-bold bg-gradient-to-r from-[#2d5f59] to-[#F4FF78] bg-clip-text text-transparent'>
-              15+
-            </div>
-            <div className='text-sm text-white/60 uppercase tracking-wider'>
-              Projects Delivered
-            </div>
-          </div>
-          <div className='text-center'>
-            <div className='text-3xl font-bold bg-gradient-to-r from-[#2d5f59] to-[#F4FF78] bg-clip-text text-transparent'>
-              100%
-            </div>
-            <div className='text-sm text-white/60 uppercase tracking-wider'>
-              Client Satisfaction
-            </div>
-          </div>
-          <div className='text-center'>
-            <div className='text-3xl font-bold bg-gradient-to-r from-[#2d5f59] to-[#F4FF78] bg-clip-text text-transparent'>
-              4K
-            </div>
-            <div className='text-sm text-white/60 uppercase tracking-wider'>
-              Video Quality
-            </div>
-          </div>
-        </motion.div>
+        </p>
       </div>
 
       {/* Category Filter */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.8 }}
-        className='flex flex-wrap justify-center gap-4 mb-16 max-w-4xl mx-auto'
-      >
+      <div className='flex flex-wrap justify-center gap-4 mb-16 max-w-4xl mx-auto'>
         {categories.map(category => (
           <button
             key={category.id}
             onClick={() => setSelectedCategory(category.id)}
             className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
               selectedCategory === category.id
-                ? 'bg-gradient-to-r from-[#2d5f59] to-[#F4FF78] text-white shadow-lg'
-                : 'bg-white/10 text-white/70 hover:bg-white/20 hover:text-white'
+                ? 'text-black shadow-lg'
+                : 'text-white/70 hover:text-white'
             }`}
+            style={{
+              backgroundColor:
+                selectedCategory === category.id
+                  ? '#eaebec'
+                  : 'rgba(255, 255, 255, 0.1)',
+              borderColor:
+                selectedCategory === category.id
+                  ? 'transparent'
+                  : 'rgba(158, 182, 169, 0.3)',
+              border: selectedCategory === category.id ? 'none' : '1px solid',
+            }}
           >
             {category.label}
           </button>
         ))}
-      </motion.div>
+      </div>
 
       {/* Projects Grid */}
       <motion.div
@@ -329,7 +271,9 @@ const Portfolio = () => {
                     className='w-full h-full object-cover group-hover:scale-110 transition-transform duration-700'
                     onError={e => {
                       console.error('Image failed to load:', proj.image);
-                      e.target.src = `${import.meta.env.VITE_CLOUDFRONT_URL}/images/placeholder.jpg`;
+                      e.target.src = `${
+                        import.meta.env.VITE_CLOUDFRONT_URL
+                      }/images/placeholder.jpg`;
                     }}
                   />
                 )}
@@ -390,14 +334,7 @@ const Portfolio = () => {
 
       {/* Reels Section */}
       {shouldShowReels && (
-        <motion.div
-          id='reels'
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: false, margin: '-100px' }}
-          className='mt-32 max-w-7xl mx-auto px-4 sm:px-6'
-        >
+        <div id='reels' className='mt-32 max-w-7xl mx-auto px-4 sm:px-6'>
           <div className='text-center mb-16'>
             <h2 className='text-3xl sm:text-4xl font-semibold mb-4 text-white tracking-tight'>
               {t('portfolio.reelsTitle', 'Social Media Reels')}
@@ -412,41 +349,23 @@ const Portfolio = () => {
 
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12'>
             {socialReels.map((reel, i) => (
-              <motion.div
+              <div
                 key={reel.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
-                viewport={{ once: false, margin: '-50px' }}
-                whileHover={{ y: -5 }}
                 ref={el => (cardsRef.current[projects.length + i] = el)}
-                className='group relative bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-[#2d5f59]/50 transition-all duration-300 shadow-xl'
+                className='relative bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 shadow-xl'
               >
                 {/* 9:16 Aspect Ratio Container */}
                 <div className='aspect-[9/16] w-full overflow-hidden relative bg-zinc-800'>
-                  {/* Loading placeholder */}
-                  {!reelLoadStates[reel.id] && (
-                    <div className='absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center'>
-                      <div className='w-16 h-16 border-2 border-[#2d5f59] border-t-[#F4FF78] rounded-full animate-spin'></div>
-                    </div>
-                  )}
-
                   <video
                     src={reel.src}
-                    className={`w-full h-full object-cover group-hover:scale-105 transition-all duration-500 ${
-                      reelLoadStates[reel.id] ? 'opacity-100' : 'opacity-0'
-                    }`}
+                    className='w-full h-full object-cover'
                     playsInline
                     muted
                     loop
                     autoPlay
                     preload='metadata'
-                    onLoadedData={() => {
-                      setReelLoadStates(prev => ({ ...prev, [reel.id]: true }));
-                    }}
                     onError={e => {
                       console.error(`Error loading reel ${reel.id}:`, e);
-                      setReelLoadStates(prev => ({ ...prev, [reel.id]: true }));
                     }}
                   >
                     {t(
@@ -455,8 +374,8 @@ const Portfolio = () => {
                     )}
                   </video>
 
-                  {/* Overlay with reel info */}
-                  <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+                  {/* Always visible overlay with reel info */}
+                  <div className='absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent'>
                     <div className='absolute bottom-0 left-0 right-0 p-4'>
                       <h3 className='text-white font-semibold text-sm mb-1'>
                         {reel.title}
@@ -468,19 +387,30 @@ const Portfolio = () => {
                         {reel.tags.slice(0, 2).map((tag, index) => (
                           <span
                             key={index}
-                            className='px-2 py-1 bg-white/20 text-white text-xs rounded backdrop-blur-sm'
+                            className='px-2 py-1 bg-black/50 backdrop-blur-sm text-white text-xs rounded border border-white/20'
                           >
                             {tag}
                           </span>
                         ))}
                       </div>
                       <div className='flex items-center justify-between'>
-                        <span className='text-[#F4FF78] text-xs font-medium'>
+                        <span className='text-[#9eb6a9] text-xs font-medium'>
                           {reel.type}
                         </span>
                         <div className='flex items-center text-white/60 text-xs'>
-                          <div className='w-1.5 h-1.5 bg-[#F4FF78] rounded-full mr-1 animate-pulse'></div>
-                          9:16
+                          <svg
+                            className='w-3 h-3 mr-1'
+                            fill='currentColor'
+                            viewBox='0 0 20 20'
+                          >
+                            <path d='M10 12a2 2 0 100-4 2 2 0 000 4z' />
+                            <path
+                              fillRule='evenodd'
+                              d='M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z'
+                              clipRule='evenodd'
+                            />
+                          </svg>
+                          {reel.views}
                         </div>
                       </div>
                     </div>
@@ -488,28 +418,15 @@ const Portfolio = () => {
 
                   {/* Social Media Badge */}
                   <div className='absolute top-3 left-3'>
-                    <span className='px-2 py-1 bg-gradient-to-r from-[#2d5f59]/80 to-[#F4FF78]/80 backdrop-blur-sm text-white text-xs rounded-full border border-white/20 font-medium'>
+                    <span className='px-2 py-1 bg-black/50 backdrop-blur-sm text-white text-xs rounded border border-white/20 font-medium'>
                       Social Media
                     </span>
                   </div>
-
-                  {/* Play Icon Overlay */}
-                  <div className='absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-                    <div className='w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30'>
-                      <svg
-                        className='w-6 h-6 text-white ml-0.5'
-                        fill='currentColor'
-                        viewBox='0 0 24 24'
-                      >
-                        <path d='M8 5v14l11-7z' />
-                      </svg>
-                    </div>
-                  </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       )}
 
       {/* Client Testimonials Section */}
@@ -517,7 +434,7 @@ const Portfolio = () => {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: false, margin: '-100px' }}
+        viewport={{ once: true, margin: '-100px' }}
         className='mt-32 max-w-6xl mx-auto px-4 sm:px-6'
       >
         <div className='text-center mb-16'>
@@ -533,6 +450,7 @@ const Portfolio = () => {
         </div>
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+          {' '}
           {[
             {
               name: "Zurich Sotheby's International Realty",
@@ -574,9 +492,8 @@ const Portfolio = () => {
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: false, margin: '-50px' }}
               className='bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-[#2d5f59]/50 transition-all duration-300'
             >
               <div className='flex items-center mb-4'>
@@ -609,7 +526,7 @@ const Portfolio = () => {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: false, margin: '-100px' }}
+        viewport={{ once: true, margin: '-100px' }}
         className='mt-32 max-w-4xl mx-auto text-center px-4 sm:px-6 relative'
       >
         <div className='bg-gradient-to-r from-[#2d5f59]/10 to-[#F4FF78]/10 backdrop-blur-sm rounded-3xl p-12 border border-white/10'>

@@ -23,6 +23,7 @@ import Contact from './pages/Contact';
 import SmiProject from './pages/SmiProject';
 import PenthouseZurichProject from './pages/PenthouseZurichProject';
 import WhyUs from './pages/WhyUs';
+import Privacy from './pages/Privacy';
 
 /* ---- composant fond ---- */
 const Background = () => {
@@ -55,6 +56,7 @@ const AppContent = () => {
         <Route path='services' element={<Services />} />
         <Route path='contact' element={<Contact />} />
         <Route path='why-us' element={<WhyUs />} />
+        <Route path='privacy' element={<Privacy />} />
         <Route path='portfolio/smi' element={<SmiProject />} />
         <Route
           path='portfolio/penthouse-zurich'

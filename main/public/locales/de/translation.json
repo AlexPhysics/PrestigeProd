@@ -36,28 +36,69 @@
     "pageTitle": "Prestige Production | Premium Video- und Fotografie-Dienstleistungen"
   },  "services": {
     "pageTitle": "Dienstleistungen | Prestige Production",
-    "hero": {      "title": "Visuelle Erzählung",
-      "highlight": "Strategische Wirkung",
-      "subtitle": "Unsere visuellen Inhalte verändern die Wahrnehmung Ihrer Marke, Produkte und Dienstleistungen bei den Zuschauern und schaffen emotionale Verbindungen, die zu messbaren Ergebnissen führen.",
+    "hero": {
+      "title": "Professionelle Video- und Fotografie",
+      "highlight": "Einfach gemacht",
+      "subtitle": "Hochwertige visuelle Inhalte, die Ihr Unternehmen professionell präsentieren. Transparente Preise, zuverlässige Lieferung, außergewöhnliche Ergebnisse.",
       "cta": "Arbeiten Sie mit uns",
       "primaryCta": "Individuelles Angebot erhalten",
       "secondaryCta": "Pakete ansehen"
+    },
+    "benefits": {
+      "expertise": "Schweizer Präzision",
+      "expertiseDesc": "Professionelle Ausrüstung und jahrelange Erfahrung gewährleisten konsistente, hochwertige Ergebnisse.",
+      "efficiency": "Zeitfokussiert",
+      "efficiencyDesc": "Rationalisierter Prozess, der Ihren Zeitplan respektiert und pünktlich zu vereinbarten Terminen liefert.",
+      "impact": "Warum es wichtig ist",
+      "impactDesc": "Erste Eindrücke prägen den Geschäftserfolg. Professionelle Bilder schaffen Vertrauen, ziehen Kunden an und heben Sie von der Konkurrenz ab."
+    },
+    "packages": {
+      "title": "Kooperative Lösungen",
+      "subtitle": "Als Boutique-Team von zwei Personen bieten wir personalisierte Service-Optionen, die Ihnen genau das geben, was Sie brauchen, ohne unnötige Komplexität.",
+      "teamNote": "Als Boutique-Studio mit zwei Personen bieten wir einen personalisierten Ansatz für jedes Projekt. Unser kleines Team bedeutet direkte Kommunikation mit den Kreativen, die an Ihren Inhalten arbeiten, und stellt sicher, dass Ihre Vision perfekt eingefangen wird.",
+      "mostPopular": "am beliebtesten",
+      "premium": {
+        "title": "Premium-Paket",
+        "premiumDesc": "Unsere charakteristische Full-Service-Lösung für Kunden, die umfassende visuelle Erzählung mit maximaler Wirkung benötigen.",
+        "premiumFeature1": "Zweitägige Produktion mit unserer kompletten Ausrüstungssuite",
+        "premiumFeature2": "Kinematographische Videoproduktion mit fortgeschrittenen Bearbeitungstechniken",
+        "premiumFeature3": "Umfangreiche Fotosammlung mit Premium-Farbkorrektur",
+        "premiumFeature4": "Optimierte Inhalte für alle wichtigen sozialen Plattformen",
+        "premiumFeature5": "Unbegrenzte Überarbeitungen und kontinuierlicher Support",
+        "premiumCta": "Premium wählen"
+      },
+      "standard": {
+        "title": "Standard-Paket",
+        "standardDesc": "Perfektes Gleichgewicht zwischen Qualität und Wert für Unternehmen, die professionelle visuelle Inhalte benötigen.",
+        "standardFeature1": "Eintägige Produktion mit wesentlicher Ausrüstung",
+        "standardFeature2": "Professionelles Video mit individueller Musikauswahl",
+        "standardFeature3": "Komplettes Fotoset mit Standard-Bearbeitung",
+        "standardCta": "Standard wählen"
+      },
+      "custom": {
+        "title": "Individuelle Lösung",
+        "customDesc": "Maßgeschneiderter Ansatz für einzigartige Projekte, die spezifische Expertise oder kreative Führung erfordern.",
+        "customFeature1": "Kollaborative Planung zur Erfüllung exakter Spezifikationen",
+        "customFeature2": "Flexibler Produktionsplan und Lieferungen",
+        "customFeature3": "Spezielle technische Anforderungen oder kreative Elemente",
+        "customCta": "Lass uns reden"
+      }
     },    "faq": {
       "title": "Häufig gestellte Fragen",
       "subtitle": "Erhalten Sie Antworten auf häufige Fragen zu unseren Dienstleistungen, Prozessen und Lieferungen.",
       "clickToExpand": "Klicken Sie auf eine Frage, um die Antwort zu sehen",
       "moreQuestions": "Haben Sie weitere Fragen? Wir sind hier, um zu helfen.",
       "contactUs": "Kontaktieren Sie unser Team",
-      "q1": "Auf welche Arten von Projekten sind Sie spezialisiert?",
-      "a1": "Wir sind auf eine breite Palette von visueller Contentproduktion spezialisiert, mit besonderer Expertise in den Bereichen Luxusimmobilien, Unternehmensveranstaltungen, Markengeschichten und Social-Media-Inhalte. Unser Team verfügt über umfangreiche Erfahrung mit hochwertigen Immobilien, internationalen Konferenzen und Premium-Marken, die eine anspruchsvolle visuelle Behandlung erfordern.",
-      "q2": "Wie lange dauert eine typische Videoproduktion von Anfang bis Ende?",
-      "a2": "Unser Produktionszeitplan variiert je nach Projektkomplexität. Bei Immobilienprojekten liefern wir in der Regel innerhalb von 5-7 Arbeitstagen nach dem Dreh die fertigen Inhalte. Komplexere Projekte wie Unternehmensreportagen oder Event-Aftermovies können 2-3 Wochen dauern. Wir erstellen immer einen detaillierten Zeitplan während unserer ersten Beratung, um die Abstimmung mit Ihrem Marketingplan zu gewährleisten.",
-      "q3": "Was unterscheidet Ihre Immobilienvideos von Standard-Immobilienbesichtigungen?",
-      "a3": "Im Gegensatz zu Standard-Immobilienbesichtigungen integrieren unsere Videos filmische Erzähltechniken, professionelle Lichtgestaltung und eine strategische Erzählstruktur, die den Lifestyle-Aspekt der Immobilien hervorhebt. Wir konzentrieren uns darauf, eine emotionale Verbindung mit den Zuschauern aufzubauen, indem wir zeigen, wie es sich anfühlt, in diesem Raum zu leben, nicht nur wie er aussieht – was zu höheren Engagement- und Konversionsraten führt.",
-      "q4": "Stellen Sie das Rohmaterial zusammen mit dem bearbeiteten Inhalt zur Verfügung?",
-      "a4": "Während unsere Standardpakete vollständig bearbeitete und farbkorrigierte Endprodukte enthalten, können wir ausgewähltes Rohmaterial als Zusatzservice anbieten. Wir archivieren alle Projektmaterialien sicher für 6 Monate, sodass Kunden während dieses Zeitraums zusätzliche Bearbeitungen oder Formate anfordern können.",
-      "q5": "Wie gehen Sie mit mehrsprachigen Inhalten für internationale Zielgruppen um?",
-      "a5": "Wir bieten umfassende mehrsprachige Lösungen an, darunter Untertitelung, Sprachaufnahmen und Übersetzungsdienste auf Englisch, Französisch, Deutsch und Italienisch. Für unsere Immobilienkunden, die internationale Käufer ansprechen möchten, empfehlen wir die Erstellung von Versionen in mehreren Sprachen, um die Marktreichweite zu maximieren und verschiedene Zielgruppen in ganz Europa und darüber hinaus anzusprechen."
+      "q1": "Was ist in Ihren Videoproduktionspaketen enthalten?",
+      "a1": "Unsere Pakete umfassen alles von der ersten Beratung und kreativen Konzeptentwicklung bis zur finalen Lieferung. Dies beinhaltet Vorproduktionsplanung, professionelle Aufnahmen mit Kino-Equipment, Postproduktion, Farbkorrektur, Audio-Mixing und optimierte Exporte für Ihre gewählten Plattformen. Wir bieten auch Projektmanagement und unbegrenzte Kommunikation während des gesamten Prozesses.",
+      "q2": "Wie lange dauert ein typisches Projekt von Anfang bis Ende?",
+      "a2": "Die Timeline hängt vom Projektumfang und der Komplexität ab. Für Standard-Unternehmensvideos oder Immobilienpräsentationen liefern wir normalerweise innerhalb von 7-10 Werktagen nach dem Dreh. Komplexere Projekte wie Markendokumentationen oder Multi-Location-Shoots können 2-3 Wochen dauern. Wir erstellen immer eine detaillierte Timeline während unserer ersten Beratung, um sie mit Ihrem Marketing-Zeitplan abzustimmen.",
+      "q3": "Arbeiten Sie mit internationalen Marken und mehrsprachigen Inhalten?",
+      "a3": "Absolut. Wir sind spezialisiert auf die Erstellung von Inhalten für internationale Zielgruppen und arbeiten regelmäßig mit Marken in ganz Europa und darüber hinaus. Wir bieten umfassende mehrsprachige Lösungen einschließlich Untertitelung, Voice-Over und Übersetzungsdienste in Englisch, Französisch, Deutsch und Italienisch. Unsere Inhalte sind darauf ausgelegt, in verschiedenen Märkten und kulturellen Kontexten zu resonieren.",
+      "q4": "Was macht Ihren Ansatz anders als andere Videoagenturen?",
+      "a4": "Als Boutique-Team von zwei Personen bieten wir direkten Zugang zu den Kreativen, die an Ihrem Projekt arbeiten, und stellen sicher, dass Ihre Vision perfekt umgesetzt wird. Jedes Projekt erhält unsere volle Aufmerksamkeit, ohne Outsourcing oder Junior-Teams. Wir kombinieren Schweizer Präzision mit kinematographischem Storytelling und verwenden nur professionelles Kino-Equipment und fortgeschrittene Postproduktions-Techniken.",
+      "q5": "Können Sie sowohl Video als auch Fotografie für dasselbe Projekt handhaben?",
+      "a5": "Ja, wir sind ein Full-Service-Studio für visuelle Inhalte. Wir können sowohl hochwertige Videos als auch Fotografie am selben Produktionstag aufnehmen, was die Effizienz maximiert und visuelle Konsistenz über alle Ihre Inhalte hinweg gewährleistet. Dieser Ansatz ist besonders wertvoll für Immobilien-, Unternehmens- und Markenprojekte, bei denen Sie eine komplette Content-Suite benötigen."
     },
     "offerings": {
       "title": "Was Wir Anbieten",
@@ -256,15 +297,21 @@
     "browserNotSupported": "Ihr Browser unterstützt das Video-Tag nicht."
   },
   "contact": {
-    "title": "Lassen Sie uns etwas Außergewöhnliches schaffen",
+    "title": "Lassen Sie uns etwas ",
+    "exceptional": "außergewöhnliches schaffen",
     "subtitle": "Kontaktieren Sie uns, um Ihr Projekt zu besprechen und zu erfahren, wie wir es zum Leben erwecken können.",
     "formTitle": "Senden Sie uns eine Nachricht",
+    "formLabel": "Kontaktformular",
     "namePlaceholder": "Ihr Name",
     "emailPlaceholder": "Ihre E-Mail",
-    "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt",
+    "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt, Zeitplan und Budget...",
     "sendButton": "Nachricht senden",
-    "successMessage": "Vielen Dank! Wir melden uns in Kürze bei Ihnen.",
-    "errorMessage": "Hoppla! Etwas ist schiefgelaufen.",
+    "sendingButton": "Wird gesendet...",
+    "submittingStatus": "Das Formular wird übermittelt",
+    "successMessage": "Vielen Dank! Ihre Nachricht wurde gesendet.",
+    "successSubtext": "Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+    "errorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "errorSubtext": "Oder kontaktieren Sie uns direkt unter info@prestigeproduction.ch",
     "nameRequired": "Name ist erforderlich",
     "emailRequired": "E-Mail ist erforderlich",
     "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
@@ -279,13 +326,42 @@
     "creative": "kreative",
     "reserveTime2": "Zeit",
     "scheduleCall": "Vereinbaren Sie einen kurzen Anruf mit uns nach Ihrem Zeitplan",
-    "whatsapp": "Chatten Sie auf WhatsApp"
+    "whatsapp": "Chatten Sie auf WhatsApp",
+    "whatsappLabel": "Chatten Sie mit uns auf WhatsApp",
+    "loadingCalendar": "Kalender wird geladen...",
+    "pageTitle": "Kontakt - Prestige Production"
   },
   "footer": {
+    "description": "Professionelle Videoproduktion und Fotografie mit Sitz in Zürich, Schweiz.",
     "rights": "Alle Rechte vorbehalten",
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
-    "followUs": "Folgen Sie uns"
+    "followUs": "Folgen Sie uns",
+    "connect": "Verbinden Sie sich mit uns",
+    "contact": {
+      "title": "Kontakt aufnehmen",
+      "phone": "Anrufen +41 76 202 19 59",
+      "email": "info@prestigeproduction.ch",
+      "location": "Zürich, Schweiz"
+    },
+    "services": {
+      "title": "Dienstleistungen",
+      "video": "Videoproduktion",
+      "photography": "Fotografie",
+      "social": "Social Media Content",
+      "branding": "Markeninhalte"
+    },
+    "company": {
+      "title": "Unternehmen",
+      "about": "Über uns",
+      "portfolio": "Portfolio",
+      "contact": "Kontakt",
+      "services": "Dienstleistungen"
+    },
+    "legal": {
+      "copyright": "© 2025 Prestige Production. Alle Rechte vorbehalten.",
+      "privacy": "Datenschutzerklärung"
+    }
   },
   "projects": {
     "penthouseTitle": "Eine Penthouse-Geschichte | Prestige Production",
@@ -324,18 +400,18 @@
         "growth": "7x Mehr Aufrufe",
         "growthDesc": "Als ihr üblicher Content + bedeutendes Follower-Wachstum"
       },
-      "whyUsTitle": "Warum Premium-Content Immobilien Schneller Verkauft",
+      "whyUsTitle": "Warum premium content Immobilien schneller verkauft",
       "whyUsDesc": "Datenbasierte Einblicke darüber, wie professioneller Video-Content Immobilienmarketing transformiert",
       "whyUs": {
-        "stat1": "Schnellere Verkäufe",
+        "stat1": "Schnellere verkäufe",
         "stat1Desc": "Immobilien mit Video",
-        "stat2": "Mehr Anfragen",
+        "stat2": "Mehr anfragen",
         "stat2Desc": "Als reine Foto-Anzeigen",
-        "benefit1": "Seriöse Käufer Anziehen",
+        "benefit1": "Seriöse käufer anziehen",
         "benefit1Desc": "Premium-Content filtert Gelegenheitsbrowser heraus und bringt nur qualifizierte Interessenten",
-        "benefit2": "Höhere Verkaufspreise",
+        "benefit2": "Höhere verkaufspreise",
         "benefit2Desc": "Professionelle Präsentation schafft emotionale Verbindung und rechtfertigt Premium-Preise",
-        "benefit3": "Globale Reichweite",
+        "benefit3": "Globale reichweite",
         "benefit3Desc": "Social Media Content erreicht internationale Käufer, die traditionelle Anzeigen nie sehen",
         "benefit4": "Wettbewerbsvorteil",
         "benefit4Desc": "Heben Sie sich von Maklern mit einfachen Fotos ab - werden Sie die Premium-Wahl für Verkäufer",
@@ -468,6 +544,32 @@
           "2": "Entwicklung einer Vertriebsstrategie über eigene und bezahlte Kanäle, Tracking von Analysen."
         }
       }
+    }
+  },
+  "privacy": {
+    "pageTitle": "Datenschutzerklärung | Prestige Production",
+    "title": "Datenschutzerklärung",
+    "lastUpdated": "Zuletzt aktualisiert: 28. Juni 2025",
+    "intro": "Bei Prestige Production sind wir dem Schutz Ihrer Privatsphäre und persönlichen Daten verpflichtet. Diese Datenschutzerklärung erklärt, wie wir Ihre Informationen sammeln, verwenden und schützen, wenn Sie unsere Website besuchen oder unsere Dienstleistungen nutzen.",
+    "section1": {
+      "title": "Informationen, die wir sammeln",
+      "content": "Wir sammeln Informationen, die Sie uns direkt zur Verfügung stellen, beispielsweise wenn Sie uns über unser Website-Formular, per E-Mail oder Telefon kontaktieren. Dies kann Ihren Namen, Ihre E-Mail-Adresse, Telefonnummer und Projektdetails umfassen."
+    },
+    "section2": {
+      "title": "Wie wir Ihre Informationen verwenden",
+      "content": "Wir verwenden die gesammelten Informationen, um auf Ihre Anfragen zu antworten, unsere Video- und Fotografie-Dienstleistungen bereitzustellen und mit Ihnen über Ihre Projekte zu kommunizieren. Wir verkaufen, handeln oder übertragen Ihre persönlichen Informationen nicht an Dritte."
+    },
+    "section3": {
+      "title": "Datenschutz",
+      "content": "Wir implementieren angemessene Sicherheitsmaßnahmen zum Schutz Ihrer persönlichen Informationen vor unbefugtem Zugriff, Änderung, Offenlegung oder Zerstörung. Ihre Informationen werden sicher gespeichert und nur von autorisiertem Personal eingesehen."
+    },
+    "section4": {
+      "title": "Ihre Rechte",
+      "content": "Sie haben das Recht, auf Ihre persönlichen Informationen zuzugreifen, diese zu aktualisieren oder zu löschen. Sie können auch bestimmten Verarbeitungen Ihrer Daten widersprechen oder diese einschränken. Um diese Rechte auszuüben, kontaktieren Sie uns bitte unter info@prestigeproduction.ch."
+    },
+    "section5": {
+      "title": "Kontaktinformationen",
+      "content": "Wenn Sie Fragen zu dieser Datenschutzerklärung oder unseren Datenpraktiken haben, kontaktieren Sie uns bitte unter info@prestigeproduction.ch oder rufen Sie +41 76 202 19 59 an."
     }
   }
 }

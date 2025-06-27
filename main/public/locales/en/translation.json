@@ -37,20 +37,20 @@
   },  "services": {
     "pageTitle": "Services | Prestige Production",
     "hero": {
-      "title": "Visual Storytelling",
-      "highlight": "Strategic Impact",
-      "subtitle": "Our visual content transforms how audiences perceive your brand, products, and services—creating emotional connections that drive measurable results.",
+      "title": "Professional Video & Photography",
+      "highlight": "Made Simple",
+      "subtitle": "High-quality visual content that showcases your business professionally. Clear pricing, reliable delivery, exceptional results.",
       "cta": "Work with us",
       "primaryCta": "Get Custom Quote",
       "secondaryCta": "View Packages"
     },
     "benefits": {
-      "faster": "94% Information Retention",
-      "fasterDesc": "Viewers retain 94% more information from video content compared to text alone.",
-      "engagement": "300% More Engagement",
-      "engagementDesc": "Our clients report triple the engagement rates with professional visual content.",
-      "premium": "64% Higher Conversion",
-      "premiumDesc": "Quality video marketing leads to 64% higher conversion rates across industries."
+      "expertise": "Swiss Precision",
+      "expertiseDesc": "Professional equipment and years of experience ensuring consistent, high-quality results.",
+      "efficiency": "Time Focused",
+      "efficiencyDesc": "Streamlined process that respects your schedule and delivers on agreed timelines.",
+      "impact": "Why It Matters",
+      "impactDesc": "First impressions shape business success. Professional visuals build trust, attract customers, and set you apart from competitors."
     },
     "process": {
       "title": "Simple Process,",
@@ -66,36 +66,40 @@
       "step4Desc": "Expert editing, color grading, and refinement of your visual story.",
       "step5Title": "Delivery",
       "step5Desc": "Final content optimized for your platforms with strategic distribution guidance."
-    },    "packages": {
-      "title": "Collaborative Solutions",
-      "subtitle": "As a boutique two-person team, we offer personalized service options that give you exactly what you need without unnecessary complexity.",
-      "teamNote": "As a two-person boutique studio, we offer a personalized approach to every project. Our small team means direct communication with the creatives working on your content, ensuring your vision is perfectly captured.",
-      "mostPopular": "MOST POPULAR",
-      "premium": {
-        "title": "Premium Package",
-        "premiumDesc": "Our signature full-service solution for clients needing comprehensive visual storytelling with maximum impact.",
-        "premiumFeature1": "Two-day production with our complete equipment suite",
-        "premiumFeature2": "Cinematic video production with advanced editing techniques",
-        "premiumFeature3": "Extensive photo collection with premium color grading",
-        "premiumFeature4": "Optimized content for all major social platforms",
-        "premiumFeature5": "Unlimited revisions and ongoing support",
-        "premiumCta": "Select Premium"
+    },    "types": {
+      "title": "Our Services",
+      "subtitle": "Professional visual content solutions tailored to your needs.",
+      "mostPopular": "most popular",
+      "videoProduction": {
+        "title": "Video Production",
+        "videoProductionDesc": "Cinematic videos that showcase your brand, property, or event with professional quality.",
+        "videoProductionPrice": "",
+        "videoFeature1": "Professional Sony cameras and drone footage",
+        "videoFeature2": "Full editing with color grading and audio",
+        "videoFeature3": "Long format videos and social media versions",
+        "videoFeature4": "Revisions included until you're happy",
+        "videoProductionCta": "Get Video Quote"
       },
-      "standard": {
-        "title": "Standard Package",
-        "standardDesc": "Perfect balance of quality and value for businesses needing professional visual content.",
-        "standardFeature1": "One-day production with essential equipment",
-        "standardFeature2": "Professional video with custom music selection",
-        "standardFeature3": "Complete photo set with standard editing",
-        "standardCta": "Select Standard"
+      "photography": {
+        "title": "Photography",
+        "photographyDesc": "Professional photos that capture the essence of your space or brand with exceptional detail.",
+        "photographyPrice": "",
+        "photoFeature1": "Professional photo session",
+        "photoFeature2": "Drone photography available",
+        "photoFeature3": "High-quality images for all your needs",
+        "photoFeature4": "Commercial rights included",
+        "photographyCta": "Get Photo Quote"
       },
-      "custom": {
-        "title": "Custom Solution",
-        "customDesc": "Tailored approach for unique projects that require specific expertise or creative direction.",
-        "customFeature1": "Collaborative planning to meet exact specifications",
-        "customFeature2": "Flexible production schedule and deliverables",
-        "customFeature3": "Special technical requirements or creative elements",
-        "customCta": "Let's Talk"
+      "completePackage": {
+        "title": "Video + Photo Package",
+        "completePackageDesc": "Complete solution combining video and photography for maximum impact and consistent storytelling.",
+        "completePackagePrice": "",
+        "completeFeature1": "Full video production + photo session",
+        "completeFeature2": "Coordinated storytelling across all content",
+        "completeFeature3": "Priority scheduling and fast delivery",
+        "completeFeature4": "Extended consultation and creative direction",
+        "completeFeature5": "Best value when combining both services",
+        "completePackageCta": "Get Complete Quote"
       }
     },"faq": {
       "title": "Frequently Asked Questions",
@@ -103,14 +107,14 @@
       "clickToExpand": "Click a question to see the answer",
       "moreQuestions": "Have more questions? We're here to help.",
       "contactUs": "Contact our team",
-      "q1": "What types of projects do you specialize in?",
-      "a1": "We specialize in a wide range of visual content creation, with particular expertise in luxury real estate, corporate events, brand storytelling, and social media content. Our team has extensive experience working with high-end properties, international conferences, and premium brands requiring sophisticated visual treatment.",
-      "q2": "How long does a typical video production take from start to finish?",
-      "a2": "Our production timeline varies based on project complexity. For real estate projects, we typically deliver final content within 5-7 business days after filming. More complex projects like corporate documentaries or event aftermovies may take 2-3 weeks. We always provide a detailed timeline during our initial consultation to ensure alignment with your marketing schedule.",      "q3": "What makes your videos different from standard productions?",
-      "a3": "Unlike standard video productions, our content incorporates cinematic storytelling techniques, professional lighting design, and strategic narrative structure. We focus on creating an emotional connection with viewers by showcasing the essence of your brand or product—resulting in higher engagement and conversion rates.",
-      "q4": "Do you provide raw footage along with the edited content?",
-      "a4": "While our standard packages include fully edited and color-graded final content, we can provide select raw footage as an add-on service. We maintain a secure archive of all project assets for 6 months, allowing clients to request additional edits or formats during that period.",      "q5": "How do you handle multilingual content for international audiences?",
-      "a5": "We offer comprehensive multilingual solutions including subtitling, voice-over, and translation services in English, French, German, and Italian. For clients targeting international audiences, we recommend creating versions in multiple languages to maximize market reach and appeal to diverse demographics across Europe and beyond."
+      "q1": "What's included in your video production packages?",
+      "a1": "Our packages include everything from initial consultation and creative concept development to final delivery. This covers pre-production planning, professional filming with cinema-grade equipment, post-production editing, color grading, audio mixing, and optimized exports for your chosen platforms. We also provide project management and unlimited communication throughout the process.",
+      "q2": "How long does a typical project take from start to finish?",
+      "a2": "Timeline depends on project scope and complexity. For standard corporate videos or property showcases, we typically deliver within 7-10 business days after filming. More complex projects like brand documentaries or multi-location shoots may take 2-3 weeks. We always provide a detailed timeline during our initial consultation to align with your marketing schedule.",      "q3": "Do you work with international brands and multilingual content?",
+      "a3": "Absolutely. We specialize in creating content for international audiences and regularly work with brands across Europe and beyond. We offer comprehensive multilingual solutions including subtitling, voice-over, and translation services in English, French, German, and Italian. Our content is designed to resonate across different markets and cultural contexts.",
+      "q4": "What makes your approach different from other video agencies?",
+      "a4": "As a boutique two-person team, we offer direct access to the creatives working on your project, ensuring your vision is perfectly captured. Every project receives our full attention, with no outsourcing or junior teams. We combine Swiss precision with cinematic storytelling, using only professional cinema-grade equipment and advanced post-production techniques.",      "q5": "Can you handle both video and photography for the same project?",
+      "a5": "Yes, we're a full-service visual content studio. We can capture both high-quality video and photography during the same production day, maximizing efficiency and ensuring visual consistency across all your content. This approach is particularly valuable for real estate, corporate, and brand projects where you need a complete content suite."
     },    "offerings": {
       "title": "Premium Content Types",
       "subtitle": "Each format is designed to showcase your brand, products, or services from their most engaging angle and capture your target audience's attention.",
@@ -130,9 +134,9 @@
         "description": "Eye-catching reels and shorts optimized for Instagram, TikTok and other platforms to maximize engagement."
       },
       "hdr": {
-        "title": "HDR Photography",
-        "imageAlt": "HDR photography example",
-        "description": "High-dynamic-range photos that capture perfect lighting, bringing out the best in your subjects and spaces."
+        "title": "Photography",
+        "imageAlt": "Professional photography example",
+        "description": "High-quality photos that capture perfect lighting, bringing out the best in your subjects and spaces."
       },
       "brandContent": {
         "title": "Brand Content",
@@ -333,15 +337,21 @@
     "browserNotSupported": "Your browser does not support the video tag."
   },
   "contact": {
-    "title": "Let's Create Something Exceptional",
+    "title": "Let's create something ",
+    "exceptional": "exceptional",
     "subtitle": "Reach out to discuss your project and discover how we can bring it to life.",
     "formTitle": "Send us a message",
+    "formLabel": "Contact form",
     "namePlaceholder": "Your name",
     "emailPlaceholder": "Your email",
-    "messagePlaceholder": "Tell us about your project",
+    "messagePlaceholder": "Tell us about your project, timeline, and budget...",
     "sendButton": "Send message",
-    "successMessage": "Thank you! We'll be in touch shortly.",
-    "errorMessage": "Oops! Something went wrong.",
+    "sendingButton": "Sending...",
+    "submittingStatus": "Form is being submitted",
+    "successMessage": "Thank you! Your message has been sent.",
+    "successSubtext": "We'll get back to you within 24 hours.",
+    "errorMessage": "Something went wrong. Please try again.",
+    "errorSubtext": "Or contact us directly at info@prestigeproduction.ch",
     "nameRequired": "Name is required",
     "emailRequired": "Email is required",
     "emailInvalid": "Please enter a valid email address",
@@ -357,13 +367,41 @@
     "reserveTime2": "time",
     "scheduleCall": "Schedule a quick call with us at your convenience",
     "whatsapp": "Chat on WhatsApp",
-    "pageTitle": "Contact | Prestige Production"
+    "whatsappLabel": "Chat with us on WhatsApp",
+    "loadingCalendar": "Loading calendar...",
+    "pageTitle": "Contact - Prestige Production"
   },
   "footer": {
+    "description": "Professional video production and photography services based in Zurich, Switzerland.",
     "rights": "All rights reserved",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "followUs": "Follow us"
+    "followUs": "Follow us",
+    "connect": "Connect with us",
+    "contact": {
+      "title": "Get in touch",
+      "phone": "Call +41 76 202 19 59",
+      "email": "info@prestigeproduction.ch",
+      "location": "Zurich, Switzerland"
+    },
+    "services": {
+      "title": "Services",
+      "video": "Video Production",
+      "photography": "Photography",
+      "social": "Social Media Content",
+      "branding": "Brand Content"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "portfolio": "Portfolio",
+      "contact": "Contact",
+      "services": "Services"
+    },
+    "legal": {
+      "copyright": "© 2025 Prestige Production. All rights reserved.",
+      "privacy": "Privacy Policy"
+    }
   },
   "projects": {
     "smiTitle": "Swiss Mining Institute | Prestige Production",
@@ -422,20 +460,20 @@
         "growth": "7x More Views",
         "growthDesc": "Compared to their usual posts, plus lots of new followers"
       },
-      "whyUsTitle": "Why Video Content Actually Works for Real Estate",
+      "whyUsTitle": "Why premium content sells properties faster",
       "whyUsDesc": "Here's what the data shows about using professional video to sell properties",
       "whyUs": {
-        "stat1": "Faster Sales",
+        "stat1": "Faster sales",
         "stat1Desc": "Properties with video",
-        "stat2": "More Inquiries",
+        "stat2": "More inquiries",
         "stat2Desc": "Than photo-only listings",
-        "benefit1": "Get Serious Buyers",
+        "benefit1": "Attract serious buyers",
         "benefit1Desc": "Good video content weeds out the tire kickers and brings in people who are actually ready to buy",
-        "benefit2": "Sell for More Money",
+        "benefit2": "Higher sale prices",
         "benefit2Desc": "When people see professional videos, they understand the value better and are willing to pay more",
-        "benefit3": "Reach More People",
+        "benefit3": "Global reach",
         "benefit3Desc": "Social media videos reach buyers from all over the world who would never see regular listings",
-        "benefit4": "Beat the Competition",
+        "benefit4": "Competitive edge",
         "benefit4Desc": "Most agents still use basic photos. Video makes you look way more professional",
         "proofTitle": "What This Project Actually Did",
         "proofDesc": "Real numbers from the Zurich penthouse videos",
@@ -552,5 +590,31 @@
     "proud": "proud",
     "of": "of.",
     "partnerAlt": "Partner"
+  },
+  "privacy": {
+    "pageTitle": "Privacy Policy | Prestige Production",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: June 28, 2025",
+    "intro": "At Prestige Production, we are committed to protecting your privacy and personal data. This Privacy Policy explains how we collect, use, and protect your information when you visit our website or use our services.",
+    "section1": {
+      "title": "Information We Collect",
+      "content": "We collect information you provide directly to us, such as when you contact us through our website form, email, or phone. This may include your name, email address, phone number, and project details."
+    },
+    "section2": {
+      "title": "How We Use Your Information",
+      "content": "We use the information we collect to respond to your inquiries, provide our video and photography services, and communicate with you about your projects. We do not sell, trade, or otherwise transfer your personal information to third parties."
+    },
+    "section3": {
+      "title": "Data Protection",
+      "content": "We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. Your information is stored securely and accessed only by authorized personnel."
+    },
+    "section4": {
+      "title": "Your Rights",
+      "content": "You have the right to access, update, or delete your personal information. You may also object to or restrict certain processing of your data. To exercise these rights, please contact us at info@prestigeproduction.ch."
+    },
+    "section5": {
+      "title": "Contact Information",
+      "content": "If you have any questions about this Privacy Policy or our data practices, please contact us at info@prestigeproduction.ch or call +41 76 202 19 59."
+    }
   }
 }

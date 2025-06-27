@@ -51,7 +51,7 @@ const HowItWorks = () => {
             {t('howItWorks.craftedWith', 'Crafted with')}&nbsp;
             <RotatingText
               texts={rotatingTexts}
-              mainClassName='inline-block px-2 bg-white text-black border border-black overflow-hidden py-0.5 md:py-1 rounded-lg'
+              mainClassName='inline-block px-2 bg-white text-black border border-black overflow-hidden py-0.5 md:py-1 rounded-lg min-w-[140px] md:min-w-[180px] text-center'
               staggerFrom='last'
               initial={{ y: '100%' }}
               animate={{ y: 0 }}

@@ -29,47 +29,57 @@ const Services = () => {
     setExpandedFaq(expandedFaq === index ? null : index);
   };
 
-  // Service packages with clear value propositions - simplified for small team
-  const servicePackages = [
+  // Clear service types with transparent approach - Swiss style simplicity
+  const serviceTypes = [
     {
-      id: 'standard',
-      titleKey: 'standard',
-      descriptionKey: 'standardDesc',
+      id: 'video-production',
+      titleKey: 'videoProduction',
+      descriptionKey: 'videoProductionDesc',
+      priceKey: 'videoProductionPrice',
       featuresKeys: [
-        'standardFeature1',
-        'standardFeature2',
-        'standardFeature3',
+        'videoFeature1',
+        'videoFeature2', 
+        'videoFeature3',
+        'videoFeature4',
       ],
-      ctaKey: 'standardCta',
-      popular: false,
-      color: 'blue',
-      icon: 'photo-video',
+      ctaKey: 'videoProductionCta',
+      color: 'charcoal',
+      icon: 'video-camera',
+      contactSubject: 'Video Production Inquiry',
     },
     {
-      id: 'premium',
-      titleKey: 'premium',
-      descriptionKey: 'premiumDesc',
+      id: 'photography',
+      titleKey: 'photography',
+      descriptionKey: 'photographyDesc',
+      priceKey: 'photographyPrice',
       featuresKeys: [
-        'premiumFeature1',
-        'premiumFeature2',
-        'premiumFeature3',
-        'premiumFeature4',
-        'premiumFeature5',
+        'photoFeature1',
+        'photoFeature2',
+        'photoFeature3',
+        'photoFeature4',
       ],
-      ctaKey: 'premiumCta',
+      ctaKey: 'photographyCta',
+      color: 'sage',
+      icon: 'camera',
+      contactSubject: 'Photography Inquiry',
+    },
+    {
+      id: 'complete-package',
+      titleKey: 'completePackage',
+      descriptionKey: 'completePackageDesc',
+      priceKey: 'completePackagePrice',
+      featuresKeys: [
+        'completeFeature1',
+        'completeFeature2',
+        'completeFeature3',
+        'completeFeature4',
+        'completeFeature5',
+      ],
+      ctaKey: 'completePackageCta',
       popular: true,
-      color: 'fuchsia',
+      color: 'teal',
       icon: 'sparkles',
-    },
-    {
-      id: 'custom',
-      titleKey: 'custom',
-      descriptionKey: 'customDesc',
-      featuresKeys: ['customFeature1', 'customFeature2', 'customFeature3'],
-      ctaKey: 'customCta',
-      popular: false,
-      color: 'amber',
-      icon: 'beaker',
+      contactSubject: 'Complete Package Inquiry',
     },
   ];
 
@@ -118,104 +128,184 @@ const Services = () => {
   return (
     <main className='bg-black text-white font-sans'>
       {/* Hero with stronger messaging */}
-      <section className='relative w-full h-[90vh] overflow-hidden flex items-center justify-center'>
-        <div className='absolute inset-0 w-full h-full'>
-          <div className='w-full h-full max-w-7xl mx-auto px-6 flex items-center justify-center'>
-            <div className='w-full aspect-video max-h-[700px] rounded-xl overflow-hidden'>
-              <video
-                src={highlightSecondVideo}
-                autoPlay
-                muted
-                loop
-                playsInline
-                className='w-full h-full object-cover'
-              />
+      <section className='relative w-full overflow-hidden'>
+        {/* Mobile-first approach */}
+        <div className='block md:hidden'>
+          {/* Mobile Hero - Simplified */}
+          <div className='relative min-h-[100vh] flex flex-col justify-center px-4 py-12'>
+            <div className='absolute inset-0 w-full h-full'>
+              <div className='w-full h-[60vh] max-w-lg mx-auto rounded-xl overflow-hidden'>
+                <video
+                  src={highlightSecondVideo}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className='w-full h-full object-cover'
+                />
+              </div>
+              <div className='absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80' />
             </div>
+            
+            <motion.div
+              className='relative z-20 text-center max-w-sm mx-auto'
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h1 className='text-3xl font-light tracking-tight mb-4'>
+                {t('services.hero.title', 'Professional Video & Photography')}<br />
+                <span className={`${GRADIENT_CLASS} bg-clip-text text-transparent font-medium`}>
+                  {t('services.hero.highlight', 'Made Simple')}
+                </span>
+              </h1>
+              <p className='text-white/90 text-lg mb-8 leading-relaxed'>
+                {t('services.hero.subtitle', 'High-quality visual content that showcases your business professionally.')}
+              </p>
+              <div className='flex flex-col gap-3 mb-12'>
+                <Link
+                  to={`/${currentLang}/contact`}
+                  className='bg-white text-black text-base font-medium px-6 py-3 rounded-full hover:bg-gray-200 transition duration-300'
+                >
+                  {t('services.hero.primaryCta', 'Get Custom Quote')}
+                </Link>
+                <a
+                  href='#packages'
+                  onClick={e => {
+                    e.preventDefault();
+                    smoothScrollTo('packages');
+                  }}
+                  className='bg-transparent border-2 border-white/30 text-white text-base font-medium px-6 py-3 rounded-full hover:bg-white/10 transition duration-300'
+                >
+                  {t('services.hero.secondaryCta', 'View Packages')}
+                </a>
+              </div>
+            </motion.div>
           </div>
-          <div className='absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/90 z-10' />
         </div>
 
-        <motion.div
-          className='relative z-20 text-center px-6 max-w-3xl mx-auto'
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          {' '}
-          <h1 className='text-4xl md:text-7xl font-light tracking-tight mb-6'>
-            {t('services.hero.title', 'Visual Storytelling,')} <br />
-            <span
-              className={`${GRADIENT_CLASS} bg-clip-text text-transparent font-medium`}
-            >
-              {t('services.hero.highlight', 'Strategic Impact')}
-            </span>
-          </h1>
-          <p className='text-white/90 text-xl md:text-2xl mb-10 max-w-2xl mx-auto'>
-            {t(
-              'services.hero.subtitle',
-              'Our visual content transforms how audiences perceive your brand, products, and services—creating emotional connections that drive measurable results.',
-            )}
-          </p>
-          <div className='flex flex-col sm:flex-row gap-5 justify-center'>
-            <Link
-              to={`/${currentLang}/contact`}
-              className='bg-white text-black text-base font-medium px-8 py-4 rounded-full hover:bg-gray-200 transition duration-300 shadow-lg hover:shadow-xl'
-            >
-              {t('services.hero.primaryCta', 'Get Custom Quote')}
-            </Link>{' '}
-            <a
-              href='#packages'
-              onClick={e => {
-                e.preventDefault();
-                smoothScrollTo('packages');
-              }}
-              className='bg-transparent border-2 border-white/30 text-white text-base font-medium px-8 py-4 rounded-full hover:bg-white/10 transition duration-300'
-            >
-              {t('services.hero.secondaryCta', 'View Packages')}
-            </a>
+        {/* Desktop Hero - Full featured */}
+        <div className='hidden md:flex min-h-[100vh] items-center justify-center py-20'>
+          <div className='absolute inset-0 w-full h-full'>
+            <div className='w-full h-full max-w-7xl mx-auto px-6 flex items-center justify-center'>
+              <div className='w-full aspect-video max-h-[600px] lg:max-h-[700px] rounded-xl overflow-hidden'>
+                <video
+                  src={highlightSecondVideo}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className='w-full h-full object-cover'
+                />
+              </div>
+            </div>
+            <div className='absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/90 z-10' />
           </div>
-          {/* Key benefits */}{' '}
+
           <motion.div
-            className='mt-16 grid grid-cols-1 md:grid-cols-3 gap-8'
-            initial={{ opacity: 0, y: 20 }}
+            className='relative z-20 text-center px-6 max-w-4xl mx-auto'
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
+            transition={{ duration: 1 }}
           >
-            <div className='bg-white/5 backdrop-blur-sm p-5 rounded-xl'>
-              <h3 className='text-xl font-medium mb-2'>
-                {t('services.benefits.faster', '94% Information Retention')}
-              </h3>
-              <p className='text-white/70 text-sm'>
-                {t(
-                  'services.benefits.fasterDesc',
-                  'Viewers retain 94% more information from video content compared to text alone.',
-                )}
-              </p>
+            <h1 className='text-4xl md:text-6xl lg:text-7xl font-light tracking-tight mb-6'>
+              {t('services.hero.title', 'Professional Video & Photography')} <br />
+              <span className={`${GRADIENT_CLASS} bg-clip-text text-transparent font-medium`}>
+                {t('services.hero.highlight', 'Made Simple')}
+              </span>
+            </h1>
+            <p className='text-white/90 text-xl md:text-2xl mb-10 max-w-2xl mx-auto'>
+              {t('services.hero.subtitle', 'High-quality visual content that showcases your business professionally. Clear pricing, reliable delivery, exceptional results.')}
+            </p>
+            <div className='flex flex-col sm:flex-row gap-5 justify-center mb-16'>
+              <Link
+                to={`/${currentLang}/contact`}
+                className='bg-white text-black text-base font-medium px-8 py-4 rounded-full hover:bg-gray-200 transition duration-300 shadow-lg hover:shadow-xl'
+              >
+                {t('services.hero.primaryCta', 'Get Custom Quote')}
+              </Link>
+              <a
+                href='#packages'
+                onClick={e => {
+                  e.preventDefault();
+                  smoothScrollTo('packages');
+                }}
+                className='bg-transparent border-2 border-white/30 text-white text-base font-medium px-8 py-4 rounded-full hover:bg-white/10 transition duration-300'
+              >
+                {t('services.hero.secondaryCta', 'View Packages')}
+              </a>
             </div>
-            <div className='bg-white/5 backdrop-blur-sm p-5 rounded-xl'>
-              <h3 className='text-xl font-medium mb-2'>
-                {t('services.benefits.engagement', '300% More Engagement')}
-              </h3>
-              <p className='text-white/70 text-sm'>
-                {t(
-                  'services.benefits.engagementDesc',
-                  'Our clients report triple the engagement rates with professional visual content.',
-                )}
-              </p>
-            </div>
-            <div className='bg-white/5 backdrop-blur-sm p-5 rounded-xl'>
-              <h3 className='text-xl font-medium mb-2'>
-                {t('services.benefits.premium', '64% Higher Conversion')}
-              </h3>
-              <p className='text-white/70 text-sm'>
-                {t(
-                  'services.benefits.premiumDesc',
-                  'Quality video marketing leads to 64% higher conversion rates across industries.',
-                )}
-              </p>
-            </div>
+            {/* Key benefits - Desktop only */}
+            <motion.div
+              className='grid grid-cols-1 md:grid-cols-3 gap-8'
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+            >
+              <div className='bg-white/5 backdrop-blur-sm p-5 rounded-xl'>
+                <h3 className='text-xl font-medium mb-2'>
+                  {t('services.benefits.expertise', 'Swiss Precision')}
+                </h3>
+                <p className='text-white/70 text-sm'>
+                  {t('services.benefits.expertiseDesc', 'Professional equipment and years of experience ensuring consistent, high-quality results.')}
+                </p>
+              </div>
+              <div className='bg-white/5 backdrop-blur-sm p-5 rounded-xl'>
+                <h3 className='text-xl font-medium mb-2'>
+                  {t('services.benefits.efficiency', 'Time Focused')}
+                </h3>
+                <p className='text-white/70 text-sm'>
+                  {t('services.benefits.efficiencyDesc', 'Streamlined process that respects your schedule and delivers on agreed timelines.')}
+                </p>
+              </div>
+              <div className='bg-white/5 backdrop-blur-sm p-5 rounded-xl'>
+                <h3 className='text-xl font-medium mb-2'>
+                  {t('services.benefits.impact', 'Why It Matters')}
+                </h3>
+                <p className='text-white/70 text-sm'>
+                  {t('services.benefits.impactDesc', 'First impressions shape business success. Professional visuals build trust, attract customers, and set you apart from competitors.')}
+                </p>
+              </div>
+            </motion.div>
           </motion.div>
-        </motion.div>
+        </div>
+
+        {/* Mobile Benefits Section - Separate */}
+        <section className='block md:hidden bg-gradient-to-b from-black to-gray-900 py-12'>
+          <div className='px-4 max-w-sm mx-auto'>
+            <motion.div
+              className='grid grid-cols-1 gap-6'
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className='bg-white/5 backdrop-blur-sm p-4 rounded-xl text-center'>
+                <h3 className='text-lg font-medium mb-2'>
+                  {t('services.benefits.expertise', 'Swiss Precision')}
+                </h3>
+                <p className='text-white/70 text-sm'>
+                  {t('services.benefits.expertiseDesc', 'Professional equipment and consistent results.')}
+                </p>
+              </div>
+              <div className='bg-white/5 backdrop-blur-sm p-4 rounded-xl text-center'>
+                <h3 className='text-lg font-medium mb-2'>
+                  {t('services.benefits.efficiency', 'Time Focused')}
+                </h3>
+                <p className='text-white/70 text-sm'>
+                  {t('services.benefits.efficiencyDesc', 'Respects your schedule and delivers on time.')}
+                </p>
+              </div>
+              <div className='bg-white/5 backdrop-blur-sm p-4 rounded-xl text-center'>
+                <h3 className='text-lg font-medium mb-2'>
+                  {t('services.benefits.impact', 'Why It Matters')}
+                </h3>
+                <p className='text-white/70 text-sm'>
+                  {t('services.benefits.impactDesc', 'Professional visuals build trust and attract customers.')}
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        </section>
       </section>
       {/* Our Process - Show how easy it is to work with you */}
       <section ref={targetRef} className='py-32 px-6 max-w-6xl mx-auto'>
@@ -234,7 +324,7 @@ const Services = () => {
           </p>{' '}
           <div className='grid md:grid-cols-5 gap-4 md:gap-6 relative'>
             {/* Connecting line */}
-            <div className='hidden md:block absolute top-8 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-transparent via-fuchsia-500/30 to-transparent z-0'></div>
+            <div className='hidden md:block absolute top-8 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-transparent via-[#9eb6a9]/30 to-transparent z-0'></div>
 
             {/* Step 1 */}
             <motion.div
@@ -245,7 +335,7 @@ const Services = () => {
               viewport={{ once: true, margin: '-50px' }}
             >
               <motion.div
-                className='w-16 h-16 rounded-full bg-gradient-to-r from-fuchsia-500 to-pink-600 flex items-center justify-center text-2xl font-bold mx-auto mb-5 relative shadow-lg shadow-fuchsia-500/20'
+                className='w-16 h-16 rounded-full bg-gradient-to-r from-[#205c57] to-[#9eb6a9] flex items-center justify-center text-2xl font-bold mx-auto mb-5 relative shadow-lg shadow-[#205c57]/20'
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 10 }}
               >
@@ -283,7 +373,7 @@ const Services = () => {
               viewport={{ once: true, margin: '-50px' }}
             >
               <motion.div
-                className='w-16 h-16 rounded-full bg-gradient-to-r from-fuchsia-500 to-pink-600 flex items-center justify-center text-2xl font-bold mx-auto mb-5 relative shadow-lg shadow-fuchsia-500/20'
+                className='w-16 h-16 rounded-full bg-gradient-to-r from-[#205c57] to-[#9eb6a9] flex items-center justify-center text-2xl font-bold mx-auto mb-5 relative shadow-lg shadow-[#205c57]/20'
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 10 }}
               >
@@ -322,7 +412,7 @@ const Services = () => {
               viewport={{ once: true, margin: '-50px' }}
             >
               <motion.div
-                className='w-16 h-16 rounded-full bg-gradient-to-r from-fuchsia-500 to-pink-600 flex items-center justify-center text-2xl font-bold mx-auto mb-5 relative shadow-lg shadow-fuchsia-500/20'
+                className='w-16 h-16 rounded-full bg-gradient-to-r from-[#205c57] to-[#9eb6a9] flex items-center justify-center text-2xl font-bold mx-auto mb-5 relative shadow-lg shadow-[#205c57]/20'
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 10 }}
               >
@@ -361,7 +451,7 @@ const Services = () => {
               viewport={{ once: true, margin: '-50px' }}
             >
               <motion.div
-                className='w-16 h-16 rounded-full bg-gradient-to-r from-fuchsia-500 to-pink-600 flex items-center justify-center text-2xl font-bold mx-auto mb-5 relative shadow-lg shadow-fuchsia-500/20'
+                className='w-16 h-16 rounded-full bg-gradient-to-r from-[#205c57] to-[#9eb6a9] flex items-center justify-center text-2xl font-bold mx-auto mb-5 relative shadow-lg shadow-[#205c57]/20'
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 10 }}
               >
@@ -400,7 +490,7 @@ const Services = () => {
               viewport={{ once: true, margin: '-50px' }}
             >
               <motion.div
-                className='w-16 h-16 rounded-full bg-gradient-to-r from-fuchsia-500 to-pink-600 flex items-center justify-center text-2xl font-bold mx-auto mb-5 relative shadow-lg shadow-fuchsia-500/20'
+                className='w-16 h-16 rounded-full bg-gradient-to-r from-[#205c57] to-[#9eb6a9] flex items-center justify-center text-2xl font-bold mx-auto mb-5 relative shadow-lg shadow-[#205c57]/20'
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 10 }}
               >
@@ -444,22 +534,22 @@ const Services = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
-            {t('services.packages.title', 'Collaborative Solutions')}
+            {t('services.types.title', 'Our Services')}
           </motion.h2>
           <p className='text-white/70 text-lg max-w-3xl mx-auto text-center mb-16'>
             {t(
-              'services.packages.subtitle',
-              'As a boutique two-person team, we offer personalized service options that give you exactly what you need without unnecessary complexity.',
+              'services.types.subtitle',
+              'Clear, transparent pricing for professional visual content that delivers results.',
             )}
           </p>
 
           <div className='grid md:grid-cols-3 gap-8 relative'>
             {/* Connecting line behind packages */}
-            <div className='hidden md:block absolute top-1/2 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-blue-500/30 via-fuchsia-500/40 to-amber-500/30 z-0'></div>
+            <div className='hidden md:block absolute top-1/2 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-[#205c57]/30 via-[#9eb6a9]/40 to-[#231f20]/30 z-0'></div>
 
-            {servicePackages.map((pkg, index) => (
+            {serviceTypes.map((service, index) => (
               <motion.div
-                key={pkg.id}
+                key={service.id}
                 className={`relative rounded-2xl backdrop-blur-sm z-10 group`}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -469,18 +559,18 @@ const Services = () => {
                 {/* Color gradient background with animated border */}
                 <div
                   className={`absolute inset-0 rounded-2xl ${
-                    pkg.popular
+                    service.popular
                       ? 'opacity-100'
                       : 'opacity-0 group-hover:opacity-100'
                   } transition-opacity duration-300`}
                 >
                   <div
                     className={`absolute inset-px rounded-2xl bg-gradient-to-br ${
-                      pkg.color === 'blue'
-                        ? 'from-blue-600/20 to-blue-900/20 border-blue-500/30'
-                        : pkg.color === 'fuchsia'
-                        ? 'from-fuchsia-600/30 to-fuchsia-900/30 border-fuchsia-500/40'
-                        : 'from-amber-600/20 to-amber-900/20 border-amber-500/30'
+                      service.color === 'teal'
+                        ? 'from-[#205c57]/20 to-[#1a4d49]/20 border-[#205c57]/30'
+                        : service.color === 'sage'
+                        ? 'from-[#9eb6a9]/30 to-[#7a9287]/30 border-[#9eb6a9]/40'
+                        : 'from-[#231f20]/20 to-[#1a1617]/20 border-[#231f20]/30'
                     } border`}
                   ></div>
                 </div>
@@ -488,7 +578,7 @@ const Services = () => {
                 {/* Static background for non-hovered state */}
                 <div
                   className={`absolute inset-0 rounded-2xl bg-white/5 ${
-                    pkg.popular
+                    service.popular
                       ? 'opacity-0'
                       : 'opacity-100 group-hover:opacity-0'
                   } transition-opacity duration-300`}
@@ -499,14 +589,14 @@ const Services = () => {
                   {/* Icon at the top */}
                   <div
                     className={`w-12 h-12 rounded-full mx-auto mb-6 flex items-center justify-center ${
-                      pkg.color === 'blue'
-                        ? 'bg-blue-500/20 text-blue-400'
-                        : pkg.color === 'fuchsia'
-                        ? 'bg-fuchsia-500/20 text-fuchsia-400'
-                        : 'bg-amber-500/20 text-amber-400'
+                      service.color === 'teal'
+                        ? 'bg-[#205c57]/20 text-[#9eb6a9]'
+                        : service.color === 'sage'
+                        ? 'bg-[#9eb6a9]/20 text-[#205c57]'
+                        : 'bg-[#231f20]/20 text-[#eaebec]'
                     }`}
                   >
-                    {pkg.icon === 'photo-video' && (
+                    {service.icon === 'video-camera' && (
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
                         className='h-6 w-6'
@@ -522,7 +612,29 @@ const Services = () => {
                         />
                       </svg>
                     )}
-                    {pkg.icon === 'sparkles' && (
+                    {service.icon === 'camera' && (
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        className='h-6 w-6'
+                        fill='none'
+                        viewBox='0 0 24 24'
+                        stroke='currentColor'
+                      >
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth={1.5}
+                          d='M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z'
+                        />
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth={1.5}
+                          d='M15 13a3 3 0 11-6 0 3 3 0 016 0z'
+                        />
+                      </svg>
+                    )}
+                    {service.icon === 'sparkles' && (
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
                         className='h-6 w-6'
@@ -538,71 +650,55 @@ const Services = () => {
                         />
                       </svg>
                     )}
-                    {pkg.icon === 'beaker' && (
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        className='h-6 w-6'
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'
-                      >
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          strokeWidth={1.5}
-                          d='M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z'
-                        />
-                      </svg>
-                    )}
                   </div>
 
-                  {pkg.popular && (
+                  {service.popular && (
                     <motion.div
-                      className='absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-fuchsia-600 to-pink-600 text-white text-xs font-bold px-4 py-1 rounded-full'
+                      className='absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-[#9eb6a9] to-[#205c57] text-white text-xs font-bold px-4 py-1 rounded-full'
                       initial={{ scale: 1 }}
                       animate={{ scale: [1, 1.05, 1] }}
                       transition={{ duration: 1.5, repeat: Infinity }}
                     >
-                      {t('services.packages.mostPopular', 'MOST POPULAR')}
+                      {t('services.types.mostPopular', 'most popular')}
                     </motion.div>
                   )}
 
                   <h3
                     className={`text-2xl font-medium mb-4 text-center ${
-                      pkg.color === 'blue'
-                        ? 'group-hover:text-blue-300'
-                        : pkg.color === 'fuchsia'
-                        ? 'group-hover:text-fuchsia-300'
-                        : 'group-hover:text-amber-300'
+                      service.color === 'teal'
+                        ? 'group-hover:text-[#9eb6a9]'
+                        : service.color === 'sage'
+                        ? 'group-hover:text-[#205c57]'
+                        : 'group-hover:text-[#eaebec]'
                     } transition-colors duration-300`}
                   >
-                    {t(`services.packages.${pkg.titleKey}.title`, pkg.titleKey)}
+                    {t(`services.types.${service.titleKey}.title`, service.titleKey)}
                   </h3>
 
                   <p className='text-white/70 text-sm mb-8 text-center'>
                     {t(
-                      `services.packages.${pkg.titleKey}.${pkg.descriptionKey}`,
-                      'Package description',
+                      `services.types.${service.titleKey}.${service.descriptionKey}`,
+                      'Service description',
                     )}
                   </p>
 
                   <div className='mb-8 space-y-4'>
-                    {pkg.featuresKeys.map((featureKey, idx) => (
+                    {service.featuresKeys.map((featureKey, idx) => (
                       <div key={idx} className='flex items-start space-x-3'>
                         <div
                           className={`flex-shrink-0 p-1 rounded-full ${
-                            pkg.color === 'blue'
-                              ? 'bg-blue-500/20 text-blue-400'
-                              : pkg.color === 'fuchsia'
-                              ? 'bg-fuchsia-500/20 text-fuchsia-400'
-                              : 'bg-amber-500/20 text-amber-400'
+                            service.color === 'teal'
+                              ? 'bg-[#205c57]/20 text-[#9eb6a9]'
+                              : service.color === 'sage'
+                              ? 'bg-[#9eb6a9]/20 text-[#205c57]'
+                              : 'bg-[#231f20]/20 text-[#eaebec]'
                           }`}
                         >
                           <CheckCircleIcon className='h-4 w-4' />
                         </div>
                         <span className='text-white/80 text-sm'>
                           {t(
-                            `services.packages.${pkg.titleKey}.${featureKey}`,
+                            `services.types.${service.titleKey}.${featureKey}`,
                             `Feature ${idx + 1}`,
                           )}
                         </span>
@@ -615,18 +711,37 @@ const Services = () => {
                     whileTap={{ scale: 0.98 }}
                   >
                     <Link
-                      to={`/${currentLang}/contact?package=${pkg.id}`}
+                      to={`/${currentLang}/contact?service=${service.id}&subject=${encodeURIComponent(service.contactSubject)}`}
+                      onClick={() => {
+                        // Analytics tracking
+                        if (typeof gtag !== 'undefined') {
+                          gtag('event', 'service_quote_click', {
+                            event_category: 'Services',
+                            event_label: service.id,
+                            service_type: service.titleKey,
+                          });
+                        }
+                        
+                        // Alternative: Custom analytics
+                        if (typeof window !== 'undefined' && window.analytics) {
+                          window.analytics.track('Service Quote Requested', {
+                            serviceId: service.id,
+                            serviceName: service.titleKey,
+                            contactSubject: service.contactSubject,
+                          });
+                        }
+                      }}
                       className={`block text-center py-3 px-6 rounded-full text-sm font-medium transition-all duration-300 ${
-                        pkg.color === 'blue'
-                          ? 'bg-blue-600/30 text-white hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/30'
-                          : pkg.color === 'fuchsia'
-                          ? 'bg-fuchsia-600/30 text-white hover:bg-fuchsia-600 hover:shadow-lg hover:shadow-fuchsia-500/30'
-                          : 'bg-amber-600/30 text-white hover:bg-amber-600 hover:shadow-lg hover:shadow-amber-500/30'
+                        service.color === 'teal'
+                          ? 'bg-[#205c57]/30 text-white hover:bg-[#205c57] hover:shadow-lg hover:shadow-[#205c57]/30'
+                          : service.color === 'sage'
+                          ? 'bg-[#9eb6a9]/30 text-black hover:bg-[#9eb6a9] hover:shadow-lg hover:shadow-[#9eb6a9]/30'
+                          : 'bg-[#231f20]/30 text-white hover:bg-[#231f20] hover:shadow-lg hover:shadow-[#231f20]/30'
                       }`}
                     >
                       {t(
-                        `services.packages.${pkg.titleKey}.${pkg.ctaKey}`,
-                        'Select Package',
+                        `services.types.${service.titleKey}.${service.ctaKey}`,
+                        'Get Quote',
                       )}
                     </Link>
                   </motion.div>
@@ -696,8 +811,8 @@ const Services = () => {
                     `${project.id} title`,
                   )}
                 </h3>
-                <div className='mb-6 px-5 py-4 bg-gradient-to-r from-fuchsia-900/20 to-transparent rounded-lg'>
-                  <p className='text-fuchsia-300 font-medium'>
+                <div className='mb-6 px-5 py-4 bg-gradient-to-r from-[#9eb6a9]/20 to-transparent rounded-lg'>
+                  <p className='text-[#9eb6a9] font-medium'>
                     {t(
                       `services.showcase.${project.resultKey}`,
                       'Impressive result statistic',
@@ -721,7 +836,7 @@ const Services = () => {
                 </p>
                 <Link
                   to={project.link}
-                  className='inline-flex items-center text-fuchsia-400 hover:text-fuchsia-300 transition'
+                  className='inline-flex items-center text-[#9eb6a9] hover:text-[#205c57] transition'
                 >
                   {t('services.showcase.viewCase', 'View Full Case Study')}
                   <svg
@@ -759,7 +874,7 @@ const Services = () => {
               "Each format is designed to showcase your brand, products, or services from their most engaging angle and capture your target audience's attention.",
             )}
           </p>
-          <div className='grid md:grid-cols-3 gap-x-8 gap-y-16'>
+          <div className='grid md:grid-cols-2 gap-x-8 gap-y-16'>
             <motion.div
               className='group'
               whileInView={{ opacity: 1, y: 0 }}
@@ -767,16 +882,15 @@ const Services = () => {
               transition={{ duration: 0.7 }}
             >
               <div className='mb-6 overflow-hidden rounded-xl'>
-                {' '}
                 <img
-                  src='/assets/services/property-tour.jpg'
+                  src='https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80'
                   alt={t(
-                    'services.offerings.cinematicVideos.imageAlt',
+                    'services.offerings.propertyTours.imageAlt',
                     'Cinematic video example',
                   )}
                   className='w-full h-[220px] object-cover group-hover:scale-105 transition duration-700'
                 />
-              </div>{' '}
+              </div>
               <h3 className='text-xl font-semibold mb-3'>
                 {t(
                   'services.offerings.propertyTours.title',
@@ -798,7 +912,7 @@ const Services = () => {
             >
               <div className='mb-6 overflow-hidden rounded-xl'>
                 <img
-                  src='/assets/services/aerial.jpg'
+                  src='https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
                   alt={t(
                     'services.offerings.aerial.imageAlt',
                     'Aerial videography example',
@@ -827,7 +941,7 @@ const Services = () => {
             >
               <div className='mb-6 overflow-hidden rounded-xl'>
                 <img
-                  src='/assets/services/social.jpg'
+                  src='https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80'
                   alt={t(
                     'services.offerings.social.imageAlt',
                     'Social media content example',
@@ -853,21 +967,21 @@ const Services = () => {
             >
               <div className='mb-6 overflow-hidden rounded-xl'>
                 <img
-                  src='/assets/services/hdr.jpg'
+                  src='https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
                   alt={t(
                     'services.offerings.hdr.imageAlt',
-                    'HDR photography example',
+                    'Professional photography example',
                   )}
                   className='w-full h-[220px] object-cover group-hover:scale-105 transition duration-700'
                 />
               </div>
               <h3 className='text-xl font-semibold mb-3'>
-                {t('services.offerings.hdr.title', 'HDR Photography')}
+                {t('services.offerings.hdr.title', 'Photography')}
               </h3>{' '}
               <p className='text-white/70 text-sm'>
                 {t(
                   'services.offerings.hdr.description',
-                  'High-dynamic-range photos that capture perfect lighting, bringing out the best in your subjects and spaces.',
+                  'High-quality photos that capture perfect lighting, bringing out the best in your subjects and spaces.',
                 )}
               </p>
             </motion.div>{' '}
@@ -879,7 +993,7 @@ const Services = () => {
             >
               <div className='mb-6 overflow-hidden rounded-xl'>
                 <img
-                  src='/assets/services/brand-content.jpg'
+                  src='https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
                   alt={t(
                     'services.offerings.brandContent.imageAlt',
                     'Brand content production example',
@@ -894,35 +1008,6 @@ const Services = () => {
                 {t(
                   'services.offerings.brandContent.description',
                   'Strategic brand storytelling through compelling visuals that communicate your values and vision.',
-                )}
-              </p>
-            </motion.div>
-            <motion.div
-              className='group'
-              whileInView={{ opacity: 1, y: 0 }}
-              initial={{ opacity: 0, y: 30 }}
-              transition={{ duration: 0.7, delay: 0.5 }}
-            >
-              <div className='mb-6 overflow-hidden rounded-xl'>
-                <img
-                  src='/assets/services/floor-plans.jpg'
-                  alt={t(
-                    'services.offerings.floorPlans.imageAlt',
-                    '3D floor plans example',
-                  )}
-                  className='w-full h-[220px] object-cover group-hover:scale-105 transition duration-700'
-                />
-              </div>{' '}
-              <h3 className='text-xl font-semibold mb-3'>
-                {t(
-                  'services.offerings.floorPlans.title',
-                  'Interactive Experiences',
-                )}
-              </h3>
-              <p className='text-white/70 text-sm'>
-                {t(
-                  'services.offerings.floorPlans.description',
-                  'Interactive digital experiences that allow audiences to explore products and concepts remotely.',
                 )}
               </p>
             </motion.div>
@@ -973,7 +1058,7 @@ const Services = () => {
                   <ul className='text-sm text-white/60 space-y-1'>
                     {[1, 2, 3].map(i => (
                       <li key={i} className='flex items-center gap-2'>
-                        <span className='w-1.5 h-1.5 rounded-full bg-fuchsia-500'></span>
+                        <span className='w-1.5 h-1.5 rounded-full bg-[#9eb6a9]'></span>
                         {t(
                           `services.gear.${titleKey}Feature${i}`,
                           `Feature ${i}`,
@@ -1001,13 +1086,13 @@ const Services = () => {
           <p className='text-white/70 text-lg max-w-3xl mx-auto text-center mb-4'>
             {t('services.faq.subtitle')}
           </p>
-          <p className='text-fuchsia-400 text-sm max-w-3xl mx-auto text-center mb-16'>
+          <p className='text-[#9eb6a9] text-sm max-w-3xl mx-auto text-center mb-16'>
             {t('services.faq.clickToExpand')}
           </p>
           <div className='space-y-6 relative'>
             {/* Decorative element */}{' '}
             <div className='absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 hidden lg:block'>
-              <div className='w-3 h-40 bg-gradient-to-b from-fuchsia-500/30 to-transparent rounded-full'></div>
+              <div className='w-3 h-40 bg-gradient-to-b from-[#9eb6a9]/30 to-transparent rounded-full'></div>
             </div>
             {[1, 2, 3, 4, 5].map(i => (
               <motion.div
@@ -1028,7 +1113,7 @@ const Services = () => {
                     <div
                       className={`w-6 h-6 rounded-full flex items-center justify-center border border-white/30 transition-transform duration-300 ${
                         expandedFaq === i
-                          ? 'bg-fuchsia-500 border-fuchsia-500 rotate-180'
+                          ? 'bg-[#9eb6a9] border-[#9eb6a9] rotate-180'
                           : ''
                       }`}
                     >
@@ -1079,7 +1164,7 @@ const Services = () => {
             </p>
             <Link
               to={`/${currentLang}/contact`}
-              className='inline-flex items-center gap-2 text-fuchsia-400 hover:text-fuchsia-300 transition-colors'
+              className='inline-flex items-center gap-2 text-[#9eb6a9] hover:text-[#205c57] transition-colors'
             >
               <span>{t('services.faq.contactUs')}</span>
               <svg
@@ -1123,7 +1208,7 @@ const Services = () => {
               {' '}
               <Link
                 to={`/${currentLang}/contact`}
-                className='bg-gradient-to-r from-fuchsia-600 to-pink-600 text-white text-lg font-medium px-10 py-4 rounded-full hover:shadow-lg hover:shadow-fuchsia-500/20 transition'
+                className='bg-gradient-to-r from-[#9eb6a9] to-[#205c57] text-white text-lg font-medium px-10 py-4 rounded-full hover:shadow-lg hover:shadow-[#9eb6a9]/20 transition'
               >
                 {t('services.cta.primaryButton', 'Book Your Free Consultation')}
               </Link>

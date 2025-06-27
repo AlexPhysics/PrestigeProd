@@ -18,7 +18,7 @@ import {
 
 const CLOUDFRONT_URL = import.meta.env.VITE_CLOUDFRONT_URL;
 
-export const GRADIENT_CLASS = 'bg-gradient-to-r from-[#2d5f59] to-[#D82DEB]';
+export const GRADIENT_CLASS = 'bg-gradient-to-r from-[#25d0ab] to-[#2d5f59]';
 export const navLists = [
   { label: 'Home', path: '/' },
   { label: 'Portfolio', path: '/portfolio' },

@@ -36,28 +36,68 @@
     "pageTitle": "Prestige Production | Services de vidéo et photographie premium"
   },  "services": {
     "pageTitle": "Services | Prestige Production",    "hero": {
-      "title": "Narration Visuelle",
-      "highlight": "Impact Stratégique",
-      "subtitle": "Notre contenu visuel transforme la façon dont les audiences perçoivent votre marque, vos produits et vos services — créant des connexions émotionnelles qui génèrent des résultats mesurables.",
+      "title": "Vidéo et photographie professionnelles",
+      "highlight": "En toute simplicité",
+      "subtitle": "Contenu visuel de haute qualité qui présente votre entreprise de manière professionnelle. Prix transparents, livraison fiable, résultats exceptionnels.",
       "cta": "Travaillons ensemble",
       "primaryCta": "Obtenir un devis personnalisé",
       "secondaryCta": "Voir les forfaits"
-    },"faq": {
-      "title": "Foire Aux Questions",
+    },
+    "benefits": {
+      "expertise": "Précision suisse",
+      "expertiseDesc": "Équipement professionnel et années d'expérience garantissant des résultats cohérents et de haute qualité.",
+      "efficiency": "Axé sur le temps",
+      "efficiencyDesc": "Processus rationalisé qui respecte votre planning et livre dans les délais convenus.",
+      "impact": "Pourquoi c'est important",
+      "impactDesc": "Les premières impressions façonnent le succès commercial. Les visuels professionnels inspirent confiance, attirent les clients et vous démarquent de la concurrence."
+    },
+    "packages": {
+      "title": "Solutions collaboratives",
+      "subtitle": "En tant qu'équipe boutique de deux personnes, nous offrons des options de service personnalisées qui vous donnent exactement ce dont vous avez besoin sans complexité inutile.",
+      "teamNote": "En tant que studio boutique de deux personnes, nous offrons une approche personnalisée à chaque projet. Notre petite équipe signifie une communication directe avec les créatifs travaillant sur votre contenu, garantissant que votre vision est parfaitement capturée.",
+      "mostPopular": "plus populaire",
+      "premium": {
+        "title": "Forfait premium",
+        "premiumDesc": "Notre solution complète signature pour les clients nécessitant une narration visuelle complète avec un impact maximum.",
+        "premiumFeature1": "Production de deux jours avec notre suite d'équipement complète",
+        "premiumFeature2": "Production vidéo cinématographique avec techniques d'édition avancées",
+        "premiumFeature3": "Collection de photos extensive avec étalonnage premium",
+        "premiumFeature4": "Contenu optimisé pour toutes les principales plateformes sociales",
+        "premiumFeature5": "Révisions illimitées et support continu",
+        "premiumCta": "Choisir premium"
+      },
+      "standard": {
+        "title": "Forfait standard",
+        "standardDesc": "Équilibre parfait entre qualité et valeur pour les entreprises nécessitant du contenu visuel professionnel.",
+        "standardFeature1": "Production d'une journée avec équipement essentiel",
+        "standardFeature2": "Vidéo professionnelle avec sélection musicale personnalisée",
+        "standardFeature3": "Ensemble de photos complet avec édition standard",
+        "standardCta": "Choisir standard"
+      },
+      "custom": {
+        "title": "Solution personnalisée",
+        "customDesc": "Approche sur mesure pour des projets uniques nécessitant une expertise spécifique ou une direction créative.",
+        "customFeature1": "Planification collaborative pour répondre aux spécifications exactes",
+        "customFeature2": "Calendrier de production flexible et livrables",
+        "customFeature3": "Exigences techniques spéciales ou éléments créatifs",
+        "customCta": "Discutons"
+      }
+    },    "faq": {
+      "title": "Foire aux questions",
       "subtitle": "Obtenez des réponses aux questions fréquentes sur nos services, notre processus et notre livraison.",
       "clickToExpand": "Cliquez sur une question pour voir la réponse",
       "moreQuestions": "Vous avez d'autres questions ? Nous sommes là pour vous aider.",
       "contactUs": "Contactez notre équipe",
-      "q1": "Dans quels types de projets êtes-vous spécialisés ?",
-      "a1": "Nous sommes spécialisés dans une large gamme de création de contenu visuel, avec une expertise particulière dans l'immobilier de luxe, les événements d'entreprise, la narration de marque et le contenu pour les réseaux sociaux. Notre équipe possède une vaste expérience avec des propriétés haut de gamme, des conférences internationales et des marques premium nécessitant un traitement visuel sophistiqué.",
-      "q2": "Combien de temps prend généralement une production vidéo du début à la fin ?",
-      "a2": "Notre calendrier de production varie en fonction de la complexité du projet. Pour les projets immobiliers, nous livrons généralement le contenu final dans les 5 à 7 jours ouvrables après le tournage. Des projets plus complexes comme les documentaires d'entreprise ou les aftermovies d'événements peuvent prendre 2 à 3 semaines. Nous fournissons toujours un calendrier détaillé lors de notre consultation initiale pour assurer l'alignement avec votre calendrier marketing.",
-      "q3": "Qu'est-ce qui distingue vos vidéos immobilières des visites standard de propriétés ?",
-      "a3": "Contrairement aux visites immobilières standard, nos vidéos incorporent des techniques de narration cinématographique, un éclairage professionnel et une structure narrative stratégique qui met en valeur l'aspect lifestyle des propriétés. Nous nous concentrons sur la création d'une connexion émotionnelle avec les spectateurs en montrant comment il se sent de vivre dans l'espace, pas seulement son apparence—ce qui génère un taux d'engagement et de conversion plus élevé.",
-      "q4": "Fournissez-vous les rushes en plus du contenu édité ?",
-      "a4": "Bien que nos forfaits standard incluent du contenu final entièrement édité et étalonné, nous pouvons fournir certains rushes en option. Nous conservons une archive sécurisée de tous les éléments du projet pendant 6 mois, permettant aux clients de demander des modifications ou formats supplémentaires pendant cette période.",
-      "q5": "Comment gérez-vous le contenu multilingue pour les audiences internationales ?",
-      "a5": "Nous offrons des solutions multilingues complètes, y compris le sous-titrage, la voix off et les services de traduction en anglais, français, allemand et italien. Pour nos clients immobiliers ciblant des acheteurs internationaux, nous recommandons de créer des versions en plusieurs langues pour maximiser la portée du marché et attirer des démographies diverses à travers l'Europe et au-delà."
+      "q1": "Qu'est-ce qui est inclus dans vos forfaits de production vidéo ?",
+      "a1": "Nos forfaits incluent tout, depuis la consultation initiale et le développement du concept créatif jusqu'à la livraison finale. Cela couvre la planification de pré-production, le tournage professionnel avec équipement cinéma, la post-production, l'étalonnage, le mixage audio, et les exports optimisés pour vos plateformes choisies. Nous fournissons également la gestion de projet et une communication illimitée tout au long du processus.",
+      "q2": "Combien de temps prend un projet type du début à la fin ?",
+      "a2": "Le délai dépend de l'envergure et de la complexité du projet. Pour les vidéos d'entreprise standard ou les présentations immobilières, nous livrons généralement dans les 7-10 jours ouvrables après le tournage. Les projets plus complexes comme les documentaires de marque ou les tournages multi-sites peuvent prendre 2-3 semaines. Nous fournissons toujours un calendrier détaillé lors de notre consultation initiale pour s'aligner avec votre planning marketing.",
+      "q3": "Travaillez-vous avec des marques internationales et du contenu multilingue ?",
+      "a3": "Absolument. Nous sommes spécialisés dans la création de contenu pour audiences internationales et travaillons régulièrement avec des marques à travers l'Europe et au-delà. Nous offrons des solutions multilingues complètes incluant sous-titrage, voix off, et services de traduction en anglais, français, allemand et italien. Notre contenu est conçu pour résonner dans différents marchés et contextes culturels.",
+      "q4": "Qu'est-ce qui rend votre approche différente des autres agences vidéo ?",
+      "a4": "En tant qu'équipe boutique de deux personnes, nous offrons un accès direct aux créatifs travaillant sur votre projet, garantissant que votre vision soit parfaitement capturée. Chaque projet reçoit notre pleine attention, sans sous-traitance ni équipes junior. Nous combinons la précision suisse avec la narration cinématographique, utilisant uniquement des équipements professionnels de niveau cinéma et des techniques de post-production avancées.",
+      "q5": "Pouvez-vous gérer à la fois la vidéo et la photographie pour le même projet ?",
+      "a5": "Oui, nous sommes un studio de contenu visuel complet. Nous pouvons capturer à la fois vidéo de haute qualité et photographie lors de la même journée de production, maximisant l'efficacité et assurant la cohérence visuelle à travers tout votre contenu. Cette approche est particulièrement précieuse pour les projets immobiliers, d'entreprise et de marque où vous avez besoin d'une suite de contenu complète."
     },
     "offerings": {
       "title": "Ce Que Nous Proposons",
@@ -255,15 +295,21 @@
     "browserNotSupported": "Votre navigateur ne prend pas en charge la balise vidéo."
   },
   "contact": {
-    "title": "Créons Quelque Chose d'Exceptionnel",
+    "title": "Créons quelque chose d'",
+    "exceptional": "exceptionnel",
     "subtitle": "Contactez-nous pour discuter de votre projet et découvrir comment nous pouvons le concrétiser.",
     "formTitle": "Envoyez-nous un message",
+    "formLabel": "Formulaire de contact",
     "namePlaceholder": "Votre nom",
     "emailPlaceholder": "Votre email",
-    "messagePlaceholder": "Parlez-nous de votre projet",
+    "messagePlaceholder": "Parlez-nous de votre projet, délais et budget...",
     "sendButton": "Envoyer le message",
-    "successMessage": "Merci ! Nous vous contacterons bientôt.",
-    "errorMessage": "Oups ! Quelque chose s'est mal passé.",
+    "sendingButton": "Envoi en cours...",
+    "submittingStatus": "Le formulaire est en cours d'envoi",
+    "successMessage": "Merci ! Votre message a été envoyé.",
+    "successSubtext": "Nous vous répondrons dans les 24 heures.",
+    "errorMessage": "Quelque chose s'est mal passé. Veuillez réessayer.",
+    "errorSubtext": "Ou contactez-nous directement à info@prestigeproduction.ch",
     "nameRequired": "Le nom est requis",
     "emailRequired": "L'email est requis",
     "emailInvalid": "Veuillez entrer une adresse email valide",
@@ -278,13 +324,42 @@
     "creative": "moment créatif",
     "reserveTime2": "",
     "scheduleCall": "Planifiez un appel rapide avec nous quand cela vous convient",
-    "whatsapp": "Discuter sur WhatsApp"
+    "whatsapp": "Discuter sur WhatsApp",
+    "whatsappLabel": "Discutez avec nous sur WhatsApp",
+    "loadingCalendar": "Chargement du calendrier...",
+    "pageTitle": "Contact - Prestige Production"
   },
   "footer": {
+    "description": "Services professionnels de production vidéo et de photographie basés à Zurich, Suisse.",
     "rights": "Tous droits réservés",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d'utilisation",
-    "followUs": "Suivez-nous"
+    "followUs": "Suivez-nous",
+    "connect": "Connectez-vous avec nous",
+    "contact": {
+      "title": "Nous contacter",
+      "phone": "Appeler +41 76 202 19 59",
+      "email": "info@prestigeproduction.ch",
+      "location": "Zurich, Suisse"
+    },
+    "services": {
+      "title": "Services",
+      "video": "Production Vidéo",
+      "photography": "Photographie",
+      "social": "Contenu Réseaux Sociaux",
+      "branding": "Contenu de Marque"
+    },
+    "company": {
+      "title": "Entreprise",
+      "about": "À Propos",
+      "portfolio": "Portfolio",
+      "contact": "Contact",
+      "services": "Services"
+    },
+    "legal": {
+      "copyright": "© 2025 Prestige Production. Tous droits réservés.",
+      "privacy": "Politique de confidentialité"
+    }
   },
   "projects": {
     "penthouseTitle": "L'Histoire d'un Penthouse | Prestige Production",
@@ -323,20 +398,20 @@
         "growth": "7x Plus de Vues",
         "growthDesc": "Que leur contenu habituel + croissance significative des abonnés"
       },
-      "whyUsTitle": "Pourquoi le Contenu Premium Vend Plus Rapidement",
+      "whyUsTitle": "Pourquoi le contenu premium vend plus rapidement",
       "whyUsDesc": "Insights basés sur les données sur comment le contenu vidéo professionnel transforme le marketing immobilier",
       "whyUs": {
         "stat1": "Ventes Plus Rapides",
         "stat1Desc": "Propriétés avec vidéo",
-        "stat2": "Plus d'Enquêtes",
+        "stat2": "Plus d'enquêtes",
         "stat2Desc": "Que les annonces avec photos seulement",
-        "benefit1": "Attirer des Acheteurs Sérieux",
+        "benefit1": "Attirer des acheteurs sérieux",
         "benefit1Desc": "Le contenu premium filtre les visiteurs occasionnels, n'amenant que des prospects qualifiés",
-        "benefit2": "Prix de Vente Plus Élevés",
+        "benefit2": "Prix de vente plus élevés",
         "benefit2Desc": "La présentation professionnelle crée une connexion émotionnelle, justifiant un prix premium",
-        "benefit3": "Portée Mondiale",
+        "benefit3": "Portée mondiale",
         "benefit3Desc": "Le contenu des réseaux sociaux atteint des acheteurs internationaux qui ne voient jamais les annonces traditionnelles",
-        "benefit4": "Avantage Concurrentiel",
+        "benefit4": "Avantage concurrentiel",
         "benefit4Desc": "Se démarquer des agents utilisant des photos basiques - devenir le choix premium pour les vendeurs",
         "proofTitle": "Impact de ce Projet",
         "proofDesc": "Résultats réels de notre campagne penthouse de Zurich",
@@ -467,6 +542,32 @@
           "2": "Développer une stratégie de distribution à travers les canaux propriétaires et payants, suivre les analytics."
         }
       }
+    }
+  },
+  "privacy": {
+    "pageTitle": "Politique de confidentialité | Prestige Production",
+    "title": "Politique de confidentialité",
+    "lastUpdated": "Dernière mise à jour : 28 juin 2025",
+    "intro": "Chez Prestige Production, nous nous engageons à protéger votre vie privée et vos données personnelles. Cette Politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations lorsque vous visitez notre site web ou utilisez nos services.",
+    "section1": {
+      "title": "Informations que nous collectons",
+      "content": "Nous collectons les informations que vous nous fournissez directement, comme lorsque vous nous contactez via notre formulaire de site web, par e-mail ou par téléphone. Cela peut inclure votre nom, adresse e-mail, numéro de téléphone et détails du projet."
+    },
+    "section2": {
+      "title": "Comment nous utilisons vos informations",
+      "content": "Nous utilisons les informations que nous collectons pour répondre à vos demandes, fournir nos services de vidéo et de photographie, et communiquer avec vous concernant vos projets. Nous ne vendons, n'échangeons ni ne transférons vos informations personnelles à des tiers."
+    },
+    "section3": {
+      "title": "Protection des données",
+      "content": "Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos informations personnelles contre l'accès non autorisé, la modification, la divulgation ou la destruction. Vos informations sont stockées de manière sécurisée et accessibles uniquement par le personnel autorisé."
+    },
+    "section4": {
+      "title": "Vos droits",
+      "content": "Vous avez le droit d'accéder, de mettre à jour ou de supprimer vos informations personnelles. Vous pouvez également vous opposer ou restreindre certains traitements de vos données. Pour exercer ces droits, veuillez nous contacter à info@prestigeproduction.ch."
+    },
+    "section5": {
+      "title": "Informations de contact",
+      "content": "Si vous avez des questions concernant cette Politique de confidentialité ou nos pratiques de données, veuillez nous contacter à info@prestigeproduction.ch ou appelez le +41 76 202 19 59."
     }
   }
 }
