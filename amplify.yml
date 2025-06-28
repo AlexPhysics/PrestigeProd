@@ -3,19 +3,14 @@ frontend:
   phases:
     preBuild:
       commands:
-        - cd main && npm install
+        - npm install
     build:
       commands:
-        - cd main && npm run build
+        - npm run build
   artifacts:
-    baseDirectory: main/dist
+    baseDirectory: dist
     files:
       - '**/*'
   cache:
     paths:
-      - main/node_modules/**/*
-backend:
-  phases:
-    build:
-      commands:
-        - echo "No backend needed - static site only"
+      - node_modules/**/*
