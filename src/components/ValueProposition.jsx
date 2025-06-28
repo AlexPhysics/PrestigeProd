@@ -184,7 +184,7 @@ const ValueProposition = () => {
 
             {/* Comparison grid */}
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16'>
-              <div className='space-y-8'></div>
+              <div className='space-y-8'>
                 <h4 className='text-2xl md:text-3xl font-light text-white/60 mb-8 text-center tracking-wide'>
                   Other agencies
                 </h4>
@@ -286,7 +286,7 @@ const ValueProposition = () => {
               }}
               viewport={{ once: true }}
               className='text-center pt-12 border-t border-white/10'
-            ></motion.div>
+            >
               <div className='inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#205C57]/20 to-[#9EB6A9]/20 border border-[#9EB6A9]/30 rounded-full backdrop-blur-sm'>
                 <svg
                   className='w-6 h-6 text-[#9EB6A9] mr-3'
