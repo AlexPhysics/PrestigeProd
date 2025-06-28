@@ -1,0 +1,591 @@
+{
+  "meta": {
+    "title": "Prestige Production | Servizi premium di video e fotografia",
+    "description": "Servizi premium di produzione video e fotografia per marchi, prodotti ed eventi aziendali in tutta la Svizzera."
+  },
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "services": "Servizi",
+    "whyUs": "Perché Noi",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "title": "Il prestigio in ogni progetto",
+    "subtitle": "Servizi premium di produzione video e fotografia",
+    "scrollDown": "Scorri per scoprire",
+    "mouseover": "Passa il mouse su ogni parola"
+  },
+  "contactSection": {
+    "cta": "Contattaci",
+    "projectInfo": "Parliamo del tuo progetto – senza costi"
+  },
+  "home": {
+    "partnersTitle": "Trusted dai leader del settore",
+    "servicesTitle": "I Nostri Servizi",
+    "servicesSubtitle": "Dal concetto al completamento, offriamo soluzioni complete di video e foto.",
+    "videoProductionTitle": "Produzione Video",
+    "videoProductionDesc": "Creazione di narrative cinematografiche che mostrano l'essenza e il valore del tuo brand.",
+    "photographyTitle": "Fotografia",
+    "photographyDesc": "Immagini visive di alta qualità che catturano ogni dettaglio con precisione e stile.",
+    "featuredProjects": "Progetti in Evidenza",
+    "viewAll": "Visualizza tutti i progetti",
+    "processTitle": "Il Nostro Processo",
+    "processSubtitle": "Come diamo vita alla tua visione",
+    "testimonials": "Cosa dicono i nostri clienti",
+    "pageTitle": "Prestige Production | Servizi premium di video e fotografia"
+  },  "services": {
+    "pageTitle": "Servizi | Prestige Production",
+    "hero": {
+      "title": "Video e fotografia professionale",
+      "highlight": "Reso semplice",
+      "subtitle": "Contenuti visivi di alta qualità che presentano la tua attività in modo professionale. Prezzi trasparenti, consegna affidabile, risultati eccezionali.",
+      "cta": "Lavora con noi",
+      "primaryCta": "Ottieni un preventivo personalizzato",
+      "secondaryCta": "Visualizza i pacchetti"
+    },
+    "benefits": {
+      "expertise": "Precisione svizzera",
+      "expertiseDesc": "Attrezzature professionali e anni di esperienza garantiscono risultati coerenti e di alta qualità.",
+      "efficiency": "Focalizzato sui tempi",
+      "efficiencyDesc": "Processo snellito che rispetta i tuoi orari e consegna nei tempi concordati.",
+      "impact": "Perché è importante",
+      "impactDesc": "Le prime impressioni determinano il successo aziendale. I contenuti visivi professionali costruiscono fiducia, attirano clienti e ti distinguono dalla concorrenza."
+    },
+    "packages": {
+      "title": "Soluzioni Collaborative",
+      "subtitle": "In qualità di team boutique di due persone, offriamo opzioni di servizio personalizzate che ti danno esattamente ciò di cui hai bisogno senza complessità inutili.",
+      "teamNote": "Come studio boutique di due persone, offriamo un approccio personalizzato per ogni progetto. Il nostro piccolo team significa comunicazione diretta con i creativi che lavorano ai tuoi contenuti, assicurando che la tua visione sia perfettamente catturata.",
+      "mostPopular": "più popolare",
+      "premium": {
+        "title": "Pacchetto Premium",
+        "premiumDesc": "La nostra soluzione completa signature per clienti che necessitano di storytelling visivo completo con massimo impatto.",
+        "premiumFeature1": "Due giorni di produzione con la nostra suite completa di attrezzature",
+        "premiumFeature2": "Produzione video cinematografica con tecniche di montaggio avanzate",
+        "premiumFeature3": "Ampia collezione fotografica con color grading premium",
+        "premiumFeature4": "Contenuti ottimizzati per tutte le principali piattaforme social",
+        "premiumFeature5": "Revisioni illimitate e supporto continuo",
+        "premiumCta": "Seleziona Premium"
+      },
+      "standard": {
+        "title": "Pacchetto Standard",
+        "standardDesc": "Perfetto equilibrio tra qualità e valore per le aziende che necessitano di contenuti visivi professionali.",
+        "standardFeature1": "Un giorno di produzione con attrezzatura essenziale",
+        "standardFeature2": "Video professionale con selezione musicale personalizzata",
+        "standardFeature3": "Set fotografico completo con editing standard",
+        "standardCta": "Seleziona Standard"
+      },
+      "custom": {
+        "title": "Soluzione Personalizzata",
+        "customDesc": "Approccio su misura per progetti unici che richiedono competenze specifiche o direzione creativa.",
+        "customFeature1": "Pianificazione collaborativa per soddisfare specifiche esatte",
+        "customFeature2": "Programmazione di produzione flessibile e consegne",
+        "customFeature3": "Requisiti tecnici speciali o elementi creativi",
+        "customCta": "Parliamone"
+      }
+    },    "faq": {
+      "title": "Domande frequenti",
+      "subtitle": "Ottieni risposte alle domande comuni sui nostri servizi, processi e consegne.",
+      "clickToExpand": "Clicca su una domanda per vedere la risposta",
+      "moreQuestions": "Hai altre domande? Siamo qui per aiutarti.",
+      "contactUs": "Contatta il nostro team",
+      "q1": "Cosa è incluso nei vostri pacchetti di produzione video?",
+      "a1": "I nostri pacchetti includono tutto dalla consultazione iniziale e lo sviluppo del concetto creativo fino alla consegna finale. Questo copre la pianificazione pre-produzione, le riprese professionali con attrezzature cinematografiche, post-produzione, color grading, mixaggio audio ed esportazioni ottimizzate per le vostre piattaforme scelte. Forniamo anche gestione del progetto e comunicazione illimitata durante tutto il processo.",
+      "q2": "Quanto tempo richiede un progetto tipico dall'inizio alla fine?",
+      "a2": "I tempi dipendono dall'ambito e dalla complessità del progetto. Per video aziendali standard o presentazioni immobiliari, in genere consegniamo entro 7-10 giorni lavorativi dopo le riprese. Progetti più complessi come documentari di marca o riprese multi-location possono richiedere 2-3 settimane. Forniamo sempre una timeline dettagliata durante la nostra consultazione iniziale per allinearci con il vostro programma di marketing.",
+      "q3": "Lavorate con marchi internazionali e contenuti multilingue?",
+      "a3": "Assolutamente. Siamo specializzati nella creazione di contenuti per pubblici internazionali e lavoriamo regolarmente con marchi in tutta Europa e oltre. Offriamo soluzioni multilingue complete inclusi sottotitolazione, voice-over e servizi di traduzione in inglese, francese, tedesco e italiano. I nostri contenuti sono progettati per risuonare in diversi mercati e contesti culturali.",
+      "q4": "Cosa rende il vostro approccio diverso dalle altre agenzie video?",
+      "a4": "Come team boutique di due persone, offriamo accesso diretto ai creativi che lavorano sul vostro progetto, garantendo che la vostra visione sia perfettamente catturata. Ogni progetto riceve la nostra piena attenzione, senza outsourcing o team junior. Combiniamo la precisione svizzera con la narrazione cinematografica, utilizzando solo attrezzature professionali di livello cinematografico e tecniche di post-produzione avanzate.",
+      "q5": "Potete gestire sia video che fotografia per lo stesso progetto?",
+      "a5": "Sì, siamo uno studio di contenuti visivi completo. Possiamo catturare sia video di alta qualità che fotografia durante lo stesso giorno di produzione, massimizzando l'efficienza e garantendo coerenza visiva in tutti i vostri contenuti. Questo approccio è particolarmente prezioso per progetti immobiliari, aziendali e di marca dove avete bisogno di una suite di contenuti completa."
+    },"offerings": {
+      "title": "Tipi di Contenuti Premium",
+      "subtitle": "Ogni formato è progettato per mostrare il tuo marchio, prodotti o servizi dal loro angolo più coinvolgente e catturare l'attenzione del tuo pubblico target.",
+      "propertyTours": {
+        "title": "Video Cinematografici",
+        "imageAlt": "Esempio di video cinematografico",
+        "description": "Storie visive immersive che evidenziano le caratteristiche chiave e creano connessioni emotive con gli spettatori."
+      },
+      "aerial": {
+        "title": "Fotografia e Video Aerei",
+        "imageAlt": "Esempio di videografia aerea",
+        "description": "Mostra scala, ambiente e prospettiva con riprese e immagini spettacolari con drone."
+      },
+      "social": {
+        "title": "Contenuti per Social Media",
+        "imageAlt": "Esempio di contenuti per social media",
+        "description": "Reels e shorts accattivanti ottimizzati per Instagram, TikTok e altre piattaforme per massimizzare il coinvolgimento."
+      },
+      "hdr": {
+        "title": "Fotografia HDR",
+        "imageAlt": "Esempio di fotografia HDR",
+        "description": "Foto ad alta gamma dinamica che catturano l'illuminazione perfetta, valorizzando al massimo soggetti e spazi."
+      },
+      "brandContent": {
+        "title": "Contenuti di Marca",
+        "imageAlt": "Esempio di produzione di contenuti di marca",
+        "description": "Storytelling strategico del marchio attraverso immagini coinvolgenti che comunicano i tuoi valori e la tua visione."
+      },
+      "floorPlans": {
+        "title": "Esperienze Interattive",
+        "imageAlt": "Esempio di esperienze digitali interattive",
+        "description": "Esperienze digitali interattive che permettono al pubblico di esplorare prodotti e concetti a distanza."
+      }
+    },
+    "gear": {
+      "title": "La Nostra Attrezzatura = Il Tuo Vantaggio Competitivo",
+      "description": "Dietro ogni visual straordinario c'è un'attrezzatura all'avanguardia. Riprendiamo con la linea cinema professionale di Sony per dettagli nitidi e gamma dinamica, e catturiamo prospettive aeree utilizzando droni di alta gamma. La nostra attrezzatura ci permette di presentare il tuo brand, prodotti, e servizi con precisione, scala e impatto cinematografico — dandoti un vantaggio competitivo in un mercato saturo.",
+      "items": {
+        "sonyAlpha": "Sony Alpha",
+        "djiMavic": "DJI Mavic 3 Pro"
+      }
+    },
+    "portfolio": {
+      "title": "Esplora I Nostri Lavori Recenti",
+      "description": "Scopri come diamo vita agli spazi attraverso video, fotografia e montaggio.",
+      "cta": "Visualizza portfolio",
+      "pageTitle": "Il Nostro Lavoro | Prestige Production"
+    },
+    "cta": {
+      "title": "Pronto a Trasformare il Tuo Marketing Visivo?",
+      "description": "Unisciti a brand e organizzazioni di successo che stanno ottenendo maggiore coinvolgimento e risultati più forti con i nostri contenuti visivi premium.",
+      "button": "Richiedi un preventivo"
+    }
+  },
+  "whyUs": {
+    "pageTitle": "Perché Noi | Prestige Production",
+    "title": "Perché Lavorare Con Noi?",
+    "subtitle": "Prestige Production è più di una semplice società di produzione video - è una partnership basata su visione, creatività e performance.",
+    "cta": "Lavoriamo insieme",
+    "teamLabel": "IL NOSTRO TEAM",
+    "meetThe": "Incontra le nostre",
+    "creativeMinus": "Menti Creative",
+    "skills": {
+      "dorian": {
+        "0": "Direzione Creativa",
+        "1": "Cinematografia", 
+        "2": "Strategia del Brand"
+      },
+      "alex": {
+        "0": "Produzione Tecnica",
+        "1": "Post-elaborazione",
+        "2": "Color Grading"
+      }
+    },
+    "approach": {
+      "title": "Il Nostro",
+      "highlight": "Approccio",
+      "vision": {
+        "tab": "Visione",
+        "title": "La Nostra Visione",
+        "description": "Iniziamo comprendendo profondamente le esigenze e gli obiettivi unici del tuo brand. Ogni progetto inizia con una visione chiara di cosa significa il successo per te e il tuo pubblico.",
+        "point1": "Interviste approfondite con gli stakeholder per comprendere le esigenze",
+        "point2": "Ricerca di mercato e del pubblico",
+        "point3": "Allineamento strategico con i tuoi obiettivi aziendali"
+      },
+      "creativity": {
+        "tab": "Creatività",
+        "title": "La Nostra Creatività",
+        "description": "Il nostro team creativo combina competenza artistica con pensiero strategico per sviluppare concetti che sono sia innovativi che allineati con i tuoi obiettivi.",
+        "point1": "Sviluppo di concetti innovativi",
+        "point2": "Competenza nello storytelling visivo",
+        "point3": "Direzione estetica allineata al brand"
+      },
+      "execution": {
+        "tab": "Esecuzione",
+        "title": "La Nostra Esecuzione",
+        "description": "Con pianificazione meticolosa ed eccellenza tecnica, diamo vita ai concetti utilizzando attrezzature premium e tecniche di produzione.",
+        "point1": "Attrezzature premium e valori di produzione",
+        "point2": "Crew esperto ed eccellenza tecnica",
+        "point3": "Processo di controllo qualità approfondito"
+      },
+      "results": {
+        "tab": "Risultati",
+        "title": "I Nostri Risultati",
+        "description": "Misuriamo il successo attraverso il coinvolgimento del pubblico, i cambiamenti nella percezione del brand e i risultati aziendali — fornendo contenuti che ottengono risultati reali.",
+        "point1": "Tracciamento delle metriche di performance",
+        "point2": "Analisi del coinvolgimento del pubblico",
+        "point3": "Reportistica sui risultati aziendali tangibili"
+      }
+    },
+    "testimonials": {
+      "titlePrefix": "Testimonianze",
+      "title": "Clienti",
+      "swipeHint": "← Scorri per navigare →",
+      "clients": {
+        "sophia": {
+          "name": "Sophia Laurent",
+          "role": "Direttrice Marketing, Swiss Luxury Properties",
+          "content": "Prestige Production ha trasformato le nostre presentazioni immobiliari in esperienze cinematiche. L'attenzione ai dettagli e lo storytelling visivo sono incomparabili nel settore."
+        },
+        "marco": {
+          "name": "Marco Bernini", 
+          "role": "CEO, Elite Events Switzerland",
+          "content": "Lavorare con Dorian e Alex è stato fluido dall'inizio alla fine. Hanno catturato l'essenza del nostro evento aziendale mantenendo i più alti standard di produzione."
+        },
+        "elise": {
+          "name": "Elise Dubois",
+          "role": "Brand Manager, Geneva Luxe", 
+          "content": "Il team di Prestige Production ha un occhio eccezionale per lo storytelling del brand. Il loro lavoro ha elevato la nostra campagna del brand e ha risuonato profondamente con il nostro pubblico."
+        }
+      }
+    },
+    "ctaSection": {
+      "label": "FAI IL PROSSIMO PASSO",
+      "title": "Pronto a creare qualcosa di",
+      "highlight": "Eccezionale?",
+      "description": "Lascia che il nostro team creativo trasformi la tua visione in contenuti visivi di impatto che risuonano con il tuo pubblico.",
+      "portfolioCta": "Vedi il nostro lavoro",
+      "trustIndicators": {
+        "quality": "Qualità Premium",
+        "turnaround": "Consegna Veloce", 
+        "satisfaction": "Soddisfazione Garantita"
+      }
+    },
+    "team": {
+      "duo": {
+        "name": "Dorian & Alex",
+        "role": "Fondatori di Prestige Production",
+        "description": {
+          "duoDesc1": "Siamo Alex e Dorian, co-fondatori di Prestige Production — uno studio creativo costruito su una passione condivisa per lo storytelling visivo.",
+          "duoDesc2": "In Prestige Production, combiniamo competenza tecnica con una mentalità creativa per creare video che non solo hanno un bell'aspetto ma comunicano scopo e significato.",
+          "duoDesc3": "Che si tratti di contenuti promozionali, montaggi cinematici o storytelling del brand — il nostro focus è sempre su qualità, chiarezza e impressione duratura."
+        }
+      },
+      "dorian": {
+        "name": "Dorian",
+        "role": "Direttore Creativo",
+        "description": {
+          "dorianDesc1": "Dorian è l'occhio dietro il nostro storytelling cinematico.",
+          "dorianDesc2": "Con una passione per l'architettura e il design, trasforma le proprietà in narrazioni eleganti.",
+          "dorianDesc3": "Guida la direzione visiva e assicura che ogni progetto si senta unico, premium e strategico."
+        }
+      },
+      "alex": {
+        "name": "Alex",
+        "role": "Direttore Tecnico",
+        "description": {
+          "alexDesc1": "Alex è il cervello tecnico dell'operazione.",
+          "alexDesc2": "Dai droni alle suite di editing, gestisce tutto — assicurando riprese nitide, montaggi fluidi e consegna impeccabile.",
+          "alexDesc3": "È ossessionato dalla qualità ed eleva ogni video per soddisfare gli standard di livello professionale."
+        }
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Il Nostro Lavoro",
+    "subtitle": "Scopri come",
+    "description": "Dai brand di lusso agli eventi di alta gamma, creiamo viaggi cinematografici che elevano ogni progetto.",
+    "categories": {
+      "all": "Tutti",
+      "realEstate": "Progetti",
+      "corporate": "Aziendale",
+      "events": "Eventi",
+      "social": "Social Media"
+    },
+    "reelsTitle": "Reel per Social Media",
+    "reelsSubtitle": "Contenuti coinvolgenti in formato breve progettati per il massimo impatto sui social media",
+    "pageTitle": "Il Nostro Lavoro | Prestige Production",
+    "defaultDescription": "Produzione cinematografica premium realizzata con attenzione ai dettagli e visione artistica.",
+    "viewProject": "Visualizza Progetto",
+    "testimonials": {
+      "title": "Cosa Dicono i Nostri Clienti",
+      "subtitle": "Fidato da marchi di lusso e clienti esigenti in tutto il mondo",
+      "client1": {
+        "role": "Immobiliare di Lusso",
+        "content": "Prestige Production ha elevato le nostre presentazioni immobiliari a un livello completamente nuovo. Il loro approccio cinematografico e l'attenzione ai dettagli catturano perfettamente l'essenza dell'immobiliare di lusso."
+      },
+      "client2": {
+        "role": "Produzione Eventi",
+        "content": "Lavorare con Prestige Production è stato eccezionale. Hanno trasformato il nostro evento in un capolavoro visivo di cui i nostri ospiti parlano ancora mesi dopo."
+      },
+      "client3": {
+        "role": "Progetto Personale",
+        "content": "La professionalità e la visione creativa del team hanno superato tutte le aspettative. Hanno consegnato un prodotto finale che ha davvero catturato la nostra visione con qualità straordinaria."
+      }
+    },
+    "cta": {
+      "title": "Pronto a Creare la Tua Visione?",
+      "description": "Collaboriamo per dare vita alla tua storia con eccellenza cinematografica e valore di produzione premium.",
+      "button": "Inizia il Tuo Progetto"
+    },
+    "browserNotSupported": "Il tuo browser non supporta il tag video."
+  },
+  "contact": {
+    "title": "Creiamo qualcosa di ",
+    "exceptional": "eccezionale",
+    "subtitle": "Contattaci per discutere del tuo progetto e scoprire come possiamo dargli vita.",
+    "formTitle": "Inviaci un messaggio",
+    "formLabel": "Modulo di contatto",
+    "namePlaceholder": "Il tuo nome",
+    "emailPlaceholder": "La tua email",
+    "messagePlaceholder": "Raccontaci del tuo progetto, tempistiche e budget...",
+    "sendButton": "Invia messaggio",
+    "sendingButton": "Invio in corso...",
+    "submittingStatus": "Il modulo è in fase di invio",
+    "successMessage": "Grazie! Il tuo messaggio è stato inviato.",
+    "successSubtext": "Ti risponderemo entro 24 ore.",
+    "errorMessage": "Qualcosa è andato storto. Riprova.",
+    "errorSubtext": "Oppure contattaci direttamente a info@prestigeproduction.ch",
+    "nameRequired": "Il nome è richiesto",
+    "emailRequired": "L'email è richiesta",
+    "emailInvalid": "Inserisci un indirizzo email valido",
+    "messageRequired": "Il messaggio è richiesto",
+    "locationTitle": "Basati in Svizzera",
+    "locationDesc": "Serviamo clienti in tutto il paese con focus su Zurigo, Ginevra e Basilea.",
+    "contactInfo": "Informazioni di Contatto",
+    "email": "Email",
+    "phone": "Telefono",
+    "meetingCTA": "Preferisci un incontro dal vivo?",
+    "reserveTime1": "Prenota il tuo",
+    "creative": "momento creativo",
+    "reserveTime2": "",
+    "scheduleCall": "Programma una breve chiamata con noi quando ti è più comodo",
+    "whatsapp": "Chatta su WhatsApp",
+    "whatsappLabel": "Chatta con noi su WhatsApp",
+    "loadingCalendar": "Caricamento calendario...",
+    "pageTitle": "Contatti - Prestige Production"
+  },
+  "footer": {
+    "description": "Servizi professionali di produzione video e fotografia con sede a Zurigo, Svizzera.",
+    "rights": "Tutti i diritti riservati",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Termini di servizio",
+    "followUs": "Seguici",
+    "connect": "Connettiti con noi",
+    "contact": {
+      "title": "Contattaci",
+      "phone": "Chiama +41 76 202 19 59",
+      "email": "info@prestigeproduction.ch",
+      "location": "Zurigo, Svizzera"
+    },
+    "services": {
+      "title": "Servizi",
+      "video": "Produzione Video",
+      "photography": "Fotografia",
+      "social": "Contenuti Social Media",
+      "branding": "Contenuti del Brand"
+    },
+    "company": {
+      "title": "Azienda",
+      "about": "Chi Siamo",
+      "portfolio": "Portfolio",
+      "contact": "Contatti",
+      "services": "Servizi"
+    },
+    "legal": {
+      "copyright": "© 2025 Prestige Production. Tutti i diritti riservati.",
+      "privacy": "Privacy Policy"
+    }
+  },
+  "projects": {
+    "penthouseTitle": "La Storia di un Attico | Prestige Production",
+    "penthouseSeoTitle": "Produzione Video Immobiliare di Lusso Zurigo | Marketing Attico Svizzera | Prestige Production",
+    "penthouseSeoDescription": "Produzione video immobiliare professionale a Zurigo, Svizzera. Marketing di proprietà di lusso con video cinematografici, contenuti social media e fotografia premium. Aumenta le vendite immobiliari con i nostri servizi video esperti in Svizzera.",
+    "penthouseSeoKeywords": "video immobiliare Zurigo, video proprietà lusso Svizzera, marketing immobiliare Zurigo, produzione video proprietà Svizzera, video immobiliari cinematografici, fotografia immobiliare Svizzera, video case lusso Zurigo, creazione contenuti immobiliari Svizzera",
+    "backToPortfolio": "Torna ai nostri lavori",
+    "browserNotSupported": "Il tuo browser non supporta il tag video.",
+    "penthouse": {
+      "title": "La Storia di un Attico",
+      "location": "Zurigo | Progetto di Prestigio",
+      "description": "Abbiamo collaborato con Zurich Sotheby's International Realty per dar vita a uno dei progetti più eccezionali di Zurigo — un attico di 304 m² situato in cima alla Mobimo Tower. Attraverso immagini cinematografiche, storytelling architettonico e un processo di produzione orientato ai dettagli, abbiamo creato una suite completa di contenuti su misura per il mercato del lusso. Dai reel in formato breve ai film in formato lungo, ogni elemento è stato realizzato per riflettere la sofisticatezza del progetto e del marchio.",
+      "category": "Immobiliare di Lusso",
+      "projectTitle": "Panoramica del Progetto",
+      "viewResults": "Visualizza Risultati",
+      "whyVideo": "Perché il Video Vende",
+      "address": "Turbinenstrasse 18, 8005 Zurigo",
+      "website": "zurichsothebysrealty.com",
+      "partner": "Zurich Sotheby's",
+      "mainVideo": "Film Principale",
+      "mainVideoDesc": "Vivi il viaggio cinematografico completo attraverso questa proprietà eccezionale",
+      "reelsTitle": "Contenuti Social Media",
+      "reelsDesc": "Contenuti brevi ottimizzati per le piattaforme di social media",
+      "reelBadge": "Social Media",
+      "resultsTitle": "Risultati Social Media",
+      "resultsDesc": "Coinvolgimento eccezionale e prestazioni su tutte le piattaforme",
+      "results": {
+        "views": "Visualizzazioni Totali",
+        "viewsDesc": "Su tutte le piattaforme",
+        "likes": "Mi Piace",
+        "likesDesc": "Alto tasso di coinvolgimento",
+        "comments": "Commenti",
+        "commentsDesc": "Comunità attiva",
+        "topPerformer": "#2 Miglior Reel",
+        "topPerformerDesc": "Secondo maggior coinvolgimento sulla pagina Instagram di Zurich Sotheby's",
+        "growth": "7x Più Visualizzazioni",
+        "growthDesc": "Rispetto ai loro contenuti abituali + crescita significativa dei follower"
+      },
+      "whyUsTitle": "Perché i contenuti premium vendono proprietà più velocemente",
+      "whyUsDesc": "Approfondimenti basati sui dati su come i contenuti video professionali trasformano il marketing immobiliare",
+      "whyUs": {
+        "stat1": "Vendite più veloci",
+        "stat1Desc": "Proprietà con video",
+        "stat2": "Più richieste",
+        "stat2Desc": "Rispetto agli annunci solo con foto",
+        "benefit1": "Attirare acquirenti seri",
+        "benefit1Desc": "I contenuti premium filtrano i navigatori casuali, portando solo prospect qualificati",
+        "benefit2": "Prezzi di vendita più alti",
+        "benefit2Desc": "La presentazione professionale crea connessione emotiva, giustificando prezzi premium",
+        "benefit3": "Portata globale",
+        "benefit3Desc": "I contenuti social media raggiungono acquirenti internazionali che non vedono mai gli annunci tradizionali",
+        "benefit4": "Vantaggio competitivo",
+        "benefit4Desc": "Distinguiti dagli agenti che usano foto basilari - diventa la scelta premium per i venditori",
+        "proofTitle": "Impatto di Questo Progetto",
+        "proofDesc": "Risultati reali dalla nostra campagna dell'attico di Zurigo",
+        "testimonial": "\"I contenuti video hanno trasformato il modo in cui gli acquirenti percepivano la nostra proprietà. Abbiamo raggiunto clienti internazionali che non avremmo mai trovato altrimenti.\"",
+        "testimonialAuthor": "— Zurich Sotheby's International Realty"
+      },
+      "ctaTitle": "Pronto a Mostrare la Tua Proprietà?",
+      "ctaDesc": "Lascia che creiamo contenuti premium che elevano le tue proprietà di lusso e catturano l'attenzione di acquirenti esigenti.",
+      "ctaButton": "Inizia il Tuo Progetto",
+      "reelTitle": "Reel",
+      "branding": "Una Produzione Prestige"
+    },
+    "smiTitle": "Swiss Mining Institute | Prestige Production",
+    "smi": {
+      "tagline": "È tutta una questione di lusso.",
+      "title": "Swiss Mining Institute 2024",
+      "subtitle": "La conferenza mineraria più prestigiosa al mondo",
+      "watchAftermovie": "Guarda l'aftermovie ufficiale",
+      "photoAlt": "Foto SMI",
+      "intro1Part1": "Lo Swiss Mining Institute è",
+      "intro1Part2": "la più grande ed esclusiva conferenza mineraria in Europa",
+      "intro1Part3": "Ospitando oltre 1000 investitori, più di 100 società quotate e oltre 2700 incontri organizzati in 2 giorni.",
+      "intro2Part1": "Per due giorni, abbiamo catturato",
+      "intro2Part2": "tutto ciò che un obiettivo poteva raggiungere",
+      "intro2Part3": "Da",
+      "interviews": "interviste",
+      "panels": "discussioni di panel",
+      "and": "e",
+      "the": "l'",
+      "aftermovie": "aftermovie ufficiale",
+      "to": "a",
+      "photos": "foto",
+      "social": "contenuti social",
+      "andMore": "e molto altro — abbiamo consegnato tutto.",
+      "watchOfficialAftermovie": "Guarda l'aftermovie ufficiale",
+      "aftermovieTitle": "Aftermovie ufficiale",
+      "featuredInterviews": "Interviste in evidenza",
+      "interviewsDesc": "Abbiamo avuto il privilegio di parlare con CEO all'avanguardia e investitori lungimiranti che stanno ridisegnando l'ecosistema minerario. Immergiti in prospettive sincere che non sentirai da nessun'altra parte.",
+      "interviewTitle": "Intervista",
+      "enlargedImage": "Ingrandita",
+      "thanks": "Grazie al nostro partner",
+      "partnerName": "Swiss Mining Institute"
+    }
+  },
+  "highlights": {
+    "takeALook": "Dai un'occhiata al",
+    "ourWork": "nostro lavoro!",
+    "seeFullPortfolio": "Guarda il portfolio completo",
+    "whatDoWeOffer": "Cosa offriamo?"
+  },
+  "common": {
+    "watch": "guarda",
+    "right": "destra"
+  },
+  "howItWorks": {
+    "craftedWith": "Creato con",
+    "subtitle": "La qualità prima di tutto.",
+    "rotatingTexts": {
+      "precision": "precisione svizzera",
+      "vision": "visione cinematografica",
+      "innovation": "innovazione digitale",
+      "emotion": "emozione umana"
+    },
+    "paragraph1": {
+      "part1": "Uniamo",
+      "part2": "la precisione svizzera",
+      "part3": "con un audace mestiere cinematografico per creare visivi che catturano l'attenzione e lasciano il segno."
+    },
+    "paragraph2": {
+      "part1": "Dal primo storyboard alla color correction finale, ogni fotogramma è progettato per",
+      "part2": "emozionare il pubblico",
+      "part3": "e",
+      "part4": "generare risultati"
+    },
+    "since": "Dal",
+    "year": "2025",
+    "projectsDelivered": "Più di 10 progetti realizzati"
+  },
+  "workflow": {
+    "title": "Il tuo percorso verso Prestige",
+    "logoAlt": "icona del processo",
+    "steps": {
+      "discovery": {
+        "title": "Scoperta & Brief",
+        "responsibilities": {
+          "0": "Condurre workshop con gli stakeholder per catturare obiettivi, pubblico e messaggi chiave.",
+          "1": "Ricercare tendenze di mercato e contenuti dei concorrenti per insight strategici.",
+          "2": "Redigere un brief creativo completo che delinei ambito, deliverable e tempistiche."
+        }
+      },
+      "script": {
+        "title": "Sceneggiatura & Storyboard",
+        "responsibilities": {
+          "0": "Sviluppare una struttura narrativa avvincente e scrivere una sceneggiatura dettagliata.",
+          "1": "Progettare pannelli storyboard che illustrano scene chiave e angoli di ripresa.",
+          "2": "Rivedere e perfezionare sceneggiatura/storyboard con approvazioni del cliente ad ogni fase."
+        }
+      },
+      "preProduction": {
+        "title": "Pre-produzione & Logistica",
+        "responsibilities": {
+          "0": "Esplorare location, acquisire permessi e pianificare la logistica delle riprese.",
+          "1": "Coordinare troupe, noleggio attrezzature, casting e guardaroba.",
+          "2": "Creare un programma di riprese e fogli di chiamata per un flusso di produzione senza intoppi."
+        }
+      },
+      "filming": {
+        "title": "Riprese & Cattura",
+        "responsibilities": {
+          "0": "Dirigere la produzione sul set, gestire camera, illuminazione e suono.",
+          "1": "Guidare la performance dei talenti e garantire l'allineamento con la visione creativa.",
+          "2": "Monitorare e fare backup del materiale girato per garantire la qualità."
+        }
+      },
+      "postProduction": {
+        "title": "Post-produzione & Feedback",
+        "responsibilities": {
+          "0": "Montare il girato grezzo, applicare correzione colore, mixaggio audio e grafica.",
+          "1": "Integrare il feedback del cliente attraverso cicli di revisione iterativi.",
+          "2": "Finalizzare il master video e preparare versioni per diverse piattaforme."
+        }
+      },
+      "delivery": {
+        "title": "Consegna & Distribuzione",
+        "responsibilities": {
+          "0": "Esportare i video nei formati e risoluzioni richiesti.",
+          "1": "Caricare su piattaforme di hosting e ottimizzare i metadati.",
+          "2": "Sviluppare una strategia di distribuzione attraverso canali proprietari e a pagamento, tracciare le analisi."
+        }
+      }
+    }
+  },
+  "privacy": {
+    "pageTitle": "Privacy Policy | Prestige Production",
+    "title": "Privacy Policy",
+    "lastUpdated": "Ultimo aggiornamento: 28 giugno 2025",
+    "intro": "Presso Prestige Production, ci impegniamo a proteggere la vostra privacy e i dati personali. Questa Privacy Policy spiega come raccogliamo, utilizziamo e proteggiamo le vostre informazioni quando visitate il nostro sito web o utilizzate i nostri servizi.",
+    "section1": {
+      "title": "Informazioni che raccogliamo",
+      "content": "Raccogliamo le informazioni che ci fornite direttamente, come quando ci contattate tramite il modulo del nostro sito web, email o telefono. Questo può includere il vostro nome, indirizzo email, numero di telefono e dettagli del progetto."
+    },
+    "section2": {
+      "title": "Come utilizziamo le vostre informazioni",
+      "content": "Utilizziamo le informazioni che raccogliamo per rispondere alle vostre richieste, fornire i nostri servizi di video e fotografia, e comunicare con voi riguardo ai vostri progetti. Non vendiamo, scambiamo o trasferiamo le vostre informazioni personali a terze parti."
+    },
+    "section3": {
+      "title": "Protezione dei dati",
+      "content": "Implementiamo misure di sicurezza appropriate per proteggere le vostre informazioni personali da accesso non autorizzato, alterazione, divulgazione o distruzione. Le vostre informazioni sono conservate in modo sicuro e accessibili solo al personale autorizzato."
+    },
+    "section4": {
+      "title": "I vostri diritti",
+      "content": "Avete il diritto di accedere, aggiornare o cancellare le vostre informazioni personali. Potete anche opporvi o limitare certi trattamenti dei vostri dati. Per esercitare questi diritti, contattateci a info@prestigeproduction.ch."
+    },
+    "section5": {
+      "title": "Informazioni di contatto",
+      "content": "Se avete domande su questa Privacy Policy o sulle nostre pratiche relative ai dati, contattateci a info@prestigeproduction.ch o chiamate +41 76 202 19 59."
+    }
+  }
+}
