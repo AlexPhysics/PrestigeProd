@@ -3,17 +3,17 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install
+        - cd main && npm install
     build:
       commands:
-        - npm run build
+        - cd main && npm run build
   artifacts:
-    baseDirectory: dist
+    baseDirectory: main/dist
     files:
       - '**/*'
   cache:
     paths:
-      - node_modules/**/*
+      - main/node_modules/**/*
 backend:
   phases:
     build:
