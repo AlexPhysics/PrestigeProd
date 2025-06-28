@@ -77,29 +77,9 @@ const Footer = () => {
             <h3 className='text-2xl font-light text-[#9EB6A9] mb-6 tracking-wide'>
               Prestige Production
             </h3>
-            <p className='text-white/70 mb-6 leading-relaxed'>
-              {t('footer.description')}
+            <p className='text-white/70 mb-6 leading-relaxed italic text-lg'>
+              {t('footer.description', 'Artistry in every pixel, excellence in every frame.')}
             </p>
-            
-            {/* Contact info */}
-            <div className='space-y-3'>
-              <p className='text-white/80'>
-                <span className='text-[#9EB6A9]'>{t('footer.contact.title')}</span>
-              </p>
-              <a 
-                href='tel:+41762021959'
-                className='block text-white/70 hover:text-[#9EB6A9] transition-colors duration-300'
-              >
-                {t('footer.contact.phone')}
-              </a>
-              <a 
-                href='mailto:info@prestigeproduction.ch'
-                className='block text-white/70 hover:text-[#9EB6A9] transition-colors duration-300'
-              >
-                {t('footer.contact.email')}
-              </a>
-              <p className='text-white/70'>{t('footer.contact.location')}</p>
-            </div>
           </div>
 
           {/* Services */}
@@ -160,7 +140,22 @@ const Footer = () => {
               ))}
             </div>
 
-
+            {/* Contact info */}
+            <div className='space-y-3'>
+              <a 
+                href='tel:+41762021959'
+                className='block text-white/70 hover:text-[#9EB6A9] transition-colors duration-300'
+              >
+                {t('footer.contact.phone')}
+              </a>
+              <a 
+                href='mailto:info@prestigeproduction.ch'
+                className='block text-white/70 hover:text-[#9EB6A9] transition-colors duration-300'
+              >
+                {t('footer.contact.email')}
+              </a>
+              <p className='text-white/70'>{t('footer.contact.location')}</p>
+            </div>
           </div>
         </div>
 

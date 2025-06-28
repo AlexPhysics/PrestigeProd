@@ -330,7 +330,7 @@
     "pageTitle": "Contact - Prestige Production"
   },
   "footer": {
-    "description": "Services professionnels de production vidéo et de photographie basés à Zurich, Suisse.",
+    "description": "Art dans chaque pixel, excellence dans chaque image.",
     "rights": "Tous droits réservés",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d'utilisation",
@@ -569,5 +569,11 @@
       "title": "Informations de contact",
       "content": "Si vous avez des questions concernant cette Politique de confidentialité ou nos pratiques de données, veuillez nous contacter à info@prestigeproduction.ch ou appelez le +41 76 202 19 59."
     }
+  },
+  "partners": {
+    "title": "Avec qui nous",
+    "work": "travaillons",
+    "with": "",
+    "partnerAlt": "Partenaire"
   }
 }

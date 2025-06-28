@@ -300,21 +300,23 @@ const SmiProject = () => {
           <div className='text-center max-w-4xl mx-auto mb-20'>
             <h1
               id='features_title'
-              className='text-5xl md:text-6xl font-semibold tracking-tight mb-4 opacity-0 translate-y-6 overflow-hidden'
+              className='text-5xl md:text-6xl font-semibold tracking-tight mb-8 opacity-0 translate-y-6 overflow-visible leading-[1.1]'
             >
               <span className='inline-block animate-text-reveal'>
                 {t('projects.smi.tagline', "It's all about luxury.")}
               </span>
             </h1>
-            <h2 className='hero-subtitle text-3xl lg:text-5xl font-light mb-2'>
-              {t('projects.smi.title', 'Swiss Mining Institute 2024')}
-            </h2>
-            <h3 className='hero-subtitle text-xl lg:text-2xl text-white/70'>
-              {t(
-                'projects.smi.subtitle',
-                'The most prestigious mining conference in the world',
-              )}
-            </h3>
+            <div className='space-y-3'>
+              <h2 className='hero-subtitle text-3xl lg:text-5xl font-light'>
+                {t('projects.smi.title', 'Swiss Mining Institute 2024')}
+              </h2>
+              <h3 className='hero-subtitle text-xl lg:text-2xl text-white/70'>
+                {t(
+                  'projects.smi.subtitle',
+                  'The most prestigious mining conference in the world',
+                )}
+              </h3>
+            </div>
           </div>
 
           {/* Main Event Video with Enhanced Info */}
@@ -417,11 +419,35 @@ const SmiProject = () => {
 
           {/* Video Carousel */}
           <div className='fade-section-2-carousel max-w-6xl mx-auto mb-24'>
-            <h2 className='text-3xl font-semibold mb-8 text-center'>
-              {t('projects.smi.moreReels', 'More reels from the event')}
-            </h2>
-            <div className='h-[600px] flex items-center justify-center relative'>
-              <Carousel items={videos} baseWidth={1000} loop round={false} />
+            <div className='text-center mb-8'>
+              <h2 className='text-3xl font-semibold mb-4'>
+                {t('projects.smi.moreReels', 'More reels from the event')}
+              </h2>
+              <div className='flex items-center justify-center gap-2 md:gap-3 text-white/60 text-xs md:text-sm mb-6'>
+                <div className='flex items-center gap-1'>
+                  <div className='w-1 h-1 bg-[#9eb6a9] rounded-full'></div>
+                  <div className='w-2 h-1 bg-[#9eb6a9]/60 rounded-full'></div>
+                  <div className='w-1 h-1 bg-[#9eb6a9] rounded-full'></div>
+                </div>
+                <span className='hidden md:inline'>{t('projects.smi.swipeLeft', 'Swipe or drag to navigate')}</span>
+                <span className='md:hidden'>{t('projects.smi.swipeLeft', 'Swipe to navigate')}</span>
+                <div className='flex items-center gap-1'>
+                  <div className='w-1 h-1 bg-[#9eb6a9] rounded-full'></div>
+                  <div className='w-2 h-1 bg-[#9eb6a9]/60 rounded-full'></div>
+                  <div className='w-1 h-1 bg-[#9eb6a9] rounded-full'></div>
+                </div>
+              </div>
+            </div>
+            <div className='min-h-[400px] md:h-[600px] flex items-center justify-center relative group px-4 md:px-0'>
+              <div className='absolute inset-0 bg-gradient-to-r from-[#9eb6a9]/5 via-transparent to-[#9eb6a9]/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none'></div>
+              <Carousel items={videos} baseWidth={1000} loop={true} round={false} />
+              {/* Improved drag hint overlay - hidden on mobile */}
+              <div className='absolute top-4 right-4 bg-black/70 backdrop-blur-md rounded-lg px-4 py-2 text-sm text-white/90 items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 border border-white/10 hidden md:flex'>
+                <svg className='w-4 h-4 text-[#9eb6a9]' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M7 16l-4-4m0 0l4-4m-4 4h18' />
+                </svg>
+                <span>{t('projects.smi.dragToExplore', 'Drag to explore')}</span>
+              </div>
             </div>
           </div>
 
@@ -573,29 +599,20 @@ const SmiProject = () => {
               </div>
             </div>
           )}
-          {/* Partner Acknowledgment */}
-          <div className='mt-28 text-center pt-12'>
-            <div className='mx-auto mb-6 h-[1px] w-32 bg-white/10'></div>
-            <p className='text-white/60 uppercase tracking-wider text-xs mb-6'>
-              {t('projects.smi.thanks', 'Thanks to our partner')}
+
+          {/* Subtle Partner Credit */}
+          <div className='mt-2 text-center border-t border-white/5 pt-2'>
+            <p className='text-white/40 text-sm font-light tracking-wider'>
+              {t('projects.smi.partnerCredit', 'Project delivered in partnership with')}{' '}
+              <a
+                href='https://www.swissmininginstitute.ch/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-white/60 hover:text-[#9eb6a9] transition-colors duration-300 font-medium'
+              >
+                {t('projects.smi.partnerName', 'Swiss Mining Institute')}
+              </a>
             </p>
-            <a
-              href='https://www.swissmininginstitute.ch/'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='inline-block hover:scale-105 transition-transform duration-500'
-            >
-              <img
-                src={smiLogo}
-                alt={t('projects.smi.partnerName', 'Swiss Mining Institute')}
-                className='w-32 h-auto mx-auto animate-rotate-3d'
-                style={{
-                  transformStyle: 'preserve-3d',
-                  perspective: '1000px',
-                  boxShadow: '0 20px 40px rgba(255,255,255,0.05)',
-                }}
-              />
-            </a>
           </div>
         </div>
       </section>

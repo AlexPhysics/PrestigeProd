@@ -372,7 +372,7 @@
     "pageTitle": "Contact - Prestige Production"
   },
   "footer": {
-    "description": "Professional video production and photography services based in Zurich, Switzerland.",
+    "description": "Artistry in every pixel, excellence in every frame.",
     "rights": "All rights reserved",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
@@ -586,9 +586,9 @@
     }
   },
   "partners": {
-    "title": "Partners we are",
-    "proud": "proud",
-    "of": "of.",
+    "title": "Who we",
+    "work": "work",
+    "with": "with",
     "partnerAlt": "Partner"
   },
   "privacy": {
