@@ -104,7 +104,8 @@
         "completeFeature5": "Best value when combining both services",
         "completePackageCta": "Get Complete Quote"
       }
-    },"faq": {
+    },
+    "faq": {
       "title": "Frequently Asked Questions",
       "subtitle": "Get answers to common questions about our services, process, and delivery.",
       "clickToExpand": "Click a question to see the answer",
@@ -183,20 +184,20 @@
   "whyUs": {
     "pageTitle": "Why Us | Prestige Production",
     "title": "Why work with us?",
-    "subtitle": "Prestige Production is more than just a video company, it's a partnership built on vision, creativity, and performance.",
+    "subtitle": "We are more than a video company. We are a creative partner dedicated to bringing your vision to life with creativity, precision, and measurable results.",
     "cta": "Let's work together",
-    "teamLabel": "OUR TEAM",
+    "teamLabel": "Our team",
     "meetThe": "Meet the",
     "creativeMinus": "Creative minds",
     "skills": {
       "dorian": {
         "0": "Creative direction",
-        "1": "Cinematography", 
+        "1": "Cinematography",
         "2": "Brand strategy"
       },
       "alex": {
         "0": "Technical production",
-        "1": "Post-processing",
+        "1": "Post processing",
         "2": "Color grading"
       }
     },
@@ -241,33 +242,28 @@
       "title": "Testimonials",
       "swipeHint": "← Swipe to navigate →",
       "clients": {
-        "sophia": {
-          "name": "Sophia Laurent",
-          "role": "Marketing Director, Swiss Luxury Properties",
-          "content": "Prestige Production transformed our property showcases into cinematic experiences. The attention to detail and visual storytelling are unmatched in the industry."
+        "sothebys": {
+          "name": "Soroush Efati",
+          "role": "Partner, Zurich Sotheby's International Realty",
+          "content": "Prestige Production delivered an outstanding video for a beautiful penthouse. Their work captured the essence of luxury, and their social media reels drove significant engagement. A truly professional team."
         },
-        "marco": {
-          "name": "Marco Bernini", 
-          "role": "CEO, Elite Events Switzerland",
-          "content": "Working with Dorian and Alex was seamless from start to finish. They captured the essence of our corporate event while maintaining the highest production standards."
-        },
-        "elise": {
-          "name": "Elise Dubois",
-          "role": "Brand Manager, Geneva Luxe", 
-          "content": "The team at Prestige Production has an exceptional eye for brand storytelling. Their work elevated our brand campaign and resonated deeply with our audience."
+        "smi": {
+          "name": "Manuel Bally",
+          "role": "Organizer, Swiss Mining Institute",
+          "content": "The aftermovie and interviews Prestige Production created for our event were exceptional. They perfectly captured the energy and provided us with fantastic content for our channels, including multiple high-impact reels."
         }
       }
     },
     "ctaSection": {
-      "label": "TAKE THE NEXT STEP",
-      "title": "Ready to Create Something",
-      "highlight": "Exceptional?",
+      "label": "Take the next step",
+      "title": "Ready to create something",
+      "highlight": "exceptional?",
       "description": "Let our creative team transform your vision into impactful visual content that resonates with your audience.",
-      "portfolioCta": "View Our Work",
+      "portfolioCta": "View our work",
       "trustIndicators": {
-        "quality": "Premium Quality",
-        "turnaround": "Fast Turnaround", 
-        "satisfaction": "Satisfaction Guaranteed"
+        "quality": "Premium quality",
+        "timelines": "Reliable timelines",
+        "satisfaction": "Satisfaction guaranteed"
       }
     },
     "team": {
@@ -275,27 +271,27 @@
         "name": "Dorian & Alex",
         "role": "Founders of Prestige Production",
         "description": {
-          "duoDesc1": "We're Alex and Dorian, co-founders of Prestige Production—a creative studio built on a shared passion for visual storytelling.",
-          "duoDesc2": "At Prestige Production, we combine technical expertise with a creative mindset to craft videos that not only look great but communicate purpose and meaning.",
-          "duoDesc3": "Whether it's promotional content, cinematic montages, or brand storytelling—our focus is always on quality, clarity, and lasting impression."
+          "duoDesc1": "We are Alex and Dorian, the co-founders of Prestige Production. We started this studio from a shared passion for visual storytelling.",
+          "duoDesc2": "Our work combines technical expertise with a creative mindset. We craft videos that look beautiful while communicating purpose and meaning.",
+          "duoDesc3": "For every project, from promotional content to brand stories, our focus is always on quality, clarity, and making a lasting impression."
         }
       },
       "dorian": {
         "name": "Dorian",
         "role": "Creative Director",
         "description": {
-          "dorianDesc1": "Dorian is the eye behind our cinematic storytelling.",
-          "dorianDesc2": "With a passion for architecture and design, he turns properties into elegant narratives.",
-          "dorianDesc3": "He leads the visual direction and ensures every project feels unique, premium, and strategic."
+          "dorianDesc1": "Dorian is the creative force behind our cinematic storytelling.",
+          "dorianDesc2": "His passion for architecture and design helps him turn properties into elegant narratives.",
+          "dorianDesc3": "He leads our visual direction, making sure every project feels unique, premium, and strategic."
         }
       },
       "alex": {
         "name": "Alex",
         "role": "Technical Director",
         "description": {
-          "alexDesc1": "Alex is the technical brain of the operation.",
-          "alexDesc2": "From drones to editing suites, he handles it all, ensuring crisp footage, smooth edits, and flawless delivery.",
-          "alexDesc3": "He's obsessed with quality and elevates every video to meet professional-grade standards."
+          "alexDesc1": "Alex is the technical expert who makes it all happen.",
+          "alexDesc2": "He manages everything from drone operation to the final edit, ensuring crisp footage and a flawless delivery.",
+          "alexDesc3": "His obsession with quality elevates every video to meet the highest professional standards."
         }
       }
     }
