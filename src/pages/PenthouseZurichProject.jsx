@@ -358,7 +358,7 @@ const PenthouseZurichProject = () => {
                       'Turbinenstrasse 18, 8005 Zürich',
                     )}
                   </div>
-                  <div className='text-white/60'>Switzerland</div>
+                  <div className='text-white/60'>{t('projects.location', 'Switzerland')}</div>
                 </div>
               </div>
 

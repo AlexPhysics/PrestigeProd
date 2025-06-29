@@ -33,6 +33,10 @@ const Portfolio = () => {
     },
     { id: 'events', label: t('portfolio.categories.events', 'Events') },
     { id: 'social', label: t('portfolio.categories.social', 'Social Media') },
+    {
+      id: 'corporate',
+      label: t('portfolio.categories.corporate', 'Corporate'),
+    },
   ];
 
   // Social media reels data with metadata
@@ -54,7 +58,7 @@ const Portfolio = () => {
       }/videos/Reel_2_penthouse_speech.mp4`,
       title: 'Penthouse Experience',
       category: 'social',
-      type: 'Instagram Reel',
+      type: 'Social Media Content',
       description: 'Luxury real estate social content',
       tags: ['Real Estate', 'Luxury', 'Social Media'],
       views: '50k+',
@@ -183,7 +187,7 @@ const Portfolio = () => {
           className='text-4xl sm:text-5xl md:text-6xl font-extralight tracking-tight leading-tight mb-6'
           style={{ color: '#eaebec' }}
         >
-          Our <span className='bg-gradient-to-r from-[#9EB6A9] via-[#7dd3c0] to-[#9EB6A9] bg-clip-text text-transparent font-medium'>portfolio</span>
+          {t('portfolio.ourPortfolio', 'Our')} <span style={{ color: '#9eb6a9' }}>portfolio</span>
         </h1>
 
         <p className='text-xl text-white/70 font-light max-w-2xl mx-auto leading-relaxed mb-12'>
@@ -330,7 +334,19 @@ const Portfolio = () => {
 
       {/* Reels Section */}
       {shouldShowReels && (
-        <div id='reels' className={`max-w-7xl mx-auto px-4 sm:px-6 ${selectedCategory === 'all' ? 'mt-32' : 'mt-16'}`}>
+        <div id='reels' className='mt-32 max-w-7xl mx-auto px-4 sm:px-6'>
+          <div className='text-center mb-16'>
+            <h2 className='text-3xl sm:text-4xl font-semibold mb-4 text-white tracking-tight'>
+              {t('portfolio.reelsTitle', 'Social Media Reels')}
+            </h2>
+            <p className='text-lg text-white/60 max-w-2xl mx-auto'>
+              {t(
+                'portfolio.reelsSubtitle',
+                'Engaging short-form content designed for maximum social media impact',
+              )}
+            </p>
+          </div>
+
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12'>
             {socialReels.map((reel, i) => (
               <div

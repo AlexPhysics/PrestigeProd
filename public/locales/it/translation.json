@@ -14,7 +14,10 @@
     "title": "Il prestigio in ogni progetto",
     "subtitle": "Servizi premium di produzione video e fotografia",
     "scrollDown": "Scorri per scoprire",
-    "mouseover": "Passa il mouse su ogni parola"
+    "mouseover": "Passa il mouse su ogni parola",
+    "scroll": "Scorri",
+    "ctaPrimary": "Inizia il tuo progetto",
+    "ctaSecondary": "Vedi il nostro lavoro"
   },
   "contactSection": {
     "cta": "Contattaci",
@@ -276,6 +279,7 @@
   "portfolio": {
     "title": "Il Nostro Lavoro",
     "subtitle": "Scopri come",
+    "ourPortfolio": "Il nostro portfolio",
     "description": "Dai brand di lusso agli eventi di alta gamma, creiamo viaggi cinematografici che elevano ogni progetto.",
     "categories": {
       "all": "Tutti",
@@ -312,6 +316,38 @@
     },
     "browserNotSupported": "Il tuo browser non supporta il tag video."
   },
+  "valueProposition": {
+    "title": "Video e fotografia professionale",
+    "subtitle": "Contenuti visivi di alta qualità che presentano la tua attività in modo professionale e generano risultati.",
+    "whyChooseUs": "Perché scegliere noi",
+    "provenResults": "Risultati comprovati, fidati dai leader del settore",
+    "trackRecord": "Il nostro track record parla da solo: i marchi premium ci scelgono per qualità garantita, coinvolgimento misurabile e affidabilità svizzera.",
+    "premiumQuality": "Qualità premium",
+    "trustedByLeaders": "Fidati dai leader del settore",
+    "testimonial1": "La loro qualità di produzione cinematografica ha catturato perfettamente le nostre proprietà di lusso. Ogni dettaglio era impeccabile.",
+    "clientSatisfactionRate": "Tasso di soddisfazione del cliente",
+    "creativeImpact": "Impatto creativo",
+    "measurableGrowth": "Crescita misurabile del coinvolgimento",
+    "socialMediaEngagement": "Coinvolgimento sui social media",
+    "websiteConversion": "Conversione del sito web",
+    "testimonial2": "Il nostro coinvolgimento Instagram è triplicato dopo la loro campagna creativa. Il ROI è stato immediato e sostanziale.",
+    "clientSuccessStory": "Storia di successo del cliente",
+    "creativeExcellence": "Premio eccellenza creativa 2024",
+    "swissReliability": "Affidabilità svizzera",
+    "guaranteedDelivery": "Consegna puntuale garantita",
+    "projectsOnSchedule": "Progetti consegnati nei tempi",
+    "trackRecordMonths": "24 mesi di track record",
+    "averageDeliveryTime": "Tempo medio di consegna",
+    "earlyDelivery": "2-5 giorni in anticipo",
+    "rushProjects": "Progetti urgenti disponibili",
+    "rushTurnaround": "Tempi di consegna 24-48h",
+    "testimonial3": "Puntualità svizzera al massimo. Mai mancato una scadenza, spesso consegnato in anticipo.",
+    "ballyCapital": "Bally Capital Advisors",
+    "qualityGuarantee": "Qualità garantita, consegnata in tempo",
+    "ctaTitle": "Pronto a creare contenuti video e foto professionali?",
+    "ctaQuote": "Ottieni il tuo preventivo gratuito",
+    "ctaWork": "Guarda il nostro lavoro"
+  },
   "contact": {
     "title": "Creiamo qualcosa di ",
     "exceptional": "eccezionale",
@@ -345,7 +381,9 @@
     "whatsapp": "Chatta su WhatsApp",
     "whatsappLabel": "Chatta con noi su WhatsApp",
     "loadingCalendar": "Caricamento calendario...",
-    "pageTitle": "Contatti | Prestige Production"
+    "pageTitle": "Contatti | Prestige Production",
+    "calendarLoadError": "Impossibile caricare il calendario",
+    "contactDirectly": "Ti preghiamo di contattarci direttamente"
   },
   "footer": {
     "description": "Arte in ogni pixel, eccellenza in ogni frame.",
@@ -386,6 +424,7 @@
     "penthouseSeoKeywords": "video immobiliare Zurigo, video proprietà lusso Svizzera, marketing immobiliare Zurigo, produzione video proprietà Svizzera, video immobiliari cinematografici, fotografia immobiliare Svizzera, video case lusso Zurigo, creazione contenuti immobiliari Svizzera",
     "backToPortfolio": "Torna ai nostri lavori",
     "browserNotSupported": "Il tuo browser non supporta il tag video.",
+    "location": "Svizzera",
     "penthouse": {
       "title": "La Storia di un Attico",
       "location": "Zurigo | Progetto di Prestigio",

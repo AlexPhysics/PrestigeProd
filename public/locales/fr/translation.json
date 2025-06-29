@@ -14,7 +14,10 @@
     "title": "Le prestige dans chaque projet",
     "subtitle": "Services premium de production vidéo et photographie",
     "scrollDown": "Défilez pour découvrir",
-    "mouseover": "Passez votre souris sur chaque mot"
+    "mouseover": "Passez votre souris sur chaque mot",
+    "scroll": "Défiler",
+    "ctaPrimary": "Commencez votre projet",
+    "ctaSecondary": "Voir notre travail"
   },
   "contactSection": {
     "cta": "Contactez-nous",
@@ -258,6 +261,7 @@
   "portfolio": {
     "title": "Notre Travail",
     "subtitle": "Découvrez comment",
+    "ourPortfolio": "Notre portfolio",
     "description": "De l'immobilier de luxe aux événements haut de gamme, nous créons des voyages cinématographiques qui élèvent chaque projet.",
     "categories": {
       "all": "Tous",
@@ -294,6 +298,38 @@
     },
     "browserNotSupported": "Votre navigateur ne prend pas en charge la balise vidéo."
   },
+  "valueProposition": {
+    "title": "Vidéo et photographie professionnelles",
+    "subtitle": "Contenu visuel de haute qualité qui présente votre entreprise de manière professionnelle et génère des résultats.",
+    "whyChooseUs": "Pourquoi nous choisir",
+    "provenResults": "Résultats prouvés, approuvés par les leaders de l'industrie",
+    "trackRecord": "Notre palmarès parle de lui-même : les marques premium nous choisissent pour la qualité garantie, l'engagement mesurable et la fiabilité suisse.",
+    "premiumQuality": "Qualité premium",
+    "trustedByLeaders": "Approuvé par les leaders de l'industrie",
+    "testimonial1": "Leur qualité de production cinématographique a parfaitement capturé nos propriétés de luxe. Chaque détail était impeccable.",
+    "clientSatisfactionRate": "Taux de satisfaction client",
+    "creativeImpact": "Impact créatif",
+    "measurableGrowth": "Croissance d'engagement mesurable",
+    "socialMediaEngagement": "Engagement sur les réseaux sociaux",
+    "websiteConversion": "Conversion du site web",
+    "testimonial2": "Notre engagement Instagram a triplé après leur campagne créative. Le ROI a été immédiat et substantiel.",
+    "clientSuccessStory": "Histoire de succès client",
+    "creativeExcellence": "Prix d'excellence créative 2024",
+    "swissReliability": "Fiabilité suisse",
+    "guaranteedDelivery": "Livraison ponctuelle garantie",
+    "projectsOnSchedule": "Projets livrés dans les délais",
+    "trackRecordMonths": "24 mois de palmarès",
+    "averageDeliveryTime": "Temps de livraison moyen",
+    "earlyDelivery": "2-5 jours d'avance",
+    "rushProjects": "Projets urgents disponibles",
+    "rushTurnaround": "Délai de 24-48h",
+    "testimonial3": "La ponctualité suisse à son meilleur. Jamais manqué une échéance, souvent livré en avance.",
+    "ballyCapital": "Bally Capital Advisors",
+    "qualityGuarantee": "Qualité garantie, livrée à temps",
+    "ctaTitle": "Prêt à créer du contenu vidéo et photo professionnel ?",
+    "ctaQuote": "Obtenez votre devis gratuit",
+    "ctaWork": "Voir notre travail"
+  },
   "contact": {
     "title": "Créons quelque chose d'",
     "exceptional": "exceptionnel",
@@ -327,7 +363,9 @@
     "whatsapp": "Discuter sur WhatsApp",
     "whatsappLabel": "Discutez avec nous sur WhatsApp",
     "loadingCalendar": "Chargement du calendrier...",
-    "pageTitle": "Contact | Prestige Production"
+    "pageTitle": "Contact | Prestige Production",
+    "calendarLoadError": "Échec du chargement du calendrier",
+    "contactDirectly": "Veuillez nous contacter directement"
   },
   "footer": {
     "description": "Art dans chaque pixel, excellence dans chaque image.",
@@ -368,6 +406,7 @@
     "penthouseSeoKeywords": "vidéo immobilier Zurich, vidéo propriété luxe Suisse, marketing immobilier Zurich, production vidéo propriété Suisse, vidéos immobilières cinématographiques, photographie immobilière Suisse, vidéos maisons luxe Zurich, création contenu immobilier Suisse",
     "backToPortfolio": "Retour à nos projets",
     "browserNotSupported": "Votre navigateur ne prend pas en charge les vidéos.",
+    "location": "Suisse",
     "penthouse": {
       "title": "Un Penthouse d'Exception",
       "location": "Zurich | Immobilier de Prestige",

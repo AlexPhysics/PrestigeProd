@@ -14,7 +14,10 @@
     "title": "Prestige in jedem Projekt",
     "subtitle": "Premium-Videoproduktion und Fotografie-Dienstleistungen",
     "scrollDown": "Scrollen Sie, um mehr zu entdecken",
-    "mouseover": "Bewegen Sie die Maus über jedes Wort"
+    "mouseover": "Bewegen Sie die Maus über jedes Wort",
+    "scroll": "Scrollen",
+    "ctaPrimary": "Starten Sie Ihr Projekt",
+    "ctaSecondary": "Sehen Sie unsere Arbeit"
   },
   "contactSection": {
     "cta": "Kontaktieren Sie uns",
@@ -260,6 +263,7 @@
   "portfolio": {
     "title": "Unsere Arbeit",
     "subtitle": "Entdecken Sie, wie",
+    "ourPortfolio": "Unser Portfolio",
     "description": "Von Luxusimmobilien bis hin zu hochwertigen Veranstaltungen schaffen wir filmische Reisen, die jedes Projekt aufwerten.",
     "categories": {
       "all": "Alle",
@@ -296,6 +300,38 @@
     },
     "browserNotSupported": "Ihr Browser unterstützt das Video-Tag nicht."
   },
+  "valueProposition": {
+    "title": "Professionelle Video- und Fotografie",
+    "subtitle": "Hochwertige visuelle Inhalte, die Ihr Unternehmen professionell präsentieren und Ergebnisse erzielen.",
+    "whyChooseUs": "Warum uns wählen",
+    "provenResults": "Bewährte Ergebnisse, vertraut von Branchenführern",
+    "trackRecord": "Unsere Erfolgsbilanz spricht für sich: Premium-Marken wählen uns für garantierte Qualität, messbare Interaktion und Schweizer Zuverlässigkeit.",
+    "premiumQuality": "Premium-Qualität",
+    "trustedByLeaders": "Vertraut von Branchenführern",
+    "testimonial1": "Ihre Produktionsqualität auf Kinoniveau hat unsere Luxusimmobilien perfekt eingefangen. Jedes Detail war makellos.",
+    "clientSatisfactionRate": "Kundenzufriedenheitsrate",
+    "creativeImpact": "Kreativer Einfluss",
+    "measurableGrowth": "Messbares Engagement-Wachstum",
+    "socialMediaEngagement": "Social Media Engagement",
+    "websiteConversion": "Website-Konversion",
+    "testimonial2": "Unser Instagram-Engagement hat sich nach ihrer kreativen Kampagne verdreifacht. Der ROI war sofort und erheblich.",
+    "clientSuccessStory": "Kunden-Erfolgsgeschichte",
+    "creativeExcellence": "Creative Excellence Award 2024",
+    "swissReliability": "Schweizer Zuverlässigkeit",
+    "guaranteedDelivery": "Garantierte pünktliche Lieferung",
+    "projectsOnSchedule": "Projekte pünktlich geliefert",
+    "trackRecordMonths": "24 Monate Erfolgsbilanz",
+    "averageDeliveryTime": "Durchschnittliche Lieferzeit",
+    "earlyDelivery": "2-5 Tage früher",
+    "rushProjects": "Eilprojekte verfügbar",
+    "rushTurnaround": "24-48h Bearbeitungszeit",
+    "testimonial3": "Schweizer Pünktlichkeit vom Feinsten. Nie einen Termin verpasst, oft vor dem Zeitplan geliefert.",
+    "ballyCapital": "Bally Capital Advisors",
+    "qualityGuarantee": "Qualität garantiert, pünktlich geliefert",
+    "ctaTitle": "Bereit für professionelle Video- und Fotoinhalte?",
+    "ctaQuote": "Kostenloses Angebot erhalten",
+    "ctaWork": "Unsere Arbeit ansehen"
+  },
   "contact": {
     "title": "Lassen Sie uns etwas ",
     "exceptional": "außergewöhnliches schaffen",
@@ -329,7 +365,9 @@
     "whatsapp": "Chatten Sie auf WhatsApp",
     "whatsappLabel": "Chatten Sie mit uns auf WhatsApp",
     "loadingCalendar": "Kalender wird geladen...",
-    "pageTitle": "Kontakt | Prestige Production"
+    "pageTitle": "Kontakt | Prestige Production",
+    "calendarLoadError": "Kalender konnte nicht geladen werden",
+    "contactDirectly": "Bitte kontaktieren Sie uns direkt"
   },
   "footer": {
     "description": "Kunst in jedem Pixel, Exzellenz in jedem Bild.",
@@ -370,6 +408,7 @@
     "penthouseSeoKeywords": "Immobilien Video Zürich, Luxus Immobilien Video Schweiz, Immobilienmarketing Zürich, Immobilien Videoproduktion Schweiz, filmische Immobilienvideos, Schweizer Immobilienfotografie, Luxus Haus Videos Zürich, Immobilien Content Creation Schweiz",
     "backToPortfolio": "Zurück zu unseren Arbeiten",
     "browserNotSupported": "Ihr Browser unterstützt das Video-Tag nicht.",
+    "location": "Schweiz",
     "penthouse": {
       "title": "Eine Penthouse-Geschichte",
       "location": "Zürich | Prestige Immobilien",

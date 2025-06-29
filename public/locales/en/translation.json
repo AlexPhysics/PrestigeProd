@@ -14,7 +14,10 @@
     "title": "Showcasing prestige in every project",
     "subtitle": "Premium video production and photography services",
     "scrollDown": "Scroll down to discover",
-    "mouseover": "Move your mouse over each word"
+    "mouseover": "Move your mouse over each word",
+    "scroll": "Scroll",
+    "ctaPrimary": "Start your project",
+    "ctaSecondary": "View our work"
   },
     "contactSection": {
     "cta": "Contact us",
@@ -300,6 +303,7 @@
   "portfolio": {
     "title": "Our Work",
     "subtitle": "Discover how",
+    "ourPortfolio": "Our portfolio",
     "description": "From luxury real estate to high-end events, we craft cinematic journeys that elevate every project.",
     "categories": {
       "all": "All",
@@ -336,6 +340,38 @@
     },
     "browserNotSupported": "Your browser does not support the video tag."
   },
+  "valueProposition": {
+    "title": "Professional video & photography",
+    "subtitle": "High-quality visual content that showcases your business professionally and drives results.",
+    "whyChooseUs": "Why choose us",
+    "provenResults": "Proven results, trusted by industry leaders",
+    "trackRecord": "Our track record speaks for itself: premium brands choose us for guaranteed quality, measurable engagement, and Swiss reliability.",
+    "premiumQuality": "Premium quality",
+    "trustedByLeaders": "Trusted by industry leaders",
+    "testimonial1": "Their cinema-grade production quality perfectly captured our luxury properties. Every detail was flawless.",
+    "clientSatisfactionRate": "Client satisfaction rate",
+    "creativeImpact": "Creative impact",
+    "measurableGrowth": "Measurable engagement growth",
+    "socialMediaEngagement": "Social media engagement",
+    "websiteConversion": "Website conversion",
+    "testimonial2": "Our Instagram engagement tripled after their creative campaign. The ROI was immediate and substantial.",
+    "clientSuccessStory": "Client Success Story",
+    "creativeExcellence": "Creative Excellence Award 2024",
+    "swissReliability": "Swiss reliability",
+    "guaranteedDelivery": "Guaranteed on-time delivery",
+    "projectsOnSchedule": "Projects delivered on schedule",
+    "trackRecordMonths": "24 months track record",
+    "averageDeliveryTime": "Average delivery time",
+    "earlyDelivery": "2-5 days early",
+    "rushProjects": "Rush projects available",
+    "rushTurnaround": "24-48h turnaround",
+    "testimonial3": "Swiss punctuality at its finest. Never missed a deadline, often delivered ahead of schedule.",
+    "ballyCapital": "Bally Capital Advisors",
+    "qualityGuarantee": "Quality guaranteed, delivered on time",
+    "ctaTitle": "Ready to create professional video & photo content?",
+    "ctaQuote": "Get your free quote",
+    "ctaWork": "View our work"
+  },
   "contact": {
     "title": "Let's create something ",
     "exceptional": "exceptional",
@@ -369,7 +405,9 @@
     "whatsapp": "Chat on WhatsApp",
     "whatsappLabel": "Chat with us on WhatsApp",
     "loadingCalendar": "Loading calendar...",
-    "pageTitle": "Contact - Prestige Production"
+    "pageTitle": "Contact - Prestige Production",
+    "calendarLoadError": "Failed to load calendar",
+    "contactDirectly": "Please contact us directly"
   },
   "footer": {
     "description": "Artistry in every pixel, excellence in every frame.",
@@ -411,6 +449,7 @@
     "penthouseSeoKeywords": "real estate video Zurich, property video Switzerland, real estate marketing Zurich, property videos Switzerland, real estate photography Zurich, property marketing videos Switzerland",
     "backToPortfolio": "Go back to our work",
     "browserNotSupported": "Your browser does not support the video tag.",
+    "location": "Switzerland",
     "penthouse": {
       "title": "A Penthouse Story",
       "location": "Zurich | Prestige Real Estate",
