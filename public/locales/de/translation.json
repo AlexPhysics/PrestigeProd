@@ -571,5 +571,11 @@
       "title": "Kontaktinformationen",
       "content": "Wenn Sie Fragen zu dieser Datenschutzerklärung oder unseren Datenpraktiken haben, kontaktieren Sie uns bitte unter info@prestigeproduction.ch oder rufen Sie +41 76 202 19 59 an."
     }
+  },
+  "partners": {
+    "title": "Partner auf die wir",
+    "proud": "stolz",
+    "of": "sind",
+    "partnerAlt": "Partner"
   }
 }

@@ -34,13 +34,13 @@ const Partners = () => {
         {/* Refined header */}
         <div className='text-center mb-12'>
           <h2 className='text-5xl md:text-7xl font-extralight mb-6 text-white tracking-tight leading-tight'>
-            {t('partners.title', 'Who we')}{' '}
+            {t('partners.title', 'Partners we are')}{' '}
             <span
               className={`${GRADIENT_CLASS} bg-clip-text text-transparent font-light`}
             >
-              {t('partners.work', 'work')}
+              {t('partners.proud', 'proud')}
             </span>{' '}
-            {t('partners.with', 'with')}
+            {t('partners.of', 'of')}
           </h2>
         </div>
 

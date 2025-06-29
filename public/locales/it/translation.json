@@ -589,9 +589,9 @@
     }
   },
   "partners": {
-    "title": "Con chi",
-    "work": "lavoriamo",
-    "with": "",
+    "title": "Partner di cui siamo",
+    "proud": "orgogliosi",
+    "of": "",
     "partnerAlt": "Partner"
   }
 }
