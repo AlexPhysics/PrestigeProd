@@ -233,12 +233,12 @@ const ValueProposition = () => {
                   viewport={{ once: true }}
                   className='text-center'
                 >
-                  <div className='bg-gradient-to-br from-[#9EB6A9]/10 to-[#205C57]/10 rounded-3xl p-12 border border-[#9EB6A9]/20 backdrop-blur-sm'>
-                    <div className='text-8xl md:text-9xl font-extralight text-transparent bg-gradient-to-br from-[#9EB6A9] to-[#205C57] bg-clip-text mb-4'>
+                  <div className='bg-gradient-to-br from-[#9EB6A9]/10 to-[#205C57]/10 rounded-3xl p-6 md:p-12 border border-[#9EB6A9]/20 backdrop-blur-sm'>
+                    <div className='text-6xl md:text-8xl lg:text-9xl font-extralight text-transparent bg-gradient-to-br from-[#9EB6A9] to-[#205C57] bg-clip-text mb-3 md:mb-4'>
                       100%
                     </div>
-                    <div className='text-xl text-white/80 mb-4'>{t('valueProposition.clientSatisfactionRate', 'Client satisfaction rate')}</div>
-                    <div className='text-[#9EB6A9] text-sm'>{t('valueProposition.basedOnClientFeedback', 'Based on post-project client feedback')}</div>
+                    <div className='text-lg md:text-xl text-white/80 mb-2 md:mb-4'>{t('valueProposition.clientSatisfactionRate', 'Client satisfaction rate')}</div>
+                    <div className='text-[#9EB6A9] text-xs md:text-sm'>{t('valueProposition.basedOnClientFeedback', 'Based on post-project client feedback')}</div>
                   </div>
                 </motion.div>
               </div>
@@ -347,23 +347,23 @@ const ValueProposition = () => {
                   viewport={{ once: true }}
                   className='lg:order-1 text-center'
                 >
-                  <div className='bg-gradient-to-br from-[#9EB6A9]/10 to-[#205C57]/10 rounded-3xl p-12 border border-[#9EB6A9]/20 backdrop-blur-sm'>
-                    <div className='text-6xl md:text-7xl font-extralight text-transparent bg-gradient-to-br from-[#9EB6A9] to-[#205C57] bg-clip-text mb-4'>
+                  <div className='bg-gradient-to-br from-[#9EB6A9]/10 to-[#205C57]/10 rounded-3xl p-6 md:p-12 border border-[#9EB6A9]/20 backdrop-blur-sm'>
+                    <div className='text-5xl md:text-6xl lg:text-7xl font-extralight text-transparent bg-gradient-to-br from-[#9EB6A9] to-[#205C57] bg-clip-text mb-3 md:mb-4'>
                       2024
                     </div>
-                    <div className='text-xl text-white/80 mb-2'>{t('valueProposition.establishedYear', 'Established')}</div>
-                    <div className='text-[#9EB6A9] text-sm mb-8'>{t('valueProposition.basedInZurich', 'Based in Zurich, Switzerland')}</div>
+                    <div className='text-lg md:text-xl text-white/80 mb-1 md:mb-2'>{t('valueProposition.establishedYear', 'Established')}</div>
+                    <div className='text-[#9EB6A9] text-xs md:text-sm mb-6 md:mb-8'>{t('valueProposition.basedInZurich', 'Based in Zurich, Switzerland')}</div>
                     
-                    <div className='space-y-4 text-sm'>
-                      <div className='flex items-center justify-between px-4 py-3 bg-white/[0.02] rounded-lg border border-white/5'>
+                    <div className='space-y-3 md:space-y-4 text-xs md:text-sm'>
+                      <div className='flex items-center justify-between px-3 md:px-4 py-2 md:py-3 bg-white/[0.02] rounded-lg border border-white/5'>
                         <span className='text-white/70'>{t('valueProposition.projectROI', 'Average project ROI')}</span>
                         <span className='text-[#9EB6A9] font-medium'>{t('valueProposition.threeToFiveX', '3-5x')}</span>
                       </div>
-                      <div className='flex items-center justify-between px-4 py-3 bg-white/[0.02] rounded-lg border border-white/5'>
+                      <div className='flex items-center justify-between px-3 md:px-4 py-2 md:py-3 bg-white/[0.02] rounded-lg border border-white/5'>
                         <span className='text-white/70'>{t('valueProposition.clientRetention', 'Client retention rate')}</span>
                         <span className='text-[#9EB6A9] font-medium'>{t('valueProposition.oneHundredPercent', '100%')}</span>
                       </div>
-                      <div className='flex items-center justify-between px-4 py-3 bg-white/[0.02] rounded-lg border border-white/5'>
+                      <div className='flex items-center justify-between px-3 md:px-4 py-2 md:py-3 bg-white/[0.02] rounded-lg border border-white/5'>
                         <span className='text-white/70'>{t('valueProposition.responseTime', 'Response time')}</span>
                         <span className='text-[#9EB6A9] font-medium'>{t('valueProposition.within24h', '< 24 hours')}</span>
                       </div>
