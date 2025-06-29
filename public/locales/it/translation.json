@@ -102,7 +102,8 @@
       "a4": "Come team boutique di due persone, offriamo accesso diretto ai creativi che lavorano sul vostro progetto, garantendo che la vostra visione sia perfettamente catturata. Ogni progetto riceve la nostra piena attenzione, senza outsourcing o team junior. Combiniamo la precisione svizzera con la narrazione cinematografica, utilizzando solo attrezzature professionali di livello cinematografico e tecniche di post-produzione avanzate.",
       "q5": "Potete gestire sia video che fotografia per lo stesso progetto?",
       "a5": "Sì, siamo uno studio di contenuti visivi completo. Possiamo catturare sia video di alta qualità che fotografia durante lo stesso giorno di produzione, massimizzando l'efficienza e garantendo coerenza visiva in tutti i vostri contenuti. Questo approccio è particolarmente prezioso per progetti immobiliari, aziendali e di marca dove avete bisogno di una suite di contenuti completa."
-    },"offerings": {
+    },
+    "offerings": {
       "title": "Tipi di Contenuti Premium",
       "subtitle": "Ogni formato è progettato per mostrare il tuo marchio, prodotti o servizi dal loro angolo più coinvolgente e catturare l'attenzione del tuo pubblico target.",
       "propertyTours": {
@@ -159,21 +160,21 @@
   "whyUs": {
     "pageTitle": "Perché Noi | Prestige Production",
     "title": "Perché Lavorare Con Noi?",
-    "subtitle": "Prestige Production è più di una semplice società di produzione video, è una partnership basata su visione, creatività e performance.",
+    "subtitle": "Siamo più di una semplice società di produzione video. Siamo un partner creativo dedicato a dare vita alla tua visione con creatività, precisione e risultati misurabili.",
     "cta": "Lavoriamo insieme",
-    "teamLabel": "IL NOSTRO TEAM",
+    "teamLabel": "Il nostro team",
     "meetThe": "Incontra le nostre",
-    "creativeMinus": "Menti Creative",
+    "creativeMinus": "menti creative",
     "skills": {
       "dorian": {
-        "0": "Direzione Creativa",
-        "1": "Cinematografia", 
-        "2": "Strategia del Brand"
+        "0": "Direzione creativa",
+        "1": "Cinematografia",
+        "2": "Strategia del brand"
       },
       "alex": {
-        "0": "Produzione Tecnica",
-        "1": "Post-elaborazione",
-        "2": "Color Grading"
+        "0": "Produzione tecnica",
+        "1": "Post elaborazione",
+        "2": "Color grading"
       }
     },
     "approach": {
@@ -217,33 +218,28 @@
       "title": "Clienti",
       "swipeHint": "← Scorri per navigare →",
       "clients": {
-        "sophia": {
-          "name": "Sophia Laurent",
-          "role": "Direttrice Marketing, Swiss Luxury Properties",
-          "content": "Prestige Production ha trasformato le nostre presentazioni immobiliari in esperienze cinematiche. L'attenzione ai dettagli e lo storytelling visivo sono incomparabili nel settore."
+        "sothebys": {
+          "name": "Soroush Efati",
+          "role": "Partner, Zurich Sotheby's International Realty",
+          "content": "Prestige Production ha realizzato un video eccezionale per un attico meraviglioso. Il loro lavoro ha catturato l'essenza del lusso e i loro reel per i social media hanno generato un coinvolgimento significativo. Un team veramente professionale."
         },
-        "marco": {
-          "name": "Marco Bernini", 
-          "role": "CEO, Elite Events Switzerland",
-          "content": "Lavorare con Dorian e Alex è stato fluido dall'inizio alla fine. Hanno catturato l'essenza del nostro evento aziendale mantenendo i più alti standard di produzione."
-        },
-        "elise": {
-          "name": "Elise Dubois",
-          "role": "Brand Manager, Geneva Luxe", 
-          "content": "Il team di Prestige Production ha un occhio eccezionale per lo storytelling del brand. Il loro lavoro ha elevato la nostra campagna del brand e ha risuonato profondamente con il nostro pubblico."
+        "smi": {
+          "name": "Manuel Bally",
+          "role": "Organizzatore, Swiss Mining Institute",
+          "content": "L'aftermovie e le interviste che Prestige Production ha creato per il nostro evento sono stati eccezionali. Hanno catturato perfettamente l'energia e ci hanno fornito contenuti fantastici per i nostri canali, inclusi diversi reel di grande impatto."
         }
       }
     },
     "ctaSection": {
-      "label": "FAI IL PROSSIMO PASSO",
+      "label": "Fai il passo successivo",
       "title": "Pronto a creare qualcosa di",
-      "highlight": "Eccezionale?",
-      "description": "Lascia che il nostro team creativo trasformi la tua visione in contenuti visivi di impatto che risuonano con il tuo pubblico.",
-      "portfolioCta": "Vedi il nostro lavoro",
+      "highlight": "eccezionale?",
+      "description": "Lascia che il nostro team creativo trasformi la tua visione in contenuti visivi di impatto che entrino in sintonia con il tuo pubblico.",
+      "portfolioCta": "Guarda i nostri lavori",
       "trustIndicators": {
-        "quality": "Qualità Premium",
-        "turnaround": "Consegna Veloce", 
-        "satisfaction": "Soddisfazione Garantita"
+        "quality": "Qualità premium",
+        "timelines": "Tempistiche affidabili",
+        "satisfaction": "Soddisfazione garantita"
       }
     },
     "team": {
@@ -251,27 +247,27 @@
         "name": "Dorian & Alex",
         "role": "Fondatori di Prestige Production",
         "description": {
-          "duoDesc1": "Siamo Alex e Dorian, co-fondatori di Prestige Production — uno studio creativo costruito su una passione condivisa per lo storytelling visivo.",
-          "duoDesc2": "In Prestige Production, combiniamo competenza tecnica con una mentalità creativa per creare video che non solo hanno un bell'aspetto ma comunicano scopo e significato.",
-          "duoDesc3": "Che si tratti di contenuti promozionali, montaggi cinematici o storytelling del brand — il nostro focus è sempre su qualità, chiarezza e impressione duratura."
+          "duoDesc1": "Siamo Alex e Dorian, i co-fondatori di Prestige Production. Abbiamo avviato questo studio spinti da una passione comune per la narrazione visiva.",
+          "duoDesc2": "Il nostro lavoro combina competenza tecnica con una mentalità creativa. Realizziamo video che sono belli e allo stesso tempo comunicano uno scopo e un significato.",
+          "duoDesc3": "Per ogni progetto, dai contenuti promozionali alle storie di marca, il nostro focus è sempre sulla qualità, la chiarezza e nel lasciare un'impressione duratura."
         }
       },
       "dorian": {
         "name": "Dorian",
         "role": "Direttore Creativo",
         "description": {
-          "dorianDesc1": "Dorian è l'occhio dietro il nostro storytelling cinematico.",
-          "dorianDesc2": "Con una passione per l'architettura e il design, trasforma le proprietà in narrazioni eleganti.",
-          "dorianDesc3": "Guida la direzione visiva e assicura che ogni progetto si senta unico, premium e strategico."
+          "dorianDesc1": "Dorian è la forza creativa dietro la nostra narrazione cinematografica.",
+          "dorianDesc2": "La sua passione per l'architettura e il design lo aiuta a trasformare le proprietà in eleganti narrazioni.",
+          "dorianDesc3": "Guida la nostra direzione visiva, assicurandosi che ogni progetto sia unico, di alta qualità e strategico."
         }
       },
       "alex": {
         "name": "Alex",
         "role": "Direttore Tecnico",
         "description": {
-          "alexDesc1": "Alex è il cervello tecnico dell'operazione.",
-          "alexDesc2": "Dai droni alle suite di editing, gestisce tutto — assicurando riprese nitide, montaggi fluidi e consegna impeccabile.",
-          "alexDesc3": "È ossessionato dalla qualità ed eleva ogni video per soddisfare gli standard di livello professionale."
+          "alexDesc1": "Alex è l'esperto tecnico che realizza tutto.",
+          "alexDesc2": "Gestisce tutto, dall'operatività dei droni al montaggio finale, garantendo riprese nitide e una consegna impeccabile.",
+          "alexDesc3": "La sua ossessione per la qualità eleva ogni video ai più alti standard professionali."
         }
       }
     }
