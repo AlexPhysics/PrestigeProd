@@ -158,8 +158,8 @@ const Contact = () => {
         if (loadingOverlay) {
           loadingOverlay.innerHTML = `
             <div class="text-center">
-              <p class="text-red-400 mb-2">Failed to load calendar</p>
-              <p class="text-white/60 text-sm">Please contact us directly</p>
+              <p class="text-red-400 mb-2">{t('contact.calendarLoadError', 'Failed to load calendar')}</p>
+              <p class="text-white/60 text-sm">{t('contact.contactDirectly', 'Please contact us directly')}</p>
             </div>
           `;
         }

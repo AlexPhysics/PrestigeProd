@@ -7,18 +7,21 @@
     "home": "Startseite",
     "portfolio": "Portfolio",
     "services": "Leistungen",
-    "whyUs": "Warum Wir",
+    "whyUs": "Warum wir",
     "contact": "Kontakt"
   },
   "hero": {
     "title": "Prestige in jedem Projekt",
     "subtitle": "Premium-Videoproduktion und Fotografie-Dienstleistungen",
     "scrollDown": "Scrollen Sie, um mehr zu entdecken",
-    "mouseover": "Bewegen Sie die Maus über jedes Wort"
+    "mouseover": "Bewegen Sie die Maus über jedes Wort",
+    "scroll": "Scrollen",
+    "ctaPrimary": "Starten Sie Ihr Projekt",
+    "ctaSecondary": "Sehen Sie unsere Arbeit"
   },
   "contactSection": {
     "cta": "Kontaktieren Sie uns",
-    "projectInfo": "Sprechen wir über Ihr Projekt – kostenlos"
+    "projectInfo": "Sprechen wir über Ihr Projekt, kostenlos"
   },
   "home": {
     "partnersTitle": "Vertrauen von Branchenführern",
@@ -140,7 +143,7 @@
   "whyUs": {
     "pageTitle": "Warum Wir | Prestige Production",
     "title": "Warum mit uns arbeiten?",
-    "subtitle": "Prestige Production ist mehr als nur ein Videoproduktionsunternehmen — es ist eine Partnerschaft, die auf Vision, Kreativität und Leistung aufbaut.",
+    "subtitle": "Prestige Production ist mehr als nur ein Videoproduktionsunternehmen, es ist eine Partnerschaft, die auf Vision, Kreativität und Leistung aufbaut.",
     "cta": "Lassen Sie uns zusammenarbeiten",
     "teamLabel": "UNSER TEAM",
     "meetThe": "Lernen Sie unsere",
@@ -260,6 +263,7 @@
   "portfolio": {
     "title": "Unsere Arbeit",
     "subtitle": "Entdecken Sie, wie",
+    "ourPortfolio": "Unser Portfolio",
     "description": "Von Luxusimmobilien bis hin zu hochwertigen Veranstaltungen schaffen wir filmische Reisen, die jedes Projekt aufwerten.",
     "categories": {
       "all": "Alle",
@@ -296,6 +300,63 @@
     },
     "browserNotSupported": "Ihr Browser unterstützt das Video-Tag nicht."
   },
+  "valueProposition": {
+    "title": "Professionelle Video- und Fotografie",
+    "subtitle": "Hochwertige visuelle Inhalte, die Ihr Unternehmen professionell präsentieren und Ergebnisse erzielen.",
+    "whyChooseUs": "Warum uns wählen",
+    "provenResults": "Bewährte Ergebnisse, vertraut von Branchenführern",
+    "trackRecord": "Unsere Erfolgsbilanz spricht für sich: Premium-Marken wählen uns für garantierte Qualität, messbare Interaktion und Schweizer Zuverlässigkeit.",
+    "premiumQuality": "Premium-Qualität",
+    "trustedByLeaders": "Vertraut von Branchenführern",
+    "testimonial1": "Ihre Produktionsqualität auf Kinoniveau hat unsere Luxusimmobilien perfekt eingefangen. Jedes Detail war makellos.",
+    "clientSatisfactionRate": "Kundenzufriedenheitsrate",
+    "creativeImpact": "Kreativer Einfluss",
+    "measurableGrowth": "Messbares Engagement-Wachstum",
+    "socialMediaEngagement": "Social Media Engagement",
+    "websiteConversion": "Website-Konversion",
+    "testimonial2": "Unser Instagram-Engagement hat sich nach ihrer kreativen Kampagne verdreifacht. Der ROI war sofort und erheblich.",
+    "clientSuccessStory": "Kunden-Erfolgsgeschichte",
+    "creativeExcellence": "Creative Excellence Award 2024",
+    "swissReliability": "Schweizer Zuverlässigkeit",
+    "guaranteedDelivery": "Garantierte pünktliche Lieferung",
+    "projectsOnSchedule": "Projekte pünktlich geliefert",
+    "trackRecordMonths": "24 Monate Erfolgsbilanz",
+    "averageDeliveryTime": "Durchschnittliche Lieferzeit",
+    "earlyDelivery": "2-5 Tage früher",
+    "rushProjects": "Eilprojekte verfügbar",
+    "rushTurnaround": "24-48h Bearbeitungszeit",
+    "testimonial3": "Professionelle Qualität vom ersten Tag an. Sie verstehen, was Premium-Marken brauchen und liefern jedes Mal.",
+    "ballyCapital": "Bally Capital Advisors",
+    "qualityGuarantee": "Qualität garantiert, pünktlich geliefert",
+    "ctaTitle": "Bereit für professionelle Video- und Fotoinhalte?",
+    "ctaQuote": "Kostenloses Angebot erhalten",
+    "ctaWork": "Unsere Arbeit ansehen",
+    "brandElevation": "Markenerhebung",
+    "brandElevationDesc": "Unser visuelles Storytelling positioniert Sie als Premium-Wahl in Ihrem Markt und differenziert Sie sofort von Konkurrenten.",
+    "brandResult": "Ergebnis: Verbesserte Markenwahrnehmung und Marktpositionierung",
+    "clientTrust": "Kundenvertrauen & Glaubwürdigkeit",
+    "clientTrustDesc": "Professionelle Visuals schaffen sofortiges Vertrauen bei potenziellen Kunden und reduzieren Verkaufszyklen in allen Marktsegmenten.",
+    "trustResult": "Ergebnis: Schnellere Kundenakquise und verbesserte Konversionsraten",
+    "swissExcellence": "Bewährte Exzellenz",
+    "prestigeFromDay1": "Vertraut von Prestige vom ersten Tag an",
+    "premiumClients": "Premium-Kundenpartnerschaften",
+    "premiumClientsDesc": "Ausschließliche Zusammenarbeit mit etablierten Marken und Branchenführern, die außergewöhnliche Qualität fordern",
+    "professionalApproach": "Professioneller Ansatz",
+    "professionalApproachDesc": "Wir liefern die gleichen hohen Standards und Liebe zum Detail für jeden Kunden, unabhängig von Projektgröße oder Branche",
+    "smiEvent": "Swiss Mining Institute",
+    "smiDesc": "Berichterstattung über eine der exklusivsten Branchenveranstaltungen Europas, Inhalte für internationale Bergbauführer",
+    "qualityFocus": "Qualität vor Quantität Ansatz",
+    "qualityFocusDesc": "Selektiver Kundenansatz gewährleistet dedizierte Aufmerksamkeit und außergewöhnliche Ergebnisse für jedes Projekt",
+    "premiumClient": "Premium-Immobilienkunde",
+    "establishedYear": "Gegründet",
+    "basedInZurich": "Sitz in Zürich, Schweiz",
+    "projectsCompleted": "Abgeschlossene Projekte",
+    "fifteenPlus": "15+",
+    "averageDelivery": "Durchschnittliche Lieferung",
+    "fiveDays": "5 Tage",
+    "responseTime": "Antwortzeit",
+    "within24h": "< 24 Stunden"
+  },
   "contact": {
     "title": "Lassen Sie uns etwas ",
     "exceptional": "außergewöhnliches schaffen",
@@ -329,10 +390,12 @@
     "whatsapp": "Chatten Sie auf WhatsApp",
     "whatsappLabel": "Chatten Sie mit uns auf WhatsApp",
     "loadingCalendar": "Kalender wird geladen...",
-    "pageTitle": "Kontakt - Prestige Production"
+    "pageTitle": "Kontakt | Prestige Production",
+    "calendarLoadError": "Kalender konnte nicht geladen werden",
+    "contactDirectly": "Bitte kontaktieren Sie uns direkt"
   },
   "footer": {
-    "description": "Professionelle Videoproduktion und Fotografie mit Sitz in Zürich, Schweiz.",
+    "description": "Kunst in jedem Pixel, Exzellenz in jedem Bild.",
     "rights": "Alle Rechte vorbehalten",
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
@@ -370,6 +433,7 @@
     "penthouseSeoKeywords": "Immobilien Video Zürich, Luxus Immobilien Video Schweiz, Immobilienmarketing Zürich, Immobilien Videoproduktion Schweiz, filmische Immobilienvideos, Schweizer Immobilienfotografie, Luxus Haus Videos Zürich, Immobilien Content Creation Schweiz",
     "backToPortfolio": "Zurück zu unseren Arbeiten",
     "browserNotSupported": "Ihr Browser unterstützt das Video-Tag nicht.",
+    "location": "Schweiz",
     "penthouse": {
       "title": "Eine Penthouse-Geschichte",
       "location": "Zürich | Prestige Immobilien",
@@ -400,24 +464,24 @@
         "growth": "7x Mehr Aufrufe",
         "growthDesc": "Als ihr üblicher Content + bedeutendes Follower-Wachstum"
       },
-      "whyUsTitle": "Warum premium content Immobilien schneller verkauft",
-      "whyUsDesc": "Datenbasierte Einblicke darüber, wie professioneller Video-Content Immobilienmarketing transformiert",
+      "whyUsTitle": "Warum Premium-Content Immobilien schneller verkauft",
+      "whyUsDesc": "Datenbasierte Einblicke, wie professioneller Video-Content das Immobilienmarketing transformiert",
       "whyUs": {
-        "stat1": "Schnellere verkäufe",
-        "stat1Desc": "Immobilien mit Video",
-        "stat2": "Mehr anfragen",
-        "stat2Desc": "Als reine Foto-Anzeigen",
-        "benefit1": "Seriöse käufer anziehen",
-        "benefit1Desc": "Premium-Content filtert Gelegenheitsbrowser heraus und bringt nur qualifizierte Interessenten",
-        "benefit2": "Höhere verkaufspreise",
-        "benefit2Desc": "Professionelle Präsentation schafft emotionale Verbindung und rechtfertigt Premium-Preise",
-        "benefit3": "Globale reichweite",
-        "benefit3Desc": "Social Media Content erreicht internationale Käufer, die traditionelle Anzeigen nie sehen",
-        "benefit4": "Wettbewerbsvorteil",
-        "benefit4Desc": "Heben Sie sich von Maklern mit einfachen Fotos ab - werden Sie die Premium-Wahl für Verkäufer",
-        "proofTitle": "Impact dieses Projekts",
-        "proofDesc": "Echte Ergebnisse unserer Zürich Penthouse Kampagne",
-        "testimonial": "\"Der Video-Content hat verändert, wie Käufer unsere Immobilie wahrgenommen haben. Wir erreichten internationale Kunden, die wir sonst nie gefunden hätten.\"",
+        "stat1": "Mehr Anfragen",
+        "stat1Desc": "Für Anzeigen mit Videoinhalten",
+        "stat2": "Schnellere Verkäufe",
+        "stat2Desc": "Für Häuser mit Luftaufnahmen",
+        "benefit1": "Gesteigertes Käuferengagement",
+        "benefit1Desc": "Zuschauer behalten 95 % einer Botschaft aus einem Video, was eine stärkere emotionale Bindung schafft.",
+        "benefit2": "Premium-Kunden anziehen",
+        "benefit2Desc": "73 % der Hausbesitzer listen eher bei einem Makler, der Videoinhalte anbietet.",
+        "benefit3": "Organischen traffic steigern",
+        "benefit3Desc": "Video führt zu einer 157%igen Steigerung des organischen Traffics von Suchmaschinen.",
+        "benefit4": "Wettbewerbsvorteil sichern",
+        "benefit4Desc": "Da nur 38 % der Makler Videos verwenden, macht Sie Premium-Content zur ersten Wahl für anspruchsvolle Verkäufer.",
+        "proofTitle": "Die Wirkung dieses Projekts",
+        "proofDesc": "Echte Ergebnisse unserer Zürcher Penthouse-Kampagne",
+        "testimonial": "\"Der Video-Content hat die Wahrnehmung unserer Immobilie durch die Käufer verändert und eine emotionale Verbindung geschaffen, die Fotos allein nicht erreichen konnten.\"",
         "testimonialAuthor": "— Zurich Sotheby's International Realty"
       },
       "ctaTitle": "Bereit, Ihre Immobilie zu Präsentieren?",
@@ -571,5 +635,11 @@
       "title": "Kontaktinformationen",
       "content": "Wenn Sie Fragen zu dieser Datenschutzerklärung oder unseren Datenpraktiken haben, kontaktieren Sie uns bitte unter info@prestigeproduction.ch oder rufen Sie +41 76 202 19 59 an."
     }
+  },
+  "partners": {
+    "title": "Partner auf die wir",
+    "proud": "stolz",
+    "of": "sind",
+    "partnerAlt": "Partner"
   }
 }

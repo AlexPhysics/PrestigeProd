@@ -96,11 +96,7 @@ const Hero = () => {
                 className='text-5xl md:text-7xl lg:text-8xl font-extralight leading-[0.9] tracking-tight mb-6'
                 style={{ color: '#eaebec' }}
               >
-                Showcasing prestige
-                <br />
-                <span style={{ color: 'rgba(123, 126, 126, 0.8)' }}>
-                  in every project
-                </span>
+                {t('hero.title', 'Showcasing prestige in every project')}
               </h1>
             </div>
 
@@ -110,7 +106,7 @@ const Hero = () => {
                 className='text-xl md:text-2xl font-light max-w-2xl mx-auto leading-relaxed'
                 style={{ color: 'rgba(234, 235, 236, 0.85)' }}
               >
-                Premium video production and photography services
+                {t('hero.subtitle', 'Premium video production and photography services')}
               </p>
             </div>
 
@@ -125,7 +121,7 @@ const Hero = () => {
                     color: '#231f20',
                   }}
                 >
-                  Start your project
+                  {t('hero.ctaPrimary', 'Start your project')}
                   <svg
                     className='w-4 h-4 ml-2 group-hover:translate-x-0.5 transition-transform'
                     fill='none'
@@ -149,7 +145,7 @@ const Hero = () => {
                     border: '1px solid rgba(158, 182, 169, 0.3)',
                   }}
                 >
-                  View our work
+                  {t('hero.ctaSecondary', 'View our work')}
                   <svg
                     className='w-4 h-4 ml-2 group-hover:translate-x-0.5 transition-transform'
                     fill='none'
@@ -182,7 +178,7 @@ const Hero = () => {
               className='text-sm font-light tracking-wider uppercase'
               style={{ color: 'rgba(123, 126, 126, 0.6)' }}
             >
-              Scroll
+              {t('hero.scroll', 'Scroll')}
             </span>
             <div
               className='w-px h-12 animate-pulse'

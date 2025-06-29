@@ -187,7 +187,7 @@ const Portfolio = () => {
           className='text-4xl sm:text-5xl md:text-6xl font-extralight tracking-tight leading-tight mb-6'
           style={{ color: '#eaebec' }}
         >
-          Our <span style={{ color: '#9eb6a9' }}>portfolio</span>
+          {t('portfolio.ourPortfolio', 'Our')} <span style={{ color: '#9eb6a9' }}>portfolio</span>
         </h1>
 
         <p className='text-xl text-white/70 font-light max-w-2xl mx-auto leading-relaxed mb-12'>

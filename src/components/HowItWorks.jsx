@@ -90,7 +90,7 @@ const HowItWorks = () => {
         </div>*/}
 
         <div className='hiw-text-container'>
-          {/* LEFT COLUMN – storytelling & craft */}
+          {/* LEFT COLUMN storytelling & craft */}
           <div className='flex flex-1 justify-center flex-col'>
             <p className='hiw-text g_fadeIn'>
               {t('howItWorks.paragraph1.part1', 'We blend')} <span className='text-white'>{t('howItWorks.paragraph1.part2', 'Swiss precision')}</span>{' '}
@@ -104,7 +104,7 @@ const HowItWorks = () => {
             </p>
           </div>
 
-          {/* RIGHT COLUMN – quick stats / proof points */}
+          {/* RIGHT COLUMN quick stats / proof points */}
           <div className='flex-1 flex justify-center flex-col g_fadeIn'>
             <p className='hiw-text'>{t('howItWorks.since', 'Since')}</p>
             <p className='hiw-bigtext'>{t('howItWorks.year', '2025')}</p>

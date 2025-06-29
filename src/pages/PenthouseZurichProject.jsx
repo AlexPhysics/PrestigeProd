@@ -344,7 +344,7 @@ const PenthouseZurichProject = () => {
             <p className='text-lg text-white/80 leading-relaxed mb-8'>
               {t(
                 'projects.penthouse.description',
-                "We partnered with Zurich Sotheby's International Realty to bring to life one of Zurich's most exceptional properties — a 304 m² penthouse perched atop the Mobimo Tower. Through cinematic visuals, architectural storytelling, and a detail-oriented production process, we created a complete content suite tailored to the luxury market.",
+                "We partnered with Zurich Sotheby's International Realty to bring to life one of Zurich's most exceptional properties, a 304 m² penthouse perched atop the Mobimo Tower. Through cinematic visuals, architectural storytelling, and a detail-oriented production process, we created a complete content suite tailored to the luxury market.",
               )}
             </p>
 
@@ -358,7 +358,7 @@ const PenthouseZurichProject = () => {
                       'Turbinenstrasse 18, 8005 Zürich',
                     )}
                   </div>
-                  <div className='text-white/60'>Switzerland</div>
+                  <div className='text-white/60'>{t('projects.location', 'Switzerland')}</div>
                 </div>
               </div>
 
@@ -688,15 +688,18 @@ const PenthouseZurichProject = () => {
                   className='bg-gradient-to-br from-[#2d5f59]/20 to-[#F4FF78]/20 backdrop-blur-sm rounded-2xl p-6 border border-[#F4FF78]/30 text-center'
                 >
                   <div className='text-3xl font-bold bg-gradient-to-r from-[#2d5f59] to-[#F4FF78] bg-clip-text text-transparent mb-2'>
-                    73%
+                    403%
                   </div>
                   <div className='text-white/80 text-sm font-medium'>
-                    {t('projects.penthouse.whyUs.stat1', 'Faster sales')}
+                    {t(
+                      'projects.penthouse.whyUs.stat1',
+                      'More Inquiries',
+                    )}
                   </div>
                   <div className='text-white/60 text-xs mt-1'>
                     {t(
                       'projects.penthouse.whyUs.stat1Desc',
-                      'Properties with video',
+                      'For listings with video content',
                     )}
                   </div>
                 </motion.div>
@@ -709,15 +712,15 @@ const PenthouseZurichProject = () => {
                   className='bg-gradient-to-br from-[#F4FF78]/20 to-[#2d5f59]/20 backdrop-blur-sm rounded-2xl p-6 border border-[#F4FF78]/30 text-center'
                 >
                   <div className='text-3xl font-bold bg-gradient-to-r from-[#F4FF78] to-[#2d5f59] bg-clip-text text-transparent mb-2'>
-                    4x
+                    68%
                   </div>
                   <div className='text-white/80 text-sm font-medium'>
-                    {t('projects.penthouse.whyUs.stat2', 'More inquiries')}
+                    {t('projects.penthouse.whyUs.stat2', 'Faster Sales')}
                   </div>
                   <div className='text-white/60 text-xs mt-1'>
                     {t(
                       'projects.penthouse.whyUs.stat2Desc',
-                      'Than photo-only listings',
+                      'For homes with aerial footage',
                     )}
                   </div>
                 </motion.div>
@@ -751,13 +754,13 @@ const PenthouseZurichProject = () => {
                     <h4 className='text-white font-semibold mb-1'>
                       {t(
                         'projects.penthouse.whyUs.benefit1',
-                        'Attract serious buyers',
+                        'Enhanced Buyer Engagement',
                       )}
                     </h4>
                     <p className='text-white/70 text-sm'>
                       {t(
                         'projects.penthouse.whyUs.benefit1Desc',
-                        'Premium content filters out casual browsers, bringing only qualified prospects',
+                        'Viewers retain 95% of a message from video, creating a stronger emotional connection.',
                       )}
                     </p>
                   </div>
@@ -789,13 +792,13 @@ const PenthouseZurichProject = () => {
                     <h4 className='text-white font-semibold mb-1'>
                       {t(
                         'projects.penthouse.whyUs.benefit2',
-                        'Higher sale prices',
+                        'Attract Premium Clients',
                       )}
                     </h4>
                     <p className='text-white/70 text-sm'>
                       {t(
                         'projects.penthouse.whyUs.benefit2Desc',
-                        'Professional presentation creates emotional connection, justifying premium pricing',
+                        '73% of homeowners are more likely to list with an agent who offers video content.',
                       )}
                     </p>
                   </div>
@@ -819,18 +822,21 @@ const PenthouseZurichProject = () => {
                         strokeLinecap='round'
                         strokeLinejoin='round'
                         strokeWidth={2}
-                        d='M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064'
+                        d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'
                       />
                     </svg>
                   </div>
                   <div>
                     <h4 className='text-white font-semibold mb-1'>
-                      {t('projects.penthouse.whyUs.benefit3', 'Global reach')}
+                      {t(
+                        'projects.penthouse.whyUs.benefit3',
+                        'Boost organic traffic',
+                      )}
                     </h4>
                     <p className='text-white/70 text-sm'>
                       {t(
                         'projects.penthouse.whyUs.benefit3Desc',
-                        'Social media content reaches international buyers who never see traditional listings',
+                        'Video drives a 157% increase in organic traffic from search engines.',
                       )}
                     </p>
                   </div>
@@ -862,13 +868,13 @@ const PenthouseZurichProject = () => {
                     <h4 className='text-white font-semibold mb-1'>
                       {t(
                         'projects.penthouse.whyUs.benefit4',
-                        'Competitive edge',
+                        'Gain a Competitive Edge',
                       )}
                     </h4>
                     <p className='text-white/70 text-sm'>
                       {t(
                         'projects.penthouse.whyUs.benefit4Desc',
-                        'Stand out from agents using basic photos - become the premium choice for sellers',
+                        'With only 38% of agents using video, premium content makes you the top choice for discerning sellers.',
                       )}
                     </p>
                   </div>
@@ -944,7 +950,7 @@ const PenthouseZurichProject = () => {
                   <p className='text-white/60 text-sm text-center italic'>
                     {t(
                       'projects.penthouse.whyUs.testimonial',
-                      '"The video content transformed how buyers perceived our property. We reached international clients we never would have found otherwise."',
+                      '"The video content transformed how buyers perceived our property, creating an emotional connection that photos alone could not achieve."',
                     )}
                   </p>
                   <p className='text-[#F4FF78] text-xs text-center mt-2 font-medium'>
