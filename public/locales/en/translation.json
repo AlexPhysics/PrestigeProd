@@ -300,7 +300,12 @@
     "title": "Our Work",
     "subtitle": "Discover how",
     "ourPortfolio": "Our portfolio",
+    "ourText": "Our",
+    "portfolioText": "portfolio",
     "description": "From luxury real estate to high-end events, we craft cinematic journeys that elevate every project.",
+    "videoProduction": "Video production",
+    "socialMedia": "Social media",
+    "quality4k": "4K",
     "categories": {
       "all": "All",
       "realEstate": "Real Estate",
@@ -314,7 +319,7 @@
     "defaultDescription": "Premium cinematic production crafted with attention to detail and artistic vision.",
     "viewProject": "View Project",
     "testimonials": {
-      "title": "What Our Clients Say",
+      "title": "What our clients say",
       "subtitle": "Trusted by luxury brands and discerning clients worldwide",
       "client1": {
         "role": "Luxury Real Estate",
@@ -330,9 +335,9 @@
       }
     },
     "cta": {
-      "title": "Ready to Create Your Vision?",
+      "title": "Ready to create your vision?",
       "description": "Let's collaborate to bring your story to life with cinematic excellence and premium production value.",
-      "button": "Start Your Project"
+      "button": "Start your project"
     },
     "browserNotSupported": "Your browser does not support the video tag."
   },
