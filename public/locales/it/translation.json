@@ -317,9 +317,10 @@
     "subtitle": "Contenuti visivi di alta qualità che presentano la tua attività in modo professionale e generano risultati.",
     "whyChooseUs": "Perché scegliere noi",
     "provenResults": "Risultati comprovati, fidati dai leader del settore",
-    "trackRecord": "Il nostro track record parla da solo: i marchi premium ci scelgono per qualità garantita, coinvolgimento misurabile e affidabilità svizzera.",
+    "trackRecord": "Il nostro track record parla da solo: i marchi ci scelgono per qualità garantita, coinvolgimento misurabile e affidabilità svizzera.",
     "premiumQuality": "Qualità premium",
     "trustedByLeaders": "Fidati dai leader del settore",
+    "trustedByLeadersDesc": "Partner di aziende consolidate che richiedono eccellenza e precisione svizzera in ogni consegna di progetto.",
     "testimonial1": "La loro qualità di produzione cinematografica ha catturato perfettamente le nostre proprietà di lusso. Ogni dettaglio era impeccabile.",
     "clientSatisfactionRate": "Tasso di soddisfazione del cliente",
     "creativeImpact": "Impatto creativo",
@@ -367,7 +368,29 @@
     "averageDelivery": "Consegna media",
     "fiveDays": "5 giorni",
     "responseTime": "Tempo di risposta",
-    "within24h": "< 24 ore"
+    "within24h": "< 24 ore",
+    "basedOnClientFeedback": "Basato sul feedback post-progetto dei clienti",
+    "premiumContentCreation": "Contenuti che trasformano come i clienti percepiscono il tuo marchio",
+    "clientFocus": "Focus cliente",
+    "clientFocusDesc": "Adattiamo il nostro approccio per soddisfare le esigenze e gli obiettivi unici di ogni cliente, garantendo soluzioni personalizzate che offrono il massimo impatto per il loro mercato e obiettivi specifici",
+    "projectROI": "ROI medio del progetto",
+    "threeToFiveX": "3-5x",
+    "clientRetention": "Tasso di retention clienti",
+    "oneHundredPercent": "100%"
+  },
+  "swissStandards": {
+    "quality": {
+      "label": "Qualità video",
+      "desc": "Attrezzature di livello cinematografico per risultati cristallini"
+    },
+    "delivery": {
+      "label": "Consegna efficiente",
+      "desc": "Risultati premium consegnati con precisione temporale"
+    },
+    "projects": {
+      "label": "Coinvolgimento del pubblico",
+      "desc": "Potenziare la tua portata e coinvolgimento con contenuti video avvincenti"
+    }
   },
   "contact": {
     "title": "Creiamo qualcosa di ",
