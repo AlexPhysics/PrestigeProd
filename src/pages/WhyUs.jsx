@@ -356,7 +356,7 @@ const WhyUs = () => {
           <p className='text-xl text-center text-white/70 fade-in mb-6 max-w-3xl mx-auto leading-relaxed'>
             {t(
               'whyUs.subtitle',
-              "Prestige Production is more than just a video company — it's a partnership built on vision, creativity, and performance.",
+              "Prestige Production is more than just a video company, it's a partnership built on vision, creativity, and performance.",
             )}
           </p>
 

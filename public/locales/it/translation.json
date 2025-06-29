@@ -18,19 +18,19 @@
   },
   "contactSection": {
     "cta": "Contattaci",
-    "projectInfo": "Parliamo del tuo progetto – senza costi"
+    "projectInfo": "Parliamo del tuo progetto, senza costi"
   },
   "home": {
     "partnersTitle": "Trusted dai leader del settore",
-    "servicesTitle": "I Nostri Servizi",
+    "servicesTitle": "I nostri servizi",
     "servicesSubtitle": "Dal concetto al completamento, offriamo soluzioni complete di video e foto.",
-    "videoProductionTitle": "Produzione Video",
+    "videoProductionTitle": "Produzione video",
     "videoProductionDesc": "Creazione di narrative cinematografiche che mostrano l'essenza e il valore del tuo brand.",
     "photographyTitle": "Fotografia",
     "photographyDesc": "Immagini visive di alta qualità che catturano ogni dettaglio con precisione e stile.",
-    "featuredProjects": "Progetti in Evidenza",
+    "featuredProjects": "Progetti in evidenza",
     "viewAll": "Visualizza tutti i progetti",
-    "processTitle": "Il Nostro Processo",
+    "processTitle": "Il nostro processo",
     "processSubtitle": "Come diamo vita alla tua visione",
     "testimonials": "Cosa dicono i nostri clienti",
     "pageTitle": "Prestige Production | Servizi premium di video e fotografia"
@@ -53,30 +53,30 @@
       "impactDesc": "Le prime impressioni determinano il successo aziendale. I contenuti visivi professionali costruiscono fiducia, attirano clienti e ti distinguono dalla concorrenza."
     },
     "packages": {
-      "title": "Soluzioni Collaborative",
+      "title": "Soluzioni collaborative",
       "subtitle": "In qualità di team boutique di due persone, offriamo opzioni di servizio personalizzate che ti danno esattamente ciò di cui hai bisogno senza complessità inutili.",
       "teamNote": "Come studio boutique di due persone, offriamo un approccio personalizzato per ogni progetto. Il nostro piccolo team significa comunicazione diretta con i creativi che lavorano ai tuoi contenuti, assicurando che la tua visione sia perfettamente catturata.",
       "mostPopular": "più popolare",
       "premium": {
-        "title": "Pacchetto Premium",
+        "title": "Pacchetto premium",
         "premiumDesc": "La nostra soluzione completa signature per clienti che necessitano di storytelling visivo completo con massimo impatto.",
         "premiumFeature1": "Due giorni di produzione con la nostra suite completa di attrezzature",
         "premiumFeature2": "Produzione video cinematografica con tecniche di montaggio avanzate",
         "premiumFeature3": "Ampia collezione fotografica con color grading premium",
         "premiumFeature4": "Contenuti ottimizzati per tutte le principali piattaforme social",
         "premiumFeature5": "Revisioni illimitate e supporto continuo",
-        "premiumCta": "Seleziona Premium"
+        "premiumCta": "Seleziona premium"
       },
       "standard": {
-        "title": "Pacchetto Standard",
+        "title": "Pacchetto standard",
         "standardDesc": "Perfetto equilibrio tra qualità e valore per le aziende che necessitano di contenuti visivi professionali.",
         "standardFeature1": "Un giorno di produzione con attrezzatura essenziale",
         "standardFeature2": "Video professionale con selezione musicale personalizzata",
         "standardFeature3": "Set fotografico completo con editing standard",
-        "standardCta": "Seleziona Standard"
+        "standardCta": "Seleziona standard"
       },
       "custom": {
-        "title": "Soluzione Personalizzata",
+        "title": "Soluzione personalizzata",
         "customDesc": "Approccio su misura per progetti unici che richiedono competenze specifiche o direzione creativa.",
         "customFeature1": "Pianificazione collaborativa per soddisfare specifiche esatte",
         "customFeature2": "Programmazione di produzione flessibile e consegne",
@@ -156,7 +156,7 @@
   "whyUs": {
     "pageTitle": "Perché Noi | Prestige Production",
     "title": "Perché Lavorare Con Noi?",
-    "subtitle": "Prestige Production è più di una semplice società di produzione video - è una partnership basata su visione, creatività e performance.",
+    "subtitle": "Prestige Production è più di una semplice società di produzione video, è una partnership basata su visione, creatività e performance.",
     "cta": "Lavoriamo insieme",
     "teamLabel": "IL NOSTRO TEAM",
     "meetThe": "Incontra le nostre",
@@ -345,7 +345,7 @@
     "whatsapp": "Chatta su WhatsApp",
     "whatsappLabel": "Chatta con noi su WhatsApp",
     "loadingCalendar": "Caricamento calendario...",
-    "pageTitle": "Contatti - Prestige Production"
+    "pageTitle": "Contatti | Prestige Production"
   },
   "footer": {
     "description": "Arte in ogni pixel, eccellenza in ogni frame.",

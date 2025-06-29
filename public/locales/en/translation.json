@@ -16,40 +16,40 @@
     "scrollDown": "Scroll down to discover",
     "mouseover": "Move your mouse over each word"
   },
-  "contactSection": {
+    "contactSection": {
     "cta": "Contact us",
-    "projectInfo": "Let's talk about your project – no cost"
+    "projectInfo": "Let's talk about your project, no cost"
   },
   "home": {
     "partnersTitle": "Trusted by industry leaders",
-    "servicesTitle": "Our Services",
+    "servicesTitle": "Our services",
     "servicesSubtitle": "From concept to completion, we offer comprehensive video and photo solutions.",
-    "videoProductionTitle": "Video Production",
+    "videoProductionTitle": "Video production",
     "videoProductionDesc": "Crafting cinematic narratives that showcase your brand's essence and value.",
     "photographyTitle": "Photography",
     "photographyDesc": "High-end visual imagery that captures every detail with precision and style.",
-    "featuredProjects": "Featured Projects",
+    "featuredProjects": "Featured projects",
     "viewAll": "View all projects",
-    "processTitle": "Our Process",
+    "processTitle": "Our process",
     "processSubtitle": "How we bring your vision to life",
     "testimonials": "What our clients say",
-    "pageTitle": "Prestige Production | Premium Video & Photography Services"
+    "pageTitle": "Prestige Production | Premium video & photography services"
   },  "services": {
     "pageTitle": "Services | Prestige Production",
     "hero": {
-      "title": "Professional Video & Photography",
-      "highlight": "Made Simple",
+      "title": "Professional video & photography",
+      "highlight": "Made simple",
       "subtitle": "High-quality visual content that showcases your business professionally. Clear pricing, reliable delivery, exceptional results.",
       "cta": "Work with us",
-      "primaryCta": "Get Custom Quote",
-      "secondaryCta": "View Packages"
+      "primaryCta": "Get custom quote",
+      "secondaryCta": "View packages"
     },
     "benefits": {
-      "expertise": "Swiss Precision",
+      "expertise": "Swiss precision",
       "expertiseDesc": "Professional equipment and years of experience ensuring consistent, high-quality results.",
-      "efficiency": "Time Focused",
+      "efficiency": "Time focused",
       "efficiencyDesc": "Streamlined process that respects your schedule and delivers on agreed timelines.",
-      "impact": "Why It Matters",
+      "impact": "Why it matters",
       "impactDesc": "First impressions shape business success. Professional visuals build trust, attract customers, and set you apart from competitors."
     },
     "process": {
@@ -179,22 +179,22 @@
   },
   "whyUs": {
     "pageTitle": "Why Us | Prestige Production",
-    "title": "Why Work With Us?",
-    "subtitle": "Prestige Production is more than just a video company — it's a partnership built on vision, creativity, and performance.",
+    "title": "Why work with us?",
+    "subtitle": "Prestige Production is more than just a video company, it's a partnership built on vision, creativity, and performance.",
     "cta": "Let's work together",
     "teamLabel": "OUR TEAM",
-    "meetThe": "Meet The",
-    "creativeMinus": "Creative Minds",
+    "meetThe": "Meet the",
+    "creativeMinus": "Creative minds",
     "skills": {
       "dorian": {
-        "0": "Creative Direction",
+        "0": "Creative direction",
         "1": "Cinematography", 
-        "2": "Brand Strategy"
+        "2": "Brand strategy"
       },
       "alex": {
-        "0": "Technical Production",
+        "0": "Technical production",
         "1": "Post-processing",
-        "2": "Color Grading"
+        "2": "Color grading"
       }
     },
     "approach": {
@@ -291,7 +291,7 @@
         "role": "Technical Director",
         "description": {
           "alexDesc1": "Alex is the technical brain of the operation.",
-          "alexDesc2": "From drones to editing suites, he handles it all — ensuring crisp footage, smooth edits, and flawless delivery.",
+          "alexDesc2": "From drones to editing suites, he handles it all, ensuring crisp footage, smooth edits, and flawless delivery.",
           "alexDesc3": "He's obsessed with quality and elevates every video to meet professional-grade standards."
         }
       }
@@ -418,7 +418,7 @@
       "projectTitle": "Project Overview",
       "viewResults": "View Results",
       "whyVideo": "Why Video Sells",
-      "description": "We partnered with Zurich Sotheby's International Realty to bring to life one of Zurich's most exceptional properties — a 304 m² penthouse perched atop the Mobimo Tower. Through cinematic visuals, architectural storytelling, and a detail-oriented production process, we created a complete content suite tailored to the luxury market.",
+      "description": "We partnered with Zurich Sotheby's International Realty to bring to life one of Zurich's most exceptional properties, a 304 m² penthouse perched atop the Mobimo Tower. Through cinematic visuals, architectural storytelling, and a detail-oriented production process, we created a complete content suite tailored to the luxury market.",
       "address": "Turbinenstrasse 18, 8005 Zürich",
       "website": "zurichsothebysrealty.com",
       "partner": "Zurich Sotheby's",
@@ -486,7 +486,7 @@
       "branding": "A Prestige Production",
       "photos": "photos",
       "social": "social content",
-      "andMore": "and more — we delivered it all.",
+      "andMore": "and more, we delivered it all.",
       "watchOfficialAftermovie": "Watch the Official Aftermovie",
       "aftermovieTitle": "Official Aftermovie",
       "featuredInterviews": "Featured Interviews",

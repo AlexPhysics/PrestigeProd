@@ -344,7 +344,7 @@ const PenthouseZurichProject = () => {
             <p className='text-lg text-white/80 leading-relaxed mb-8'>
               {t(
                 'projects.penthouse.description',
-                "We partnered with Zurich Sotheby's International Realty to bring to life one of Zurich's most exceptional properties — a 304 m² penthouse perched atop the Mobimo Tower. Through cinematic visuals, architectural storytelling, and a detail-oriented production process, we created a complete content suite tailored to the luxury market.",
+                "We partnered with Zurich Sotheby's International Realty to bring to life one of Zurich's most exceptional properties, a 304 m² penthouse perched atop the Mobimo Tower. Through cinematic visuals, architectural storytelling, and a detail-oriented production process, we created a complete content suite tailored to the luxury market.",
               )}
             </p>
 

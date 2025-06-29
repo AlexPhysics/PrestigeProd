@@ -495,7 +495,7 @@ const SmiProject = () => {
               <span className='text-white'>
                 {t('projects.smi.social', 'social content')}
               </span>{' '}
-              {t('projects.smi.andMore', 'and more — we delivered it all.')}
+              {t('projects.smi.andMore', 'and more, we delivered it all.')}
             </p>
           </div>
 

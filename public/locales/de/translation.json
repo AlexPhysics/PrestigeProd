@@ -7,7 +7,7 @@
     "home": "Startseite",
     "portfolio": "Portfolio",
     "services": "Leistungen",
-    "whyUs": "Warum Wir",
+    "whyUs": "Warum wir",
     "contact": "Kontakt"
   },
   "hero": {
@@ -18,7 +18,7 @@
   },
   "contactSection": {
     "cta": "Kontaktieren Sie uns",
-    "projectInfo": "Sprechen wir über Ihr Projekt – kostenlos"
+    "projectInfo": "Sprechen wir über Ihr Projekt, kostenlos"
   },
   "home": {
     "partnersTitle": "Vertrauen von Branchenführern",
@@ -140,7 +140,7 @@
   "whyUs": {
     "pageTitle": "Warum Wir | Prestige Production",
     "title": "Warum mit uns arbeiten?",
-    "subtitle": "Prestige Production ist mehr als nur ein Videoproduktionsunternehmen — es ist eine Partnerschaft, die auf Vision, Kreativität und Leistung aufbaut.",
+    "subtitle": "Prestige Production ist mehr als nur ein Videoproduktionsunternehmen, es ist eine Partnerschaft, die auf Vision, Kreativität und Leistung aufbaut.",
     "cta": "Lassen Sie uns zusammenarbeiten",
     "teamLabel": "UNSER TEAM",
     "meetThe": "Lernen Sie unsere",
@@ -329,7 +329,7 @@
     "whatsapp": "Chatten Sie auf WhatsApp",
     "whatsappLabel": "Chatten Sie mit uns auf WhatsApp",
     "loadingCalendar": "Kalender wird geladen...",
-    "pageTitle": "Kontakt - Prestige Production"
+    "pageTitle": "Kontakt | Prestige Production"
   },
   "footer": {
     "description": "Kunst in jedem Pixel, Exzellenz in jedem Bild.",

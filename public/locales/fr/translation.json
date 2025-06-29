@@ -18,19 +18,19 @@
   },
   "contactSection": {
     "cta": "Contactez-nous",
-    "projectInfo": "Parlons de votre projet – sans frais"
+    "projectInfo": "Parlons de votre projet, sans frais"
   },
   "home": {
     "partnersTitle": "Approuvé par les leaders de l'industrie",
-    "servicesTitle": "Nos Services",
+    "servicesTitle": "Nos services",
     "servicesSubtitle": "Du concept à la réalisation, nous offrons des solutions complètes en vidéo et photo.",
-    "videoProductionTitle": "Production Vidéo",
+    "videoProductionTitle": "Production vidéo",
     "videoProductionDesc": "Création de narratifs cinématiques qui mettent en valeur l'essence et la valeur de votre marque.",
     "photographyTitle": "Photographie",
     "photographyDesc": "Images visuelles haut de gamme qui capturent chaque détail avec précision et style.",
     "featuredProjects": "Projets en vedette",
     "viewAll": "Voir tous les projets",
-    "processTitle": "Notre Processus",
+    "processTitle": "Notre processus",
     "processSubtitle": "Comment nous donnons vie à votre vision",
     "testimonials": "Ce que disent nos clients",
     "pageTitle": "Prestige Production | Services de vidéo et photographie premium"
@@ -327,7 +327,7 @@
     "whatsapp": "Discuter sur WhatsApp",
     "whatsappLabel": "Discutez avec nous sur WhatsApp",
     "loadingCalendar": "Chargement du calendrier...",
-    "pageTitle": "Contact - Prestige Production"
+    "pageTitle": "Contact | Prestige Production"
   },
   "footer": {
     "description": "Art dans chaque pixel, excellence dans chaque image.",
