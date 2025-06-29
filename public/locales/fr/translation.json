@@ -297,10 +297,11 @@
     "title": "Vidéo et photographie professionnelles",
     "subtitle": "Contenu visuel de haute qualité qui présente votre entreprise de manière professionnelle et génère des résultats.",
     "whyChooseUs": "Pourquoi nous choisir",
-    "provenResults": "Résultats prouvés, approuvés par les leaders de l'industrie",
-    "trackRecord": "Notre palmarès parle de lui-même : les marques premium nous choisissent pour la qualité garantie, l'engagement mesurable et la fiabilité suisse.",
+    "provenResults": "Des résultats concrets, la confiance des professionnels",
+    "trackRecord": "Notre expérience parle d'elle-même : les marques nous choisissent pour la qualité garantie, l'engagement mesurable et la fiabilité suisse.",
     "premiumQuality": "Qualité premium",
     "trustedByLeaders": "Approuvé par les leaders de l'industrie",
+    "trustedByLeadersDesc": "Partenaires d'entreprises établies qui exigent l'excellence et la précision suisse dans chaque livraison de projet.",
     "testimonial1": "Leur qualité de production cinématographique a parfaitement capturé nos propriétés de luxe. Chaque détail était impeccable.",
     "clientSatisfactionRate": "Taux de satisfaction client",
     "creativeImpact": "Impact créatif",
@@ -313,7 +314,7 @@
     "swissReliability": "Fiabilité suisse",
     "guaranteedDelivery": "Livraison ponctuelle garantie",
     "projectsOnSchedule": "Projets livrés dans les délais",
-    "trackRecordMonths": "24 mois de palmarès",
+    "trackRecordMonths": "24 mois d'expérience",
     "averageDeliveryTime": "Temps de livraison moyen",
     "earlyDelivery": "2-5 jours d'avance",
     "rushProjects": "Projets urgents disponibles",
@@ -325,7 +326,7 @@
     "ctaQuote": "Obtenez votre devis gratuit",
     "ctaWork": "Voir notre travail",
     "brandElevation": "Élévation de marque",
-    "brandElevationDesc": "Notre narration visuelle vous positionne comme le choix premium sur votre marché, vous différenciant immédiatement des concurrents.",
+    "brandElevationDesc": "Notre storytelling visuel vous positionne comme l'option premium sur votre marché, vous démarquant immédiatement de la concurrence.",
     "brandResult": "Résultat : Perception de marque améliorée et positionnement sur le marché",
     "clientTrust": "Confiance client et crédibilité",
     "clientTrustDesc": "Les visuels professionnels créent une confiance immédiate avec les clients potentiels, réduisant les cycles de vente dans tous les segments de marché.",
@@ -333,13 +334,13 @@
     "swissExcellence": "Excellence prouvée",
     "prestigeFromDay1": "Approuvé par le prestige dès le premier jour",
     "premiumClients": "Partenariats clients premium",
-    "premiumClientsDesc": "Travail exclusif avec des marques établies et des leaders de l'industrie qui exigent une qualité exceptionnelle",
+    "premiumClientsDesc": "Nous travaillons exclusivement avec des marques établies et des leaders de l'industrie qui exigent une qualité exceptionnelle",
     "professionalApproach": "Approche professionnelle",
     "professionalApproachDesc": "Nous offrons les mêmes hauts standards et attention aux détails pour chaque client, quelle que soit la taille du projet ou l'industrie",
     "smiEvent": "Swiss Mining Institute",
     "smiDesc": "Couverture de l'un des événements industriels les plus exclusifs d'Europe, création de contenu pour les leaders miniers internationaux",
     "qualityFocus": "Approche qualité avant quantité",
-    "qualityFocusDesc": "Approche client sélective garantit une attention dédiée et des résultats exceptionnels pour chaque projet",
+    "qualityFocusDesc": "Notre approche client sélective garantit une attention dédiée et des résultats exceptionnels pour chaque projet",
     "premiumClient": "Client immobilier premium",
     "establishedYear": "Établi",
     "basedInZurich": "Basé à Zurich, Suisse",
@@ -348,7 +349,29 @@
     "averageDelivery": "Livraison moyenne",
     "fiveDays": "5 jours",
     "responseTime": "Temps de réponse",
-    "within24h": "< 24 heures"
+    "within24h": "< 24 heures",
+    "basedOnClientFeedback": "Basé sur les retours post-projet des clients",
+    "premiumContentCreation": "Contenu qui transforme la perception de votre marque par les clients",
+    "clientFocus": "Focus client",
+    "clientFocusDesc": "Nous adaptons notre approche pour répondre aux besoins et objectifs uniques de chaque client, garantissant des solutions personnalisées qui offrent un impact maximal pour leur marché et leurs objectifs spécifiques",
+    "projectROI": "ROI moyen des projets",
+    "threeToFiveX": "3-5x",
+    "clientRetention": "Taux de rétention client",
+    "oneHundredPercent": "100%"
+  },
+  "swissStandards": {
+    "quality": {
+      "label": "Qualité vidéo",
+      "desc": "Équipement de niveau cinéma pour des résultats d'une clarté cristalline"
+    },
+    "delivery": {
+      "label": "Délais respectés", 
+      "desc": "On tient parole et on respecte toujours vos échéances"
+    },
+    "projects": {
+      "label": "Engagement de l'audience",
+      "desc": "Amplifier votre portée et engagement avec du contenu vidéo captivant"
+    }
   },
   "contact": {
     "title": "Créons quelque chose d'",
