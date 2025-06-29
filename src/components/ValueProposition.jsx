@@ -204,7 +204,7 @@ const ValueProposition = () => {
                   </h4>
                   
                   <p className='text-xl text-white/70 leading-relaxed mb-8 flex-grow'>
-                    Partnered with established brands who demand excellence and Swiss precision in every project delivery.
+                    {t('valueProposition.trustedByLeadersDesc')}
                   </p>
                   
                   <div className='flex items-center space-x-6'>
@@ -354,7 +354,7 @@ const ValueProposition = () => {
                       <div className='w-2 h-2 bg-[#9EB6A9] rounded-full mt-3 flex-shrink-0'></div>
                       <div>
                         <div className='text-white/90 text-lg font-medium mb-1'>{t('valueProposition.clientFocus', 'Client focus')}</div>
-                        <div className='text-white/70'>{t('valueProposition.premiumClientDesc', 'We work exclusively with discerning clients who value exceptional quality and understand the importance of professional visual storytelling')}</div>
+                        <div className='text-white/70'>{t('valueProposition.clientFocusDesc', 'We adapt our approach to meet each client\'s unique needs and goals, ensuring personalized solutions that deliver maximum impact for their specific market and objectives')}</div>
                       </div>
                     </div>
                     
