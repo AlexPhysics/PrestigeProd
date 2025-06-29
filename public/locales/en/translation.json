@@ -546,9 +546,43 @@
         "testimonialAuthor": "— Zurich Sotheby's International Realty"
       },
       "ctaTitle": "Ready to Showcase Your Property?",
-      "ctaDesc": "Let us create premium content that elevates your luxury properties and captures the attention of discerning buyers.",
-      "ctaButton": "Start Your Project",
-      "branding": "A Prestige Production",
+      "ctaDesc": "Let us create premium content that elevates your luxury properties and captures the attention of discerning buyers."
+    },
+    "smi": {
+      "seoTitle": "Swiss Mining Institute 2024 - Premium Event Production | Prestige Production",
+      "seoDescription": "Discover our premium video production coverage of the Swiss Mining Institute 2024 - the most prestigious mining conference in Europe. Featuring exclusive interviews, aftermovies, and luxury event content.",
+      "seoKeywords": "Swiss Mining Institute, luxury event production, mining conference video, premium corporate videos, event videography, conference coverage, aftermovie production",
+      "tagline": "It's all about luxury.",
+      "title": "Swiss Mining Institute 2024",
+      "subtitle": "The most prestigious mining conference in the world",
+      "moreReels": "More reels from the event",
+      "swipeLeft": "Swipe or drag to navigate",
+      "swipeLeftMobile": "Swipe to navigate",
+      "partnerCredit": "Project delivered in partnership with",
+      "partnerName": "Swiss Mining Institute",
+      "intro1Part1": "The Swiss Mining Institute is",
+      "intro1Part2": "the biggest and most exclusive mining conference in Europe",
+      "intro1Part3": "Hosting 1000+ investors, 100+ listed companies and over 2700 meetings arranged over 2 days.",
+      "intro2Part1": "For two days, we captured",
+      "intro2Part2": "everything a camera lens could reach",
+      "intro2Part3": "From",
+      "interviews": "interviews",
+      "panels": "panel discussions",
+      "and": "and",
+      "the": "the",
+      "aftermovie": "official aftermovie",
+      "to": "to",
+      "watchAftermovie": "Watch the official aftermovie",
+      "mainVideo": {
+        "title": "Event Highlights",
+        "type": "Highlight Reel",
+        "description": "Premium coverage of the most exclusive mining conference in Europe, featuring luxury venues and high-profile networking.",
+        "tags": {
+          "luxuryEvent": "Luxury Event",
+          "miningConference": "Mining Conference", 
+          "premiumProduction": "Premium Production"
+        }
+      },
       "photos": "photos",
       "social": "social content",
       "andMore": "and more, we delivered it all.",
@@ -558,8 +592,29 @@
       "interviewsDesc": "We've had the privilege to sit down with trail-blazing CEOs and forward-thinking investors who are reshaping the mining ecosystem. Dive in for candid insights you won't hear anywhere else.",
       "interviewTitle": "Interview",
       "enlargedImage": "Enlarged",
-      "thanks": "Thanks to our partner",
-      "partnerName": "Swiss Mining Institute"
+      "lightboxLabel": "Media viewer",
+      "closeLightbox": "Close viewer",
+      "photoAlt": "SMI Photo",
+      "carousel": {
+        "reel1": {
+          "title": "SMI Conference Opening",
+          "description": "Exclusive opening moments of the mining conference",
+          "type": "Event Highlight",
+          "tags": ["Conference", "Mining"]
+        },
+        "reel2": {
+          "title": "Industry Leaders", 
+          "description": "Key speakers and industry insights",
+          "type": "Professional Content",
+          "tags": ["Speakers", "Industry"]
+        },
+        "reel3": {
+          "title": "Conference Highlights",
+          "description": "Best moments from the two-day event", 
+          "type": "Event Summary",
+          "tags": ["Highlights", "Event"]
+        }
+      }
     }
   },
   "highlights": {
