@@ -254,22 +254,24 @@
     }
   },
   "portfolio": {
-    "title": "Notre Travail",
+    "title": "Notre travail",
     "subtitle": "Découvrez comment",
     "ourPortfolio": "Notre portfolio",
+    "ourText": "Notre",
+    "portfolioText": "portfolio",
     "description": "De l'immobilier de luxe aux événements haut de gamme, nous créons des voyages cinématographiques qui élèvent chaque projet.",
     "categories": {
       "all": "Tous",
       "realEstate": "Immobilier",
       "corporate": "Entreprise",
       "events": "Événements",
-      "social": "Réseaux Sociaux"
+      "social": "Réseaux sociaux"
     },
-    "reelsTitle": "Reels pour Médias Sociaux",
+    "reelsTitle": "Reels pour médias sociaux",
     "reelsSubtitle": "Contenu court et engageant conçu pour un impact maximum sur les réseaux sociaux",
     "pageTitle": "Notre Travail | Prestige Production",
     "defaultDescription": "Production cinématographique premium réalisée avec attention aux détails et vision artistique.",
-    "viewProject": "Voir le Projet",
+    "viewProject": "Voir le projet",
     "testimonials": {
       "title": "Ce Que Disent Nos Clients",
       "subtitle": "Approuvé par les marques de luxe et les clients exigeants du monde entier",

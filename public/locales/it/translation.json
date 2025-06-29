@@ -273,22 +273,24 @@
     }
   },
   "portfolio": {
-    "title": "Il Nostro Lavoro",
+    "title": "Il nostro lavoro",
     "subtitle": "Scopri come",
     "ourPortfolio": "Il nostro portfolio",
+    "ourText": "Il nostro",
+    "portfolioText": "portfolio",
     "description": "Dai brand di lusso agli eventi di alta gamma, creiamo viaggi cinematografici che elevano ogni progetto.",
     "categories": {
       "all": "Tutti",
       "realEstate": "Progetti",
       "corporate": "Aziendale",
       "events": "Eventi",
-      "social": "Social Media"
+      "social": "Social media"
     },
-    "reelsTitle": "Reel per Social Media",
+    "reelsTitle": "Reel per social media",
     "reelsSubtitle": "Contenuti coinvolgenti in formato breve progettati per il massimo impatto sui social media",
     "pageTitle": "Il Nostro Lavoro | Prestige Production",
     "defaultDescription": "Produzione cinematografica premium realizzata con attenzione ai dettagli e visione artistica.",
-    "viewProject": "Visualizza Progetto",
+    "viewProject": "Visualizza progetto",
     "testimonials": {
       "title": "Cosa Dicono i Nostri Clienti",
       "subtitle": "Fidato da marchi di lusso e clienti esigenti in tutto il mondo",

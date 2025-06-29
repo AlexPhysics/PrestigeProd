@@ -259,19 +259,21 @@
     "title": "Unsere Arbeit",
     "subtitle": "Entdecken Sie, wie",
     "ourPortfolio": "Unser Portfolio",
+    "ourText": "Unser",
+    "portfolioText": "Portfolio",
     "description": "Von Luxusimmobilien bis hin zu hochwertigen Veranstaltungen schaffen wir filmische Reisen, die jedes Projekt aufwerten.",
     "categories": {
       "all": "Alle",
       "realEstate": "Immobilien",
       "corporate": "Unternehmen",
       "events": "Veranstaltungen",
-      "social": "Soziale Medien"
+      "social": "Soziale medien"
     },
-    "reelsTitle": "Social Media Reels",
+    "reelsTitle": "Social media reels",
     "reelsSubtitle": "Ansprechende Kurzcontent-Formate für maximale Wirkung in sozialen Medien",
     "pageTitle": "Unsere Arbeit | Prestige Production",
     "defaultDescription": "Premium-Filmproduktion mit Aufmerksamkeit für Details und künstlerische Vision.",
-    "viewProject": "Projekt Ansehen",
+    "viewProject": "Projekt ansehen",
     "testimonials": {
       "title": "Was Unsere Kunden Sagen",
       "subtitle": "Vertraut von Luxusmarken und anspruchsvollen Kunden weltweit",
