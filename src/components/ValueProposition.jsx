@@ -86,7 +86,7 @@ const ValueProposition = () => {
             viewport={{ once: true }}
             className='text-4xl md:text-6xl lg:text-7xl font-light text-white mb-8 tracking-tight leading-[1.1]'
           >
-            Professional Video & Photography
+            {t('valueProposition.title', 'Professional video & photography')}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -99,8 +99,7 @@ const ValueProposition = () => {
             viewport={{ once: true }}
             className='text-xl md:text-2xl text-white/80 max-w-4xl mx-auto leading-relaxed font-light'
           >
-            High-quality visual content that showcases your business
-            professionally and drives results.
+            {t('valueProposition.subtitle', 'High-quality visual content that showcases your business professionally and drives results.')}
           </motion.p>
         </div>
 
@@ -169,141 +168,210 @@ const ValueProposition = () => {
                   />
                 </svg>
                 <span className='text-[#9EB6A9] font-medium tracking-wide'>
-                  Why Choose Us
+                  {t('valueProposition.whyChooseUs', 'Why choose us')}
                 </span>
               </motion.div>
 
               <h3 className='text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6 tracking-tight leading-[1.1]'>
-                Professional Video & Photo Production
+                {t('valueProposition.provenResults', 'Proven results, trusted by industry leaders')}
               </h3>
               <p className='text-xl md:text-2xl text-white/80 max-w-4xl mx-auto mb-12 leading-relaxed font-light'>
-                We deliver high-quality visual content with Swiss precision and
-                reliability.
+                {t('valueProposition.trackRecord', 'Our track record speaks for itself: premium brands choose us for guaranteed quality, measurable engagement, and Swiss reliability.')}
               </p>
             </div>
 
-            {/* Comparison grid */}
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16'>
-              <div className='space-y-8'>
-                <h4 className='text-2xl md:text-3xl font-light text-white/60 mb-8 text-center tracking-wide'>
-                  Other agencies
-                </h4>
+            {/* Proven results showcase */}
+            <div className='space-y-16'>
+              {/* First row - Trust & Quality */}
+              <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 items-center'>
+                {/* High Quality Deliverables */}
+                <motion.div
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+                  viewport={{ once: true }}
+                  className='space-y-8'
+                >
+                  <div className='inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#9EB6A9]/20 to-[#205C57]/20 border border-[#9EB6A9]/30 rounded-full backdrop-blur-sm'>
+                    <svg className='w-5 h-5 text-[#9EB6A9] mr-3' fill='currentColor' viewBox='0 0 20 20'>
+                      <path fillRule='evenodd' d='M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z' clipRule='evenodd' />
+                    </svg>
+                    <span className='text-[#9EB6A9] font-medium tracking-wide'>{t('valueProposition.premiumQuality', 'Premium quality')}</span>
+                  </div>
+                  
+                  <h4 className='text-3xl md:text-4xl font-light text-white tracking-wide leading-tight'>
+                    {t('valueProposition.trustedByLeaders', 'Trusted by industry leaders')}
+                  </h4>
+                  
+                  <div className='flex items-center space-x-6 mb-8'>
+                    <img 
+                      src='/assets/logos/zurich_sothebys_logo.png' 
+                      alt='Zurich Sothebys Realty'
+                      className='h-10 opacity-80 filter brightness-0 invert'
+                    />
+                    <div className='w-px h-10 bg-white/20'></div>
+                    <img 
+                      src='/assets/logos/smi_logo.png' 
+                      alt='SMI Management'
+                      className='h-10 opacity-80 filter brightness-0 invert'
+                    />
+                  </div>
+                  
+                  <blockquote className='text-xl text-white/80 italic leading-relaxed border-l-4 border-[#9EB6A9]/40 pl-6'>
+                    "{t('valueProposition.testimonial1', 'Their cinema-grade production quality perfectly captured our luxury properties. Every detail was flawless.')}"
+                  </blockquote>
+                  <div className='text-[#9EB6A9] font-medium'>
+                    — Zurich Sotheby's International Realty
+                  </div>
+                </motion.div>
 
-                <div className='space-y-6'>
-                  {[
-                    'Large team overhead costs',
-                    'Junior staff handling projects',
-                    'One-size-fits-all packages',
-                    'Limited creative flexibility',
-                  ].map((item, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, x: -30 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{
-                        duration: 0.6,
-                        delay: index * 0.1,
-                        ease: [0.25, 0.1, 0.25, 1],
-                      }}
-                      viewport={{ once: true }}
-                      className='flex items-center justify-center space-x-4'
-                    >
-                      <div className='w-8 h-8 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 border border-white/20'>
-                        <svg
-                          className='w-4 h-4 text-white/50'
-                          fill='currentColor'
-                          viewBox='0 0 20 20'
-                        >
-                          <path
-                            fillRule='evenodd'
-                            d='M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z'
-                            clipRule='evenodd'
-                          />
-                        </svg>
-                      </div>
-                      <span className='text-white/70 text-lg font-light'>
-                        {item}
-                      </span>
-                    </motion.div>
-                  ))}
-                </div>
+                {/* Satisfaction Rate */}
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
+                  viewport={{ once: true }}
+                  className='text-center'
+                >
+                  <div className='bg-gradient-to-br from-[#9EB6A9]/10 to-[#205C57]/10 rounded-3xl p-12 border border-[#9EB6A9]/20 backdrop-blur-sm'>
+                    <div className='text-8xl md:text-9xl font-extralight text-transparent bg-gradient-to-br from-[#9EB6A9] to-[#205C57] bg-clip-text mb-4'>
+                      100%
+                    </div>
+                    <div className='text-xl text-white/80 mb-4'>{t('valueProposition.clientSatisfactionRate', 'Client satisfaction rate')}</div>
+                    <div className='text-[#9EB6A9] text-sm'>{t('valueProposition.basedOnClientFeedback', 'Based on post-project client feedback')}</div>
+                  </div>
+                </motion.div>
               </div>
 
-              <div className='space-y-8'>
-                <h4 className='text-2xl md:text-3xl font-light text-[#9EB6A9] mb-8 text-center tracking-wide'>
-                  Prestige Production
-                </h4>
-
-                <div className='space-y-6 bg-gradient-to-br from-[#9EB6A9]/5 to-[#205C57]/5 rounded-2xl p-6 border border-[#9EB6A9]/10'>
-                  {[
-                    'Cinema-grade equipment only',
-                    'Boutique two-person focus',
-                    'Tailored creative solutions',
-                    'Swiss precision meets agility',
-                  ].map((item, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, x: 30 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{
-                        duration: 0.6,
-                        delay: index * 0.1,
-                        ease: [0.25, 0.1, 0.25, 1],
-                      }}
-                      viewport={{ once: true }}
-                      className='flex items-center justify-center space-x-4'
-                    >
-                      <div className='w-8 h-8 bg-gradient-to-br from-[#9EB6A9]/30 to-[#205C57]/30 rounded-full flex items-center justify-center flex-shrink-0 border border-[#9EB6A9]/40'>
-                        <svg
-                          className='w-4 h-4 text-[#9EB6A9]'
-                          fill='currentColor'
-                          viewBox='0 0 20 20'
-                        >
-                          <path
-                            fillRule='evenodd'
-                            d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z'
-                            clipRule='evenodd'
-                          />
-                        </svg>
-                      </div>
-                      <span className='text-white font-medium text-lg'>
-                        {item}
-                      </span>
-                    </motion.div>
-                  ))}
+              {/* Second row - Creative Impact */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
+                viewport={{ once: true }}
+                className='text-center space-y-8'
+              >
+                <div className='inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#205C57]/20 to-[#9EB6A9]/20 border border-[#9EB6A9]/30 rounded-full backdrop-blur-sm'>
+                  <svg className='w-5 h-5 text-[#9EB6A9] mr-3' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+                    <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={1.5} d='M13 10V3L4 14h7v7l9-11h-7z' />
+                  </svg>
+                  <span className='text-[#9EB6A9] font-medium tracking-wide'>{t('valueProposition.creativeImpact', 'Creative impact')}</span>
                 </div>
+                
+                <h4 className='text-3xl md:text-4xl font-light text-white tracking-wide leading-tight max-w-3xl mx-auto'>
+                  {t('valueProposition.premiumContentCreation', 'Content that transforms how clients perceive your brand')}
+                </h4>
+                
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto'>
+                  <div className='bg-gradient-to-br from-[#9EB6A9]/5 to-[#205C57]/5 rounded-2xl p-10 border border-[#9EB6A9]/10 text-left'>
+                    <div className='flex items-center mb-6'>
+                      <div className='w-3 h-3 bg-[#9EB6A9] rounded-full mr-4'></div>
+                      <h5 className='text-xl text-white/90 font-medium'>{t('valueProposition.brandElevation', 'Brand elevation')}</h5>
+                    </div>
+                    <p className='text-white/70 leading-relaxed mb-4'>
+                      {t('valueProposition.brandElevationDesc', 'Our visual storytelling positions you as the premium choice in your market, immediately differentiating you from competitors.')}
+                    </p>
+                    <div className='text-[#9EB6A9] text-sm font-medium'>
+                      {t('valueProposition.brandResult', 'Result: Enhanced brand perception and market positioning')}
+                    </div>
+                  </div>
+                  
+                  <div className='bg-gradient-to-br from-[#9EB6A9]/5 to-[#205C57]/5 rounded-2xl p-10 border border-[#9EB6A9]/10 text-left'>
+                    <div className='flex items-center mb-6'>
+                      <div className='w-3 h-3 bg-[#9EB6A9] rounded-full mr-4'></div>
+                      <h5 className='text-xl text-white/90 font-medium'>{t('valueProposition.clientTrust', 'Client trust & credibility')}</h5>
+                    </div>
+                    <p className='text-white/70 leading-relaxed mb-4'>
+                      {t('valueProposition.clientTrustDesc', 'Professional visuals build immediate trust with potential clients, reducing sales cycles and increasing conversion rates across all market segments.')}
+                    </p>
+                    <div className='text-[#9EB6A9] text-sm font-medium'>
+                      {t('valueProposition.trustResult', 'Result: Faster client acquisition and improved conversion rates')}
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Third row - Swiss Excellence */}
+              <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 items-center'>
+                {/* Swiss Excellence */}
+                <motion.div
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
+                  viewport={{ once: true }}
+                  className='lg:order-2 space-y-8'
+                >
+                  <div className='inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#9EB6A9]/20 to-[#205C57]/20 border border-[#9EB6A9]/30 rounded-full backdrop-blur-sm'>
+                    <svg className='w-5 h-5 text-[#9EB6A9] mr-3' fill='currentColor' viewBox='0 0 20 20'>
+                      <path fillRule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z' clipRule='evenodd' />
+                    </svg>
+                    <span className='text-[#9EB6A9] font-medium tracking-wide'>{t('valueProposition.swissExcellence', 'Proven excellence')}</span>
+                  </div>
+                  
+                  <h4 className='text-3xl md:text-4xl font-light text-white tracking-wide leading-tight'>
+                    {t('valueProposition.prestigeFromDay1', 'Trusted by prestige from day one')}
+                  </h4>
+                  
+                  <div className='space-y-6'>
+                    <div className='flex items-start space-x-4'>
+                      <div className='w-2 h-2 bg-[#9EB6A9] rounded-full mt-3 flex-shrink-0'></div>
+                      <div>
+                        <div className='text-white/90 text-lg font-medium mb-1'>{t('valueProposition.professionalApproach', 'Professional approach')}</div>
+                        <div className='text-white/70'>{t('valueProposition.professionalApproachDesc', 'We deliver the same high standards and attention to detail for every client, regardless of project size or industry')}</div>
+                      </div>
+                    </div>
+                    
+                    <div className='flex items-start space-x-4'>
+                      <div className='w-2 h-2 bg-[#9EB6A9] rounded-full mt-3 flex-shrink-0'></div>
+                      <div>
+                        <div className='text-white/90 text-lg font-medium mb-1'>{t('valueProposition.smiEvent', 'Swiss Mining Institute')}</div>
+                        <div className='text-white/70'>{t('valueProposition.smiDesc', 'Covered one of Europe\'s most exclusive industry events, capturing content for international mining leaders')}</div>
+                      </div>
+                    </div>
+                    
+                    <div className='flex items-start space-x-4'>
+                      <div className='w-2 h-2 bg-[#9EB6A9] rounded-full mt-3 flex-shrink-0'></div>
+                      <div>
+                        <div className='text-white/90 text-lg font-medium mb-1'>{t('valueProposition.qualityFocus', 'Quality over quantity approach')}</div>
+                        <div className='text-white/70'>{t('valueProposition.qualityFocusDesc', 'Selective client approach ensures dedicated attention and exceptional results for every project')}</div>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Company Stats */}
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+                  viewport={{ once: true }}
+                  className='lg:order-1 text-center'
+                >
+                  <div className='bg-gradient-to-br from-[#9EB6A9]/10 to-[#205C57]/10 rounded-3xl p-12 border border-[#9EB6A9]/20 backdrop-blur-sm'>
+                    <div className='text-6xl md:text-7xl font-extralight text-transparent bg-gradient-to-br from-[#9EB6A9] to-[#205C57] bg-clip-text mb-4'>
+                      2024
+                    </div>
+                    <div className='text-xl text-white/80 mb-2'>{t('valueProposition.establishedYear', 'Established')}</div>
+                    <div className='text-[#9EB6A9] text-sm mb-8'>{t('valueProposition.basedInZurich', 'Based in Zurich, Switzerland')}</div>
+                    
+                    <div className='space-y-4 text-sm'>
+                      <div className='flex items-center justify-between px-4 py-3 bg-white/[0.02] rounded-lg border border-white/5'>
+                        <span className='text-white/70'>{t('valueProposition.projectROI', 'Average project ROI')}</span>
+                        <span className='text-[#9EB6A9] font-medium'>{t('valueProposition.threeToFiveX', '3-5x')}</span>
+                      </div>
+                      <div className='flex items-center justify-between px-4 py-3 bg-white/[0.02] rounded-lg border border-white/5'>
+                        <span className='text-white/70'>{t('valueProposition.clientRetention', 'Client retention rate')}</span>
+                        <span className='text-[#9EB6A9] font-medium'>{t('valueProposition.oneHundredPercent', '100%')}</span>
+                      </div>
+                      <div className='flex items-center justify-between px-4 py-3 bg-white/[0.02] rounded-lg border border-white/5'>
+                        <span className='text-white/70'>{t('valueProposition.responseTime', 'Response time')}</span>
+                        <span className='text-[#9EB6A9] font-medium'>{t('valueProposition.within24h', '< 24 hours')}</span>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
               </div>
             </div>
-
-            {/* Promise section */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.3,
-                ease: [0.25, 0.1, 0.25, 1],
-              }}
-              viewport={{ once: true }}
-              className='text-center pt-12 border-t border-white/10'
-            >
-              <div className='inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#205C57]/20 to-[#9EB6A9]/20 border border-[#9EB6A9]/30 rounded-full backdrop-blur-sm'>
-                <svg
-                  className='w-6 h-6 text-[#9EB6A9] mr-3'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                >
-                  <path
-                    fillRule='evenodd'
-                    d='M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z'
-                    clipRule='evenodd'
-                  />
-                </svg>
-                <span className='text-[#9EB6A9] font-medium text-lg tracking-wide'>
-                  Quality guaranteed, delivered on time
-                </span>
-              </div>
-            </motion.div>
           </div>
         </motion.div>
 
@@ -316,14 +384,14 @@ const ValueProposition = () => {
           className='text-center mt-20'
         >
           <h3 className='text-3xl md:text-4xl font-light text-white mb-10 tracking-wide leading-relaxed'>
-            Ready to create professional video & photo content?
+            {t('valueProposition.ctaTitle', 'Ready to create professional video & photo content?')}
           </h3>
           <div className='flex flex-col sm:flex-row gap-6 justify-center'>
             <a
               href='/en/contact'
               className='group inline-flex items-center px-10 py-5 bg-gradient-to-r from-[#205C57] to-[#9EB6A9] text-black font-semibold text-lg rounded-full hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:from-[#9EB6A9] hover:to-[#205C57]'
             >
-              Get Your Free Quote
+              {t('valueProposition.ctaQuote', 'Get your free quote')}
               <svg
                 className='w-5 h-5 ml-3 group-hover:translate-x-2 transition-transform duration-300'
                 fill='none'
@@ -342,7 +410,7 @@ const ValueProposition = () => {
               href='/en/portfolio'
               className='inline-flex items-center px-10 py-5 bg-white/[0.08] backdrop-blur-xl text-white border border-white/20 text-lg font-medium rounded-full hover:border-[#9EB6A9]/60 hover:bg-white/[0.12] transition-all duration-500 hover:scale-105'
             >
-              View Our Work
+              {t('valueProposition.ctaWork', 'View our work')}
             </a>
           </div>
         </motion.div>
