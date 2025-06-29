@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 const ValueProposition = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const swissStandards = [
     {
@@ -181,29 +181,33 @@ const ValueProposition = () => {
             </div>
 
             {/* Proven results showcase */}
-            <div className='space-y-16'>
+            <div className='space-y-20'>
               {/* First row - Trust & Quality */}
-              <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 items-center'>
+              <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch'>
                 {/* High Quality Deliverables */}
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
                   viewport={{ once: true }}
-                  className='space-y-8'
+                  className='flex flex-col'
                 >
-                  <div className='inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#9EB6A9]/20 to-[#205C57]/20 border border-[#9EB6A9]/30 rounded-full backdrop-blur-sm'>
+                  <div className='inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#9EB6A9]/20 to-[#205C57]/20 border border-[#9EB6A9]/30 rounded-full backdrop-blur-sm w-fit mb-8'>
                     <svg className='w-5 h-5 text-[#9EB6A9] mr-3' fill='currentColor' viewBox='0 0 20 20'>
                       <path fillRule='evenodd' d='M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z' clipRule='evenodd' />
                     </svg>
                     <span className='text-[#9EB6A9] font-medium tracking-wide'>{t('valueProposition.premiumQuality', 'Premium quality')}</span>
                   </div>
                   
-                  <h4 className='text-3xl md:text-4xl font-light text-white tracking-wide leading-tight'>
+                  <h4 className='text-3xl md:text-4xl font-light text-white tracking-wide leading-tight mb-6'>
                     {t('valueProposition.trustedByLeaders', 'Trusted by industry leaders')}
                   </h4>
                   
-                  <div className='flex items-center space-x-6 mb-8'>
+                  <p className='text-xl text-white/70 leading-relaxed mb-8 flex-grow'>
+                    Partnered with established brands who demand excellence and Swiss precision in every project delivery.
+                  </p>
+                  
+                  <div className='flex items-center space-x-6'>
                     <img 
                       src='/assets/logos/zurich_sothebys_logo.png' 
                       alt='Zurich Sothebys Realty'
@@ -216,13 +220,6 @@ const ValueProposition = () => {
                       className='h-10 opacity-80 filter brightness-0 invert'
                     />
                   </div>
-                  
-                  <blockquote className='text-xl text-white/80 italic leading-relaxed border-l-4 border-[#9EB6A9]/40 pl-6'>
-                    "{t('valueProposition.testimonial1', 'Their cinema-grade production quality perfectly captured our luxury properties. Every detail was flawless.')}"
-                  </blockquote>
-                  <div className='text-[#9EB6A9] font-medium'>
-                    — Zurich Sotheby's International Realty
-                  </div>
                 </motion.div>
 
                 {/* Satisfaction Rate */}
@@ -231,14 +228,14 @@ const ValueProposition = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
                   viewport={{ once: true }}
-                  className='text-center'
+                  className='flex'
                 >
-                  <div className='bg-gradient-to-br from-[#9EB6A9]/10 to-[#205C57]/10 rounded-3xl p-6 md:p-12 border border-[#9EB6A9]/20 backdrop-blur-sm'>
-                    <div className='text-6xl md:text-8xl lg:text-9xl font-extralight text-transparent bg-gradient-to-br from-[#9EB6A9] to-[#205C57] bg-clip-text mb-3 md:mb-4'>
+                  <div className='bg-gradient-to-br from-[#9EB6A9]/10 to-[#205C57]/10 rounded-3xl p-8 md:p-12 border border-[#9EB6A9]/20 backdrop-blur-sm flex flex-col justify-center items-center text-center w-full'>
+                    <div className='text-6xl md:text-8xl lg:text-9xl font-extralight text-transparent bg-gradient-to-br from-[#9EB6A9] to-[#205C57] bg-clip-text mb-4'>
                       100%
                     </div>
-                    <div className='text-lg md:text-xl text-white/80 mb-2 md:mb-4'>{t('valueProposition.clientSatisfactionRate', 'Client satisfaction rate')}</div>
-                    <div className='text-[#9EB6A9] text-xs md:text-sm'>{t('valueProposition.basedOnClientFeedback', 'Based on post-project client feedback')}</div>
+                    <div className='text-lg md:text-xl text-white/80 mb-2'>{t('valueProposition.clientSatisfactionRate', 'Client satisfaction rate')}</div>
+                    <div className='text-[#9EB6A9] text-sm'>{t('valueProposition.basedOnClientFeedback', 'Based on post-project client feedback')}</div>
                   </div>
                 </motion.div>
               </div>
@@ -249,21 +246,21 @@ const ValueProposition = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
                 viewport={{ once: true }}
-                className='text-center space-y-8'
+                className='text-center'
               >
-                <div className='inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#205C57]/20 to-[#9EB6A9]/20 border border-[#9EB6A9]/30 rounded-full backdrop-blur-sm'>
+                <div className='inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#205C57]/20 to-[#9EB6A9]/20 border border-[#9EB6A9]/30 rounded-full backdrop-blur-sm mb-8'>
                   <svg className='w-5 h-5 text-[#9EB6A9] mr-3' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
                     <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={1.5} d='M13 10V3L4 14h7v7l9-11h-7z' />
                   </svg>
                   <span className='text-[#9EB6A9] font-medium tracking-wide'>{t('valueProposition.creativeImpact', 'Creative impact')}</span>
                 </div>
                 
-                <h4 className='text-3xl md:text-4xl font-light text-white tracking-wide leading-tight max-w-3xl mx-auto'>
+                <h4 className='text-3xl md:text-4xl font-light text-white tracking-wide leading-tight max-w-3xl mx-auto mb-12'>
                   {t('valueProposition.premiumContentCreation', 'Content that transforms how clients perceive your brand')}
                 </h4>
                 
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto'>
-                  <div className='bg-gradient-to-br from-[#9EB6A9]/5 to-[#205C57]/5 rounded-2xl p-10 border border-[#9EB6A9]/10 text-left'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto'>
+                  <div className='bg-gradient-to-br from-[#9EB6A9]/5 to-[#205C57]/5 rounded-2xl p-8 border border-[#9EB6A9]/10 text-left'>
                     <div className='flex items-center mb-6'>
                       <div className='w-3 h-3 bg-[#9EB6A9] rounded-full mr-4'></div>
                       <h5 className='text-xl text-white/90 font-medium'>{t('valueProposition.brandElevation', 'Brand elevation')}</h5>
@@ -276,7 +273,7 @@ const ValueProposition = () => {
                     </div>
                   </div>
                   
-                  <div className='bg-gradient-to-br from-[#9EB6A9]/5 to-[#205C57]/5 rounded-2xl p-10 border border-[#9EB6A9]/10 text-left'>
+                  <div className='bg-gradient-to-br from-[#9EB6A9]/5 to-[#205C57]/5 rounded-2xl p-8 border border-[#9EB6A9]/10 text-left'>
                     <div className='flex items-center mb-6'>
                       <div className='w-3 h-3 bg-[#9EB6A9] rounded-full mr-4'></div>
                       <h5 className='text-xl text-white/90 font-medium'>{t('valueProposition.clientTrust', 'Client trust & credibility')}</h5>
@@ -292,27 +289,59 @@ const ValueProposition = () => {
               </motion.div>
 
               {/* Third row - Swiss Excellence */}
-              <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 items-center'>
-                {/* Swiss Excellence */}
+              <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch'>
+                {/* Company Stats */}
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
                   viewport={{ once: true }}
-                  className='lg:order-2 space-y-8'
+                  className='flex'
                 >
-                  <div className='inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#9EB6A9]/20 to-[#205C57]/20 border border-[#9EB6A9]/30 rounded-full backdrop-blur-sm'>
+                  <div className='bg-gradient-to-br from-[#9EB6A9]/10 to-[#205C57]/10 rounded-3xl p-8 md:p-12 border border-[#9EB6A9]/20 backdrop-blur-sm flex flex-col justify-center text-center w-full'>
+                    <div className='text-5xl md:text-6xl lg:text-7xl font-extralight text-transparent bg-gradient-to-br from-[#9EB6A9] to-[#205C57] bg-clip-text mb-4'>
+                      2024
+                    </div>
+                    <div className='text-lg md:text-xl text-white/80 mb-2'>{t('valueProposition.establishedYear', 'Established')}</div>
+                    <div className='text-[#9EB6A9] text-sm mb-8'>{t('valueProposition.basedInZurich', 'Based in Zurich, Switzerland')}</div>
+                    
+                    <div className='space-y-4 text-sm'>
+                      <div className='flex items-center justify-between px-4 py-3 bg-white/[0.02] rounded-lg border border-white/5'>
+                        <span className='text-white/70'>{t('valueProposition.projectROI', 'Average project ROI')}</span>
+                        <span className='text-[#9EB6A9] font-medium'>{t('valueProposition.threeToFiveX', '3-5x')}</span>
+                      </div>
+                      <div className='flex items-center justify-between px-4 py-3 bg-white/[0.02] rounded-lg border border-white/5'>
+                        <span className='text-white/70'>{t('valueProposition.clientRetention', 'Client retention rate')}</span>
+                        <span className='text-[#9EB6A9] font-medium'>{t('valueProposition.oneHundredPercent', '100%')}</span>
+                      </div>
+                      <div className='flex items-center justify-between px-4 py-3 bg-white/[0.02] rounded-lg border border-white/5'>
+                        <span className='text-white/70'>{t('valueProposition.responseTime', 'Response time')}</span>
+                        <span className='text-[#9EB6A9] font-medium'>{t('valueProposition.within24h', '< 24 hours')}</span>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Swiss Excellence */}
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+                  viewport={{ once: true }}
+                  className='flex flex-col'
+                >
+                  <div className='inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#9EB6A9]/20 to-[#205C57]/20 border border-[#9EB6A9]/30 rounded-full backdrop-blur-sm w-fit mb-8'>
                     <svg className='w-5 h-5 text-[#9EB6A9] mr-3' fill='currentColor' viewBox='0 0 20 20'>
                       <path fillRule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z' clipRule='evenodd' />
                     </svg>
                     <span className='text-[#9EB6A9] font-medium tracking-wide'>{t('valueProposition.swissExcellence', 'Proven excellence')}</span>
                   </div>
                   
-                  <h4 className='text-3xl md:text-4xl font-light text-white tracking-wide leading-tight'>
+                  <h4 className='text-3xl md:text-4xl font-light text-white tracking-wide leading-tight mb-8'>
                     {t('valueProposition.prestigeFromDay1', 'Trusted by prestige from day one')}
                   </h4>
                   
-                  <div className='space-y-6'>
+                  <div className='space-y-6 flex-grow'>
                     <div className='flex items-start space-x-4'>
                       <div className='w-2 h-2 bg-[#9EB6A9] rounded-full mt-3 flex-shrink-0'></div>
                       <div>
@@ -324,8 +353,8 @@ const ValueProposition = () => {
                     <div className='flex items-start space-x-4'>
                       <div className='w-2 h-2 bg-[#9EB6A9] rounded-full mt-3 flex-shrink-0'></div>
                       <div>
-                        <div className='text-white/90 text-lg font-medium mb-1'>{t('valueProposition.smiEvent', 'Swiss Mining Institute')}</div>
-                        <div className='text-white/70'>{t('valueProposition.smiDesc', 'Covered one of Europe\'s most exclusive industry events, capturing content for international mining leaders')}</div>
+                        <div className='text-white/90 text-lg font-medium mb-1'>{t('valueProposition.clientFocus', 'Client focus')}</div>
+                        <div className='text-white/70'>{t('valueProposition.premiumClientDesc', 'We work exclusively with discerning clients who value exceptional quality and understand the importance of professional visual storytelling')}</div>
                       </div>
                     </div>
                     
@@ -334,38 +363,6 @@ const ValueProposition = () => {
                       <div>
                         <div className='text-white/90 text-lg font-medium mb-1'>{t('valueProposition.qualityFocus', 'Quality over quantity approach')}</div>
                         <div className='text-white/70'>{t('valueProposition.qualityFocusDesc', 'Selective client approach ensures dedicated attention and exceptional results for every project')}</div>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-
-                {/* Company Stats */}
-                <motion.div
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
-                  viewport={{ once: true }}
-                  className='lg:order-1 text-center'
-                >
-                  <div className='bg-gradient-to-br from-[#9EB6A9]/10 to-[#205C57]/10 rounded-3xl p-6 md:p-12 border border-[#9EB6A9]/20 backdrop-blur-sm'>
-                    <div className='text-5xl md:text-6xl lg:text-7xl font-extralight text-transparent bg-gradient-to-br from-[#9EB6A9] to-[#205C57] bg-clip-text mb-3 md:mb-4'>
-                      2024
-                    </div>
-                    <div className='text-lg md:text-xl text-white/80 mb-1 md:mb-2'>{t('valueProposition.establishedYear', 'Established')}</div>
-                    <div className='text-[#9EB6A9] text-xs md:text-sm mb-6 md:mb-8'>{t('valueProposition.basedInZurich', 'Based in Zurich, Switzerland')}</div>
-                    
-                    <div className='space-y-3 md:space-y-4 text-xs md:text-sm'>
-                      <div className='flex items-center justify-between px-3 md:px-4 py-2 md:py-3 bg-white/[0.02] rounded-lg border border-white/5'>
-                        <span className='text-white/70'>{t('valueProposition.projectROI', 'Average project ROI')}</span>
-                        <span className='text-[#9EB6A9] font-medium'>{t('valueProposition.threeToFiveX', '3-5x')}</span>
-                      </div>
-                      <div className='flex items-center justify-between px-3 md:px-4 py-2 md:py-3 bg-white/[0.02] rounded-lg border border-white/5'>
-                        <span className='text-white/70'>{t('valueProposition.clientRetention', 'Client retention rate')}</span>
-                        <span className='text-[#9EB6A9] font-medium'>{t('valueProposition.oneHundredPercent', '100%')}</span>
-                      </div>
-                      <div className='flex items-center justify-between px-3 md:px-4 py-2 md:py-3 bg-white/[0.02] rounded-lg border border-white/5'>
-                        <span className='text-white/70'>{t('valueProposition.responseTime', 'Response time')}</span>
-                        <span className='text-[#9EB6A9] font-medium'>{t('valueProposition.within24h', '< 24 hours')}</span>
                       </div>
                     </div>
                   </div>
@@ -388,7 +385,7 @@ const ValueProposition = () => {
           </h3>
           <div className='flex flex-col sm:flex-row gap-6 justify-center'>
             <a
-              href='/en/contact'
+              href={`/${i18n.language}/contact`}
               className='group inline-flex items-center px-10 py-5 bg-gradient-to-r from-[#205C57] to-[#9EB6A9] text-black font-semibold text-lg rounded-full hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:from-[#9EB6A9] hover:to-[#205C57]'
             >
               {t('valueProposition.ctaQuote', 'Get your free quote')}
@@ -407,7 +404,7 @@ const ValueProposition = () => {
               </svg>
             </a>
             <a
-              href='/en/portfolio'
+              href={`/${i18n.language}/portfolio`}
               className='inline-flex items-center px-10 py-5 bg-white/[0.08] backdrop-blur-xl text-white border border-white/20 text-lg font-medium rounded-full hover:border-[#9EB6A9]/60 hover:bg-white/[0.12] transition-all duration-500 hover:scale-105'
             >
               {t('valueProposition.ctaWork', 'View our work')}

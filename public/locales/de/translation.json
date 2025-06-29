@@ -295,17 +295,33 @@
     },
     "browserNotSupported": "Ihr Browser unterstützt das Video-Tag nicht."
   },
+  "swissStandards": {
+    "quality": {
+      "label": "Videoqualität",
+      "desc": "Kinoqualitäts-Ausrüstung für kristallklare Ergebnisse"
+    },
+    "delivery": {
+      "label": "Effiziente Lieferung", 
+      "desc": "Premium-Ergebnisse mit präzisem Timing geliefert"
+    },
+    "projects": {
+      "label": "Publikumsinteraktion",
+      "desc": "Steigerung Ihrer Reichweite und Interaktion mit überzeugenden Videoinhalten"
+    }
+  },
   "valueProposition": {
     "title": "Professionelle Video- und Fotografie",
     "subtitle": "Hochwertige visuelle Inhalte, die Ihr Unternehmen professionell präsentieren und Ergebnisse erzielen.",
     "whyChooseUs": "Warum uns wählen",
     "provenResults": "Bewährte Ergebnisse, vertraut von Branchenführern",
-    "trackRecord": "Unsere Erfolgsbilanz spricht für sich: Premium-Marken wählen uns für garantierte Qualität, messbare Interaktion und Schweizer Zuverlässigkeit.",
+    "trackRecord": "Unsere Erfolgsbilanz spricht für sich: Marken wählen uns für garantierte Qualität, messbare Interaktion und Schweizer Zuverlässigkeit.",
     "premiumQuality": "Premium-Qualität",
     "trustedByLeaders": "Vertraut von Branchenführern",
     "testimonial1": "Ihre Produktionsqualität auf Kinoniveau hat unsere Luxusimmobilien perfekt eingefangen. Jedes Detail war makellos.",
     "clientSatisfactionRate": "Kundenzufriedenheitsrate",
+    "basedOnClientFeedback": "Basierend auf Kunden-Feedback nach dem Projekt",
     "creativeImpact": "Kreativer Einfluss",
+    "premiumContentCreation": "Inhalte, die verändern, wie Kunden Ihre Marke wahrnehmen",
     "measurableGrowth": "Messbares Engagement-Wachstum",
     "socialMediaEngagement": "Social Media Engagement",
     "websiteConversion": "Website-Konversion",
@@ -338,6 +354,8 @@
     "premiumClientsDesc": "Ausschließliche Zusammenarbeit mit etablierten Marken und Branchenführern, die außergewöhnliche Qualität fordern",
     "professionalApproach": "Professioneller Ansatz",
     "professionalApproachDesc": "Wir liefern die gleichen hohen Standards und Liebe zum Detail für jeden Kunden, unabhängig von Projektgröße oder Branche",
+    "clientFocus": "Kundenfokus",
+    "premiumClientDesc": "Wir arbeiten ausschließlich mit anspruchsvollen Kunden, die außergewöhnliche Qualität schätzen und die Bedeutung professioneller visueller Erzählung verstehen",
     "smiEvent": "Swiss Mining Institute",
     "smiDesc": "Berichterstattung über eine der exklusivsten Branchenveranstaltungen Europas, Inhalte für internationale Bergbauführer",
     "qualityFocus": "Qualität vor Quantität Ansatz",

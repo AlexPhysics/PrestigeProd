@@ -298,7 +298,7 @@
     "subtitle": "Contenu visuel de haute qualité qui présente votre entreprise de manière professionnelle et génère des résultats.",
     "whyChooseUs": "Pourquoi nous choisir",
     "provenResults": "Résultats prouvés, approuvés par les leaders de l'industrie",
-    "trackRecord": "Notre palmarès parle de lui-même : les marques premium nous choisissent pour la qualité garantie, l'engagement mesurable et la fiabilité suisse.",
+    "trackRecord": "Notre palmarès parle de lui-même : les marques nous choisissent pour la qualité garantie, l'engagement mesurable et la fiabilité suisse.",
     "premiumQuality": "Qualité premium",
     "trustedByLeaders": "Approuvé par les leaders de l'industrie",
     "testimonial1": "Leur qualité de production cinématographique a parfaitement capturé nos propriétés de luxe. Chaque détail était impeccable.",
@@ -348,7 +348,29 @@
     "averageDelivery": "Livraison moyenne",
     "fiveDays": "5 jours",
     "responseTime": "Temps de réponse",
-    "within24h": "< 24 heures"
+    "within24h": "< 24 heures",
+    "basedOnClientFeedback": "Basé sur les retours post-projet des clients",
+    "premiumContentCreation": "Contenu qui transforme la perception de votre marque par les clients",
+    "clientFocus": "Focus client",
+    "premiumClientDesc": "Nous travaillons exclusivement avec des clients exigeants qui valorisent la qualité exceptionnelle et comprennent l'importance du storytelling visuel professionnel",
+    "projectROI": "ROI moyen des projets",
+    "threeToFiveX": "3-5x",
+    "clientRetention": "Taux de rétention client",
+    "oneHundredPercent": "100%"
+  },
+  "swissStandards": {
+    "quality": {
+      "label": "Qualité vidéo",
+      "desc": "Équipement de niveau cinéma pour des résultats d'une clarté cristalline"
+    },
+    "delivery": {
+      "label": "Livraison efficace", 
+      "desc": "Résultats premium livrés avec une précision temporelle"
+    },
+    "projects": {
+      "label": "Engagement de l'audience",
+      "desc": "Amplifier votre portée et engagement avec du contenu vidéo captivant"
+    }
   },
   "contact": {
     "title": "Créons quelque chose d'",
