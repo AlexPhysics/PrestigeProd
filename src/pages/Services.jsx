@@ -38,7 +38,7 @@ const Services = () => {
       priceKey: 'videoProductionPrice',
       featuresKeys: [
         'videoFeature1',
-        'videoFeature2', 
+        'videoFeature2',
         'videoFeature3',
         'videoFeature4',
       ],
@@ -83,28 +83,6 @@ const Services = () => {
     },
   ];
 
-  // Showcase projects - testimonials and results
-  const showcaseProjects = [
-    {
-      id: 'penthouse',
-      imageKey: 'penthouseImage',
-      titleKey: 'penthouseTitle',
-      resultKey: 'penthouseResult',
-      quoteKey: 'penthouseQuote',
-      clientKey: 'penthouseClient',
-      link: `/${currentLang}/projects/penthouse-zurich`,
-    },
-    {
-      id: 'smi',
-      imageKey: 'smiImage',
-      titleKey: 'smiTitle',
-      resultKey: 'smiResult',
-      quoteKey: 'smiQuote',
-      clientKey: 'smiClient',
-      link: `/${currentLang}/projects/swiss-mining-institute`,
-    },
-  ];
-
   // Professional gear
   const gear = [
     {
@@ -146,7 +124,7 @@ const Services = () => {
               </div>
               <div className='absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80' />
             </div>
-            
+
             <motion.div
               className='relative z-20 text-center max-w-sm mx-auto'
               initial={{ opacity: 0, y: 30 }}
@@ -154,13 +132,19 @@ const Services = () => {
               transition={{ duration: 0.8 }}
             >
               <h1 className='text-3xl font-light tracking-tight mb-4'>
-                {t('services.hero.title', 'Professional Video & Photography')}<br />
-                <span className={`${GRADIENT_CLASS} bg-clip-text text-transparent font-medium`}>
+                {t('services.hero.title', 'Professional Video & Photography')}
+                <br />
+                <span
+                  className={`${GRADIENT_CLASS} bg-clip-text text-transparent font-medium`}
+                >
                   {t('services.hero.highlight', 'Made Simple')}
                 </span>
               </h1>
               <p className='text-white/90 text-lg mb-8 leading-relaxed'>
-                {t('services.hero.subtitle', 'High-quality visual content that showcases your business professionally.')}
+                {t(
+                  'services.hero.subtitle',
+                  'High-quality visual content that showcases your business professionally.',
+                )}
               </p>
               <div className='flex flex-col gap-3 mb-12'>
                 <Link
@@ -209,13 +193,19 @@ const Services = () => {
             transition={{ duration: 1 }}
           >
             <h1 className='text-4xl md:text-6xl lg:text-7xl font-light tracking-tight mb-6'>
-              {t('services.hero.title', 'Professional Video & Photography')} <br />
-              <span className={`${GRADIENT_CLASS} bg-clip-text text-transparent font-medium`}>
+              {t('services.hero.title', 'Professional Video & Photography')}{' '}
+              <br />
+              <span
+                className={`${GRADIENT_CLASS} bg-clip-text text-transparent font-medium`}
+              >
                 {t('services.hero.highlight', 'Made Simple')}
               </span>
             </h1>
             <p className='text-white/90 text-xl md:text-2xl mb-10 max-w-2xl mx-auto'>
-              {t('services.hero.subtitle', 'High-quality visual content that showcases your business professionally. Clear pricing, reliable delivery, exceptional results.')}
+              {t(
+                'services.hero.subtitle',
+                'High-quality visual content that showcases your business professionally. Clear pricing, reliable delivery, exceptional results.',
+              )}
             </p>
             <div className='flex flex-col sm:flex-row gap-5 justify-center mb-16'>
               <Link
@@ -247,7 +237,10 @@ const Services = () => {
                   {t('services.benefits.expertise', 'Swiss Precision')}
                 </h3>
                 <p className='text-white/70 text-sm'>
-                  {t('services.benefits.expertiseDesc', 'Professional equipment and years of experience ensuring consistent, high-quality results.')}
+                  {t(
+                    'services.benefits.expertiseDesc',
+                    'Professional equipment and years of experience ensuring consistent, high-quality results.',
+                  )}
                 </p>
               </div>
               <div className='bg-white/5 backdrop-blur-sm p-5 rounded-xl'>
@@ -255,7 +248,10 @@ const Services = () => {
                   {t('services.benefits.efficiency', 'Time Focused')}
                 </h3>
                 <p className='text-white/70 text-sm'>
-                  {t('services.benefits.efficiencyDesc', 'Streamlined process that respects your schedule and delivers on agreed timelines.')}
+                  {t(
+                    'services.benefits.efficiencyDesc',
+                    'Streamlined process that respects your schedule and delivers on agreed timelines.',
+                  )}
                 </p>
               </div>
               <div className='bg-white/5 backdrop-blur-sm p-5 rounded-xl'>
@@ -263,7 +259,10 @@ const Services = () => {
                   {t('services.benefits.impact', 'Why It Matters')}
                 </h3>
                 <p className='text-white/70 text-sm'>
-                  {t('services.benefits.impactDesc', 'First impressions shape business success. Professional visuals build trust, attract customers, and set you apart from competitors.')}
+                  {t(
+                    'services.benefits.impactDesc',
+                    'First impressions shape business success. Professional visuals build trust, attract customers, and set you apart from competitors.',
+                  )}
                 </p>
               </div>
             </motion.div>
@@ -284,7 +283,10 @@ const Services = () => {
                   {t('services.benefits.expertise', 'Swiss Precision')}
                 </h3>
                 <p className='text-white/70 text-sm'>
-                  {t('services.benefits.expertiseDesc', 'Professional equipment and consistent results.')}
+                  {t(
+                    'services.benefits.expertiseDesc',
+                    'Professional equipment and consistent results.',
+                  )}
                 </p>
               </div>
               <div className='bg-white/5 backdrop-blur-sm p-4 rounded-xl text-center'>
@@ -292,7 +294,10 @@ const Services = () => {
                   {t('services.benefits.efficiency', 'Time Focused')}
                 </h3>
                 <p className='text-white/70 text-sm'>
-                  {t('services.benefits.efficiencyDesc', 'Respects your schedule and delivers on time.')}
+                  {t(
+                    'services.benefits.efficiencyDesc',
+                    'Respects your schedule and delivers on time.',
+                  )}
                 </p>
               </div>
               <div className='bg-white/5 backdrop-blur-sm p-4 rounded-xl text-center'>
@@ -300,7 +305,10 @@ const Services = () => {
                   {t('services.benefits.impact', 'Why It Matters')}
                 </h3>
                 <p className='text-white/70 text-sm'>
-                  {t('services.benefits.impactDesc', 'Professional visuals build trust and attract customers.')}
+                  {t(
+                    'services.benefits.impactDesc',
+                    'Professional visuals build trust and attract customers.',
+                  )}
                 </p>
               </div>
             </motion.div>
@@ -672,7 +680,10 @@ const Services = () => {
                         : 'group-hover:text-[#eaebec]'
                     } transition-colors duration-300`}
                   >
-                    {t(`services.types.${service.titleKey}.title`, service.titleKey)}
+                    {t(
+                      `services.types.${service.titleKey}.title`,
+                      service.titleKey,
+                    )}
                   </h3>
 
                   <p className='text-white/70 text-sm mb-8 text-center'>
@@ -706,160 +717,58 @@ const Services = () => {
                     ))}
                   </div>
 
-                  <motion.div
-                    whileHover={{ scale: 1.03 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
+                  <div className='mt-auto'>
                     <Link
-                      to={`/${currentLang}/contact?service=${service.id}&subject=${encodeURIComponent(service.contactSubject)}`}
-                      onClick={() => {
-                        // Analytics tracking
-                        if (typeof gtag !== 'undefined') {
-                          gtag('event', 'service_quote_click', {
-                            event_category: 'Services',
-                            event_label: service.id,
-                            service_type: service.titleKey,
-                          });
-                        }
-                        
-                        // Alternative: Custom analytics
-                        if (typeof window !== 'undefined' && window.analytics) {
-                          window.analytics.track('Service Quote Requested', {
-                            serviceId: service.id,
-                            serviceName: service.titleKey,
-                            contactSubject: service.contactSubject,
-                          });
-                        }
+                      to={`/${currentLang}/contact`}
+                      state={{
+                        selectedPackage: t(
+                          `services.types.${service.titleKey}.title`,
+                        ),
                       }}
-                      className={`block text-center py-3 px-6 rounded-full text-sm font-medium transition-all duration-300 ${
-                        service.color === 'teal'
-                          ? 'bg-[#205c57]/30 text-white hover:bg-[#205c57] hover:shadow-lg hover:shadow-[#205c57]/30'
-                          : service.color === 'sage'
-                          ? 'bg-[#9eb6a9]/30 text-black hover:bg-[#9eb6a9] hover:shadow-lg hover:shadow-[#9eb6a9]/30'
-                          : 'bg-[#231f20]/30 text-white hover:bg-[#231f20] hover:shadow-lg hover:shadow-[#231f20]/30'
+                      className={`w-full text-center block font-medium py-3 px-6 rounded-lg transition duration-300 ${
+                        service.popular
+                          ? `${GRADIENT_CLASS} text-black hover:opacity-90`
+                          : 'bg-white/10 text-white hover:bg-white/20'
                       }`}
                     >
                       {t(
                         `services.types.${service.titleKey}.${service.ctaKey}`,
-                        'Get Quote',
+                        'Select offer',
                       )}
                     </Link>
-                  </motion.div>
+                  </div>
                 </div>
               </motion.div>
             ))}
           </div>
 
-          {/* Additional note for small team */}
-          <motion.p
-            className='text-center mt-12 text-white/60 text-sm max-w-2xl mx-auto'
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
-            {t(
-              'services.packages.teamNote',
-              'As a two-person boutique studio, we offer a personalized approach to every project. Our small team means direct communication with the creatives working on your content, ensuring your vision is perfectly captured.',
-            )}
-          </motion.p>
-        </div>
-      </section>
-      {/* Results and Testimonials - show real impact */}
-      <section className='py-32 px-6 max-w-6xl mx-auto'>
-        <motion.h2
-          className='text-center text-3xl sm:text-5xl font-light mb-6 tracking-tight'
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          {t('services.showcase.title', 'The Results Speak for Themselves')}
-        </motion.h2>{' '}
-        <p className='text-white/70 text-lg max-w-3xl mx-auto text-center mb-20'>
-          {t(
-            'services.showcase.subtitle',
-            'See how our visual storytelling has transformed brands and accelerated growth for our clients.',
-          )}
-        </p>
-        <div className='space-y-24'>
-          {showcaseProjects.map((project, idx) => (
-            <motion.div
-              key={project.id}
-              className={`flex flex-col ${
-                idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-              } gap-10 items-center`}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
+          {/* Custom Project Section */}
+          <div className='mt-20 text-center bg-white/5 rounded-2xl p-10 max-w-4xl mx-auto'>
+            <h3 className='text-2xl font-medium mb-4'>
+              {t(
+                'services.custom.title',
+                "Need Something Different? Let's Build a Custom Package.",
+              )}
+            </h3>
+            <p className='text-white/70 max-w-2xl mx-auto mb-8'>
+              {t(
+                'services.custom.description',
+                "Have a unique project in mind? We're experts at creating custom solutions tailored to your exact needs. Let's discuss your vision.",
+              )}
+            </p>
+            <Link
+              to={`/${currentLang}/contact`}
+              state={{ selectedPackage: 'Custom Project' }}
+              className='inline-block bg-white text-black text-base font-medium px-8 py-3 rounded-full hover:bg-gray-200 transition duration-300'
             >
-              <div className='lg:w-1/2'>
-                <div className='rounded-2xl overflow-hidden'>
-                  <img
-                    src={`/assets/projects/${project.id}.jpg`}
-                    alt={t(
-                      `services.showcase.${project.imageKey}Alt`,
-                      `${project.id} project`,
-                    )}
-                    className='w-full h-auto object-cover'
-                  />
-                </div>
-              </div>
-              <div className='lg:w-1/2'>
-                <h3 className='text-2xl font-medium mb-3'>
-                  {t(
-                    `services.showcase.${project.titleKey}`,
-                    `${project.id} title`,
-                  )}
-                </h3>
-                <div className='mb-6 px-5 py-4 bg-gradient-to-r from-[#9eb6a9]/20 to-transparent rounded-lg'>
-                  <p className='text-[#9eb6a9] font-medium'>
-                    {t(
-                      `services.showcase.${project.resultKey}`,
-                      'Impressive result statistic',
-                    )}
-                  </p>
-                </div>
-                <blockquote className='text-white/80 italic mb-4 text-lg'>
-                  "
-                  {t(
-                    `services.showcase.${project.quoteKey}`,
-                    'Client testimonial quote',
-                  )}
-                  "
-                </blockquote>
-                <p className='text-white/60 text-sm mb-6'>
-                  —{' '}
-                  {t(
-                    `services.showcase.${project.clientKey}`,
-                    'Client name and position',
-                  )}
-                </p>
-                <Link
-                  to={project.link}
-                  className='inline-flex items-center text-[#9eb6a9] hover:text-[#205c57] transition'
-                >
-                  {t('services.showcase.viewCase', 'View Full Case Study')}
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='h-5 w-5 ml-1'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                  >
-                    <path
-                      fillRule='evenodd'
-                      d='M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z'
-                      clipRule='evenodd'
-                    />
-                  </svg>
-                </Link>
-              </div>
-            </motion.div>
-          ))}
+              {t('services.custom.cta', "Let's Talk")}
+            </Link>
+          </div>
         </div>
       </section>
-      {/* Service types - more visual */}
+      {/* Service types - cinematic editorial style */}
       <section className='py-24 px-6 bg-gradient-to-b from-[#111111] to-black'>
-        <div className='max-w-6xl mx-auto'>
+        <div className='max-w-7xl mx-auto'>
           <motion.h2
             className='text-center text-3xl sm:text-5xl font-light mb-6 tracking-tight'
             initial={{ opacity: 0 }}
@@ -867,149 +776,296 @@ const Services = () => {
             transition={{ duration: 0.8 }}
           >
             {t('services.offerings.title', 'Premium Content Types')}
-          </motion.h2>{' '}
-          <p className='text-white/70 text-lg max-w-3xl mx-auto text-center mb-16'>
+          </motion.h2>
+          <p className='text-white/70 text-lg max-w-3xl mx-auto text-center mb-20'>
             {t(
               'services.offerings.subtitle',
-              "Each format is designed to showcase your brand, products, or services from their most engaging angle and capture your target audience's attention.",
+              "Each format is crafted to highlight your brand's best features and engage your target audience.",
             )}
           </p>
-          <div className='grid md:grid-cols-2 gap-x-8 gap-y-16'>
+
+          <div className='space-y-32'>
+            {/* Cinematic Videos */}
             <motion.div
-              className='group'
-              whileInView={{ opacity: 1, y: 0 }}
-              initial={{ opacity: 0, y: 30 }}
-              transition={{ duration: 0.7 }}
+              className='grid lg:grid-cols-2 gap-16 items-center'
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
             >
-              <div className='mb-6 overflow-hidden rounded-xl'>
-                <img
-                  src='https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80'
-                  alt={t(
-                    'services.offerings.propertyTours.imageAlt',
-                    'Cinematic video example',
-                  )}
-                  className='w-full h-[220px] object-cover group-hover:scale-105 transition duration-700'
-                />
+              <div className='relative overflow-hidden rounded-3xl h-[400px] group'>
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className='absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
+                >
+                  <source
+                    src={`${
+                      import.meta.env.VITE_CLOUDFRONT_URL
+                    }/videos/hero.mp4`}
+                    type='video/mp4'
+                  />
+                </video>
+                <div className='absolute inset-0 bg-black/30'></div>
+                <div className='absolute bottom-8 left-8'>
+                  <div className='w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:bg-white/30 transition-colors duration-300'>
+                    <svg
+                      className='w-6 h-6 text-white ml-1'
+                      fill='currentColor'
+                      viewBox='0 0 24 24'
+                    >
+                      <path d='M8 5v14l11-7z' />
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <h3 className='text-xl font-semibold mb-3'>
-                {t(
-                  'services.offerings.propertyTours.title',
-                  'Cinematic Videos',
-                )}
-              </h3>
-              <p className='text-white/70 text-sm'>
-                {t(
-                  'services.offerings.propertyTours.description',
-                  'Immersive visual stories that highlight key features and create emotional connections with viewers.',
-                )}
-              </p>
+              <div className='space-y-6'>
+                <div className='space-y-2'>
+                  <span className='text-blue-400 text-sm font-medium tracking-wider uppercase'>
+                    01
+                  </span>
+                  <h3 className='text-4xl font-light tracking-tight'>
+                    {t(
+                      'services.offerings.propertyTours.title',
+                      'Cinematic Videos',
+                    )}
+                  </h3>
+                </div>
+                <p className='text-white/70 text-lg leading-relaxed'>
+                  {t(
+                    'services.offerings.propertyTours.description',
+                    'Immersive visual stories that create an emotional connection with viewers.',
+                  )}
+                </p>
+                <div className='flex items-center space-x-4 text-sm text-white/50'>
+                  <span>4K Resolution</span>
+                  <span>•</span>
+                  <span>Cinema Grade</span>
+                  <span>•</span>
+                  <span>Color Graded</span>
+                </div>
+              </div>
             </motion.div>
+
+            {/* Professional Photography */}
             <motion.div
-              className='group'
-              whileInView={{ opacity: 1, y: 0 }}
-              initial={{ opacity: 0, y: 30 }}
-              transition={{ duration: 0.7, delay: 0.1 }}
+              className='grid lg:grid-cols-2 gap-16 items-center'
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
             >
-              <div className='mb-6 overflow-hidden rounded-xl'>
-                <img
-                  src='https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
-                  alt={t(
-                    'services.offerings.aerial.imageAlt',
-                    'Aerial videography example',
+              <div className='space-y-6 lg:order-2'>
+                <div className='space-y-2'>
+                  <span className='text-blue-400 text-sm font-medium tracking-wider uppercase'>
+                    02
+                  </span>
+                  <h3 className='text-4xl font-light tracking-tight'>
+                    {t(
+                      'services.offerings.aerial.title',
+                      'Professional Photography',
+                    )}
+                  </h3>
+                </div>
+                <p className='text-white/70 text-lg leading-relaxed'>
+                  {t(
+                    'services.offerings.aerial.description',
+                    'Stunning high-resolution images that capture every detail with perfect lighting and composition.',
                   )}
-                  className='w-full h-[220px] object-cover group-hover:scale-105 transition duration-700'
-                />
+                </p>
+                <div className='flex items-center space-x-4 text-sm text-white/50'>
+                  <span>High Resolution</span>
+                  <span>•</span>
+                  <span>Perfect Lighting</span>
+                  <span>•</span>
+                  <span>Professional Editing</span>
+                </div>
               </div>
-              <h3 className='text-xl font-semibold mb-3'>
-                {t(
-                  'services.offerings.aerial.title',
-                  'Aerial Photography & Video',
-                )}
-              </h3>{' '}
-              <p className='text-white/70 text-sm'>
-                {t(
-                  'services.offerings.aerial.description',
-                  'Showcase scale, surroundings, and perspective with dramatic drone footage and stills.',
-                )}
-              </p>
+              <div className='relative lg:order-1'>
+                {/* Photo Gallery Grid */}
+                <div className='grid grid-cols-2 gap-4 h-[400px]'>
+                  {/* Main large photo */}
+                  <motion.div
+                    className='relative overflow-hidden rounded-2xl group'
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <img
+                      src={`${
+                        import.meta.env.VITE_CLOUDFRONT_URL
+                      }/images/explore1.jpg`}
+                      alt='Professional Photography Sample'
+                      className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
+                    />
+                    <div className='absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300'></div>
+                    <div className='absolute top-4 right-4'>
+                      <div className='w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center'>
+                        <svg
+                          className='w-4 h-4 text-white'
+                          fill='none'
+                          stroke='currentColor'
+                          viewBox='0 0 24 24'
+                        >
+                          <path
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            strokeWidth={2}
+                            d='M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z'
+                          />
+                          <path
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            strokeWidth={2}
+                            d='M15 13a3 3 0 11-6 0 3 3 0 016 0z'
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </motion.div>
+
+                  {/* Right column with two smaller photos */}
+                  <div className='space-y-4'>
+                    <motion.div
+                      className='relative overflow-hidden rounded-2xl h-[190px] group'
+                      whileHover={{ scale: 1.02 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <img
+                        src={`${
+                          import.meta.env.VITE_CLOUDFRONT_URL
+                        }/images/explore2.jpg`}
+                        alt='Professional Photography Sample'
+                        className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
+                      />
+                      <div className='absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300'></div>
+                      <div className='absolute top-4 right-4'>
+                        <div className='w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center'>
+                          <svg
+                            className='w-4 h-4 text-white'
+                            fill='none'
+                            stroke='currentColor'
+                            viewBox='0 0 24 24'
+                          >
+                            <path
+                              strokeLinecap='round'
+                              strokeLinejoin='round'
+                              strokeWidth={2}
+                              d='M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z'
+                            />
+                            <path
+                              strokeLinecap='round'
+                              strokeLinejoin='round'
+                              strokeWidth={2}
+                              d='M15 13a3 3 0 11-6 0 3 3 0 016 0z'
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </motion.div>
+
+                    <motion.div
+                      className='relative overflow-hidden rounded-2xl h-[190px] group'
+                      whileHover={{ scale: 1.02 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <img
+                        src={`${
+                          import.meta.env.VITE_CLOUDFRONT_URL
+                        }/images/thumbnail_penthouse.png`}
+                        alt='Professional Photography Sample'
+                        className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
+                      />
+                      <div className='absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300'></div>
+                      <div className='absolute top-4 right-4'>
+                        <div className='w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center'>
+                          <svg
+                            className='w-4 h-4 text-white'
+                            fill='none'
+                            stroke='currentColor'
+                            viewBox='0 0 24 24'
+                          >
+                            <path
+                              strokeLinecap='round'
+                              strokeLinejoin='round'
+                              strokeWidth={2}
+                              d='M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z'
+                            />
+                            <path
+                              strokeLinecap='round'
+                              strokeLinejoin='round'
+                              strokeWidth={2}
+                              d='M15 13a3 3 0 11-6 0 3 3 0 016 0z'
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </motion.div>
+                  </div>
+                </div>
+              </div>
             </motion.div>
+
+            {/* Social Media Content */}
             <motion.div
-              className='group'
-              whileInView={{ opacity: 1, y: 0 }}
-              initial={{ opacity: 0, y: 30 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
+              className='grid lg:grid-cols-2 gap-16 items-center'
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
             >
-              <div className='mb-6 overflow-hidden rounded-xl'>
-                <img
-                  src='https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80'
-                  alt={t(
-                    'services.offerings.social.imageAlt',
-                    'Social media content example',
-                  )}
-                  className='w-full h-[220px] object-cover group-hover:scale-105 transition duration-700'
-                />
+              <div className='relative overflow-hidden rounded-3xl h-[400px] group'>
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className='absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
+                >
+                  <source
+                    src={`${
+                      import.meta.env.VITE_CLOUDFRONT_URL
+                    }/videos/lowres_short_reel_showcase_v2_1.mp4`}
+                    type='video/mp4'
+                  />
+                </video>
+                <div className='absolute inset-0 bg-black/30'></div>
+                <div className='absolute bottom-8 left-8'>
+                  <div className='w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:bg-white/30 transition-colors duration-300'>
+                    <svg
+                      className='w-6 h-6 text-white ml-1'
+                      fill='currentColor'
+                      viewBox='0 0 24 24'
+                    >
+                      <path d='M8 5v14l11-7z' />
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <h3 className='text-xl font-semibold mb-3'>
-                {t('services.offerings.social.title', 'Social Media Content')}
-              </h3>
-              <p className='text-white/70 text-sm'>
-                {t(
-                  'services.offerings.social.description',
-                  'Eye-catching reels and shorts optimized for Instagram, TikTok and other platforms to maximize engagement.',
-                )}
-              </p>
-            </motion.div>
-            <motion.div
-              className='group'
-              whileInView={{ opacity: 1, y: 0 }}
-              initial={{ opacity: 0, y: 30 }}
-              transition={{ duration: 0.7, delay: 0.3 }}
-            >
-              <div className='mb-6 overflow-hidden rounded-xl'>
-                <img
-                  src='https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
-                  alt={t(
-                    'services.offerings.hdr.imageAlt',
-                    'Professional photography example',
+              <div className='space-y-6'>
+                <div className='space-y-2'>
+                  <span className='text-blue-400 text-sm font-medium tracking-wider uppercase'>
+                    03
+                  </span>
+                  <h3 className='text-4xl font-light tracking-tight'>
+                    {t(
+                      'services.offerings.social.title',
+                      'Social Media Content',
+                    )}
+                  </h3>
+                </div>
+                <p className='text-white/70 text-lg leading-relaxed'>
+                  {t(
+                    'services.offerings.social.description',
+                    'Eye-catching reels and shorts optimized for maximum engagement.',
                   )}
-                  className='w-full h-[220px] object-cover group-hover:scale-105 transition duration-700'
-                />
+                </p>
+                <div className='flex items-center space-x-4 text-sm text-white/50'>
+                  <span>Multi-Platform</span>
+                  <span>•</span>
+                  <span>Optimized Formats</span>
+                  <span>•</span>
+                  <span>Trend-Aware</span>
+                </div>
               </div>
-              <h3 className='text-xl font-semibold mb-3'>
-                {t('services.offerings.hdr.title', 'Photography')}
-              </h3>{' '}
-              <p className='text-white/70 text-sm'>
-                {t(
-                  'services.offerings.hdr.description',
-                  'High-quality photos that capture perfect lighting, bringing out the best in your subjects and spaces.',
-                )}
-              </p>
-            </motion.div>{' '}
-            <motion.div
-              className='group'
-              whileInView={{ opacity: 1, y: 0 }}
-              initial={{ opacity: 0, y: 30 }}
-              transition={{ duration: 0.7, delay: 0.4 }}
-            >
-              <div className='mb-6 overflow-hidden rounded-xl'>
-                <img
-                  src='https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
-                  alt={t(
-                    'services.offerings.brandContent.imageAlt',
-                    'Brand content production example',
-                  )}
-                  className='w-full h-[220px] object-cover group-hover:scale-105 transition duration-700'
-                />
-              </div>
-              <h3 className='text-xl font-semibold mb-3'>
-                {t('services.offerings.brandContent.title', 'Brand Content')}
-              </h3>
-              <p className='text-white/70 text-sm'>
-                {t(
-                  'services.offerings.brandContent.description',
-                  'Strategic brand storytelling through compelling visuals that communicate your values and vision.',
-                )}
-              </p>
             </motion.div>
           </div>
         </div>

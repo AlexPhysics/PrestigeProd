@@ -37,55 +37,82 @@
     "processSubtitle": "Comment nous donnons vie à votre vision",
     "testimonials": "Ce que disent nos clients",
     "pageTitle": "Prestige Production | Services de vidéo et photographie premium"
-  },  "services": {
-    "pageTitle": "Services | Prestige Production",    "hero": {
-      "title": "Vidéo et photographie professionnelles",
-      "highlight": "En toute simplicité",
-      "subtitle": "Contenu visuel de haute qualité qui présente votre entreprise de manière professionnelle. Prix transparents, livraison fiable, résultats exceptionnels.",
+  },
+  "services": {
+    "pageTitle": "Services | Prestige Production",
+    "hero": {
+      "title": "Vidéo & photographie professionnelles",
+      "highlight": "en toute simplicité",
+      "subtitle": "Nous créons des visuels de haute qualité qui présentent votre entreprise de manière professionnelle, avec des prix clairs et une livraison fiable à chaque fois.",
       "cta": "Travaillons ensemble",
       "primaryCta": "Obtenir un devis personnalisé",
-      "secondaryCta": "Voir les forfaits"
+      "secondaryCta": "Voir nos forfaits"
     },
     "benefits": {
       "expertise": "Précision suisse",
       "expertiseDesc": "Équipement professionnel et années d'expérience garantissant des résultats cohérents et de haute qualité.",
       "efficiency": "Axé sur le temps",
-      "efficiencyDesc": "Processus rationalisé qui respecte votre planning et livre dans les délais convenus.",
+      "efficiencyDesc": "Un processus optimisé qui respecte votre emploi du temps et livre dans les délais convenus.",
       "impact": "Pourquoi c'est important",
-      "impactDesc": "Les premières impressions façonnent le succès commercial. Les visuels professionnels inspirent confiance, attirent les clients et vous démarquent de la concurrence."
+      "impactDesc": "Les premières impressions façonnent le succès commercial. Nos visuels professionnels instaurent la confiance, attirent les clients et vous démarquent de la concurrence."
     },
-    "packages": {
-      "title": "Solutions collaboratives",
-      "subtitle": "En tant qu'équipe boutique de deux personnes, nous offrons des options de service personnalisées qui vous donnent exactement ce dont vous avez besoin sans complexité inutile.",
-      "teamNote": "En tant que studio boutique de deux personnes, nous offrons une approche personnalisée à chaque projet. Notre petite équipe signifie une communication directe avec les créatifs travaillant sur votre contenu, garantissant que votre vision est parfaitement capturée.",
-      "mostPopular": "plus populaire",
-      "premium": {
-        "title": "Forfait premium",
-        "premiumDesc": "Notre solution complète signature pour les clients nécessitant une narration visuelle complète avec un impact maximum.",
-        "premiumFeature1": "Production de deux jours avec notre suite d'équipement complète",
-        "premiumFeature2": "Production vidéo cinématographique avec techniques d'édition avancées",
-        "premiumFeature3": "Collection de photos extensive avec étalonnage premium",
-        "premiumFeature4": "Contenu optimisé pour toutes les principales plateformes sociales",
-        "premiumFeature5": "Révisions illimitées et support continu",
-        "premiumCta": "Choisir premium"
+    "process": {
+      "title": "Processus simple,",
+      "highlight": "résultats exceptionnels",
+      "description": "Travailler avec nous est simple. Nous nous occupons de la complexité pour que vous puissiez vous concentrer sur ce qui compte : développer votre entreprise et impressionner vos clients.",
+      "step1Title": "Consultation",
+      "step1Desc": "Nous commençons par explorer vos objectifs, votre public et vos objectifs stratégiques.",
+      "step2Title": "Planification",
+      "step2Desc": "Nous développons ensuite un concept créatif et un plan de production détaillé.",
+      "step3Title": "Production",
+      "step3Desc": "Notre équipe capture des séquences de haute qualité à l'aide d'équipements professionnels.",
+      "step4Title": "Post-production",
+      "step4Desc": "Nous nous occupons de tout le montage, de l'étalonnage des couleurs et du peaufinage de votre histoire visuelle.",
+      "step5Title": "Livraison",
+      "step5Desc": "Vous recevez le contenu final, optimisé pour vos plateformes avec nos conseils stratégiques."
+    },
+    "types": {
+      "title": "Nos services",
+      "subtitle": "Nous proposons des prix clairs et transparents pour un contenu professionnel qui vous apporte les résultats dont vous avez besoin.",
+      "mostPopular": "le plus populaire",
+      "videoProduction": {
+        "title": "Production vidéo",
+        "videoProductionDesc": "Des vidéos cinématiques qui mettent en valeur votre marque, votre propriété ou votre événement avec une qualité professionnelle.",
+        "videoProductionPrice": "",
+        "videoFeature1": "Caméras professionnelles Sony et séquences par drone",
+        "videoFeature2": "Montage complet avec étalonnage des couleurs et audio",
+        "videoFeature3": "Vidéos grand format et versions pour les médias sociaux",
+        "videoFeature4": "Révisions incluses jusqu'à ce que vous soyez satisfait",
+        "videoProductionCta": "Sélectionner le forfait vidéo"
       },
-      "standard": {
-        "title": "Forfait standard",
-        "standardDesc": "Équilibre parfait entre qualité et valeur pour les entreprises nécessitant du contenu visuel professionnel.",
-        "standardFeature1": "Production d'une journée avec équipement essentiel",
-        "standardFeature2": "Vidéo professionnelle avec sélection musicale personnalisée",
-        "standardFeature3": "Ensemble de photos complet avec édition standard",
-        "standardCta": "Choisir standard"
+      "photography": {
+        "title": "Photographie",
+        "photographyDesc": "Des photos professionnelles qui capturent l'essence de votre espace ou de votre marque avec un détail exceptionnel.",
+        "photographyPrice": "",
+        "photoFeature1": "Séance photo professionnelle",
+        "photoFeature2": "Photographie par drone disponible",
+        "photoFeature3": "Images de haute qualité pour tous vos besoins",
+        "photoFeature4": "Droits commerciaux inclus",
+        "photographyCta": "Sélectionner le forfait photo"
       },
-      "custom": {
-        "title": "Solution personnalisée",
-        "customDesc": "Approche sur mesure pour des projets uniques nécessitant une expertise spécifique ou une direction créative.",
-        "customFeature1": "Planification collaborative pour répondre aux spécifications exactes",
-        "customFeature2": "Calendrier de production flexible et livrables",
-        "customFeature3": "Exigences techniques spéciales ou éléments créatifs",
-        "customCta": "Discutons"
+      "completePackage": {
+        "title": "Photos et vidéos",
+        "completePackageDesc": "Une solution complète combinant la vidéo et la photographie pour un impact maximal et une narration cohérente.",
+        "completePackagePrice": "",
+        "completeFeature1": "Production vidéo complète + séance photo",
+        "completeFeature2": "Narration coordonnée sur tous les contenus",
+        "completeFeature3": "Planification prioritaire et livraison rapide",
+        "completeFeature4": "Consultation élargie et direction créative",
+        "completeFeature5": "Meilleur rapport qualité-prix en combinant les deux services",
+        "completePackageCta": "Sélectionner le forfait complet"
       }
-    },    "faq": {
+    },
+    "custom": {
+      "title": "Besoin de quelque chose de différent ? créons un forfait sur mesure.",
+      "description": "Vous avez un projet unique en tête ? Nous sommes experts dans la création de solutions sur mesure adaptées à vos besoins exacts. Discutons de votre vision.",
+      "cta": "Discutons"
+    },
+    "faq": {
       "title": "Foire aux questions",
       "subtitle": "Obtenez des réponses aux questions fréquentes sur nos services, notre processus et notre livraison.",
       "clickToExpand": "Cliquez sur une question pour voir la réponse",
@@ -103,43 +130,78 @@
       "a5": "Oui, nous sommes un studio de contenu visuel complet. Nous pouvons capturer à la fois vidéo de haute qualité et photographie lors de la même journée de production, maximisant l'efficacité et assurant la cohérence visuelle à travers tout votre contenu. Cette approche est particulièrement précieuse pour les projets immobiliers, d'entreprise et de marque où vous avez besoin d'une suite de contenu complète."
     },
     "offerings": {
-      "title": "Ce Que Nous Proposons",
-      "cards": {
-        "videos": {
-          "title": "Vidéos",
-          "text": "Des histoires immobilières narratives en qualité cinématographique. Idéal pour YouTube et sites web."
-        },
-        "reels": {
-          "title": "Reels pour Réseaux Sociaux",
-          "text": "Courts métrages Instagram & TikTok à fort impact, conçus pour l'engagement et la viralité."
-        },
-        "photos": {
-          "title": "Photos",
-          "text": "Images parfaitement équilibrées utilisant des techniques HDR pour mettre en valeur l'espace et la lumière."
-        }
+      "title": "Types de contenu premium",
+      "subtitle": "Chaque format est conçu pour mettre en valeur les meilleurs atouts de votre marque et susciter l'intérêt de votre public cible.",
+      "propertyTours": {
+        "title": "Vidéos cinématiques",
+        "description": "Des récits visuels immersifs qui créent un lien émotionnel avec les spectateurs."
+      },
+      "aerial": {
+        "title": "Photographie professionnelle",
+        "description": "Des images haute résolution époustouflantes qui capturent chaque détail avec un éclairage et une composition parfaits."
+      },
+      "social": {
+        "title": "Contenu pour les médias sociaux",
+        "description": "Des reels et des courts métrages percutants, optimisés pour un engagement maximal."
+      },
+      "hdr": {
+        "title": "Photographie",
+        "imageAlt": "Exemple de photographie professionnelle",
+        "description": "Des photos de haute qualité qui capturent un éclairage parfait, faisant ressortir le meilleur de vos sujets et de vos espaces."
+      },
+      "brandContent": {
+        "title": "Contenu de marque",
+        "imageAlt": "Exemple de production de contenu de marque",
+        "description": "Narration de marque stratégique à travers des visuels convaincants qui communiquent vos valeurs et votre vision."
+      },
+      "floorPlans": {
+        "title": "Expériences interactives",
+        "imageAlt": "Exemple d'expériences numériques interactives",
+        "description": "Des expériences numériques interactives qui permettent au public d'explorer des produits et des concepts à distance."
       }
     },
     "gear": {
-      "title": "Notre Équipement = Votre Avantage Compétitif",
-      "description": "Derrière chaque visuel impressionnant se trouve un équipement de pointe. Nous tournons avec la gamme cinéma professionnelle de Sony pour des détails nets et une plage dynamique étendue, et capturons des perspectives aériennes avec des drones haut de gamme. Notre équipement nous permet de mettre en valeur votre propriété avec précision, échelle et impact cinématographique — vous donnant un avantage concurrentiel sur un marché saturé.",
-      "items": {
-        "sonyAlpha": "Sony Alpha",
-        "djiMavic": "DJI Mavic 3 Pro"
-      }
+      "title": "Équipement de qualité professionnelle",
+      "description": "Nous investissons dans les dernières technologies de cinéma pour capturer votre marque, vos produits et vos services avec un détail, une précision des couleurs et une qualité cinématographique exceptionnels.",
+      "sonyAlpha": "Ligne de cinéma Sony Alpha",
+      "sonyAlphaAlt": "Caméra Sony Alpha",
+      "sonyAlphaSpec": "Caméra de cinéma numérique compatible 8K avec des performances extraordinaires en basse lumière et une plage dynamique étendue",
+      "sonyAlphaFeature1": "Capteur plein format pour une profondeur de champ cinématographique",
+      "sonyAlphaFeature2": "Science des couleurs professionnelle et capacités d'étalonnage",
+      "sonyAlphaFeature3": "Fréquence d'images élevée pour de superbes ralentis",
+      "djiMavic": "DJI Mavic 3 Pro",
+      "djiMavicAlt": "Drone DJI Mavic 3 Pro",
+      "djiMavicSpec": "Plateforme aérienne professionnelle avec système de caméra Hasselblad et capacités de vol avancées",
+      "djiMavicFeature1": "Caméra CMOS 4/3 Hasselblad pour une qualité d'image supérieure",
+      "djiMavicFeature2": "46 minutes de temps de vol pour une couverture aérienne étendue",
+      "djiMavicFeature3": "Détection d'obstacles omnidirectionnelle pour des prises de vue sûres et complexes"
     },
-    "portfolio": {
-      "title": "Découvrez Nos Travaux Récents",
-      "description": "Voyez comment nous donnons vie aux espaces grâce à la vidéo, la photographie et le montage.",
-      "cta": "Voir le portfolio"
+    "showcase": {
+      "title": "Les résultats parlent d'eux-mêmes",
+      "subtitle": "Découvrez comment notre narration visuelle a transformé des marques et accéléré la croissance de nos clients.",
+      "penthouseImage": "Image du projet Penthouse",
+      "penthouseImageAlt": "Projet penthouse à Zurich",
+      "penthouseTitle": "Penthouse de Zurich",
+      "penthouseResult": "7x plus de vues que le contenu moyen",
+      "penthouseQuote": "Prestige Production a livré une vidéo exceptionnelle pour un magnifique penthouse. Leur travail a capturé l'essence du luxe.",
+      "penthouseClient": "Soroush Efati, Associé, Zurich Sotheby's International Realty",
+      "smiImage": "Image du projet SMI",
+      "smiImageAlt": "Projet du Swiss Mining Institute",
+      "smiTitle": "Swiss Mining Institute",
+      "smiResult": "Suite de contenu complète pour un événement d'entreprise de haut niveau",
+      "smiQuote": "L'aftermovie et les interviews qu'ils ont créés étaient exceptionnels. Ils ont parfaitement capturé l'énergie de notre événement.",
+      "smiClient": "Manuel Bally, Organisateur, Swiss Mining Institute",
+      "viewCase": "Voir l'étude de cas complète"
     },
     "cta": {
-      "title": "Prêt à élever votre marque ?",
-      "description": "Laissez-nous transformer vos propriétés en expériences visuelles qui se démarquent.",
-      "button": "Demander un Devis"
+      "title": "Prêt à transformer votre marketing visuel ?",
+      "description": "Rejoignez des marques et des organisations à succès qui obtiennent un engagement plus élevé et des résultats plus solides avec notre contenu visuel premium.",
+      "primaryButton": "Réservez votre consultation gratuite",
+      "secondaryButton": "Explorez notre portfolio"
     }
   },
   "whyUs": {
-    "pageTitle": "Pourquoi Nous | Prestige Production",
+    "pageTitle": "Pourquoi nous | Prestige Production",
     "title": "Pourquoi Travailler Avec Nous ?",
     "subtitle": "Nous sommes plus qu'une simple société de production vidéo. Nous sommes un partenaire créatif dédié à donner vie à votre vision avec créativité, précision et des résultats mesurables.",
     "cta": "Travaillons ensemble",

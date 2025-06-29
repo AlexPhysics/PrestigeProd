@@ -11,8 +11,9 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Showcasing prestige in every project",
-    "subtitle": "Premium video production and photography services",
+    "title": "Professional video & photography",
+    "highlight": "made simple",
+    "subtitle": "We create high-quality visuals that present your business professionally, with clear pricing and reliable delivery every time.",
     "scrollDown": "Scroll down to discover",
     "mouseover": "Move your mouse over each word",
     "scroll": "Scroll",
@@ -41,47 +42,47 @@
     "pageTitle": "Services | Prestige Production",
     "hero": {
       "title": "Professional video & photography",
-      "highlight": "Made simple",
-      "subtitle": "High-quality visual content that showcases your business professionally. Clear pricing, reliable delivery, exceptional results.",
+      "highlight": "made simple",
+      "subtitle": "We create high-quality visuals that present your business professionally, with clear pricing and reliable delivery every time.",
       "cta": "Work with us",
-      "primaryCta": "Get custom quote",
-      "secondaryCta": "View packages"
+      "primaryCta": "Get a custom quote",
+      "secondaryCta": "View our packages"
     },
     "benefits": {
       "expertise": "Swiss precision",
       "expertiseDesc": "Professional equipment and years of experience ensuring consistent, high-quality results.",
       "efficiency": "Time focused",
-      "efficiencyDesc": "Streamlined process that respects your schedule and delivers on agreed timelines.",
+      "efficiencyDesc": "A streamlined process that respects your schedule and delivers on agreed timelines.",
       "impact": "Why it matters",
-      "impactDesc": "First impressions shape business success. Professional visuals build trust, attract customers, and set you apart from competitors."
+      "impactDesc": "First impressions shape business success. Our professional visuals build trust, attract customers, and set you apart from the competition."
     },
     "process": {
-      "title": "Simple Process,",
-      "highlight": "Exceptional Results",
+      "title": "Simple process,",
+      "highlight": "exceptional results",
       "description": "Working with us is straightforward. We handle the complexity so you can focus on what matters—growing your business and impressing your clients.",
       "step1Title": "Consultation",
-      "step1Desc": "We explore your goals, audience, and strategic objectives.",
+      "step1Desc": "We start by exploring your goals, audience, and strategic objectives.",
       "step2Title": "Planning",
-      "step2Desc": "We develop a creative concept and detailed production plan.",
+      "step2Desc": "We then develop a creative concept and a detailed production plan.",
       "step3Title": "Production",
-      "step3Desc": "Our team captures high-quality footage using premium equipment.",
-      "step4Title": "Post-Production",
-      "step4Desc": "Expert editing, color grading, and refinement of your visual story.",
+      "step3Desc": "Our team captures high-quality footage using professional equipment.",
+      "step4Title": "Post production",
+      "step4Desc": "We handle all the editing, color grading, and refinement of your visual story.",
       "step5Title": "Delivery",
-      "step5Desc": "Final content optimized for your platforms with strategic distribution guidance."
+      "step5Desc": "You receive the final content, optimized for your platforms with our strategic guidance."
     },    "types": {
-      "title": "Our Services",
-      "subtitle": "Professional visual content solutions tailored to your needs.",
+      "title": "Our services",
+      "subtitle": "We offer clear and transparent pricing for professional content that gets you the results you need.",
       "mostPopular": "most popular",
       "videoProduction": {
-        "title": "Video Production",
+        "title": "Video production",
         "videoProductionDesc": "Cinematic videos that showcase your brand, property, or event with professional quality.",
         "videoProductionPrice": "",
         "videoFeature1": "Professional Sony cameras and drone footage",
         "videoFeature2": "Full editing with color grading and audio",
         "videoFeature3": "Long format videos and social media versions",
         "videoFeature4": "Revisions included until you're happy",
-        "videoProductionCta": "Get Video Quote"
+        "videoProductionCta": "Select video plan"
       },
       "photography": {
         "title": "Photography",
@@ -91,22 +92,27 @@
         "photoFeature2": "Drone photography available",
         "photoFeature3": "High-quality images for all your needs",
         "photoFeature4": "Commercial rights included",
-        "photographyCta": "Get Photo Quote"
+        "photographyCta": "Select photo plan"
       },
       "completePackage": {
-        "title": "Video + Photo Package",
-        "completePackageDesc": "Complete solution combining video and photography for maximum impact and consistent storytelling.",
+        "title": "Photos and videos",
+        "completePackageDesc": "A complete solution combining video and photography for maximum impact and consistent storytelling.",
         "completePackagePrice": "",
         "completeFeature1": "Full video production + photo session",
         "completeFeature2": "Coordinated storytelling across all content",
         "completeFeature3": "Priority scheduling and fast delivery",
         "completeFeature4": "Extended consultation and creative direction",
         "completeFeature5": "Best value when combining both services",
-        "completePackageCta": "Get Complete Quote"
+        "completePackageCta": "Select complete plan"
       }
     },
+    "custom": {
+      "title": "Need something different? Let's build a custom package.",
+      "description": "Have a unique project in mind? We're experts at creating custom solutions tailored to your exact needs. Let's discuss your vision.",
+      "cta": "Let's talk"
+    },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "Frequently asked questions",
       "subtitle": "Get answers to common questions about our services, process, and delivery.",
       "clickToExpand": "Click a question to see the answer",
       "moreQuestions": "Have more questions? We're here to help.",
@@ -120,22 +126,19 @@
       "a4": "As a boutique two-person team, we offer direct access to the creatives working on your project, ensuring your vision is perfectly captured. Every project receives our full attention, with no outsourcing or junior teams. We combine Swiss precision with cinematic storytelling, using only professional cinema-grade equipment and advanced post-production techniques.",      "q5": "Can you handle both video and photography for the same project?",
       "a5": "Yes, we're a full-service visual content studio. We can capture both high-quality video and photography during the same production day, maximizing efficiency and ensuring visual consistency across all your content. This approach is particularly valuable for real estate, corporate, and brand projects where you need a complete content suite."
     },    "offerings": {
-      "title": "Premium Content Types",
-      "subtitle": "Each format is designed to showcase your brand, products, or services from their most engaging angle and capture your target audience's attention.",
+      "title": "Premium content types",
+      "subtitle": "Each format is crafted to highlight your brand's best features and engage your target audience.",
       "propertyTours": {
-        "title": "Cinematic Videos",
-        "imageAlt": "Cinematic video example",
-        "description": "Immersive visual stories that highlight key features and create emotional connections with viewers."
+        "title": "Cinematic videos",
+        "description": "Immersive visual stories that create an emotional connection with viewers."
       },
       "aerial": {
-        "title": "Aerial Photography & Video",
-        "imageAlt": "Aerial videography example",
-        "description": "Showcase scale, surroundings, and perspective with dramatic drone footage and stills."
+        "title": "Professional photography",
+        "description": "Stunning high-resolution images that capture every detail with perfect lighting and composition."
       },
       "social": {
-        "title": "Social Media Content",
-        "imageAlt": "Social media content example",
-        "description": "Eye-catching reels and shorts optimized for Instagram, TikTok and other platforms to maximize engagement."
+        "title": "Social media content",
+        "description": "Eye-catching reels and shorts optimized for maximum engagement."
       },
       "hdr": {
         "title": "Photography",
@@ -143,19 +146,19 @@
         "description": "High-quality photos that capture perfect lighting, bringing out the best in your subjects and spaces."
       },
       "brandContent": {
-        "title": "Brand Content",
+        "title": "Brand content",
         "imageAlt": "Brand content production example",
         "description": "Strategic brand storytelling through compelling visuals that communicate your values and vision."
       },
       "floorPlans": {
-        "title": "Interactive Experiences",
+        "title": "Interactive experiences",
         "imageAlt": "Interactive digital experiences example",
         "description": "Interactive digital experiences that allow audiences to explore products and concepts remotely."
       }
     },    "gear": {
-      "title": "Professional-Grade Equipment",
+      "title": "Professional-grade equipment",
       "description": "We invest in the latest cinema-grade technology to capture your brand, products, and services with exceptional detail, color accuracy, and cinematic quality.",
-      "sonyAlpha": "Sony Alpha Cinema Line",
+      "sonyAlpha": "Sony Alpha cinema line",
       "sonyAlphaAlt": "Sony Alpha camera",
       "sonyAlphaSpec": "8K-capable digital cinema camera with extraordinary low-light performance and dynamic range",
       "sonyAlphaFeature1": "Full-frame sensor for cinematic depth of field",
@@ -175,14 +178,31 @@
       "pageTitle": "Notre Travail | Prestige Production"
 
     },    "cta": {
-      "title": "Ready to Transform Your Visual Marketing?",
+      "title": "Ready to transform your visual marketing?",
       "description": "Join successful brands and organizations who are seeing higher engagement and stronger results with our premium visual content.",
-      "primaryButton": "Book Your Free Consultation",
-      "secondaryButton": "Explore Our Portfolio"
+      "primaryButton": "Book your free consultation",
+      "secondaryButton": "Explore our portfolio"
+    },
+    "showcase": {
+      "title": "The results speak for themselves",
+      "subtitle": "See how our visual storytelling has transformed brands and accelerated growth for our clients.",
+      "penthouseImage": "Penthouse project image",
+      "penthouseImageAlt": "Zurich penthouse project",
+      "penthouseTitle": "Zurich Penthouse",
+      "penthouseResult": "7x more views than average content",
+      "penthouseQuote": "Prestige Production delivered an outstanding video for a beautiful penthouse. Their work captured the essence of luxury.",
+      "penthouseClient": "Soroush Efati, Partner, Zurich Sotheby's International Realty",
+      "smiImage": "SMI project image",
+      "smiImageAlt": "Swiss Mining Institute project",
+      "smiTitle": "Swiss Mining Institute",
+      "smiResult": "Full content suite for a high-profile corporate event",
+      "smiQuote": "The aftermovie and interviews they created were exceptional. They perfectly captured the energy of our event.",
+      "smiClient": "Manuel Bally, Organizer, Swiss Mining Institute",
+      "viewCase": "View full case study"
     }
   },
   "whyUs": {
-    "pageTitle": "Why Us | Prestige Production",
+    "pageTitle": "Why us | Prestige Production",
     "title": "Why work with us?",
     "subtitle": "We are more than a video company. We are a creative partner dedicated to bringing your vision to life with creativity, precision, and measurable results.",
     "cta": "Let's work together",
