@@ -337,13 +337,6 @@ const ValueProposition = () => {
                       </div>
                     </div>
                   </div>
-                  
-                  <blockquote className='text-xl text-white/80 italic leading-relaxed border-l-4 border-[#9EB6A9]/40 pl-6'>
-                    "{t('valueProposition.testimonial3', 'Professional quality from day one. They understand what premium brands need and deliver every time.')}"
-                  </blockquote>
-                  <div className='text-[#9EB6A9] font-medium'>
-                    — {t('valueProposition.premiumClient', 'Premium real estate client')}
-                  </div>
                 </motion.div>
 
                 {/* Company Stats */}
@@ -363,12 +356,12 @@ const ValueProposition = () => {
                     
                     <div className='space-y-4 text-sm'>
                       <div className='flex items-center justify-between px-4 py-3 bg-white/[0.02] rounded-lg border border-white/5'>
-                        <span className='text-white/70'>{t('valueProposition.projectsCompleted', 'Projects completed')}</span>
-                        <span className='text-[#9EB6A9] font-medium'>{t('valueProposition.fifteenPlus', '15+')}</span>
+                        <span className='text-white/70'>{t('valueProposition.projectROI', 'Average project ROI')}</span>
+                        <span className='text-[#9EB6A9] font-medium'>{t('valueProposition.threeToFiveX', '3-5x')}</span>
                       </div>
                       <div className='flex items-center justify-between px-4 py-3 bg-white/[0.02] rounded-lg border border-white/5'>
-                        <span className='text-white/70'>{t('valueProposition.averageDelivery', 'Average delivery')}</span>
-                        <span className='text-[#9EB6A9] font-medium'>{t('valueProposition.fiveDays', '5 days')}</span>
+                        <span className='text-white/70'>{t('valueProposition.clientRetention', 'Client retention rate')}</span>
+                        <span className='text-[#9EB6A9] font-medium'>{t('valueProposition.oneHundredPercent', '100%')}</span>
                       </div>
                       <div className='flex items-center justify-between px-4 py-3 bg-white/[0.02] rounded-lg border border-white/5'>
                         <span className='text-white/70'>{t('valueProposition.responseTime', 'Response time')}</span>
