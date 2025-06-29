@@ -356,17 +356,34 @@
     },
     "browserNotSupported": "Your browser does not support the video tag."
   },
+  "swissStandards": {
+    "quality": {
+      "label": "Video Quality",
+      "desc": "Cinema-grade equipment for crystal clear results"
+    },
+    "delivery": {
+      "label": "Efficient Delivery", 
+      "desc": "Premium results delivered with precision timing"
+    },
+    "projects": {
+      "label": "Audience Engagement",
+      "desc": "Boosting your reach and engagement with compelling video content"
+    }
+  },
   "valueProposition": {
     "title": "Professional video & photography",
     "subtitle": "High-quality visual content that showcases your business professionally and drives results.",
     "whyChooseUs": "Why choose us",
     "provenResults": "Proven results, trusted by industry leaders",
-    "trackRecord": "Our track record speaks for itself: premium brands choose us for guaranteed quality, measurable engagement, and Swiss reliability.",
+    "trackRecord": "Our track record speaks for itself: brands choose us for guaranteed quality, measurable engagement, and Swiss reliability.",
     "premiumQuality": "Premium quality",
     "trustedByLeaders": "Trusted by industry leaders",
+    "trustedByLeadersDesc": "Partnered with established brands who demand excellence and Swiss precision in every project delivery.",
     "testimonial1": "Their cinema-grade production quality perfectly captured our luxury properties. Every detail was flawless.",
     "clientSatisfactionRate": "Client satisfaction rate",
+    "basedOnClientFeedback": "Based on post-project client feedback",
     "creativeImpact": "Creative impact",
+    "premiumContentCreation": "Content that transforms how clients perceive your brand",
     "measurableGrowth": "Measurable engagement growth",
     "socialMediaEngagement": "Social media engagement",
     "websiteConversion": "Website conversion",
@@ -399,6 +416,7 @@
     "premiumClientsDesc": "Working exclusively with established brands and industry leaders who demand exceptional quality",
     "professionalApproach": "Professional approach",
     "professionalApproachDesc": "We deliver the same high standards and attention to detail for every client, regardless of project size or industry",
+    "clientFocus": "Client focus",      "clientFocusDesc": "We adapt our approach to meet each client's unique needs and goals, ensuring personalized solutions that deliver maximum impact for their specific market and objectives",
     "smiEvent": "Swiss Mining Institute",
     "smiDesc": "Covered one of Europe's most exclusive industry events, capturing content for international mining leaders",
     "qualityFocus": "Quality over quantity approach",
@@ -411,7 +429,11 @@
     "averageDelivery": "Average delivery",
     "fiveDays": "5 days",
     "responseTime": "Response time",
-    "within24h": "< 24 hours"
+    "within24h": "< 24 hours",
+    "projectROI": "Average project ROI",
+    "threeToFiveX": "3-5x",
+    "clientRetention": "Client retention rate",
+    "oneHundredPercent": "100%"
   },
   "contact": {
     "title": "Let's create something ",
