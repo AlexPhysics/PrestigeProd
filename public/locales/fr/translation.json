@@ -289,9 +289,9 @@
       }
     },
     "cta": {
-      "title": "Prêt à Créer Votre Vision ?",
+      "title": "Prêt à créer votre vision ?",
       "description": "Collaborons pour donner vie à votre histoire avec l'excellence cinématographique et une valeur de production premium.",
-      "button": "Commencer Votre Projet"
+      "button": "Commencer votre projet"
     },
     "browserNotSupported": "Votre navigateur ne prend pas en charge la balise vidéo."
   },
@@ -537,7 +537,11 @@
       "interviewTitle": "Interview",
       "enlargedImage": "Agrandie",
       "thanks": "Merci à notre partenaire",
-      "partnerName": "Swiss Mining Institute"
+      "partnerName": "Swiss Mining Institute",
+      "moreReels": "Plus de reels de l'événement",
+      "swipeLeft": "Glissez ou faites glisser pour naviguer",
+      "swipeLeftMobile": "Glissez pour naviguer",
+      "partnerCredit": "Projet réalisé en partenariat avec"
     }
   },
   "highlights": {
