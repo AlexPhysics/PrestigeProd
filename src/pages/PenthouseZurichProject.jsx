@@ -207,6 +207,8 @@ const PenthouseZurichProject = () => {
         <motion.div
           id='back-link'
           initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           className='max-w-6xl mx-auto mb-12 px-2'
         >
           <Link

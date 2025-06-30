@@ -1,5 +1,6 @@
 import { useGSAP } from '@gsap/react';
 import React, { useRef, useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { animateWithGsap } from '../utils/animations';
 import {
   explore1Img,
@@ -13,7 +14,6 @@ import { Link, useParams } from 'react-router-dom';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { smiLogo } from '../utils';
 import Carousel from '../components/Carousel';
-import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 
 gsap.registerPlugin(ScrollTrigger);
