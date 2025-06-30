@@ -249,7 +249,7 @@
       "results": {
         "tab": "Risultati",
         "title": "I Nostri Risultati",
-        "description": "Misuriamo il successo attraverso il coinvolgimento del pubblico, i cambiamenti nella percezione del brand e i risultati aziendali — fornendo contenuti che ottengono risultati reali.",
+        "description": "Misuriamo il successo attraverso il coinvolgimento del pubblico, i cambiamenti nella percezione del brand e i risultati aziendali, fornendo contenuti che ottengono risultati reali.",
         "point1": "Tracciamento delle metriche di performance",
         "point2": "Analisi del coinvolgimento del pubblico",
         "point3": "Reportistica sui risultati aziendali tangibili"
@@ -315,22 +315,61 @@
     }
   },
   "portfolio": {
-    "title": "Il Nostro Lavoro",
+    "title": "Il nostro lavoro",
     "subtitle": "Scopri come",
     "ourPortfolio": "Il nostro portfolio",
+    "ourText": "Il nostro",
+    "portfolioText": "portfolio",
     "description": "Dai brand di lusso agli eventi di alta gamma, creiamo viaggi cinematografici che elevano ogni progetto.",
     "categories": {
       "all": "Tutti",
       "realEstate": "Progetti",
       "corporate": "Aziendale",
       "events": "Eventi",
-      "social": "Social Media"
+      "social": "Social media"
     },
-    "reelsTitle": "Reel per Social Media",
+    "tags": {
+      "event": "Evento",
+      "socialMedia": "Social media",
+      "shortForm": "Formato breve",
+      "realEstate": "Immobiliare",
+      "luxury": "Lusso",
+      "property": "Proprietà",
+      "views": "Visualizzazioni",
+      "conference": "Conferenza",
+      "mining": "Minerario",
+      "speakers": "Relatori",
+      "industry": "Industria",
+      "highlights": "Punti salienti"
+    },
+    "reelsTitle": "Reel per social media",
     "reelsSubtitle": "Contenuti coinvolgenti in formato breve progettati per il massimo impatto sui social media",
+    "reels": {
+      "instagramReel": "Reel Instagram",
+      "smi": {
+        "title": "Evento SMI in evidenza",
+        "description": "Copertura dinamica dell'evento per i social media"
+      },
+      "penthouseSpeech": {
+        "title": "Esperienza penthouse",
+        "description": "Contenuti social immobiliari di lusso"
+      },
+      "penthouseViews": {
+        "title": "Viste del penthouse",
+        "description": "Viste immobiliari mozzafiato per le piattaforme social"
+      }
+    },
+    "types": {
+      "eventProduction": "Produzione eventi",
+      "realEstate": "Immobiliare",
+      "videoProduction": "Produzione video"
+    },
+    "socialMedia": "Social media",
+    "quality4k": "4K",
+    "videoProduction": "Produzione video",
     "pageTitle": "Il Nostro Lavoro | Prestige Production",
     "defaultDescription": "Produzione cinematografica premium realizzata con attenzione ai dettagli e visione artistica.",
-    "viewProject": "Visualizza Progetto",
+    "viewProject": "Visualizza progetto",
     "testimonials": {
       "title": "Cosa Dicono i Nostri Clienti",
       "subtitle": "Fidato da marchi di lusso e clienti esigenti in tutto il mondo",
@@ -348,9 +387,9 @@
       }
     },
     "cta": {
-      "title": "Pronto a Creare la Tua Visione?",
+      "title": "Pronto a creare la tua visione?",
       "description": "Collaboriamo per dare vita alla tua storia con eccellenza cinematografica e valore di produzione premium.",
-      "button": "Inizia il Tuo Progetto"
+      "button": "Inizia il tuo progetto"
     },
     "browserNotSupported": "Il tuo browser non supporta il tag video."
   },
@@ -512,91 +551,130 @@
     "browserNotSupported": "Il tuo browser non supporta il tag video.",
     "location": "Svizzera",
     "penthouse": {
-      "title": "La Storia di un Attico",
-      "location": "Zurigo | Progetto di Prestigio",
-      "description": "Abbiamo collaborato con Zurich Sotheby's International Realty per dar vita a uno dei progetti più eccezionali di Zurigo — un attico di 304 m² situato in cima alla Mobimo Tower. Attraverso immagini cinematografiche, storytelling architettonico e un processo di produzione orientato ai dettagli, abbiamo creato una suite completa di contenuti su misura per il mercato del lusso. Dai reel in formato breve ai film in formato lungo, ogni elemento è stato realizzato per riflettere la sofisticatezza del progetto e del marchio.",
-      "category": "Immobiliare di Lusso",
-      "projectTitle": "Panoramica del Progetto",
-      "viewResults": "Visualizza Risultati",
-      "whyVideo": "Perché il Video Vende",
+      "title": "La storia di un attico",
+      "location": "Zurigo | Progetto di prestigio",
+      "description": "Abbiamo collaborato con Zurich Sotheby's International Realty per dar vita a uno dei progetti più eccezionali di Zurigo: un attico di 304 m² situato in cima alla Mobimo Tower. Attraverso immagini cinematografiche, storytelling architettonico e un processo di produzione orientato ai dettagli, abbiamo creato una suite completa di contenuti su misura per il mercato del lusso. Dai reel in formato breve ai film in formato lungo, ogni elemento è stato realizzato per riflettere la sofisticatezza del progetto e del marchio.",
+      "category": "Immobiliare di lusso",
+      "projectTitle": "Panoramica del progetto",
+      "viewResults": "Visualizza risultati",
+      "whyVideo": "Perché il video vende",
       "address": "Turbinenstrasse 18, 8005 Zurigo",
       "website": "zurichsothebysrealty.com",
       "partner": "Zurich Sotheby's",
-      "mainVideo": "Film Principale",
+      "mainVideo": "Film principale",
       "mainVideoDesc": "Vivi il viaggio cinematografico completo attraverso questa proprietà eccezionale",
-      "reelsTitle": "Contenuti Social Media",
+      "reelsTitle": "Contenuti social media",
       "reelsDesc": "Contenuti brevi ottimizzati per le piattaforme di social media",
-      "reelBadge": "Social Media",
-      "resultsTitle": "Risultati Social Media",
+      "reelBadge": "Social media",
+      "resultsTitle": "Risultati social media",
       "resultsDesc": "Coinvolgimento eccezionale e prestazioni su tutte le piattaforme",
       "results": {
-        "views": "Visualizzazioni Totali",
+        "views": "Visualizzazioni totali",
         "viewsDesc": "Su tutte le piattaforme",
-        "likes": "Mi Piace",
+        "likes": "Mi piace",
         "likesDesc": "Alto tasso di coinvolgimento",
         "comments": "Commenti",
         "commentsDesc": "Comunità attiva",
-        "topPerformer": "#2 Miglior Reel",
+        "topPerformer": "#2 miglior reel",
         "topPerformerDesc": "Secondo maggior coinvolgimento sulla pagina Instagram di Zurich Sotheby's",
-        "growth": "7x Più Visualizzazioni",
+        "growth": "7x più visualizzazioni",
         "growthDesc": "Rispetto ai loro contenuti abituali + crescita significativa dei follower"
       },
       "whyUsTitle": "Perché i contenuti premium vendono proprietà più velocemente",
       "whyUsDesc": "Approfondimenti basati sui dati su come i contenuti video professionali trasformano il marketing immobiliare",
       "whyUs": {
-        "stat1": "Più Richieste",
+        "stat1": "Più richieste",
         "stat1Desc": "Per annunci con contenuti video",
-        "stat2": "Vendite Più Veloci",
+        "stat2": "Vendite più veloci",
         "stat2Desc": "Per case con riprese aeree",
-        "benefit1": "Coinvolgimento Acquirenti Migliorato",
+        "benefit1": "Coinvolgimento acquirenti migliorato",
         "benefit1Desc": "Gli spettatori ricordano il 95% di un messaggio video, creando una connessione emotiva più forte.",
-        "benefit2": "Attirare Clienti Premium",
+        "benefit2": "Attirare clienti premium",
         "benefit2Desc": "Il 73% dei proprietari preferisce elencare con un agente che offre contenuti video.",
         "benefit3": "Aumentare il traffico organico",
         "benefit3Desc": "Il video genera un aumento del 157% del traffico organico dai motori di ricerca.",
-        "benefit4": "Ottenere un Vantaggio Competitivo",
+        "benefit4": "Ottenere un vantaggio competitivo",
         "benefit4Desc": "Con solo il 38% degli agenti che usa video, i contenuti premium ti rendono la scelta preferita per venditori esigenti.",
-        "proofTitle": "Impatto di Questo Progetto",
+        "proofTitle": "Impatto di questo progetto",
         "proofDesc": "Risultati reali dalla nostra campagna dell'attico di Zurigo",
+        "impactSocialReach": "Copertura social media",
+        "impactSocialReachValue": "50K+ visualizzazioni",
+        "impactEngagement": "Tasso di coinvolgimento",
+        "impactEngagementValue": "7x sopra la media",
+        "impactExposure": "Esposizione internazionale",
+        "impactExposureValue": "Pubblico globale",
+        "impactBrand": "Riconoscimento del brand",
+        "impactBrandValue": "#2 miglior reel",
+        "firstThreeDays": "30K+ visualizzazioni in soli 3 giorni",
+        "firstThreeDaysDesc": "Performance iniziale eccezionale su tutte le piattaforme",
         "testimonial": "\"I contenuti video hanno trasformato il modo in cui gli acquirenti percepivano la nostra proprietà, creando una connessione emotiva che le sole foto non potevano raggiungere.\"",
-        "testimonialAuthor": "— Zurich Sotheby's International Realty"
+        "testimonialAuthor": "Zurich Sotheby's International Realty"
       },
-      "ctaTitle": "Pronto a Mostrare la Tua Proprietà?",
+      "ctaTitle": "Pronto a mostrare la tua proprietà?",
       "ctaDesc": "Lascia che creiamo contenuti premium che elevano le tue proprietà di lusso e catturano l'attenzione di acquirenti esigenti.",
-      "ctaButton": "Inizia il Tuo Progetto",
+      "ctaButton": "Inizia il tuo progetto",
       "reelTitle": "Reel",
       "branding": "Una Produzione Prestige"
     },
     "smiTitle": "Swiss Mining Institute | Prestige Production",
     "smi": {
+      "seoTitle": "Swiss Mining Institute 2024 - Produzione eventi premium | Prestige Production",
+      "seoDescription": "Scopri la nostra copertura di produzione video premium dello Swiss Mining Institute 2024 - la conferenza mineraria più prestigiosa in Europa. Con interviste esclusive, aftermovie e contenuti di eventi di lusso.",
+      "seoKeywords": "Swiss Mining Institute, produzione eventi di lusso, video conferenza mineraria, video aziendali premium, videografia eventi, copertura conferenza, produzione aftermovie",
       "tagline": "È tutta una questione di lusso.",
       "title": "Swiss Mining Institute 2024",
       "subtitle": "La conferenza mineraria più prestigiosa al mondo",
+      "moreReels": "Altri reel dall'evento",
+      "swipeLeft": "Scorri o trascina per navigare",
+      "swipeLeftMobile": "Scorri per navigare",
+      "partnerCredit": "Progetto realizzato in partnership con",
+      "partnerName": "Swiss Mining Institute",
       "watchAftermovie": "Guarda l'aftermovie ufficiale",
       "photoAlt": "Foto SMI",
+      "mainVideo": {
+        "title": "Punti salienti evento",
+        "type": "Reel punti salienti",
+        "description": "Copertura premium della conferenza mineraria più esclusiva d'Europa, con luoghi di lusso e networking di alto profilo.",
+        "tags": {
+          "luxuryEvent": "Evento di lusso",
+          "miningConference": "Conferenza mineraria", 
+          "premiumProduction": "Produzione premium"
+        }
+      },
       "intro1Part1": "Lo Swiss Mining Institute è",
       "intro1Part2": "la più grande ed esclusiva conferenza mineraria in Europa",
       "intro1Part3": "Ospitando oltre 1000 investitori, più di 100 società quotate e oltre 2700 incontri organizzati in 2 giorni.",
-      "intro2Part1": "Per due giorni, abbiamo catturato",
-      "intro2Part2": "tutto ciò che un obiettivo poteva raggiungere",
-      "intro2Part3": "Da",
-      "interviews": "interviste",
-      "panels": "discussioni di panel",
-      "and": "e",
-      "the": "l'",
-      "aftermovie": "aftermovie ufficiale",
-      "to": "a",
-      "photos": "foto",
-      "social": "contenuti social",
-      "andMore": "e molto altro — abbiamo consegnato tutto.",
+      "intro2": "In due giorni, abbiamo filmato e fotografato tutto: interviste, tavole rotonde, aftermovie ufficiale, foto e contenuti per i social media.",
       "watchOfficialAftermovie": "Guarda l'aftermovie ufficiale",
       "aftermovieTitle": "Aftermovie ufficiale",
       "featuredInterviews": "Interviste in evidenza",
       "interviewsDesc": "Abbiamo avuto il privilegio di parlare con CEO all'avanguardia e investitori lungimiranti che stanno ridisegnando l'ecosistema minerario. Immergiti in prospettive sincere che non sentirai da nessun'altra parte.",
       "interviewTitle": "Intervista",
       "enlargedImage": "Ingrandita",
+      "lightboxLabel": "Visualizzatore media",
+      "closeLightbox": "Chiudi visualizzatore",
       "thanks": "Grazie al nostro partner",
-      "partnerName": "Swiss Mining Institute"
+      "carousel": {
+        "reel1": {
+          "title": "Apertura conferenza SMI",
+          "description": "Momenti esclusivi di apertura della conferenza mineraria",
+          "type": "Momento saliente evento",
+          "views": "15K+"
+        },
+        "reel2": {
+          "title": "Leader del settore", 
+          "description": "Relatori chiave e approfondimenti del settore",
+          "type": "Contenuto professionale",
+          "views": "12K+"
+        },
+        "reel3": {
+          "title": "Punti salienti della conferenza",
+          "description": "Migliori momenti dell'evento di due giorni", 
+          "type": "Riassunto evento",
+          "views": "18K+"
+        }
+      },
+      "mainVideoViews": "15K+"
     }
   },
   "highlights": {

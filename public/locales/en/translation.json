@@ -251,7 +251,7 @@
       "results": {
         "tab": "Results",
         "title": "Our Results",
-        "description": "We measure success through audience engagement, brand perception shifts, and business outcomes—delivering content that achieves real results.",
+        "description": "We measure success through audience engagement, brand perception shifts, and business outcomes, delivering content that achieves real results.",
         "point1": "Performance metrics tracking",
         "point2": "Audience engagement analysis",
         "point3": "Tangible business outcome reporting"
@@ -320,21 +320,60 @@
     "title": "Our Work",
     "subtitle": "Discover how",
     "ourPortfolio": "Our portfolio",
+    "ourText": "Our",
+    "portfolioText": "portfolio",
     "description": "From luxury real estate to high-end events, we craft cinematic journeys that elevate every project.",
+    "videoProduction": "Video production",
+    "socialMedia": "Social media",
+    "quality4k": "4K",
     "categories": {
       "all": "All",
-      "realEstate": "Real Estate",
+      "realEstate": "Real estate",
       "corporate": "Corporate",
       "events": "Events",
-      "social": "Social Media"
+      "social": "Social media"
     },
-    "reelsTitle": "Social Media Reels",
+    "tags": {
+      "event": "Event",
+      "socialMedia": "Social media",
+      "shortForm": "Short form",
+      "realEstate": "Real estate",
+      "luxury": "Luxury",
+      "property": "Property",
+      "views": "Views",
+      "conference": "Conference",
+      "mining": "Mining",
+      "speakers": "Speakers",
+      "industry": "Industry",
+      "highlights": "Highlights"
+    },
+    "reelsTitle": "Social media reels",
     "reelsSubtitle": "Engaging short-form content designed for maximum social media impact",
+    "reels": {
+      "instagramReel": "Instagram reel",
+      "smi": {
+        "title": "SMI event highlight",
+        "description": "Dynamic event coverage for social media"
+      },
+      "penthouseSpeech": {
+        "title": "Penthouse experience",
+        "description": "Luxury real estate social content"
+      },
+      "penthouseViews": {
+        "title": "Penthouse views",
+        "description": "Stunning property views for social platforms"
+      }
+    },
+    "types": {
+      "eventProduction": "Event production",
+      "realEstate": "Real estate",
+      "videoProduction": "Video production"
+    },
     "pageTitle": "Our Work | Prestige Production",
     "defaultDescription": "Premium cinematic production crafted with attention to detail and artistic vision.",
-    "viewProject": "View Project",
+    "viewProject": "View project",
     "testimonials": {
-      "title": "What Our Clients Say",
+      "title": "What our clients say",
       "subtitle": "Trusted by luxury brands and discerning clients worldwide",
       "client1": {
         "role": "Luxury Real Estate",
@@ -350,9 +389,9 @@
       }
     },
     "cta": {
-      "title": "Ready to Create Your Vision?",
+      "title": "Ready to create your vision?",
       "description": "Let's collaborate to bring your story to life with cinematic excellence and premium production value.",
-      "button": "Start Your Project"
+      "button": "Start your project"
     },
     "browserNotSupported": "Your browser does not support the video tag."
   },
@@ -514,12 +553,12 @@
     "browserNotSupported": "Your browser does not support the video tag.",
     "location": "Switzerland",
     "penthouse": {
-      "title": "A Penthouse Story",
-      "location": "Zurich | Prestige Real Estate",
-      "category": "Luxury Real Estate",
-      "projectTitle": "Project Overview",
-      "viewResults": "View Results",
-      "whyVideo": "Why Video Sells",
+      "title": "A penthouse story",
+      "location": "Zurich | Prestige real estate",
+      "category": "Luxury real estate",
+      "projectTitle": "Project overview",
+      "viewResults": "View results",
+      "whyVideo": "Why video sells",
       "description": "We partnered with Zurich Sotheby's International Realty to bring to life one of Zurich's most exceptional properties, a 304 m² penthouse perched atop the Mobimo Tower. Through cinematic visuals, architectural storytelling, and a detail-oriented production process, we created a complete content suite tailored to the luxury market.",
       "address": "Turbinenstrasse 18, 8005 Zürich",
       "website": "zurichsothebysrealty.com",
@@ -530,73 +569,132 @@
         "views": "Views",
         "likes": "Likes"
       },
-      "mainVideo": "Featured Film",
+      "mainVideo": "Featured film",
       "mainVideoDesc": "Experience the complete cinematic journey through this exceptional property",
-      "featuresTitle": "Production Highlights",
+      "featuresTitle": "Production highlights",
       "featuresDesc": "Key elements that made this project exceptional",
       "features": {
-        "cinematic": "Cinematic Production",
+        "cinematic": "Cinematic production",
         "cinematicDesc": "Professional-grade equipment and techniques",
-        "architecture": "Architectural Focus",
+        "architecture": "Architectural focus",
         "architectureDesc": "Highlighting design and spatial flow",
-        "social": "Social Media Ready",
+        "social": "Social media ready",
         "socialDesc": "Optimized content for all platforms",
-        "luxury": "Luxury Market",
+        "luxury": "Luxury market",
         "luxuryDesc": "Tailored for high-end clientele"
       },
-      "reelsTitle": "Social Media Content",
+      "reelsTitle": "Social media content",
       "reelsDesc": "Short-form content optimized for social media platforms",
-      "reelBadge": "Social Media",
+      "reelBadge": "Social media",
       "reelTitle": "Reel",
-      "resultsTitle": "Social Media Results",
+      "resultsTitle": "Social media results",
       "resultsDesc": "Exceptional engagement and performance across platforms",
       "results": {
-        "views": "Total Views",
+        "views": "Total views",
         "viewsDesc": "Across all platforms",
         "likes": "Likes",
         "likesDesc": "High engagement rate",
         "comments": "Comments",
         "commentsDesc": "Active community",
-        "topPerformer": "#2 Best Performing Reel",
+        "topPerformer": "#2 best performing reel",
         "topPerformerDesc": "Second highest engagement on Zurich Sotheby's Instagram page",
-        "growth": "7x More Views",
+        "growth": "7x more views",
         "growthDesc": "Than their usual content + significant follower growth"
       },
       "whyUsTitle": "Why premium content sells properties faster",
       "whyUsDesc": "Data-driven insights on how professional video content transforms real estate marketing",
       "whyUs": {
-        "stat1": "More Inquiries",
+        "stat1": "More inquiries",
         "stat1Desc": "For listings with video content",
-        "stat2": "Faster Sales",
+        "stat2": "Faster sales",
         "stat2Desc": "For homes with aerial footage",
-        "benefit1": "Enhanced Buyer Engagement",
+        "benefit1": "Enhanced buyer engagement",
         "benefit1Desc": "Viewers retain 95% of a message from video, creating a stronger emotional connection.",
-        "benefit2": "Attract Premium Clients",
+        "benefit2": "Attract premium clients",
         "benefit2Desc": "73% of homeowners are more likely to list with an agent who offers video content.",
         "benefit3": "Boost organic traffic",
         "benefit3Desc": "Video drives a 157% increase in organic traffic from search engines.",
-        "benefit4": "Gain a Competitive Edge",
+        "benefit4": "Gain a competitive edge",
         "benefit4Desc": "With only 38% of agents using video, premium content makes you the top choice for discerning sellers.",
-        "proofTitle": "This Project's Impact",
+        "proofTitle": "This project's impact",
         "proofDesc": "Real results from our Zurich penthouse campaign",
+        "impactSocialReach": "Social media reach",
+        "impactSocialReachValue": "50K+ views",
+        "impactEngagement": "Engagement rate",
+        "impactEngagementValue": "7x above average",
+        "impactExposure": "International exposure",
+        "impactExposureValue": "Global audience",
+        "impactBrand": "Brand recognition",
+        "impactBrandValue": "#2 best reel",
+        "firstThreeDays": "30K+ views in just 3 days",
+        "firstThreeDaysDesc": "Exceptional initial performance across all platforms",
         "testimonial": "\"The video content transformed how buyers perceived our property, creating an emotional connection that photos alone could not achieve.\"",
-        "testimonialAuthor": "— Zurich Sotheby's International Realty"
+        "testimonialAuthor": "Zurich Sotheby's International Realty"
       },
-      "ctaTitle": "Ready to Showcase Your Property?",
+      "ctaTitle": "Ready to showcase your property?",
       "ctaDesc": "Let us create premium content that elevates your luxury properties and captures the attention of discerning buyers.",
-      "ctaButton": "Start Your Project",
-      "branding": "A Prestige Production",
-      "photos": "photos",
-      "social": "social content",
-      "andMore": "and more, we delivered it all.",
+      "ctaButton": "Start your project"
+    },
+    "smi": {
+      "seoTitle": "Swiss Mining Institute 2024 - Premium Event Production | Prestige Production",
+      "seoDescription": "Discover our premium video production coverage of the Swiss Mining Institute 2024 - the most prestigious mining conference in Europe. Featuring exclusive interviews, aftermovies, and luxury event content.",
+      "seoKeywords": "Swiss Mining Institute, luxury event production, mining conference video, premium corporate videos, event videography, conference coverage, aftermovie production",
+      "tagline": "It's all about luxury.",
+      "title": "Swiss Mining Institute 2024",
+      "subtitle": "The most prestigious mining conference in the world",
+      "moreReels": "More reels from the event",
+      "swipeLeft": "Swipe or drag to navigate",
+      "swipeLeftMobile": "Swipe to navigate",
+      "partnerCredit": "Project delivered in partnership with",
+      "partnerName": "Swiss Mining Institute",
+      "intro1Part1": "The Swiss Mining Institute is",
+      "intro1Part2": "the biggest and most exclusive mining conference in Europe",
+      "intro1Part3": "Hosting 1000+ investors, 100+ listed companies and over 2700 meetings arranged over 2 days.",
+      "intro2": "For two days, we captured everything a camera lens could reach. From interviews, panel discussions and the official aftermovie to photos, social content and more, we delivered it all.",
+      "watchAftermovie": "Watch the official aftermovie",
+      "mainVideo": {
+        "title": "Event Highlights",
+        "type": "Highlight Reel",
+        "description": "Premium coverage of the most exclusive mining conference in Europe, featuring luxury venues and high-profile networking.",
+        "tags": {
+          "luxuryEvent": "Luxury Event",
+          "miningConference": "Mining Conference", 
+          "premiumProduction": "Premium Production"
+        }
+      },
       "watchOfficialAftermovie": "Watch the Official Aftermovie",
       "aftermovieTitle": "Official Aftermovie",
       "featuredInterviews": "Featured Interviews",
       "interviewsDesc": "We've had the privilege to sit down with trail-blazing CEOs and forward-thinking investors who are reshaping the mining ecosystem. Dive in for candid insights you won't hear anywhere else.",
       "interviewTitle": "Interview",
       "enlargedImage": "Enlarged",
-      "thanks": "Thanks to our partner",
-      "partnerName": "Swiss Mining Institute"
+      "lightboxLabel": "Media viewer",
+      "closeLightbox": "Close viewer",
+      "photoAlt": "SMI Photo",
+      "carousel": {
+        "reel1": {
+          "title": "SMI conference opening",
+          "description": "Exclusive opening moments of the mining conference",
+          "type": "Event highlight",
+          "views": "15k+",
+          "tags": ["tags.conference", "tags.mining"]
+        },
+        "reel2": {
+          "title": "Industry leaders", 
+          "description": "Key speakers and industry insights",
+          "type": "Professional content",
+          "views": "12K+",
+          "tags": ["tags.speakers", "tags.industry"]
+        },
+        "reel3": {
+          "title": "Conference highlights",
+          "description": "Best moments from the two-day event", 
+          "type": "Event summary",
+          "views": "18K+",
+          "tags": ["tags.highlights", "tags.event"]
+        }
+      },
+      "mainVideoViews": "15K+"
     }
   },
   "highlights": {

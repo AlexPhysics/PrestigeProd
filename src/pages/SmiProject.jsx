@@ -1,5 +1,6 @@
 import { useGSAP } from '@gsap/react';
 import React, { useRef, useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { animateWithGsap } from '../utils/animations';
 import {
   explore1Img,
@@ -13,40 +14,52 @@ import { Link, useParams } from 'react-router-dom';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { smiLogo } from '../utils';
 import Carousel from '../components/Carousel';
-import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const SmiProject = () => {
-  // Enhanced video reels with metadata
+  const { t, i18n } = useTranslation();
+  const { lang } = useParams();
+  const currentLang = lang || i18n.language || 'en';
+
+  // Enhanced video reels with metadata - using translation keys
   const videos = [
     {
       id: 'smi-reel-1',
       src: `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/teaser 1_smi.mp4`,
-      title: 'SMI Conference Opening',
-      description: 'Exclusive opening moments of the mining conference',
-      tags: ['Conference', 'Mining'],
-      views: '15k+',
-      type: 'Event Highlight',
+      title: t('projects.smi.carousel.reel1.title', 'SMI conference opening'),
+      description: t('projects.smi.carousel.reel1.description', 'Exclusive opening moments of the mining conference'),
+      tags: [
+        t('portfolio.tags.conference', 'Conference'),
+        t('portfolio.tags.mining', 'Mining')
+      ],
+      views: t('projects.smi.carousel.reel1.views', '15K+'),
+      type: t('projects.smi.carousel.reel1.type', 'Event highlight'),
     },
     {
       id: 'smi-reel-2',
       src: `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/teaser 2_smi.mp4`,
-      title: 'Industry Leaders',
-      description: 'Key speakers and industry insights',
-      tags: ['Speakers', 'Industry'],
-      views: '12k+',
-      type: 'Professional Content',
+      title: t('projects.smi.carousel.reel2.title', 'Industry leaders'),
+      description: t('projects.smi.carousel.reel2.description', 'Key speakers and industry insights'),
+      tags: [
+        t('portfolio.tags.speakers', 'Speakers'),
+        t('portfolio.tags.industry', 'Industry')
+      ],
+      views: t('projects.smi.carousel.reel2.views', '12K+'),
+      type: t('projects.smi.carousel.reel2.type', 'Professional content'),
     },
     {
       id: 'smi-reel-3',
       src: `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/teaser 3_smi.mp4`,
-      title: 'Conference Highlights',
-      description: 'Best moments from the two-day event',
-      tags: ['Highlights', 'Event'],
-      views: '18k+',
-      type: 'Event Summary',
+      title: t('projects.smi.carousel.reel3.title', 'Conference highlights'),
+      description: t('projects.smi.carousel.reel3.description', 'Best moments from the two-day event'),
+      tags: [
+        t('portfolio.tags.highlights', 'Highlights'),
+        t('portfolio.tags.event', 'Event')
+      ],
+      views: t('projects.smi.carousel.reel3.views', '18K+'),
+      type: t('projects.smi.carousel.reel3.type', 'Event summary'),
     },
   ];
 
@@ -55,9 +68,6 @@ const SmiProject = () => {
   const parallaxRef = useRef();
   const [lightboxSrc, setLightboxSrc] = useState(null);
   const [videoLoaded, setVideoLoaded] = useState(false);
-  const { t, i18n } = useTranslation();
-  const { lang } = useParams();
-  const currentLang = lang || i18n.language || 'en';
 
   // Clean title effect without DOM manipulation (Helmet handles SEO)
   useEffect(() => {
@@ -248,10 +258,10 @@ const SmiProject = () => {
 
         <div className='relative z-10 px-6 pt-20 pb-32'>
           {/* Back Link + Aftermovie Link - Enhanced styling */}
-          <div className='max-w-6xl mx-auto mb-12 px-2 flex justify-between items-center after-link'>
+          <div className='max-w-6xl mx-auto mb-12 px-2 flex flex-col gap-4 md:flex-row md:justify-between md:items-center after-link'>
             <Link
               to={`/${currentLang}/portfolio`}
-              className='inline-flex items-center text-sm text-white/60 hover:text-[#9eb6a9] transition-all duration-300 group'
+              className='inline-flex items-center text-sm text-white/60 hover:text-[#9eb6a9] transition-all duration-300 group self-start'
             >
               <svg
                 className='w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform duration-300'
@@ -274,7 +284,7 @@ const SmiProject = () => {
                 e.preventDefault();
                 smoothScrollTo('aftermovie');
               }}
-              className='inline-flex items-center text-sm tracking-wide text-white/60 hover:text-[#9eb6a9] transition-all duration-300 group'
+              className='inline-flex items-center text-sm tracking-wide text-white/60 hover:text-[#9eb6a9] transition-all duration-300 group self-start md:self-auto'
             >
               {t(
                 'projects.smi.watchAftermovie',
@@ -322,7 +332,7 @@ const SmiProject = () => {
           {/* Main Event Video with Enhanced Info */}
           <div className='fade-section-1 max-w-5xl mx-auto mb-24'>
             <div
-              className='relative group cursor-pointer'
+              className='relative group cursor-pointer transition-transform duration-300 hover:scale-[1.02]'
               onClick={() => setLightboxSrc(exploreVideo)}
             >
               <div className='overflow-hidden rounded-xl relative'>
@@ -339,19 +349,19 @@ const SmiProject = () => {
                   <source src={exploreVideo} type='video/mp4' />
                 </video>
 
-                {/* Video Info Overlay - Always Visible */}
-                <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6 rounded-xl'>
+                {/* Video Info Overlay - Responsive */}
+                <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3 md:p-6 rounded-xl'>
                   <div className='w-full'>
-                    <div className='flex items-start justify-between mb-3'>
-                      <h3 className='text-xl font-semibold text-white'>
+                    <div className='flex items-start justify-between mb-2 md:mb-3'>
+                      <h3 className='text-lg md:text-xl font-semibold text-white'>
                         {t('projects.smi.mainVideo.title', 'Event Highlights')}
                       </h3>
-                      <span className='text-xs text-white/80 bg-white/20 backdrop-blur-sm px-2 py-1 rounded-full'>
+                      <span className='text-xs text-white/80 bg-white/20 backdrop-blur-sm px-2 py-1 rounded-full shrink-0'>
                         {t('projects.smi.mainVideo.type', 'Highlight Reel')}
                       </span>
                     </div>
 
-                    <p className='text-white/90 text-sm mb-3'>
+                    <p className='text-white/90 text-xs md:text-sm mb-2 md:mb-3 hidden md:block'>
                       {t(
                         'projects.smi.mainVideo.description',
                         'Premium coverage of the most exclusive mining conference in Europe, featuring luxury venues and high-profile networking.',
@@ -359,22 +369,19 @@ const SmiProject = () => {
                     </p>
 
                     <div className='flex items-center justify-between'>
-                      <div className='flex flex-wrap gap-2'>
-                        {[
-                          'Luxury Event',
-                          'Mining Conference',
-                          'Premium Production',
-                        ].map((tag, index) => (
-                          <span
-                            key={index}
-                            className='text-xs text-[#9eb6a9] bg-[#9eb6a9]/20 backdrop-blur-sm px-2 py-1 rounded'
-                          >
-                            {tag}
-                          </span>
-                        ))}
+                      <div className='flex flex-wrap gap-1 md:gap-2'>
+                        <span className='text-xs text-[#9eb6a9] bg-[#9eb6a9]/20 backdrop-blur-sm px-1.5 md:px-2 py-0.5 md:py-1 rounded'>
+                          {t('projects.smi.mainVideo.tags.luxuryEvent', 'Luxury Event')}
+                        </span>
+                        <span className='text-xs text-[#9eb6a9] bg-[#9eb6a9]/20 backdrop-blur-sm px-1.5 md:px-2 py-0.5 md:py-1 rounded'>
+                          {t('projects.smi.mainVideo.tags.miningConference', 'Mining Conference')}
+                        </span>
+                        <span className='text-xs text-[#9eb6a9] bg-[#9eb6a9]/20 backdrop-blur-sm px-1.5 md:px-2 py-0.5 md:py-1 rounded'>
+                          {t('projects.smi.mainVideo.tags.premiumProduction', 'Premium Production')}
+                        </span>
                       </div>
 
-                      <div className='flex items-center text-white/80 text-xs'>
+                      <div className='flex items-center text-white/80 text-xs shrink-0 ml-2'>
                         <svg
                           className='w-3 h-3 mr-1'
                           fill='currentColor'
@@ -387,10 +394,17 @@ const SmiProject = () => {
                             clipRule='evenodd'
                           />
                         </svg>
-                        {(12847).toLocaleString()}
+                        {t('projects.smi.mainVideoViews', '15K+')}
                       </div>
                     </div>
                   </div>
+                </div>
+
+                {/* Click indicator */}
+                <div className='absolute top-3 right-3 md:top-4 md:right-4 bg-black/50 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-all duration-300'>
+                  <svg className='w-4 h-4 text-[#9eb6a9]' fill='none' stroke='currentColor' viewBox='0 0 24 24' strokeWidth={2}>
+                    <path strokeLinecap='round' strokeLinejoin='round' d='M4 8V6a2 2 0 012-2h2M4 16v2a2 2 0 002 2h2M16 4h2a2 2 0 012 2v2M16 20h2a2 2 0 002-2v-2' />
+                  </svg>
                 </div>
               </div>
             </div>
@@ -401,7 +415,7 @@ const SmiProject = () => {
             {[explore1Img, explore2Img].map((src, i) => (
               <div
                 key={i}
-                className='overflow-hidden h-[50vh] rounded-xl cursor-pointer group'
+                className='relative overflow-hidden h-[50vh] rounded-xl cursor-pointer group transition-transform duration-300 hover:scale-[1.02]'
                 onClick={() => setLightboxSrc(src)}
               >
                 <img
@@ -411,6 +425,12 @@ const SmiProject = () => {
                   loading='lazy'
                   decoding='async'
                 />
+                {/* Click indicator */}
+                <div className='absolute top-3 right-3 md:top-4 md:right-4 bg-black/50 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-all duration-300'>
+                  <svg className='w-4 h-4 text-[#9eb6a9]' fill='none' stroke='currentColor' viewBox='0 0 24 24' strokeWidth={2}>
+                    <path strokeLinecap='round' strokeLinejoin='round' d='M4 8V6a2 2 0 012-2h2M4 16v2a2 2 0 002 2h2M16 4h2a2 2 0 012 2v2M16 20h2a2 2 0 002-2v-2' />
+                  </svg>
+                </div>
                 {/* Subtle overlay on hover */}
                 <div className='absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none' />
               </div>
@@ -425,34 +445,39 @@ const SmiProject = () => {
               </h2>
               <div className='flex items-center justify-center gap-2 md:gap-3 text-white/60 text-xs md:text-sm mb-6'>
                 <div className='flex items-center gap-1'>
-                  <div className='w-1 h-1 bg-[#9eb6a9] rounded-full'></div>
-                  <div className='w-2 h-1 bg-[#9eb6a9]/60 rounded-full'></div>
-                  <div className='w-1 h-1 bg-[#9eb6a9] rounded-full'></div>
+                  <svg className='w-5 h-5' fill='none' stroke='url(#leftGradient)' viewBox='0 0 24 24' strokeWidth={2}>
+                    <defs>
+                      <linearGradient id='leftGradient' x1='0%' y1='0%' x2='100%' y2='0%'>
+                        <stop offset='0%' stopColor='#9eb6a9' />
+                        <stop offset='100%' stopColor='#205c57' />
+                      </linearGradient>
+                    </defs>
+                    <path strokeLinecap='round' strokeLinejoin='round' d='M15 19l-7-7 7-7' />
+                  </svg>
                 </div>
                 <span className='hidden md:inline'>{t('projects.smi.swipeLeft', 'Swipe or drag to navigate')}</span>
-                <span className='md:hidden'>{t('projects.smi.swipeLeft', 'Swipe to navigate')}</span>
+                <span className='md:hidden'>{t('projects.smi.swipeLeftMobile', 'Swipe to navigate')}</span>
                 <div className='flex items-center gap-1'>
-                  <div className='w-1 h-1 bg-[#9eb6a9] rounded-full'></div>
-                  <div className='w-2 h-1 bg-[#9eb6a9]/60 rounded-full'></div>
-                  <div className='w-1 h-1 bg-[#9eb6a9] rounded-full'></div>
+                  <svg className='w-5 h-5' fill='none' stroke='url(#rightGradient)' viewBox='0 0 24 24' strokeWidth={2}>
+                    <defs>
+                      <linearGradient id='rightGradient' x1='0%' y1='0%' x2='100%' y2='0%'>
+                        <stop offset='0%' stopColor='#205c57' />
+                        <stop offset='100%' stopColor='#9eb6a9' />
+                      </linearGradient>
+                    </defs>
+                    <path strokeLinecap='round' strokeLinejoin='round' d='M9 5l7 7-7 7' />
+                  </svg>
                 </div>
               </div>
             </div>
             <div className='min-h-[400px] md:h-[600px] flex items-center justify-center relative group px-4 md:px-0'>
               <div className='absolute inset-0 bg-gradient-to-r from-[#9eb6a9]/5 via-transparent to-[#9eb6a9]/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none'></div>
               <Carousel items={videos} baseWidth={1000} loop={true} round={false} />
-              {/* Improved drag hint overlay - hidden on mobile */}
-              <div className='absolute top-4 right-4 bg-black/70 backdrop-blur-md rounded-lg px-4 py-2 text-sm text-white/90 items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 border border-white/10 hidden md:flex'>
-                <svg className='w-4 h-4 text-[#9eb6a9]' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
-                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M7 16l-4-4m0 0l4-4m-4 4h18' />
-                </svg>
-                <span>{t('projects.smi.dragToExplore', 'Drag to explore')}</span>
-              </div>
             </div>
           </div>
 
           {/* Description Text */}
-          <div className='fade-section-3 space-y-12 max-w-3xl mx-auto mb-24 px-4'>
+          <div className='fade-section-3 space-y-6 max-w-3xl mx-auto mb-24 px-4'>
             <p className='text-lg text-white/80 g_text'>
               {t('projects.smi.intro1Part1', 'The Swiss Mining Institute is')}{' '}
               <span className='text-white'>
@@ -468,34 +493,7 @@ const SmiProject = () => {
               )}
             </p>
             <p className='text-lg text-white/80 g_text'>
-              {t('projects.smi.intro2Part1', 'For two days, we captured')}{' '}
-              <span className='text-white'>
-                {t(
-                  'projects.smi.intro2Part2',
-                  'everything a camera lens could reach',
-                )}
-              </span>
-              . {t('projects.smi.intro2Part3', 'From')}{' '}
-              <span className='text-white'>
-                {t('projects.smi.interviews', 'interviews')}
-              </span>
-              ,{' '}
-              <span className='text-white'>
-                {t('projects.smi.panels', 'panel discussions')}
-              </span>{' '}
-              {t('projects.smi.and', 'and')} {t('projects.smi.the', 'the')}{' '}
-              <span className='text-white'>
-                {t('projects.smi.aftermovie', 'official aftermovie')}
-              </span>{' '}
-              {t('projects.smi.to', 'to')}{' '}
-              <span className='text-white'>
-                {t('projects.smi.photos', 'photos')}
-              </span>
-              ,{' '}
-              <span className='text-white'>
-                {t('projects.smi.social', 'social content')}
-              </span>{' '}
-              {t('projects.smi.andMore', 'and more, we delivered it all.')}
+              {t('projects.smi.intro2', 'For two days, we captured everything a camera lens could reach. From interviews, panel discussions and the official aftermovie to photos, social content and more, we delivered it all.')}
             </p>
           </div>
 
