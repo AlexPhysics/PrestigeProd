@@ -34,7 +34,7 @@ const SmiProject = () => {
         t('portfolio.tags.conference', 'Conference'),
         t('portfolio.tags.mining', 'Mining')
       ],
-      views: '15k+',
+      views: t('projects.smi.carousel.reel1.views', '15K+'),
       type: t('projects.smi.carousel.reel1.type', 'Event highlight'),
     },
     {
@@ -46,7 +46,7 @@ const SmiProject = () => {
         t('portfolio.tags.speakers', 'Speakers'),
         t('portfolio.tags.industry', 'Industry')
       ],
-      views: '12k+',
+      views: t('projects.smi.carousel.reel2.views', '12K+'),
       type: t('projects.smi.carousel.reel2.type', 'Professional content'),
     },
     {
@@ -58,7 +58,7 @@ const SmiProject = () => {
         t('portfolio.tags.highlights', 'Highlights'),
         t('portfolio.tags.event', 'Event')
       ],
-      views: '18k+',
+      views: t('projects.smi.carousel.reel3.views', '18K+'),
       type: t('projects.smi.carousel.reel3.type', 'Event summary'),
     },
   ];
@@ -394,7 +394,7 @@ const SmiProject = () => {
                             clipRule='evenodd'
                           />
                         </svg>
-                        {(12847).toLocaleString()}
+                        {t('projects.smi.mainVideoViews', '15K+')}
                       </div>
                     </div>
                   </div>
@@ -477,7 +477,7 @@ const SmiProject = () => {
           </div>
 
           {/* Description Text */}
-          <div className='fade-section-3 space-y-12 max-w-3xl mx-auto mb-24 px-4'>
+          <div className='fade-section-3 space-y-6 max-w-3xl mx-auto mb-24 px-4'>
             <p className='text-lg text-white/80 g_text'>
               {t('projects.smi.intro1Part1', 'The Swiss Mining Institute is')}{' '}
               <span className='text-white'>
@@ -493,34 +493,7 @@ const SmiProject = () => {
               )}
             </p>
             <p className='text-lg text-white/80 g_text'>
-              {t('projects.smi.intro2Part1', 'For two days, we captured')}{' '}
-              <span className='text-white'>
-                {t(
-                  'projects.smi.intro2Part2',
-                  'everything a camera lens could reach',
-                )}
-              </span>
-              . {t('projects.smi.intro2Part3', 'From')}{' '}
-              <span className='text-white'>
-                {t('projects.smi.interviews', 'interviews')}
-              </span>
-              ,{' '}
-              <span className='text-white'>
-                {t('projects.smi.panels', 'panel discussions')}
-              </span>{' '}
-              {t('projects.smi.and', 'and')} {t('projects.smi.the', 'the')}{' '}
-              <span className='text-white'>
-                {t('projects.smi.aftermovie', 'official aftermovie')}
-              </span>{' '}
-              {t('projects.smi.to', 'to')}{' '}
-              <span className='text-white'>
-                {t('projects.smi.photos', 'photos')}
-              </span>
-              ,{' '}
-              <span className='text-white'>
-                {t('projects.smi.social', 'social content')}
-              </span>{' '}
-              {t('projects.smi.andMore', 'and more, we delivered it all.')}
+              {t('projects.smi.intro2', 'For two days, we captured everything a camera lens could reach. From interviews, panel discussions and the official aftermovie to photos, social content and more, we delivered it all.')}
             </p>
           </div>
 

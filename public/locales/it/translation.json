@@ -139,7 +139,7 @@
     },
     "gear": {
       "title": "La Nostra Attrezzatura = Il Tuo Vantaggio Competitivo",
-      "description": "Dietro ogni visual straordinario c'è un'attrezzatura all'avanguardia. Riprendiamo con la linea cinema professionale di Sony per dettagli nitidi e gamma dinamica, e catturiamo prospettive aeree utilizzando droni di alta gamma. La nostra attrezzatura ci permette di presentare il tuo brand, prodotti, e servizi con precisione, scala e impatto cinematografico — dandoti un vantaggio competitivo in un mercato saturo.",
+      "description": "Dietro ogni visual straordinario c'è un'attrezzatura all'avanguardia. Riprendiamo con la linea cinema professionale di Sony per dettagli nitidi e gamma dinamica, e catturiamo prospettive aeree utilizzando droni di alta gamma. La nostra attrezzatura ci permette di presentare il tuo brand, prodotti, e servizi con precisione, scala e impatto cinematografico, dandoti un vantaggio competitivo in un mercato saturo.",
       "items": {
         "sonyAlpha": "Sony Alpha",
         "djiMavic": "DJI Mavic 3 Pro"
@@ -207,7 +207,7 @@
       "results": {
         "tab": "Risultati",
         "title": "I Nostri Risultati",
-        "description": "Misuriamo il successo attraverso il coinvolgimento del pubblico, i cambiamenti nella percezione del brand e i risultati aziendali — fornendo contenuti che ottengono risultati reali.",
+        "description": "Misuriamo il successo attraverso il coinvolgimento del pubblico, i cambiamenti nella percezione del brand e i risultati aziendali, fornendo contenuti che ottengono risultati reali.",
         "point1": "Tracciamento delle metriche di performance",
         "point2": "Analisi del coinvolgimento del pubblico",
         "point3": "Reportistica sui risultati aziendali tangibili"
@@ -511,7 +511,7 @@
     "penthouse": {
       "title": "La storia di un attico",
       "location": "Zurigo | Progetto di prestigio",
-      "description": "Abbiamo collaborato con Zurich Sotheby's International Realty per dar vita a uno dei progetti più eccezionali di Zurigo — un attico di 304 m² situato in cima alla Mobimo Tower. Attraverso immagini cinematografiche, storytelling architettonico e un processo di produzione orientato ai dettagli, abbiamo creato una suite completa di contenuti su misura per il mercato del lusso. Dai reel in formato breve ai film in formato lungo, ogni elemento è stato realizzato per riflettere la sofisticatezza del progetto e del marchio.",
+      "description": "Abbiamo collaborato con Zurich Sotheby's International Realty per dar vita a uno dei progetti più eccezionali di Zurigo: un attico di 304 m² situato in cima alla Mobimo Tower. Attraverso immagini cinematografiche, storytelling architettonico e un processo di produzione orientato ai dettagli, abbiamo creato una suite completa di contenuti su misura per il mercato del lusso. Dai reel in formato breve ai film in formato lungo, ogni elemento è stato realizzato per riflettere la sofisticatezza del progetto e del marchio.",
       "category": "Immobiliare di lusso",
       "projectTitle": "Panoramica del progetto",
       "viewResults": "Visualizza risultati",
@@ -563,10 +563,10 @@
         "impactExposureValue": "Pubblico globale",
         "impactBrand": "Riconoscimento del brand",
         "impactBrandValue": "#2 miglior reel",
-        "firstThreeDays": "30,000 visualizzazioni in soli 3 giorni",
+        "firstThreeDays": "30K+ visualizzazioni in soli 3 giorni",
         "firstThreeDaysDesc": "Performance iniziale eccezionale su tutte le piattaforme",
         "testimonial": "\"I contenuti video hanno trasformato il modo in cui gli acquirenti percepivano la nostra proprietà, creando una connessione emotiva che le sole foto non potevano raggiungere.\"",
-        "testimonialAuthor": "— Zurich Sotheby's International Realty"
+        "testimonialAuthor": "Zurich Sotheby's International Realty"
       },
       "ctaTitle": "Pronto a mostrare la tua proprietà?",
       "ctaDesc": "Lascia che creiamo contenuti premium che elevano le tue proprietà di lusso e catturano l'attenzione di acquirenti esigenti.",
@@ -576,55 +576,63 @@
     },
     "smiTitle": "Swiss Mining Institute | Prestige Production",
     "smi": {
+      "seoTitle": "Swiss Mining Institute 2024 - Produzione eventi premium | Prestige Production",
+      "seoDescription": "Scopri la nostra copertura di produzione video premium dello Swiss Mining Institute 2024 - la conferenza mineraria più prestigiosa in Europa. Con interviste esclusive, aftermovie e contenuti di eventi di lusso.",
+      "seoKeywords": "Swiss Mining Institute, produzione eventi di lusso, video conferenza mineraria, video aziendali premium, videografia eventi, copertura conferenza, produzione aftermovie",
       "tagline": "È tutta una questione di lusso.",
       "title": "Swiss Mining Institute 2024",
       "subtitle": "La conferenza mineraria più prestigiosa al mondo",
+      "moreReels": "Altri reel dall'evento",
+      "swipeLeft": "Scorri o trascina per navigare",
+      "swipeLeftMobile": "Scorri per navigare",
+      "partnerCredit": "Progetto realizzato in partnership con",
+      "partnerName": "Swiss Mining Institute",
       "watchAftermovie": "Guarda l'aftermovie ufficiale",
       "photoAlt": "Foto SMI",
+      "mainVideo": {
+        "title": "Punti salienti evento",
+        "type": "Reel punti salienti",
+        "description": "Copertura premium della conferenza mineraria più esclusiva d'Europa, con luoghi di lusso e networking di alto profilo.",
+        "tags": {
+          "luxuryEvent": "Evento di lusso",
+          "miningConference": "Conferenza mineraria", 
+          "premiumProduction": "Produzione premium"
+        }
+      },
       "intro1Part1": "Lo Swiss Mining Institute è",
       "intro1Part2": "la più grande ed esclusiva conferenza mineraria in Europa",
       "intro1Part3": "Ospitando oltre 1000 investitori, più di 100 società quotate e oltre 2700 incontri organizzati in 2 giorni.",
-      "intro2Part1": "Per due giorni, abbiamo catturato",
-      "intro2Part2": "tutto ciò che un obiettivo poteva raggiungere",
-      "intro2Part3": "Da",
-      "interviews": "interviste",
-      "panels": "discussioni di panel",
-      "and": "e",
-      "the": "l'",
-      "aftermovie": "aftermovie ufficiale",
-      "to": "a",
-      "photos": "foto",
-      "social": "contenuti social",
-      "andMore": "e molto altro — abbiamo consegnato tutto.",
+      "intro2": "In due giorni, abbiamo filmato e fotografato tutto: interviste, tavole rotonde, aftermovie ufficiale, foto e contenuti per i social media.",
       "watchOfficialAftermovie": "Guarda l'aftermovie ufficiale",
       "aftermovieTitle": "Aftermovie ufficiale",
       "featuredInterviews": "Interviste in evidenza",
       "interviewsDesc": "Abbiamo avuto il privilegio di parlare con CEO all'avanguardia e investitori lungimiranti che stanno ridisegnando l'ecosistema minerario. Immergiti in prospettive sincere che non sentirai da nessun'altra parte.",
       "interviewTitle": "Intervista",
       "enlargedImage": "Ingrandita",
+      "lightboxLabel": "Visualizzatore media",
+      "closeLightbox": "Chiudi visualizzatore",
       "thanks": "Grazie al nostro partner",
-      "partnerName": "Swiss Mining Institute",
-      "moreReels": "Altri reel dall'evento",
-      "swipeLeft": "Scorri o trascina per navigare",
-      "swipeLeftMobile": "Scorri per navigare",
-      "partnerCredit": "Progetto realizzato in partnership con",
       "carousel": {
         "reel1": {
           "title": "Apertura conferenza SMI",
           "description": "Momenti esclusivi di apertura della conferenza mineraria",
-          "type": "Momento saliente evento"
+          "type": "Momento saliente evento",
+          "views": "15K+"
         },
         "reel2": {
           "title": "Leader del settore", 
           "description": "Relatori chiave e approfondimenti del settore",
-          "type": "Contenuto professionale"
+          "type": "Contenuto professionale",
+          "views": "12K+"
         },
         "reel3": {
           "title": "Punti salienti della conferenza",
           "description": "Migliori momenti dell'evento di due giorni", 
-          "type": "Riassunto evento"
+          "type": "Riassunto evento",
+          "views": "18K+"
         }
-      }
+      },
+      "mainVideoViews": "15K+"
     }
   },
   "highlights": {

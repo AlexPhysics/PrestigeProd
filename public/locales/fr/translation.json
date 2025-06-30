@@ -121,7 +121,7 @@
     },
     "gear": {
       "title": "Notre Équipement = Votre Avantage Compétitif",
-      "description": "Derrière chaque visuel impressionnant se trouve un équipement de pointe. Nous tournons avec la gamme cinéma professionnelle de Sony pour des détails nets et une plage dynamique étendue, et capturons des perspectives aériennes avec des drones haut de gamme. Notre équipement nous permet de mettre en valeur votre propriété avec précision, échelle et impact cinématographique — vous donnant un avantage concurrentiel sur un marché saturé.",
+      "description": "Derrière chaque visuel impressionnant se trouve un équipement de pointe. Nous tournons avec la gamme cinéma professionnelle de Sony pour des détails nets et une plage dynamique étendue, et capturons des perspectives aériennes avec des drones haut de gamme. Notre équipement nous permet de mettre en valeur votre propriété avec précision, échelle et impact cinématographique, vous donnant un avantage concurrentiel sur un marché saturé.",
       "items": {
         "sonyAlpha": "Sony Alpha",
         "djiMavic": "DJI Mavic 3 Pro"
@@ -188,7 +188,7 @@
       "results": {
         "tab": "Résultats",
         "title": "Nos Résultats",
-        "description": "Nous mesurons le succès à travers l'engagement de l'audience, les changements de perception de marque et les résultats commerciaux — livrant du contenu qui obtient de vrais résultats.",
+        "description": "Nous mesurons le succès à travers l'engagement de l'audience, les changements de perception de marque et les résultats commerciaux, livrant du contenu qui obtient de vrais résultats.",
         "point1": "Suivi des métriques de performance",
         "point2": "Analyse de l'engagement de l'audience",
         "point3": "Rapports de résultats commerciaux tangibles"
@@ -286,7 +286,7 @@
     "reels": {
       "instagramReel": "Reel Instagram",
       "smi": {
-        "title": "Événement SMI en vedette",
+        "title": "Événement SMI",
         "description": "Couverture événementielle dynamique pour les réseaux sociaux"
       },
       "penthouseSpeech": {
@@ -492,7 +492,7 @@
     "penthouse": {
       "title": "Un penthouse d'exception",
       "location": "Zurich | Immobilier de prestige",
-      "description": "Nous avons collaboré avec Zurich Sotheby's International Realty pour mettre en valeur l'une des propriétés les plus exceptionnelles de Zurich — un penthouse de 304 m² perché au sommet de la Mobimo Tower. Grâce à des visuels cinématographiques, une narration architecturale et un processus de production minutieux, nous avons créé une suite complète de contenu adaptée au marché du luxe. Des courts reels aux films longs, chaque élément a été conçu pour refléter la sophistication de la propriété et de la marque.",
+      "description": "Nous avons collaboré avec Zurich Sotheby's International Realty pour mettre en valeur l'une des propriétés les plus exceptionnelles de Zurich : un penthouse de 304 m² perché au sommet de la Mobimo Tower. Grâce à des visuels cinématographiques, une narration architecturale et un processus de production minutieux, nous avons créé une suite complète de contenu adaptée au marché du luxe. Des courts reels aux films longs, chaque élément a été conçu pour refléter la sophistication de la propriété et de la marque.",
       "category": "Immobilier de luxe",
       "projectTitle": "Aperçu du projet",
       "viewResults": "Voir les résultats",
@@ -544,10 +544,10 @@
         "impactExposureValue": "Audience globale",
         "impactBrand": "Reconnaissance de marque",
         "impactBrandValue": "#2 meilleur reel",
-        "firstThreeDays": "30,000 vues en seulement 3 jours",
+        "firstThreeDays": "30K+ vues en seulement 3 jours",
         "firstThreeDaysDesc": "Performance initiale exceptionnelle sur toutes les plateformes",
         "testimonial": "\"Le contenu vidéo a transformé la perception de notre propriété par les acheteurs, créant une connexion émotionnelle que les photos seules ne pouvaient pas atteindre.\"",
-        "testimonialAuthor": "— Zurich Sotheby's International Realty"
+        "testimonialAuthor": "Zurich Sotheby's International Realty"
       },
       "ctaTitle": "Prêt à mettre en valeur votre propriété ?",
       "ctaDesc": "Laissez-nous créer du contenu premium qui élève vos propriétés de luxe et capture l'attention d'acheteurs exigeants.",
@@ -557,55 +557,63 @@
     },
     "smiTitle": "Swiss Mining Institute | Prestige Production",
     "smi": {
+      "seoTitle": "Swiss Mining Institute 2024 - Production d'événements premium | Prestige Production",
+      "seoDescription": "Découvrez notre couverture de production vidéo premium du Swiss Mining Institute 2024 - la conférence minière la plus prestigieuse d'Europe. Avec des interviews exclusives, des aftermovies et du contenu d'événements de luxe.",
+      "seoKeywords": "Swiss Mining Institute, production d'événements de luxe, vidéo de conférence minière, vidéos d'entreprise premium, vidéographie d'événements, couverture de conférence, production d'aftermovie",
       "tagline": "Une question de luxe.",
       "title": "Swiss Mining Institute 2024",
       "subtitle": "La conférence minière la plus prestigieuse au monde",
+      "moreReels": "Plus de reels de l'événement",
+      "swipeLeft": "Glissez pour naviguer",
+      "swipeLeftMobile": "Glissez pour naviguer",
+      "partnerCredit": "Projet réalisé en partenariat avec",
+      "partnerName": "Swiss Mining Institute",
       "watchAftermovie": "Regarder l'aftermovie officiel",
       "photoAlt": "Photo SMI",
+      "mainVideo": {
+        "title": "Points forts de l'événement",
+        "type": "Reel Instagram",
+        "description": "Couverture premium de la conférence minière la plus exclusive d'Europe, avec des lieux de luxe et du réseautage de haut niveau.",
+        "tags": {
+          "luxuryEvent": "Événement de luxe",
+          "miningConference": "Conférence minière", 
+          "premiumProduction": "Production premium"
+        }
+      },
       "intro1Part1": "Le Swiss Mining Institute est",
       "intro1Part2": "la plus grande et la plus exclusive conférence minière d'Europe",
       "intro1Part3": "Réunissant plus de 1000 investisseurs, 100+ sociétés cotées et plus de 2700 réunions organisées sur 2 jours.",
-      "intro2Part1": "Pendant deux jours, nous avons capturé",
-      "intro2Part2": "tout ce qu'un objectif pouvait saisir",
-      "intro2Part3": "Des",
-      "interviews": "interviews",
-      "panels": "discussions de panel",
-      "and": "et",
-      "the": "l'",
-      "aftermovie": "aftermovie officiel",
-      "to": "aux",
-      "photos": "photos",
-      "social": "contenus pour réseaux sociaux",
-      "andMore": "et plus encore — nous avons tout livré.",
+      "intro2": "En deux jours, nous avons tout filmé et photographié : interviews, tables rondes, aftermovie officiel, photos et contenus pour les réseaux sociaux.",
       "watchOfficialAftermovie": "Regardez l'aftermovie officiel",
       "aftermovieTitle": "Aftermovie officiel",
-      "featuredInterviews": "Interviews en vedette",
+      "featuredInterviews": "Interviews",
       "interviewsDesc": "Nous avons eu le privilège de nous entretenir avec des PDG visionnaires et des investisseurs avant-gardistes qui transforment l'écosystème minier. Plongez dans des perspectives authentiques que vous n'entendrez nulle part ailleurs.",
       "interviewTitle": "Interview",
       "enlargedImage": "Agrandie",
+      "lightboxLabel": "Visionneuse de médias",
+      "closeLightbox": "Fermer la visionneuse",
       "thanks": "Merci à notre partenaire",
-      "partnerName": "Swiss Mining Institute",
-      "moreReels": "Plus de reels de l'événement",
-      "swipeLeft": "Glissez ou faites glisser pour naviguer",
-      "swipeLeftMobile": "Glissez pour naviguer",
-      "partnerCredit": "Projet réalisé en partenariat avec",
       "carousel": {
         "reel1": {
           "title": "Ouverture de la conférence SMI",
           "description": "Moments exclusifs d'ouverture de la conférence minière",
-          "type": "Moment fort de l'événement"
+          "type": "Moment fort de l'événement",
+          "views": "15K+"
         },
         "reel2": {
           "title": "Leaders de l'industrie", 
           "description": "Intervenants clés et perspectives industrielles",
-          "type": "Contenu professionnel"
+          "type": "Contenu professionnel",
+          "views": "12K+"
         },
         "reel3": {
           "title": "Points forts de la conférence",
           "description": "Meilleurs moments de l'événement de deux jours", 
-          "type": "Résumé de l'événement"
+          "type": "Résumé de l'événement",
+          "views": "18K+"
         }
-      }
+      },
+      "mainVideoViews": "15K+"
     }
   },
   "highlights": {

@@ -45,9 +45,7 @@ const Portfolio = () => {
       type: t('portfolio.reels.instagramReel', 'Instagram Reel'),
       description: t('portfolio.reels.smi.description', 'Dynamic event coverage for social media'),
       tags: [
-        t('portfolio.tags.event', 'Event'),
-        t('portfolio.tags.socialMedia', 'Social media'),
-        t('portfolio.tags.shortForm', 'Short form')
+        t('portfolio.tags.event', 'Event')
       ],
       views: '32k+',
     },
@@ -373,12 +371,9 @@ const Portfolio = () => {
                   {/* Always visible overlay with reel info */}
                   <div className='absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent'>
                     <div className='absolute bottom-0 left-0 right-0 p-4'>
-                      <h3 className='text-white font-semibold text-sm mb-1'>
+                      <h3 className='text-white font-semibold text-sm mb-3'>
                         {reel.title}
                       </h3>
-                      <p className='text-white/80 text-xs mb-2 line-clamp-2'>
-                        {reel.description}
-                      </p>
                       <div className='flex flex-wrap gap-1 mb-3'>
                         {reel.tags.slice(0, 2).map((tag, index) => (
                           <span

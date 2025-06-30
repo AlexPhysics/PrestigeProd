@@ -58,7 +58,7 @@
     "process": {
       "title": "Simple Process,",
       "highlight": "Exceptional Results",
-      "description": "Working with us is straightforward. We handle the complexity so you can focus on what matters—growing your business and impressing your clients.",
+      "description": "Working with us is straightforward. We handle the complexity so you can focus on what matters: growing your business and impressing your clients.",
       "step1Title": "Consultation",
       "step1Desc": "We explore your goals, audience, and strategic objectives.",
       "step2Title": "Planning",
@@ -231,7 +231,7 @@
       "results": {
         "tab": "Results",
         "title": "Our Results",
-        "description": "We measure success through audience engagement, brand perception shifts, and business outcomes—delivering content that achieves real results.",
+        "description": "We measure success through audience engagement, brand perception shifts, and business outcomes, delivering content that achieves real results.",
         "point1": "Performance metrics tracking",
         "point2": "Audience engagement analysis",
         "point3": "Tangible business outcome reporting"
@@ -606,10 +606,10 @@
         "impactExposureValue": "Global audience",
         "impactBrand": "Brand recognition",
         "impactBrandValue": "#2 best reel",
-        "firstThreeDays": "30,000 views in just 3 days",
+        "firstThreeDays": "30K+ views in just 3 days",
         "firstThreeDaysDesc": "Exceptional initial performance across all platforms",
         "testimonial": "\"The video content transformed how buyers perceived our property, creating an emotional connection that photos alone could not achieve.\"",
-        "testimonialAuthor": "— Zurich Sotheby's International Realty"
+        "testimonialAuthor": "Zurich Sotheby's International Realty"
       },
       "ctaTitle": "Ready to showcase your property?",
       "ctaDesc": "Let us create premium content that elevates your luxury properties and captures the attention of discerning buyers.",
@@ -630,15 +630,7 @@
       "intro1Part1": "The Swiss Mining Institute is",
       "intro1Part2": "the biggest and most exclusive mining conference in Europe",
       "intro1Part3": "Hosting 1000+ investors, 100+ listed companies and over 2700 meetings arranged over 2 days.",
-      "intro2Part1": "For two days, we captured",
-      "intro2Part2": "everything a camera lens could reach",
-      "intro2Part3": "From",
-      "interviews": "interviews",
-      "panels": "panel discussions",
-      "and": "and",
-      "the": "the",
-      "aftermovie": "official aftermovie",
-      "to": "to",
+      "intro2": "For two days, we captured everything a camera lens could reach. From interviews, panel discussions and the official aftermovie to photos, social content and more, we delivered it all.",
       "watchAftermovie": "Watch the official aftermovie",
       "mainVideo": {
         "title": "Event Highlights",
@@ -650,9 +642,6 @@
           "premiumProduction": "Premium Production"
         }
       },
-      "photos": "photos",
-      "social": "social content",
-      "andMore": "and more, we delivered it all.",
       "watchOfficialAftermovie": "Watch the Official Aftermovie",
       "aftermovieTitle": "Official Aftermovie",
       "featuredInterviews": "Featured Interviews",
@@ -667,21 +656,25 @@
           "title": "SMI conference opening",
           "description": "Exclusive opening moments of the mining conference",
           "type": "Event highlight",
+          "views": "15k+",
           "tags": ["tags.conference", "tags.mining"]
         },
         "reel2": {
           "title": "Industry leaders", 
           "description": "Key speakers and industry insights",
           "type": "Professional content",
+          "views": "12K+",
           "tags": ["tags.speakers", "tags.industry"]
         },
         "reel3": {
           "title": "Conference highlights",
           "description": "Best moments from the two-day event", 
           "type": "Event summary",
+          "views": "18K+",
           "tags": ["tags.highlights", "tags.event"]
         }
-      }
+      },
+      "mainVideoViews": "15K+"
     }
   },
   "highlights": {
