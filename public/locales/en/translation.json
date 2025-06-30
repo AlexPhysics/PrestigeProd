@@ -564,11 +564,22 @@
         "benefit4Desc": "With only 38% of agents using video, premium content makes you the top choice for discerning sellers.",
         "proofTitle": "This project's impact",
         "proofDesc": "Real results from our Zurich penthouse campaign",
+        "impactSocialReach": "Social media reach",
+        "impactSocialReachValue": "50K+ views",
+        "impactEngagement": "Engagement rate",
+        "impactEngagementValue": "7x above average",
+        "impactExposure": "International exposure",
+        "impactExposureValue": "Global audience",
+        "impactBrand": "Brand recognition",
+        "impactBrandValue": "#2 best reel",
+        "firstThreeDays": "30,000 views in just 3 days",
+        "firstThreeDaysDesc": "Exceptional initial performance across all platforms",
         "testimonial": "\"The video content transformed how buyers perceived our property, creating an emotional connection that photos alone could not achieve.\"",
         "testimonialAuthor": "— Zurich Sotheby's International Realty"
       },
       "ctaTitle": "Ready to showcase your property?",
-      "ctaDesc": "Let us create premium content that elevates your luxury properties and captures the attention of discerning buyers."
+      "ctaDesc": "Let us create premium content that elevates your luxury properties and captures the attention of discerning buyers.",
+      "ctaButton": "Start your project"
     },
     "smi": {
       "seoTitle": "Swiss Mining Institute 2024 - Premium Event Production | Prestige Production",
