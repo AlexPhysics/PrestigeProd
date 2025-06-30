@@ -286,8 +286,45 @@
       "events": "Eventi",
       "social": "Social media"
     },
+    "tags": {
+      "event": "Evento",
+      "socialMedia": "Social media",
+      "shortForm": "Formato breve",
+      "realEstate": "Immobiliare",
+      "luxury": "Lusso",
+      "property": "Proprietà",
+      "views": "Visualizzazioni",
+      "conference": "Conferenza",
+      "mining": "Minerario",
+      "speakers": "Relatori",
+      "industry": "Industria",
+      "highlights": "Punti salienti"
+    },
     "reelsTitle": "Reel per social media",
     "reelsSubtitle": "Contenuti coinvolgenti in formato breve progettati per il massimo impatto sui social media",
+    "reels": {
+      "instagramReel": "Reel Instagram",
+      "smi": {
+        "title": "Evento SMI in evidenza",
+        "description": "Copertura dinamica dell'evento per i social media"
+      },
+      "penthouseSpeech": {
+        "title": "Esperienza penthouse",
+        "description": "Contenuti social immobiliari di lusso"
+      },
+      "penthouseViews": {
+        "title": "Viste del penthouse",
+        "description": "Viste immobiliari mozzafiato per le piattaforme social"
+      }
+    },
+    "types": {
+      "eventProduction": "Produzione eventi",
+      "realEstate": "Immobiliare",
+      "videoProduction": "Produzione video"
+    },
+    "socialMedia": "Social media",
+    "quality4k": "4K",
+    "videoProduction": "Produzione video",
     "pageTitle": "Il Nostro Lavoro | Prestige Production",
     "defaultDescription": "Produzione cinematografica premium realizzata con attenzione ai dettagli e visione artistica.",
     "viewProject": "Visualizza progetto",
@@ -570,7 +607,24 @@
       "moreReels": "Altri reel dall'evento",
       "swipeLeft": "Scorri o trascina per navigare",
       "swipeLeftMobile": "Scorri per navigare",
-      "partnerCredit": "Progetto realizzato in partnership con"
+      "partnerCredit": "Progetto realizzato in partnership con",
+      "carousel": {
+        "reel1": {
+          "title": "Apertura conferenza SMI",
+          "description": "Momenti esclusivi di apertura della conferenza mineraria",
+          "type": "Momento saliente evento"
+        },
+        "reel2": {
+          "title": "Leader del settore", 
+          "description": "Relatori chiave e approfondimenti del settore",
+          "type": "Contenuto professionale"
+        },
+        "reel3": {
+          "title": "Punti salienti della conferenza",
+          "description": "Migliori momenti dell'evento di due giorni", 
+          "type": "Riassunto evento"
+        }
+      }
     }
   },
   "highlights": {

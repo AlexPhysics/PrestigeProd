@@ -28,29 +28,38 @@ const SmiProject = () => {
     {
       id: 'smi-reel-1',
       src: `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/teaser 1_smi.mp4`,
-      title: t('projects.smi.carousel.reel1.title', 'SMI Conference Opening'),
+      title: t('projects.smi.carousel.reel1.title', 'SMI conference opening'),
       description: t('projects.smi.carousel.reel1.description', 'Exclusive opening moments of the mining conference'),
-      tags: t('projects.smi.carousel.reel1.tags', ['Conference', 'Mining']),
+      tags: [
+        t('portfolio.tags.conference', 'Conference'),
+        t('portfolio.tags.mining', 'Mining')
+      ],
       views: '15k+',
-      type: t('projects.smi.carousel.reel1.type', 'Event Highlight'),
+      type: t('projects.smi.carousel.reel1.type', 'Event highlight'),
     },
     {
       id: 'smi-reel-2',
       src: `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/teaser 2_smi.mp4`,
-      title: t('projects.smi.carousel.reel2.title', 'Industry Leaders'),
+      title: t('projects.smi.carousel.reel2.title', 'Industry leaders'),
       description: t('projects.smi.carousel.reel2.description', 'Key speakers and industry insights'),
-      tags: t('projects.smi.carousel.reel2.tags', ['Speakers', 'Industry']),
+      tags: [
+        t('portfolio.tags.speakers', 'Speakers'),
+        t('portfolio.tags.industry', 'Industry')
+      ],
       views: '12k+',
-      type: t('projects.smi.carousel.reel2.type', 'Professional Content'),
+      type: t('projects.smi.carousel.reel2.type', 'Professional content'),
     },
     {
       id: 'smi-reel-3',
       src: `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/teaser 3_smi.mp4`,
-      title: t('projects.smi.carousel.reel3.title', 'Conference Highlights'),
+      title: t('projects.smi.carousel.reel3.title', 'Conference highlights'),
       description: t('projects.smi.carousel.reel3.description', 'Best moments from the two-day event'),
-      tags: t('projects.smi.carousel.reel3.tags', ['Highlights', 'Event']),
+      tags: [
+        t('portfolio.tags.highlights', 'Highlights'),
+        t('portfolio.tags.event', 'Event')
+      ],
       views: '18k+',
-      type: t('projects.smi.carousel.reel3.type', 'Event Summary'),
+      type: t('projects.smi.carousel.reel3.type', 'Event summary'),
     },
   ];
 

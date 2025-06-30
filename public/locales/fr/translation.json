@@ -259,7 +259,7 @@
     "ourPortfolio": "Notre portfolio",
     "ourText": "Notre",
     "portfolioText": "portfolio",
-    "description": "De l'immobilier de luxe aux événements haut de gamme, nous créons des voyages cinématographiques qui élèvent chaque projet.",
+    "description": "De l'immobilier de luxe aux événements haut de gamme, nous créons des expériences cinématographiques qui élèvent chaque projet.",
     "categories": {
       "all": "Tous",
       "realEstate": "Immobilier",
@@ -267,8 +267,45 @@
       "events": "Événements",
       "social": "Réseaux sociaux"
     },
+    "tags": {
+      "event": "Événement",
+      "socialMedia": "Réseaux sociaux",
+      "shortForm": "Format court",
+      "realEstate": "Immobilier",
+      "luxury": "Luxe",
+      "property": "Propriété",
+      "views": "Vues",
+      "conference": "Conférence",
+      "mining": "Mines",
+      "speakers": "Intervenants",
+      "industry": "Industrie",
+      "highlights": "Points forts"
+    },
     "reelsTitle": "Reels pour médias sociaux",
     "reelsSubtitle": "Contenu court et engageant conçu pour un impact maximum sur les réseaux sociaux",
+    "reels": {
+      "instagramReel": "Reel Instagram",
+      "smi": {
+        "title": "Événement SMI en vedette",
+        "description": "Couverture événementielle dynamique pour les réseaux sociaux"
+      },
+      "penthouseSpeech": {
+        "title": "Expérience penthouse",
+        "description": "Contenu réseaux sociaux immobilier de luxe"
+      },
+      "penthouseViews": {
+        "title": "Vues du penthouse",
+        "description": "Vues immobilières impressionnantes pour les réseaux sociaux"
+      }
+    },
+    "types": {
+      "eventProduction": "Production d'événements",
+      "realEstate": "Immobilier",
+      "videoProduction": "Production vidéo"
+    },
+    "socialMedia": "Réseaux sociaux",
+    "quality4k": "4K",
+    "videoProduction": "Production vidéo",
     "pageTitle": "Notre Travail | Prestige Production",
     "defaultDescription": "Production cinématographique premium réalisée avec attention aux détails et vision artistique.",
     "viewProject": "Voir le projet",
@@ -551,7 +588,24 @@
       "moreReels": "Plus de reels de l'événement",
       "swipeLeft": "Glissez ou faites glisser pour naviguer",
       "swipeLeftMobile": "Glissez pour naviguer",
-      "partnerCredit": "Projet réalisé en partenariat avec"
+      "partnerCredit": "Projet réalisé en partenariat avec",
+      "carousel": {
+        "reel1": {
+          "title": "Ouverture de la conférence SMI",
+          "description": "Moments exclusifs d'ouverture de la conférence minière",
+          "type": "Moment fort de l'événement"
+        },
+        "reel2": {
+          "title": "Leaders de l'industrie", 
+          "description": "Intervenants clés et perspectives industrielles",
+          "type": "Contenu professionnel"
+        },
+        "reel3": {
+          "title": "Points forts de la conférence",
+          "description": "Meilleurs moments de l'événement de deux jours", 
+          "type": "Résumé de l'événement"
+        }
+      }
     }
   },
   "highlights": {

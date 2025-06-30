@@ -40,11 +40,15 @@ const Portfolio = () => {
     {
       id: 'reel-1',
       src: `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/smi_reel_tavi.mp4`,
-      title: 'SMI Event Highlight',
+      title: t('portfolio.reels.smi.title', 'SMI Event Highlight'),
       category: 'social',
-      type: 'Instagram Reel',
-      description: 'Dynamic event coverage for social media',
-      tags: ['Event', 'Social Media', 'Short Form'],
+      type: t('portfolio.reels.instagramReel', 'Instagram Reel'),
+      description: t('portfolio.reels.smi.description', 'Dynamic event coverage for social media'),
+      tags: [
+        t('portfolio.tags.event', 'Event'),
+        t('portfolio.tags.socialMedia', 'Social media'),
+        t('portfolio.tags.shortForm', 'Short form')
+      ],
       views: '32k+',
     },
     {
@@ -52,11 +56,15 @@ const Portfolio = () => {
       src: `${
         import.meta.env.VITE_CLOUDFRONT_URL
       }/videos/Reel_2_penthouse_speech.mp4`,
-      title: 'Penthouse Experience',
+      title: t('portfolio.reels.penthouseSpeech.title', 'Penthouse Experience'),
       category: 'social',
-      type: 'Instagram Reel',
-      description: 'Luxury real estate social content',
-      tags: ['Real Estate', 'Luxury', 'Social Media'],
+      type: t('portfolio.reels.instagramReel', 'Instagram Reel'),
+      description: t('portfolio.reels.penthouseSpeech.description', 'Luxury real estate social content'),
+      tags: [
+        t('portfolio.tags.realEstate', 'Real estate'),
+        t('portfolio.tags.luxury', 'Luxury'),
+        t('portfolio.tags.socialMedia', 'Social media')
+      ],
       views: '50k+',
     },
     {
@@ -64,11 +72,15 @@ const Portfolio = () => {
       src: `${
         import.meta.env.VITE_CLOUDFRONT_URL
       }/videos/Reel_1_penthouse_view.mp4`,
-      title: 'Penthouse Views',
+      title: t('portfolio.reels.penthouseViews.title', 'Penthouse Views'),
       category: 'social',
-      type: 'Instagram Reel',
-      description: 'Stunning property views for social platforms',
-      tags: ['Property', 'Views', 'Social Media'],
+      type: t('portfolio.reels.instagramReel', 'Instagram Reel'),
+      description: t('portfolio.reels.penthouseViews.description', 'Stunning property views for social platforms'),
+      tags: [
+        t('portfolio.tags.property', 'Property'),
+        t('portfolio.tags.views', 'Views'),
+        t('portfolio.tags.socialMedia', 'Social media')
+      ],
       views: '28k+',
     },
   ];
@@ -319,7 +331,7 @@ const Portfolio = () => {
                 {/* Project type badge */}
                 <div className='absolute top-4 left-4'>
                   <span className='px-3 py-1 bg-black/50 backdrop-blur-sm text-white text-xs rounded-full border border-white/20'>
-                    {proj.type || t('portfolio.videoProduction', 'Video production')}
+                    {proj.typeKey ? t(proj.typeKey, proj.type || 'Video production') : t('portfolio.types.videoProduction', 'Video production')}
                   </span>
                 </div>
               </div>

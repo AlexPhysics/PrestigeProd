@@ -269,8 +269,45 @@
       "events": "Veranstaltungen",
       "social": "Soziale medien"
     },
+    "tags": {
+      "event": "Veranstaltung",
+      "socialMedia": "Soziale medien",
+      "shortForm": "Kurze form",
+      "realEstate": "Immobilien",
+      "luxury": "Luxus",
+      "property": "Eigenschaft",
+      "views": "Ansichten",
+      "conference": "Konferenz",
+      "mining": "Bergbau",
+      "speakers": "Redner",
+      "industry": "Industrie",
+      "highlights": "Höhepunkte"
+    },
     "reelsTitle": "Social media reels",
     "reelsSubtitle": "Ansprechende Kurzcontent-Formate für maximale Wirkung in sozialen Medien",
+    "reels": {
+      "instagramReel": "Instagram reel",
+      "smi": {
+        "title": "SMI veranstaltungs highlight",
+        "description": "Dynamische veranstaltungsberichterstattung für soziale medien"
+      },
+      "penthouseSpeech": {
+        "title": "Penthouse erfahrung",
+        "description": "Luxusimmobilien social content"
+      },
+      "penthouseViews": {
+        "title": "Penthouse ansichten",
+        "description": "Atemberaubende immobilienansichten für soziale plattformen"
+      }
+    },
+    "types": {
+      "eventProduction": "Veranstaltungsproduktion",
+      "realEstate": "Immobilien",
+      "videoProduction": "Videoproduktion"
+    },
+    "socialMedia": "Soziale medien",
+    "quality4k": "4K",
+    "videoProduction": "Videoproduktion",
     "pageTitle": "Unsere Arbeit | Prestige Production",
     "defaultDescription": "Premium-Filmproduktion mit Aufmerksamkeit für Details und künstlerische Vision.",
     "viewProject": "Projekt ansehen",
@@ -549,7 +586,24 @@
       "moreReels": "Weitere reels von der Veranstaltung",
       "swipeLeft": "Wischen oder ziehen zum navigieren",
       "swipeLeftMobile": "Wischen zum navigieren",
-      "partnerCredit": "Projekt in Partnerschaft mit"
+      "partnerCredit": "Projekt in Partnerschaft mit",
+      "carousel": {
+        "reel1": {
+          "title": "SMI konferenz eröffnung",
+          "description": "Exklusive eröffnungsmomente der bergbaukonferenz",
+          "type": "Veranstaltungs höhepunkt"
+        },
+        "reel2": {
+          "title": "Führungskräfte der industrie", 
+          "description": "Hauptredner und brancheneinblicke",
+          "type": "Professioneller inhalt"
+        },
+        "reel3": {
+          "title": "Konferenz höhepunkte",
+          "description": "Beste momente der zweitägigen veranstaltung", 
+          "type": "Veranstaltungs zusammenfassung"
+        }
+      }
     }
   },
   "highlights": {

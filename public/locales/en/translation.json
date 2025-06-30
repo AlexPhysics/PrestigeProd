@@ -313,8 +313,42 @@
       "events": "Events",
       "social": "Social media"
     },
+    "tags": {
+      "event": "Event",
+      "socialMedia": "Social media",
+      "shortForm": "Short form",
+      "realEstate": "Real estate",
+      "luxury": "Luxury",
+      "property": "Property",
+      "views": "Views",
+      "conference": "Conference",
+      "mining": "Mining",
+      "speakers": "Speakers",
+      "industry": "Industry",
+      "highlights": "Highlights"
+    },
     "reelsTitle": "Social media reels",
     "reelsSubtitle": "Engaging short-form content designed for maximum social media impact",
+    "reels": {
+      "instagramReel": "Instagram reel",
+      "smi": {
+        "title": "SMI event highlight",
+        "description": "Dynamic event coverage for social media"
+      },
+      "penthouseSpeech": {
+        "title": "Penthouse experience",
+        "description": "Luxury real estate social content"
+      },
+      "penthouseViews": {
+        "title": "Penthouse views",
+        "description": "Stunning property views for social platforms"
+      }
+    },
+    "types": {
+      "eventProduction": "Event production",
+      "realEstate": "Real estate",
+      "videoProduction": "Video production"
+    },
     "pageTitle": "Our Work | Prestige Production",
     "defaultDescription": "Premium cinematic production crafted with attention to detail and artistic vision.",
     "viewProject": "View project",
@@ -630,22 +664,22 @@
       "photoAlt": "SMI Photo",
       "carousel": {
         "reel1": {
-          "title": "SMI Conference Opening",
+          "title": "SMI conference opening",
           "description": "Exclusive opening moments of the mining conference",
-          "type": "Event Highlight",
-          "tags": ["Conference", "Mining"]
+          "type": "Event highlight",
+          "tags": ["tags.conference", "tags.mining"]
         },
         "reel2": {
-          "title": "Industry Leaders", 
+          "title": "Industry leaders", 
           "description": "Key speakers and industry insights",
-          "type": "Professional Content",
-          "tags": ["Speakers", "Industry"]
+          "type": "Professional content",
+          "tags": ["tags.speakers", "tags.industry"]
         },
         "reel3": {
-          "title": "Conference Highlights",
+          "title": "Conference highlights",
           "description": "Best moments from the two-day event", 
-          "type": "Event Summary",
-          "tags": ["Highlights", "Event"]
+          "type": "Event summary",
+          "tags": ["tags.highlights", "tags.event"]
         }
       }
     }
