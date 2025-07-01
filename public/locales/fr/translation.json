@@ -67,7 +67,7 @@
       "step3Title": "Production",
       "step3Desc": "Notre équipe capture des séquences de haute qualité à l'aide d'équipements professionnels.",
       "step4Title": "Post-production",
-      "step4Desc": "Nous nous occupons de tout le montage, de l'étalonnage des couleurs et du peaufinage de votre histoire visuelle.",
+      "step4Desc": "Nous nous occupons de tout le montage, de l'étalonnage des couleurs et du peaufinage de votre projet.",
       "step5Title": "Livraison",
       "step5Desc": "Vous recevez le contenu final, optimisé pour vos plateformes avec nos conseils stratégiques."
     },
@@ -498,7 +498,7 @@
     "sendingButton": "Envoi en cours...",
     "submittingStatus": "Le formulaire est en cours d'envoi",
     "successMessage": "Merci ! Votre message a été envoyé.",
-    "successSubtext": "Nous vous répondrons dans les 24 heures.",
+    "successSubtext": "Nous vous répondrons dès que possible.",
     "errorMessage": "Quelque chose s'est mal passé. Veuillez réessayer.",
     "errorSubtext": "Ou contactez-nous directement à info@prestigeproduction.ch",
     "nameRequired": "Le nom est requis",
