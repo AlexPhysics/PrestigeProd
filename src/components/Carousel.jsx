@@ -25,8 +25,18 @@ export default function Carousel({
   loop = false,
   round = false,
 }) {
-  const pad = 16;
-  const itemW = baseWidth - pad * 2;
+  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200);
+  
+  // Responsive width calculation
+  const getResponsiveWidth = () => {
+    if (windowWidth < 768) return Math.min(windowWidth - 40, 360); // Mobile
+    if (windowWidth < 1024) return Math.min(windowWidth - 80, 600); // Tablet
+    return Math.min(baseWidth, windowWidth - 120); // Desktop
+  };
+
+  const pad = windowWidth < 768 ? 8 : 16;
+  const responsiveWidth = getResponsiveWidth();
+  const itemW = responsiveWidth - pad * 2;
   const itemH = (itemW * 9) / 16;
   const step = itemW + GAP;
 
@@ -95,6 +105,16 @@ export default function Carousel({
     pauseOnHover,
   ]);
 
+  // Handle window resize for responsive behavior
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const onDragEnd = (_, info) => {
     const { x: off } = info.offset;
     const { x: vel } = info.velocity;
@@ -130,12 +150,16 @@ export default function Carousel({
   return (
     <div
       ref={containerRef}
-      className={`relative overflow-hidden p-4 ${
+      className={`relative overflow-hidden ${
         round
           ? 'rounded-full border border-white'
           : 'rounded-[24px] border border-[#222]'
       }`}
-      style={{ width: baseWidth, ...(round && { height: baseWidth }) }}
+      style={{ 
+        width: responsiveWidth, 
+        padding: `${pad}px`,
+        ...(round && { height: responsiveWidth }) 
+      }}
     >
       <motion.div
         drag='x'
@@ -188,21 +212,24 @@ export default function Carousel({
           round ? 'absolute bottom-12 left-1/2 -translate-x-1/2' : ''
         }`}
       >
-        <div className='mt-4 flex w-[150px] justify-between px-8'>
+        <div className='mt-4 md:mt-6 flex w-[120px] md:w-[180px] justify-between px-2 md:px-4'>
           {items.map((_, i) => (
             <motion.div
               key={i}
-              className={`h-2 w-2 rounded-full cursor-pointer ${
+              className={`h-2 w-2 md:h-3 md:w-3 rounded-full cursor-pointer border-2 transition-all duration-300 ${
                 idx % items.length === i
                   ? round
-                    ? 'bg-white'
-                    : 'bg-[#333]'
+                    ? 'bg-white border-white'
+                    : 'bg-[#9eb6a9] border-[#9eb6a9] shadow-lg shadow-[#9eb6a9]/30'
                   : round
-                  ? 'bg-[#555]'
-                  : 'bg-[rgba(51,51,51,0.4)]'
+                  ? 'bg-transparent border-white/40 hover:border-white/60'
+                  : 'bg-transparent border-white/30 hover:border-[#9eb6a9]/50'
               }`}
-              animate={{ scale: idx % items.length === i ? 1.2 : 1 }}
-              transition={{ duration: 0.15 }}
+              animate={{ 
+                scale: idx % items.length === i ? 1.2 : 1,
+                opacity: idx % items.length === i ? 1 : 0.7
+              }}
+              transition={{ duration: 0.3, ease: 'easeOut' }}
               onClick={() => setIdx(i)}
             />
           ))}

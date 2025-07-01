@@ -33,7 +33,8 @@ const TrueFocus = ({
     }
   }, [manualMode, animationDuration, pauseBetweenAnimations, words.length]);
 
-  useEffect(() => {
+  // Calculate focus rectangle position
+  const updateFocusRect = () => {
     if (currentIndex === null || currentIndex === -1) return;
     if (!wordRefs.current[currentIndex] || !containerRef.current) return;
 
@@ -46,7 +47,37 @@ const TrueFocus = ({
       width: activeRect.width,
       height: activeRect.height,
     });
+  };
+
+  useEffect(() => {
+    updateFocusRect();
   }, [currentIndex, words.length]);
+
+  // Initialize focus rect on mount
+  useEffect(() => {
+    const initializeFocus = () => {
+      if (!wordRefs.current[0] || !containerRef.current) {
+        // If refs aren't ready, try again
+        const retryTimer = setTimeout(initializeFocus, 10);
+        return () => clearTimeout(retryTimer);
+      }
+      updateFocusRect();
+    };
+
+    // Use requestAnimationFrame to ensure DOM is fully rendered
+    const rafId = requestAnimationFrame(initializeFocus);
+    return () => cancelAnimationFrame(rafId);
+  }, []);
+
+  // Handle window resize to recalculate focus rect
+  useEffect(() => {
+    const handleResize = () => {
+      updateFocusRect();
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [currentIndex]);
 
   const handleMouseEnter = index => {
     if (manualMode) {

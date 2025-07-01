@@ -184,7 +184,7 @@ export const projects = [
     video: `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/SMI_logo_final.mp4`,
     link: '/portfolio/smi',
     category: 'events',
-    type: 'Event Production'
+    typeKey: 'portfolio.types.eventProduction'
   },
   {
     id: 2,
@@ -192,7 +192,7 @@ export const projects = [
     image: `${import.meta.env.VITE_CLOUDFRONT_URL}/images/thumbnail_penthouse.png`,
     link: '/portfolio/penthouse-zurich',
     category: 'realEstate',
-    type: 'Real Estate'
+    typeKey: 'portfolio.types.realEstate'
   },
 ];
 

@@ -39,7 +39,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className='common-padding'>
+    <section className='common-padding !pb-10'>
       <div className='screen-max-width'>
         {/*<div id='chip' className='flex-center w-full my-20'>
           <img src={chipImg} alt='chip' width={180} height={180} />
@@ -64,52 +64,6 @@ const HowItWorks = () => {
           </h2>
 
           <p className='hiw-subtitle'>{t('howItWorks.subtitle', 'Quality above everything else.')}</p>
-        </div>
-
-        {/*
-        <div className='mt-10 md:mt-20 mb-14'>
-          <div className='relative h-full flex-center'>
-            <div className='relative'>
-              <img
-                src={frameImg}
-                alt='frame'
-                className='bg-transparent relative z-10 block w-full h-auto'
-              />
-              <video
-                className='absolute top-0 left-0 w-full h-full object-cover z-0 pointer-events-none'
-                playsInline
-                preload='none'
-                muted
-                autoPlay
-                ref={videoRef}
-              >
-                <source src={frameVideo} type='video/mp4' />
-              </video>
-            </div>
-          </div>
-        </div>*/}
-
-        <div className='hiw-text-container'>
-          {/* LEFT COLUMN – storytelling & craft */}
-          <div className='flex flex-1 justify-center flex-col'>
-            <p className='hiw-text g_fadeIn'>
-              {t('howItWorks.paragraph1.part1', 'We blend')} <span className='text-white'>{t('howItWorks.paragraph1.part2', 'Swiss precision')}</span>{' '}
-              {t('howItWorks.paragraph1.part3', 'with bold cinematic craft to create visuals that stop thumbs and turn heads.')}
-            </p>
-
-            <p className='hiw-text g_fadeIn'>
-              {t('howItWorks.paragraph2.part1', 'From the first storyboard to the final colour grade, every frame is engineered to')}{' '}
-              <span className='text-white'>{t('howItWorks.paragraph2.part2', 'move audiences')}</span> {t('howItWorks.paragraph2.part3', 'and')}
-              <span className='text-white'> {t('howItWorks.paragraph2.part4', 'drive results')}</span>.
-            </p>
-          </div>
-
-          {/* RIGHT COLUMN – quick stats / proof points */}
-          <div className='flex-1 flex justify-center flex-col g_fadeIn'>
-            <p className='hiw-text'>{t('howItWorks.since', 'Since')}</p>
-            <p className='hiw-bigtext'>{t('howItWorks.year', '2025')}</p>
-            <p className='hiw-text'>{t('howItWorks.projectsDelivered', '10+ projects delivered')}</p>
-          </div>
         </div>
       </div>
     </section>

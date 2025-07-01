@@ -207,6 +207,8 @@ const PenthouseZurichProject = () => {
         <motion.div
           id='back-link'
           initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           className='max-w-6xl mx-auto mb-12 px-2'
         >
           <Link
@@ -344,7 +346,7 @@ const PenthouseZurichProject = () => {
             <p className='text-lg text-white/80 leading-relaxed mb-8'>
               {t(
                 'projects.penthouse.description',
-                "We partnered with Zurich Sotheby's International Realty to bring to life one of Zurich's most exceptional properties — a 304 m² penthouse perched atop the Mobimo Tower. Through cinematic visuals, architectural storytelling, and a detail-oriented production process, we created a complete content suite tailored to the luxury market.",
+                "We partnered with Zurich Sotheby's International Realty to bring to life one of Zurich's most exceptional properties, a 304 m² penthouse perched atop the Mobimo Tower. Through cinematic visuals, architectural storytelling, and a detail-oriented production process, we created a complete content suite tailored to the luxury market.",
               )}
             </p>
 
@@ -358,7 +360,7 @@ const PenthouseZurichProject = () => {
                       'Turbinenstrasse 18, 8005 Zürich',
                     )}
                   </div>
-                  <div className='text-white/60'>Switzerland</div>
+                  <div className='text-white/60'>{t('projects.location', 'Switzerland')}</div>
                 </div>
               </div>
 
@@ -605,48 +607,53 @@ const PenthouseZurichProject = () => {
                     controls
                     playsInline
                     preload='metadata'
-                    className='w-full h-full object-cover group-hover:scale-110 transition-transform duration-700'
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      objectPosition: 'center'
+                    }}
+                    className='group-hover:scale-110 transition-transform duration-700'
+                    onLoadedMetadata={(e) => {
+                      // Ensure proper aspect ratio handling in fullscreen
+                      e.target.style.maxHeight = '100vh';
+                      e.target.style.maxWidth = '100vw';
+                    }}
                   />
 
-                  {/* Info overlay - positioned to not interfere with video controls */}
-                  <div className='absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none'>
-                    <div className='p-4 pb-16'>
-                      <h3 className='text-white font-semibold text-sm mb-1'>
+                  {/* View counter - simple text with contrast */}
+                  <div className='absolute top-3 right-3 z-10'>
+                    <div className='flex items-center'>
+                      <svg
+                        className='w-3 h-3 mr-1 text-[#9EB6A9]'
+                        fill='currentColor'
+                        viewBox='0 0 20 20'
+                        style={{ filter: 'drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8))' }}
+                      >
+                        <path d='M10 12a2 2 0 100-4 2 2 0 000 4z' />
+                        <path
+                          fillRule='evenodd'
+                          d='M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z'
+                          clipRule='evenodd'
+                        />
+                      </svg>
+                      <span 
+                        className='text-[#9EB6A9] text-xs font-medium'
+                        style={{ 
+                          textShadow: '0 1px 3px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.6)' 
+                        }}
+                      >
+                        {reel.views}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Title overlay - positioned at bottom */}
+                  <div className='absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none'>
+                    <div className='p-3'>
+                      <h3 className='text-white font-medium text-sm'>
                         {reel.title}
                       </h3>
-                      <p className='text-white/80 text-xs mb-2 line-clamp-2'>
-                        {reel.description}
-                      </p>
-                      <div className='flex flex-wrap gap-1 mb-3'>
-                        {reel.tags.slice(0, 2).map((tag, index) => (
-                          <span
-                            key={index}
-                            className='px-2 py-1 bg-black/50 backdrop-blur-sm text-white text-xs rounded border border-white/20'
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                      <div className='flex items-center justify-between'>
-                        <span className='text-[#9eb6a9] text-xs font-medium'>
-                          {reel.type}
-                        </span>
-                        <div className='flex items-center text-white/60 text-xs'>
-                          <svg
-                            className='w-3 h-3 mr-1'
-                            fill='currentColor'
-                            viewBox='0 0 20 20'
-                          >
-                            <path d='M10 12a2 2 0 100-4 2 2 0 000 4z' />
-                            <path
-                              fillRule='evenodd'
-                              d='M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z'
-                              clipRule='evenodd'
-                            />
-                          </svg>
-                          {reel.views}
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -688,15 +695,18 @@ const PenthouseZurichProject = () => {
                   className='bg-gradient-to-br from-[#2d5f59]/20 to-[#F4FF78]/20 backdrop-blur-sm rounded-2xl p-6 border border-[#F4FF78]/30 text-center'
                 >
                   <div className='text-3xl font-bold bg-gradient-to-r from-[#2d5f59] to-[#F4FF78] bg-clip-text text-transparent mb-2'>
-                    73%
+                    403%
                   </div>
                   <div className='text-white/80 text-sm font-medium'>
-                    {t('projects.penthouse.whyUs.stat1', 'Faster sales')}
+                    {t(
+                      'projects.penthouse.whyUs.stat1',
+                      'More Inquiries',
+                    )}
                   </div>
                   <div className='text-white/60 text-xs mt-1'>
                     {t(
                       'projects.penthouse.whyUs.stat1Desc',
-                      'Properties with video',
+                      'For listings with video content',
                     )}
                   </div>
                 </motion.div>
@@ -709,15 +719,15 @@ const PenthouseZurichProject = () => {
                   className='bg-gradient-to-br from-[#F4FF78]/20 to-[#2d5f59]/20 backdrop-blur-sm rounded-2xl p-6 border border-[#F4FF78]/30 text-center'
                 >
                   <div className='text-3xl font-bold bg-gradient-to-r from-[#F4FF78] to-[#2d5f59] bg-clip-text text-transparent mb-2'>
-                    4x
+                    68%
                   </div>
                   <div className='text-white/80 text-sm font-medium'>
-                    {t('projects.penthouse.whyUs.stat2', 'More inquiries')}
+                    {t('projects.penthouse.whyUs.stat2', 'Faster Sales')}
                   </div>
                   <div className='text-white/60 text-xs mt-1'>
                     {t(
                       'projects.penthouse.whyUs.stat2Desc',
-                      'Than photo-only listings',
+                      'For homes with aerial footage',
                     )}
                   </div>
                 </motion.div>
@@ -751,13 +761,13 @@ const PenthouseZurichProject = () => {
                     <h4 className='text-white font-semibold mb-1'>
                       {t(
                         'projects.penthouse.whyUs.benefit1',
-                        'Attract serious buyers',
+                        'Enhanced Buyer Engagement',
                       )}
                     </h4>
                     <p className='text-white/70 text-sm'>
                       {t(
                         'projects.penthouse.whyUs.benefit1Desc',
-                        'Premium content filters out casual browsers, bringing only qualified prospects',
+                        'Viewers retain 95% of a message from video, creating a stronger emotional connection.',
                       )}
                     </p>
                   </div>
@@ -789,13 +799,13 @@ const PenthouseZurichProject = () => {
                     <h4 className='text-white font-semibold mb-1'>
                       {t(
                         'projects.penthouse.whyUs.benefit2',
-                        'Higher sale prices',
+                        'Attract Premium Clients',
                       )}
                     </h4>
                     <p className='text-white/70 text-sm'>
                       {t(
                         'projects.penthouse.whyUs.benefit2Desc',
-                        'Professional presentation creates emotional connection, justifying premium pricing',
+                        '73% of homeowners are more likely to list with an agent who offers video content.',
                       )}
                     </p>
                   </div>
@@ -819,18 +829,21 @@ const PenthouseZurichProject = () => {
                         strokeLinecap='round'
                         strokeLinejoin='round'
                         strokeWidth={2}
-                        d='M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064'
+                        d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'
                       />
                     </svg>
                   </div>
                   <div>
                     <h4 className='text-white font-semibold mb-1'>
-                      {t('projects.penthouse.whyUs.benefit3', 'Global reach')}
+                      {t(
+                        'projects.penthouse.whyUs.benefit3',
+                        'Boost organic traffic',
+                      )}
                     </h4>
                     <p className='text-white/70 text-sm'>
                       {t(
                         'projects.penthouse.whyUs.benefit3Desc',
-                        'Social media content reaches international buyers who never see traditional listings',
+                        'Video drives a 157% increase in organic traffic from search engines.',
                       )}
                     </p>
                   </div>
@@ -862,13 +875,13 @@ const PenthouseZurichProject = () => {
                     <h4 className='text-white font-semibold mb-1'>
                       {t(
                         'projects.penthouse.whyUs.benefit4',
-                        'Competitive edge',
+                        'Gain a Competitive Edge',
                       )}
                     </h4>
                     <p className='text-white/70 text-sm'>
                       {t(
                         'projects.penthouse.whyUs.benefit4Desc',
-                        'Stand out from agents using basic photos - become the premium choice for sellers',
+                        'With only 38% of agents using video, premium content makes you the top choice for discerning sellers.',
                       )}
                     </p>
                   </div>
@@ -905,54 +918,50 @@ const PenthouseZurichProject = () => {
                 <div className='space-y-4'>
                   <div className='flex justify-between items-center p-3 bg-gradient-to-r from-[#2d5f59]/10 to-[#F4FF78]/10 rounded-xl'>
                     <span className='text-white/80 text-sm'>
-                      Social Media Reach
+                      {t('projects.penthouse.whyUs.impactSocialReach', 'Social media reach')}
                     </span>
                     <span className='text-[#F4FF78] font-semibold'>
-                      50K+ views
+                      {t('projects.penthouse.whyUs.impactSocialReachValue', '50K+ views')}
                     </span>
                   </div>
 
                   <div className='flex justify-between items-center p-3 bg-gradient-to-r from-[#2d5f59]/10 to-[#F4FF78]/10 rounded-xl'>
                     <span className='text-white/80 text-sm'>
-                      Engagement Rate
+                      {t('projects.penthouse.whyUs.impactEngagement', 'Engagement rate')}
                     </span>
                     <span className='text-[#F4FF78] font-semibold'>
-                      7x above average
+                      {t('projects.penthouse.whyUs.impactEngagementValue', '7x above average')}
                     </span>
                   </div>
 
                   <div className='flex justify-between items-center p-3 bg-gradient-to-r from-[#2d5f59]/10 to-[#F4FF78]/10 rounded-xl'>
                     <span className='text-white/80 text-sm'>
-                      International Exposure
+                      {t('projects.penthouse.whyUs.impactExposure', 'International exposure')}
                     </span>
                     <span className='text-[#F4FF78] font-semibold'>
-                      Global audience
+                      {t('projects.penthouse.whyUs.impactExposureValue', 'Global audience')}
                     </span>
                   </div>
 
                   <div className='flex justify-between items-center p-3 bg-gradient-to-r from-[#2d5f59]/10 to-[#F4FF78]/10 rounded-xl'>
                     <span className='text-white/80 text-sm'>
-                      Brand Recognition
+                      {t('projects.penthouse.whyUs.impactBrand', 'Brand recognition')}
                     </span>
                     <span className='text-[#F4FF78] font-semibold'>
-                      #2 best reel
+                      {t('projects.penthouse.whyUs.impactBrandValue', '#2 best reel')}
                     </span>
                   </div>
                 </div>
 
                 <div className='mt-6 pt-6 border-t border-white/20'>
-                  <p className='text-white/60 text-sm text-center italic'>
-                    {t(
-                      'projects.penthouse.whyUs.testimonial',
-                      '"The video content transformed how buyers perceived our property. We reached international clients we never would have found otherwise."',
-                    )}
-                  </p>
-                  <p className='text-[#F4FF78] text-xs text-center mt-2 font-medium'>
-                    {t(
-                      'projects.penthouse.whyUs.testimonialAuthor',
-                      "— Zurich Sotheby's International Realty",
-                    )}
-                  </p>
+                  <div className='text-center'>
+                    <div className='text-2xl font-bold bg-gradient-to-r from-[#2d5f59] to-[#F4FF78] bg-clip-text text-transparent mb-2'>
+                      {t('projects.penthouse.whyUs.firstThreeDays', '30K views in first 3 days')}
+                    </div>
+                    <p className='text-white/70 text-sm'>
+                      {t('projects.penthouse.whyUs.firstThreeDaysDesc', 'Exceptional initial performance across all platforms')}
+                    </p>
+                  </div>
                 </div>
               </div>
             </motion.div>

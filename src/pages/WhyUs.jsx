@@ -11,6 +11,54 @@ import { GRADIENT_CLASS } from '../constants';
 // Register ScrollTrigger and ScrollToPlugin plugins
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
+// --- Icon Components ---
+const IconWrapper = ({ children, className }) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke='currentColor'
+    strokeWidth='1.5'
+    strokeLinecap='round'
+    strokeLinejoin='round'
+    className={className}
+  >
+    {children}
+  </svg>
+);
+
+const VisionIcon = ({ className }) => (
+  <IconWrapper className={className}>
+    <path d='M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z' />
+    <circle cx='12' cy='12' r='3' />
+  </IconWrapper>
+);
+
+const CreativityIcon = ({ className }) => (
+  <IconWrapper className={className}>
+    <path d='M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z' />
+  </IconWrapper>
+);
+
+const ExecutionIcon = ({ className }) => (
+  <IconWrapper className={className}>
+    <circle cx='12' cy='12' r='3' />
+    <path d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 16.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2v-1a2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z' />
+  </IconWrapper>
+);
+
+const ResultsIcon = ({ className }) => (
+  <IconWrapper className={className}>
+    <path d='M18 20V10M12 20V4M6 20v-6' />
+  </IconWrapper>
+);
+
+const CheckIcon = ({ className }) => (
+  <IconWrapper className={className}>
+    <polyline points='20 6 9 17 4 12' />
+  </IconWrapper>
+);
+
 const WhyUs = () => {
   const { t, i18n } = useTranslation();
   const { lang } = useParams();
@@ -29,14 +77,14 @@ const WhyUs = () => {
   // Team member skills to showcase expertise
   const skills = {
     dorian: [
-      t('whyUs.skills.dorian.0', 'Creative Direction'),
+      t('whyUs.skills.dorian.0', 'Creative direction'),
       t('whyUs.skills.dorian.1', 'Cinematography'),
-      t('whyUs.skills.dorian.2', 'Brand Strategy'),
+      t('whyUs.skills.dorian.2', 'Brand strategy'),
     ],
     alex: [
-      t('whyUs.skills.alex.0', 'Technical Production'),
-      t('whyUs.skills.alex.1', 'Post-processing'),
-      t('whyUs.skills.alex.2', 'Color Grading'),
+      t('whyUs.skills.alex.0', 'Technical production'),
+      t('whyUs.skills.alex.1', 'Post processing'),
+      t('whyUs.skills.alex.2', 'Color grading'),
     ],
   };
 
@@ -86,55 +134,39 @@ const WhyUs = () => {
 
   // Approach tabs data
   const approachTabs = [
-    { id: 'vision', icon: '👁️', color: 'from-[#2d5f59] to-[#F4FF78]' },
-    { id: 'creativity', icon: '✨', color: 'from-amber-500 to-orange-500' },
-    { id: 'execution', icon: '🚀', color: 'from-blue-500 to-indigo-500' },
-    { id: 'results', icon: '📈', color: 'from-green-500 to-teal-500' },
+    { id: 'vision', icon: VisionIcon },
+    { id: 'creativity', icon: CreativityIcon },
+    { id: 'execution', icon: ExecutionIcon },
+    { id: 'results', icon: ResultsIcon },
   ];
 
   // Testimonials data
   const testimonials = [
     {
       id: 1,
-      name: t('whyUs.testimonials.clients.sophia.name', 'Sophia Laurent'),
+      name: t('whyUs.testimonials.clients.sothebys.name', 'Soroush Efati'),
       role: t(
-        'whyUs.testimonials.clients.sophia.role',
-        'Marketing Director, Swiss Luxury Properties',
+        'whyUs.testimonials.clients.sothebys.role',
+        "Partner, Zurich Sotheby's International Realty",
       ),
       content: t(
-        'whyUs.testimonials.clients.sophia.content',
-        'Prestige Production transformed our property showcases into cinematic experiences. The attention to detail and visual storytelling are unmatched in the industry.',
+        'whyUs.testimonials.clients.sothebys.content',
+        'Prestige Production delivered an outstanding video for a beautiful penthouse. Their work captured the essence of luxury, and their social media reels drove significant engagement. A truly professional team.',
       ),
-      image:
-        'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop',
+      image: '/assets/logos/zurich_sothebys_logo.png',
     },
     {
       id: 2,
-      name: t('whyUs.testimonials.clients.marco.name', 'Marco Bernini'),
+      name: t('whyUs.testimonials.clients.smi.name', 'Manuel Bally'),
       role: t(
-        'whyUs.testimonials.clients.marco.role',
-        'CEO, Elite Events Switzerland',
+        'whyUs.testimonials.clients.smi.role',
+        'Organizer, Swiss Mining Institute',
       ),
       content: t(
-        'whyUs.testimonials.clients.marco.content',
-        'Working with Dorian and Alex was seamless from start to finish. They captured the essence of our corporate event while maintaining the highest production standards.',
+        'whyUs.testimonials.clients.smi.content',
+        'The aftermovie and interviews Prestige Production created for our event were exceptional. They perfectly captured the energy and provided us with fantastic content for our channels, including multiple high-impact reels.',
       ),
-      image:
-        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop',
-    },
-    {
-      id: 3,
-      name: t('whyUs.testimonials.clients.elise.name', 'Elise Dubois'),
-      role: t(
-        'whyUs.testimonials.clients.elise.role',
-        'Brand Manager, Geneva Luxe',
-      ),
-      content: t(
-        'whyUs.testimonials.clients.elise.content',
-        'The team at Prestige Production has an exceptional eye for brand storytelling. Their work elevated our brand campaign and resonated deeply with our audience.',
-      ),
-      image:
-        'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop',
+      image: '/assets/logos/smi_logo.png',
     },
   ];
 
@@ -248,7 +280,7 @@ const WhyUs = () => {
     });
 
     // Approach section tab animations
-    gsap.from('.approach-tab', {
+    /* gsap.from('.approach-tab', {
       scrollTrigger: {
         trigger: approachSectionRef.current,
         start: 'top 75%',
@@ -258,7 +290,7 @@ const WhyUs = () => {
       stagger: 0.15,
       duration: 0.6,
       ease: 'power2.out',
-    });
+    }); */
 
     // We removed testimonial cards GSAP animation to avoid conflicts with Framer Motion
 
@@ -356,7 +388,7 @@ const WhyUs = () => {
           <p className='text-xl text-center text-white/70 fade-in mb-6 max-w-3xl mx-auto leading-relaxed'>
             {t(
               'whyUs.subtitle',
-              "Prestige Production is more than just a video company — it's a partnership built on vision, creativity, and performance.",
+              "Prestige Production is more than just a video company, it's a partnership built on vision, creativity, and performance.",
             )}
           </p>
 
@@ -405,7 +437,7 @@ const WhyUs = () => {
               className='absolute bottom-0 left-0 right-0 p-8 text-left'
             >
               <span className='px-3 py-1 text-xs rounded-full bg-white/20 backdrop-blur-sm text-white/90 mb-4 inline-block'>
-                {t('whyUs.teamLabel', 'OUR TEAM')}
+                {t('whyUs.teamLabel', 'Our team')}
               </span>
               <h2 className='text-3xl sm:text-4xl font-medium mb-1 text-white'>
                 {t(`whyUs.team.${duo.nameKey}.name`, 'Dorian & Alex')}
@@ -567,34 +599,37 @@ const WhyUs = () => {
             <div className='w-24 h-0.5 mx-auto bg-gradient-to-r from-transparent via-[#2d5f59]/50 to-transparent'></div>
           </motion.div>
 
-          <div className='bg-gradient-to-b from-[#2d5f59]/5 to-black/10 rounded-2xl p-3 md:p-8 shadow-xl backdrop-blur-sm'>
+          <div className='bg-gradient-to-b from-pp-charcoal/20 to-black/10 rounded-2xl p-4 md:p-8 shadow-xl backdrop-blur-sm border border-pp-grey/10'>
             {/* Approach Tabs */}
-            <div className='flex flex-wrap justify-center gap-2 md:gap-4 mb-6 md:mb-12'>
-              {approachTabs.map(tab => (
-                <motion.button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`approach-tab flex items-center gap-2 px-4 py-2 md:px-6 md:py-3 rounded-full transition-all duration-300 ${
-                    activeTab === tab.id
-                      ? `bg-gradient-to-r ${tab.color} text-white shadow-lg`
-                      : 'bg-white/10 text-white/70 hover:bg-white/20'
-                  }`}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <span className='text-xl'>{tab.icon}</span>
-                  <span className='font-medium'>
-                    {t(
-                      `whyUs.approach.${tab.id}.tab`,
-                      tab.id.charAt(0).toUpperCase() + tab.id.slice(1),
-                    )}
-                  </span>
-                </motion.button>
-              ))}
+            <div className='flex flex-wrap justify-center gap-2 md:gap-4 mb-8 md:mb-12'>
+              {approachTabs.map(tab => {
+                const Icon = tab.icon;
+                return (
+                  <motion.button
+                    key={tab.id}
+                    onClick={() => setActiveTab(tab.id)}
+                    className={`approach-tab flex items-center gap-3 px-4 py-2 rounded-full transition-all duration-300 text-sm font-medium ${
+                      activeTab === tab.id
+                        ? 'bg-pp-teal text-white shadow-lg shadow-pp-teal/20'
+                        : 'bg-pp-charcoal/60 text-pp-ice/80 border border-pp-grey/20 hover:bg-pp-grey/10'
+                    }`}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Icon className='w-4 h-4' />
+                    <span className=''>
+                      {t(
+                        `whyUs.approach.${tab.id}.tab`,
+                        tab.id.charAt(0).toUpperCase() + tab.id.slice(1),
+                      )}
+                    </span>
+                  </motion.button>
+                );
+              })}
             </div>
 
             {/* Tab Content with illustrations */}
-            <div className='grid md:grid-cols-5 gap-4 md:gap-6 items-center'>
+            <div className='grid md:grid-cols-5 gap-8 md:gap-12 items-center'>
               <div className='md:col-span-3 order-2 md:order-1'>
                 <AnimatePresence mode='wait'>
                   <motion.div
@@ -618,21 +653,19 @@ const WhyUs = () => {
                         getApproachDescription(activeTab),
                       )}
                     </p>
-                    <ul className='space-y-3'>
+                    <ul className='space-y-4'>
                       {[1, 2, 3].map(i => (
                         <motion.li
                           key={i}
-                          className='flex items-start gap-3'
+                          className='flex items-center gap-4'
                           initial={{ opacity: 0, x: -10 }}
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ delay: i * 0.1 }}
                         >
                           <div
-                            className={`flex-shrink-0 w-6 h-6 mt-0.5 rounded-full bg-gradient-to-r ${
-                              approachTabs.find(t => t.id === activeTab).color
-                            } flex items-center justify-center text-white text-xs`}
+                            className={`flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-pp-teal/20 text-pp-teal`}
                           >
-                            ✓
+                            <CheckIcon className='w-3 h-3' />
                           </div>
                           <span className='text-white/80'>
                             {t(
@@ -648,23 +681,25 @@ const WhyUs = () => {
               </div>
 
               <div className='md:col-span-2 order-1 md:order-2 relative'>
-                {/* Decorative blurs removed */}
-
                 <motion.div
                   key={activeTab}
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
-                  className='relative bg-gradient-to-br from-white/5 to-transparent p-4 rounded-xl shadow-lg backdrop-blur-sm border border-white/10'
+                  className='relative'
                 >
-                  <div
-                    className={`aspect-square w-3/5 sm:w-4/5 md:w-full mx-auto rounded-lg overflow-hidden flex items-center justify-center bg-gradient-to-br ${
-                      approachTabs.find(t => t.id === activeTab).color
-                    }/20`}
-                  >
-                    <div className='text-5xl sm:text-6xl md:text-8xl transform transition-transform hover:scale-110 duration-700'>
-                      {approachTabs.find(t => t.id === activeTab).icon}
-                    </div>
+                  <div className='aspect-square w-full rounded-2xl flex items-center justify-center bg-pp-charcoal border border-pp-grey/20'>
+                    <motion.div
+                      key={activeTab}
+                      initial={{ scale: 0.5, opacity: 0, rotate: -30 }}
+                      animate={{ scale: 1, opacity: 1, rotate: 0 }}
+                      transition={{ duration: 0.4, ease: 'easeOut' }}
+                      className='w-3/5 h-3/5 text-pp-teal/50'
+                    >
+                      {React.createElement(
+                        approachTabs.find(t => t.id === activeTab)?.icon,
+                      )}
+                    </motion.div>
                   </div>
                 </motion.div>
               </div>
@@ -710,13 +745,13 @@ const WhyUs = () => {
                 >
                   <div className='flex flex-col md:flex-row gap-6 items-center'>
                     <motion.div
-                      whileHover={{ scale: 1.05, rotate: 5 }}
-                      className='flex-shrink-0 w-24 h-24 rounded-full overflow-hidden border-2 border-white/20 shadow-lg'
+                      whileHover={{ scale: 1.05 }}
+                      className='flex-shrink-0 w-32 h-24 bg-white/10 p-2 rounded-xl flex items-center justify-center overflow-hidden border-2 border-white/20 shadow-lg'
                     >
                       <img
                         src={testimonials[currentTestimonial].image}
-                        alt={testimonials[currentTestimonial].name}
-                        className='w-full h-full object-cover'
+                        alt={`${testimonials[currentTestimonial].name} logo`}
+                        className='w-full h-full object-contain'
                       />
                     </motion.div>
 
@@ -817,17 +852,17 @@ const WhyUs = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
-              className='inline-block px-6 py-2 rounded-full bg-[#2d5f59]/20 text-white/90 text-sm font-medium mb-8 border border-[#2d5f59]/30'
+              className='inline-block px-6 py-2 rounded-full bg-pp-teal/20 text-pp-ice/90 text-sm font-medium mb-8 border border-pp-teal/30'
             >
-              {t('whyUs.ctaSection.label', 'TAKE THE NEXT STEP')}
+              {t('whyUs.ctaSection.label', 'Take the next step')}
             </motion.span>
 
             <h2 className='text-3xl md:text-5xl font-light mb-6'>
-              {t('whyUs.ctaSection.title', 'Ready to Create Something')}{' '}
+              {t('whyUs.ctaSection.title', 'Ready to create something')}{' '}
               <span
                 className={`${GRADIENT_CLASS} bg-clip-text text-transparent`}
               >
-                {t('whyUs.ctaSection.highlight', 'Exceptional?')}
+                {t('whyUs.ctaSection.highlight', 'exceptional?')}
               </span>
             </h2>
 
@@ -879,24 +914,24 @@ const WhyUs = () => {
               className='flex flex-wrap justify-center gap-x-10 gap-y-4 mt-16 text-white/70 text-sm'
             >
               <div className='flex items-center gap-3'>
-                <span className='text-[#F4FF78]'>✓</span>{' '}
+                <span className='text-pp-teal'>✓</span>{' '}
                 {t(
                   'whyUs.ctaSection.trustIndicators.quality',
-                  'Premium Quality',
+                  'Premium quality',
                 )}
               </div>
               <div className='flex items-center gap-3'>
-                <span className='text-[#F4FF78]'>✓</span>{' '}
+                <span className='text-pp-teal'>✓</span>{' '}
                 {t(
-                  'whyUs.ctaSection.trustIndicators.turnaround',
-                  'Fast Turnaround',
+                  'whyUs.ctaSection.trustIndicators.timelines',
+                  'Reliable timelines',
                 )}
               </div>
               <div className='flex items-center gap-3'>
-                <span className='text-[#F4FF78]'>✓</span>{' '}
+                <span className='text-pp-teal'>✓</span>{' '}
                 {t(
                   'whyUs.ctaSection.trustIndicators.satisfaction',
-                  'Satisfaction Guaranteed',
+                  'Satisfaction guaranteed',
                 )}
               </div>
             </motion.div>
