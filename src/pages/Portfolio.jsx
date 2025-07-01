@@ -33,10 +33,6 @@ const Portfolio = () => {
     },
     { id: 'events', label: t('portfolio.categories.events', 'Events') },
     { id: 'social', label: t('portfolio.categories.social', 'Social Media') },
-    {
-      id: 'corporate',
-      label: t('portfolio.categories.corporate', 'Corporate'),
-    },
   ];
 
   // Social media reels data with metadata
@@ -44,11 +40,13 @@ const Portfolio = () => {
     {
       id: 'reel-1',
       src: `${import.meta.env.VITE_CLOUDFRONT_URL}/videos/smi_reel_tavi.mp4`,
-      title: 'SMI Event Highlight',
+      title: t('portfolio.reels.smi.title', 'SMI Event Highlight'),
       category: 'social',
-      type: 'Instagram Reel',
-      description: 'Dynamic event coverage for social media',
-      tags: ['Event', 'Social Media', 'Short Form'],
+      type: t('portfolio.reels.instagramReel', 'Instagram Reel'),
+      description: t('portfolio.reels.smi.description', 'Dynamic event coverage for social media'),
+      tags: [
+        t('portfolio.tags.event', 'Event')
+      ],
       views: '32k+',
     },
     {
@@ -56,11 +54,15 @@ const Portfolio = () => {
       src: `${
         import.meta.env.VITE_CLOUDFRONT_URL
       }/videos/Reel_2_penthouse_speech.mp4`,
-      title: 'Penthouse Experience',
+      title: t('portfolio.reels.penthouseSpeech.title', 'Penthouse Experience'),
       category: 'social',
-      type: 'Social Media Content',
-      description: 'Luxury real estate social content',
-      tags: ['Real Estate', 'Luxury', 'Social Media'],
+      type: t('portfolio.reels.instagramReel', 'Instagram Reel'),
+      description: t('portfolio.reels.penthouseSpeech.description', 'Luxury real estate social content'),
+      tags: [
+        t('portfolio.tags.realEstate', 'Real estate'),
+        t('portfolio.tags.luxury', 'Luxury'),
+        t('portfolio.tags.socialMedia', 'Social media')
+      ],
       views: '50k+',
     },
     {
@@ -68,11 +70,15 @@ const Portfolio = () => {
       src: `${
         import.meta.env.VITE_CLOUDFRONT_URL
       }/videos/Reel_1_penthouse_view.mp4`,
-      title: 'Penthouse Views',
+      title: t('portfolio.reels.penthouseViews.title', 'Penthouse Views'),
       category: 'social',
-      type: 'Instagram Reel',
-      description: 'Stunning property views for social platforms',
-      tags: ['Property', 'Views', 'Social Media'],
+      type: t('portfolio.reels.instagramReel', 'Instagram Reel'),
+      description: t('portfolio.reels.penthouseViews.description', 'Stunning property views for social platforms'),
+      tags: [
+        t('portfolio.tags.property', 'Property'),
+        t('portfolio.tags.views', 'Views'),
+        t('portfolio.tags.socialMedia', 'Social media')
+      ],
       views: '28k+',
     },
   ];
@@ -181,13 +187,13 @@ const Portfolio = () => {
         <div className='parallax-element absolute top-1/2 left-1/2 w-24 h-24 bg-gradient-to-r from-[#2d5f59]/15 to-[#F4FF78]/15 rounded-full blur-2xl'></div>
       </div>
 
-      {/* Hero Intro - Simplified */}
+      {/* Hero intro simplified */}
       <div className='max-w-4xl mx-auto text-center mb-16 px-4 sm:px-6 relative z-10'>
         <h1
           className='text-4xl sm:text-5xl md:text-6xl font-extralight tracking-tight leading-tight mb-6'
           style={{ color: '#eaebec' }}
         >
-          {t('portfolio.ourPortfolio', 'Our')} <span style={{ color: '#9eb6a9' }}>portfolio</span>
+          {t('portfolio.ourText', 'Our')} <span style={{ color: '#9eb6a9' }}>{t('portfolio.portfolioText', 'portfolio')}</span>
         </h1>
 
         <p className='text-xl text-white/70 font-light max-w-2xl mx-auto leading-relaxed mb-12'>
@@ -198,8 +204,8 @@ const Portfolio = () => {
         </p>
       </div>
 
-      {/* Category Filter */}
-      <div className='flex flex-wrap justify-center gap-4 mb-16 max-w-4xl mx-auto'>
+      {/* Category filter */}
+      <div className='flex flex-wrap justify-center gap-4 mb-12 max-w-4xl mx-auto'>
         {categories.map(category => (
           <button
             key={category.id}
@@ -226,7 +232,7 @@ const Portfolio = () => {
         ))}
       </div>
 
-      {/* Projects Grid */}
+      {/* Projects grid */}
       <motion.div
         layout
         className='grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto relative z-10'
@@ -314,7 +320,7 @@ const Portfolio = () => {
                       {/* Quality indicator */}
                       <div className='flex items-center text-white/60 text-xs'>
                         <div className='w-2 h-2 bg-[#F4FF78] rounded-full mr-1 animate-pulse'></div>
-                        4K
+                        {t('portfolio.quality4k', '4K')}
                       </div>
                     </div>
                   </div>
@@ -323,7 +329,7 @@ const Portfolio = () => {
                 {/* Project type badge */}
                 <div className='absolute top-4 left-4'>
                   <span className='px-3 py-1 bg-black/50 backdrop-blur-sm text-white text-xs rounded-full border border-white/20'>
-                    {proj.type || 'Video Production'}
+                    {proj.typeKey ? t(proj.typeKey, proj.type || 'Video production') : t('portfolio.types.videoProduction', 'Video production')}
                   </span>
                 </div>
               </div>
@@ -332,21 +338,9 @@ const Portfolio = () => {
         ))}
       </motion.div>
 
-      {/* Reels Section */}
+      {/* Reels section */}
       {shouldShowReels && (
-        <div id='reels' className='mt-32 max-w-7xl mx-auto px-4 sm:px-6'>
-          <div className='text-center mb-16'>
-            <h2 className='text-3xl sm:text-4xl font-semibold mb-4 text-white tracking-tight'>
-              {t('portfolio.reelsTitle', 'Social Media Reels')}
-            </h2>
-            <p className='text-lg text-white/60 max-w-2xl mx-auto'>
-              {t(
-                'portfolio.reelsSubtitle',
-                'Engaging short-form content designed for maximum social media impact',
-              )}
-            </p>
-          </div>
-
+        <div id='reels' className='mt-24 max-w-7xl mx-auto px-4 sm:px-6'>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12'>
             {socialReels.map((reel, i) => (
               <div
@@ -377,12 +371,9 @@ const Portfolio = () => {
                   {/* Always visible overlay with reel info */}
                   <div className='absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent'>
                     <div className='absolute bottom-0 left-0 right-0 p-4'>
-                      <h3 className='text-white font-semibold text-sm mb-1'>
+                      <h3 className='text-white font-semibold text-sm mb-3'>
                         {reel.title}
                       </h3>
-                      <p className='text-white/80 text-xs mb-2 line-clamp-2'>
-                        {reel.description}
-                      </p>
                       <div className='flex flex-wrap gap-1 mb-3'>
                         {reel.tags.slice(0, 2).map((tag, index) => (
                           <span
@@ -416,10 +407,10 @@ const Portfolio = () => {
                     </div>
                   </div>
 
-                  {/* Social Media Badge */}
+                  {/* Social media badge */}
                   <div className='absolute top-3 left-3'>
                     <span className='px-2 py-1 bg-black/50 backdrop-blur-sm text-white text-xs rounded border border-white/20 font-medium'>
-                      Social Media
+                      {t('portfolio.socialMedia', 'Social media')}
                     </span>
                   </div>
                 </div>
@@ -429,99 +420,7 @@ const Portfolio = () => {
         </div>
       )}
 
-      {/* Client Testimonials Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true, margin: '-100px' }}
-        className='mt-32 max-w-6xl mx-auto px-4 sm:px-6'
-      >
-        <div className='text-center mb-16'>
-          <h2 className='text-3xl sm:text-4xl font-semibold mb-4 text-white tracking-tight'>
-            {t('portfolio.testimonials.title', 'What Our Clients Say')}
-          </h2>
-          <p className='text-lg text-white/60 max-w-2xl mx-auto'>
-            {t(
-              'portfolio.testimonials.subtitle',
-              'Trusted by luxury brands and discerning clients worldwide',
-            )}
-          </p>
-        </div>
-
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-          {' '}
-          {[
-            {
-              name: "Zurich Sotheby's International Realty",
-              role: t(
-                'portfolio.testimonials.client1.role',
-                'Luxury Real Estate',
-              ),
-              content: t(
-                'portfolio.testimonials.client1.content',
-                'Prestige Production elevated our property presentations to an entirely new level. Their cinematic approach and attention to detail perfectly captures the essence of luxury real estate.',
-              ),
-              rating: 5,
-            },
-            {
-              name: 'SMI Event Management',
-              role: t(
-                'portfolio.testimonials.client2.role',
-                'Event Production',
-              ),
-              content: t(
-                'portfolio.testimonials.client2.content',
-                'Working with Prestige Production was exceptional. They transformed our event into a visual masterpiece that our guests still talk about months later.',
-              ),
-              rating: 5,
-            },
-            {
-              name: 'Private Client',
-              role: t(
-                'portfolio.testimonials.client3.role',
-                'Personal Project',
-              ),
-              content: t(
-                'portfolio.testimonials.client3.content',
-                "The team's professionalism and creative vision exceeded all expectations. They delivered a final product that truly captured our vision with stunning quality.",
-              ),
-              rating: 5,
-            },
-          ].map((testimonial, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className='bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-[#2d5f59]/50 transition-all duration-300'
-            >
-              <div className='flex items-center mb-4'>
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <svg
-                    key={i}
-                    className='w-4 h-4 text-[#F4FF78] fill-current'
-                    viewBox='0 0 20 20'
-                  >
-                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
-                  </svg>
-                ))}
-              </div>
-              <p className='text-white/80 text-sm leading-relaxed mb-4 italic'>
-                "{testimonial.content}"
-              </p>
-              <div className='border-t border-white/10 pt-4'>
-                <p className='text-white font-medium text-sm'>
-                  {testimonial.name}
-                </p>
-                <p className='text-white/60 text-xs'>{testimonial.role}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* Call to Action Section */}
+      {/* Call to action section */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -531,7 +430,7 @@ const Portfolio = () => {
       >
         <div className='bg-gradient-to-r from-[#2d5f59]/10 to-[#F4FF78]/10 backdrop-blur-sm rounded-3xl p-12 border border-white/10'>
           <h2 className='text-3xl sm:text-4xl font-semibold mb-6 text-white'>
-            {t('portfolio.cta.title', 'Ready to Create Your Vision?')}
+            {t('portfolio.cta.title', 'Ready to create your vision?')}
           </h2>
           <p className='text-lg text-white/70 mb-8 max-w-2xl mx-auto leading-relaxed'>
             {t(
@@ -543,7 +442,7 @@ const Portfolio = () => {
             to={`/${currentLang}/contact`}
             className='inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#2d5f59] to-[#F4FF78] text-black font-semibold rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 group'
           >
-            {t('portfolio.cta.button', 'Start Your Project')}
+            {t('portfolio.cta.button', 'Start your project')}
             <svg
               className='w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform'
               fill='none'
