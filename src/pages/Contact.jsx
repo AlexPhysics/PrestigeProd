@@ -33,7 +33,7 @@ const Contact = () => {
     document.title = t('contact.pageTitle', 'Contact | Prestige Production');
   }, [t]);
 
-  // Handle URL parameters for prefilling form
+  // Handle URL parameters and selected package for prefilling form
   useEffect(() => {
     const urlParams = new URLSearchParams(location.search);
     const service = urlParams.get('service');
@@ -70,8 +70,28 @@ const Contact = () => {
           service_type: service,
         });
       }
+    } else if (selectedPackage) {
+      // Create a personalized message based on the selected package
+      const prefillMessage =
+        selectedPackage === 'Custom Project'
+          ? `Hello! I'm interested in creating a custom project with Prestige Production. I'd like to discuss my specific requirements and get a tailored quote.`
+          : `Hi! I'm interested in the "${selectedPackage}" package. I'd like to learn more about what's included and discuss my project requirements.`;
+
+      setFormData(prev => ({
+        ...prev,
+        message: prefillMessage,
+      }));
+
+      // Analytics: Track package selection
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'package_inquiry', {
+          event_category: 'Contact',
+          event_label: selectedPackage,
+          package_type: selectedPackage,
+        });
+      }
     }
-  }, [location.search]);
+  }, [location.search, selectedPackage]);
 
   useEffect(() => {
     const calendlyScriptId = 'calendly-widget-script';
@@ -320,7 +340,6 @@ const Contact = () => {
             role='alert'
             aria-live='polite'
           >
-            <div className='text-4xl mb-4'>✨</div>
             <p className='text-pp-teal text-xl mb-2 font-medium'>
               {t(
                 'contact.successMessage',
@@ -353,9 +372,21 @@ const Contact = () => {
                 if (service && subject) {
                   return `${subject} - ${currentLang.toUpperCase()}`;
                 }
+                if (selectedPackage) {
+                  return `New inquiry for ${selectedPackage} - ${currentLang.toUpperCase()}`;
+                }
                 return `Message from Prestige Production site (${currentLang})`;
               })()}
             />
+
+            {/* Include selected package in form data */}
+            {selectedPackage && (
+              <input
+                type='hidden'
+                name='Selected Package'
+                value={selectedPackage}
+              />
+            )}
 
             <div className='fade-in'>
               <label htmlFor='name' className='block text-sm mb-2 font-medium'>
