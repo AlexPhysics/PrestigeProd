@@ -77,11 +77,11 @@
       "mostPopular": "le plus populaire",
       "videoProduction": {
         "title": "Production vidéo",
-        "videoProductionDesc": "Des vidéos cinématiques qui mettent en valeur votre marque, votre propriété ou votre événement avec une qualité professionnelle.",
+        "videoProductionDesc": "Des vidéos cinématiques qui mettent en valeur votre marque, votre propriété ou votre événement avec une qualité exceptionnelle.",
         "videoProductionPrice": "",
         "videoFeature1": "Caméras professionnelles Sony et séquences par drone",
         "videoFeature2": "Montage complet avec étalonnage des couleurs et audio",
-        "videoFeature3": "Vidéos grand format et versions pour les médias sociaux",
+        "videoFeature3": "Vidéos grand format et versions pour les réseaux sociaux",
         "videoFeature4": "Révisions incluses jusqu'à ce que vous soyez satisfait",
         "videoProductionCta": "Sélectionner le forfait vidéo"
       },
@@ -108,26 +108,26 @@
       }
     },
     "custom": {
-      "title": "Besoin de quelque chose de différent ? créons un forfait sur mesure.",
+      "title": "Besoin de quelque chose de différent ? Créons un forfait sur mesure.",
       "description": "Vous avez un projet unique en tête ? Nous sommes experts dans la création de solutions sur mesure adaptées à vos besoins exacts. Discutons de votre vision.",
       "cta": "Discutons"
     },
     "faq": {
-      "title": "Foire aux questions",
-      "subtitle": "Obtenez des réponses aux questions fréquentes sur nos services, notre processus et notre livraison.",
-      "clickToExpand": "Cliquez sur une question pour voir la réponse",
-      "moreQuestions": "Vous avez d'autres questions ? Nous sommes là pour vous aider.",
+      "title": "Vos questions, nos réponses",
+      "subtitle": "Curieux de savoir comment nous travaillons, ce que nous offrons ou combien cela coûte ? Vous êtes au bon endroit !",
+      "clickToExpand": "Cliquez simplement sur une question pour découvrir la réponse.",
+      "moreQuestions": "Vous avez encore une question brûlante ? N'hésitez pas !",
       "contactUs": "Contactez notre équipe",
-      "q1": "Qu'est-ce qui est inclus dans vos forfaits de production vidéo ?",
-      "a1": "Nos forfaits incluent tout, depuis la consultation initiale et le développement du concept créatif jusqu'à la livraison finale. Cela couvre la planification de pré-production, le tournage professionnel avec équipement cinéma, la post-production, l'étalonnage, le mixage audio, et les exports optimisés pour vos plateformes choisies. Nous fournissons également la gestion de projet et une communication illimitée tout au long du processus.",
-      "q2": "Combien de temps prend un projet type du début à la fin ?",
-      "a2": "Le délai dépend de l'envergure et de la complexité du projet. Pour les vidéos d'entreprise standard ou les présentations immobilières, nous livrons généralement dans les 7-10 jours ouvrables après le tournage. Les projets plus complexes comme les documentaires de marque ou les tournages multi-sites peuvent prendre 2-3 semaines. Nous fournissons toujours un calendrier détaillé lors de notre consultation initiale pour s'aligner avec votre planning marketing.",
-      "q3": "Travaillez-vous avec des marques internationales et du contenu multilingue ?",
-      "a3": "Absolument. Nous sommes spécialisés dans la création de contenu pour audiences internationales et travaillons régulièrement avec des marques à travers l'Europe et au-delà. Nous offrons des solutions multilingues complètes incluant sous-titrage, voix off, et services de traduction en anglais, français, allemand et italien. Notre contenu est conçu pour résonner dans différents marchés et contextes culturels.",
-      "q4": "Qu'est-ce qui rend votre approche différente des autres agences vidéo ?",
-      "a4": "En tant qu'équipe boutique de deux personnes, nous offrons un accès direct aux créatifs travaillant sur votre projet, garantissant que votre vision soit parfaitement capturée. Chaque projet reçoit notre pleine attention, sans sous-traitance ni équipes junior. Nous combinons la précision suisse avec la narration cinématographique, utilisant uniquement des équipements professionnels de niveau cinéma et des techniques de post-production avancées.",
-      "q5": "Pouvez-vous gérer à la fois la vidéo et la photographie pour le même projet ?",
-      "a5": "Oui, nous sommes un studio de contenu visuel complet. Nous pouvons capturer à la fois vidéo de haute qualité et photographie lors de la même journée de production, maximisant l'efficacité et assurant la cohérence visuelle à travers tout votre contenu. Cette approche est particulièrement précieuse pour les projets immobiliers, d'entreprise et de marque où vous avez besoin d'une suite de contenu complète."
+      "q1": "Quel genre de magie photo et vidéo créez-vous ?",
+      "a1": "Nous sommes un duo créatif offrant des services complets, spécialisé dans les visuels qui subliment les projets d'entreprise, de marque et immobiliers. Pensez aux films de marque cinématographiques, aux témoignages clients émouvants, aux portraits professionnels impeccables et aux photographies architecturales époustouflantes. Ce qui nous distingue vraiment, c'est notre talent pour créer une histoire visuelle complète, en capturant à la fois la vidéo et les photos en une seule séance fluide et efficace pour que votre marque reste cohérente et soignée.",
+      "q2": "Comment déterminez-vous le prix d'un projet ?",
+      "a2": "Puisque chaque projet est unique comme une empreinte digitale, nous vous préparons un devis personnalisé juste après notre discussion. Nos prix prennent en compte des éléments tels que la complexité de la pré-production, le nombre de jours de tournage, la taille de notre équipe, l'équipement sophistiqué dont nous aurons besoin, et tous les extras de post-production (comme les superbes animations graphiques ou les sous-titres en différentes langues). Nous vous fournirons une proposition détaillée et limpide, sans surprise. N'hésitez pas à nous contacter, sans engagement, pour un devis adapté à vos objectifs précis !",
+      "q3": "Quel est votre processus créatif et qu'en est-il des révisions ?",
+      "a3": "Notre processus est axé sur la collaboration et une communication fluide. Il se déroule généralement comme suit : 1) Nous discutons et élaborons une stratégie, 2) Nous planifions tout dans les moindres détails, 3) Lumières, caméra, action ! (jour de tournage), et 4) Nous réalisons notre magie de post-production. Vous recevrez un brouillon pour examen, et nos forfaits incluent généralement deux séries de révisions pour nous assurer que le résultat final correspond exactement à votre vision.",
+      "q4": "Travaillez-vous uniquement à Zurich, ou pouvez-vous vous déplacer ?",
+      "a4": "Absolument, nous sommes prêts à nous déplacer où que vous soyez ! Bien que notre base soit à Zurich, nous servons avec plaisir des clients dans toute la Suisse et à travers l'Europe. Pour que tout soit super clair, tous les frais de transport et de déplacement pour notre équipe et notre équipement sont toujours listés séparément dans nos propositions, peu importe où votre projet nous mène.",
+      "q5": "Qu'est-ce qui différencie votre studio boutique d'une grande agence ?",
+      "a5": "En tant qu'équipe de deux personnes très concentrée, votre projet n'est pas qu'un simple numéro, c'est notre priorité absolue. Vous travaillerez directement avec nous, les créatifs, du début à la fin, pour que votre vision ne soit jamais perdue dans la traduction. Nous combinons la précision suisse avec une narration cinématographique captivante, en utilisant un équipement de qualité cinéma de premier ordre pour offrir une qualité exceptionnelle sans les frais généraux importants ou l'ambiance impersonnelle que vous pourriez trouver dans une grande agence."
     },
     "offerings": {
       "title": "Types de contenu premium",
@@ -141,8 +141,19 @@
         "description": "Des images haute résolution époustouflantes qui capturent chaque détail avec un éclairage et une composition parfaits."
       },
       "social": {
-        "title": "Contenu pour les médias sociaux",
+        "title": "Contenu pour les réseaux sociaux",
         "description": "Des reels et des courts métrages percutants, optimisés pour un engagement maximal."
+      },
+      "tags": {
+        "fourKResolution": "Résolution 4K",
+        "cinemaGrade": "Qualité cinéma",
+        "colorGraded": "Étalonnage couleur",
+        "highResolution": "Haute résolution",
+        "perfectLighting": "Éclairage parfait",
+        "professionalEditing": "Montage professionnel",
+        "multiPlatform": "Multi-plateforme",
+        "optimizedFormats": "Formats optimisés",
+        "trendAware": "Tendances actuelles"
       },
       "hdr": {
         "title": "Photographie",
@@ -161,20 +172,20 @@
       }
     },
     "gear": {
-      "title": "Équipement de qualité professionnelle",
-      "description": "Nous investissons dans les dernières technologies de cinéma pour capturer votre marque, vos produits et vos services avec un détail, une précision des couleurs et une qualité cinématographique exceptionnels.",
-      "sonyAlpha": "Ligne de cinéma Sony Alpha",
-      "sonyAlphaAlt": "Caméra Sony Alpha",
-      "sonyAlphaSpec": "Caméra de cinéma numérique compatible 8K avec des performances extraordinaires en basse lumière et une plage dynamique étendue",
-      "sonyAlphaFeature1": "Capteur plein format pour une profondeur de champ cinématographique",
-      "sonyAlphaFeature2": "Science des couleurs professionnelle et capacités d'étalonnage",
-      "sonyAlphaFeature3": "Fréquence d'images élevée pour de superbes ralentis",
-      "djiMavic": "DJI Mavic 3 Pro",
-      "djiMavicAlt": "Drone DJI Mavic 3 Pro",
-      "djiMavicSpec": "Plateforme aérienne professionnelle avec système de caméra Hasselblad et capacités de vol avancées",
-      "djiMavicFeature1": "Caméra CMOS 4/3 Hasselblad pour une qualité d'image supérieure",
-      "djiMavicFeature2": "46 minutes de temps de vol pour une couverture aérienne étendue",
-      "djiMavicFeature3": "Détection d'obstacles omnidirectionnelle pour des prises de vue sûres et complexes"
+      "title": "La technologie derrière des visuels exceptionnels",
+      "description": "Notre équipement soigneusement sélectionné garantit que chaque image capture votre histoire avec une clarté exceptionnelle, des couleurs éclatantes et un impact cinématographique qui résonne avec votre audience.",
+      "sonyAlpha": "Sony a6700",
+      "sonyAlphaAlt": "Caméra Sony a6700",
+      "sonyAlphaSpec": "Technologie cinématographique avancée qui offre des résultats professionnels dans tous les environnements",
+      "sonyAlphaFeature1": "Clarté et détails exceptionnels, même dans des conditions de lumière difficiles",
+      "sonyAlphaFeature2": "Couleurs éclatantes et naturelles qui font ressortir votre marque",
+      "sonyAlphaFeature3": "Séquences au ralenti fluides et captivantes",
+      "djiMavic": "DJI Air 3",
+      "djiMavicAlt": "Drone DJI Air 3",
+      "djiMavicSpec": "Plateforme aérienne avancée qui capture des perspectives époustouflantes avec précision et sécurité",
+      "djiMavicFeature1": "Perspectives aériennes époustouflantes qui subliment votre histoire",
+      "djiMavicFeature2": "Images fluides et stables, des paysages grandioses aux détails complexes",
+      "djiMavicFeature3": "Opérations sûres et précises pour les prises de vue les plus complexes"
     },
     "showcase": {
       "title": "Les résultats parlent d'eux-mêmes",
@@ -202,7 +213,7 @@
   },
   "whyUs": {
     "pageTitle": "Pourquoi nous | Prestige Production",
-    "title": "Pourquoi Travailler Avec Nous ?",
+    "title": "Pourquoi travailler avec nous ?",
     "subtitle": "Nous sommes plus qu'une simple société de production vidéo. Nous sommes un partenaire créatif dédié à donner vie à votre vision avec créativité, précision et des résultats mesurables.",
     "cta": "Travaillons ensemble",
     "teamLabel": "Notre équipe",
@@ -225,7 +236,7 @@
       "highlight": "Approche",
       "vision": {
         "tab": "Vision",
-        "title": "Notre Vision",
+        "title": "Notre vision",
         "description": "Nous commençons par comprendre profondément les besoins et objectifs uniques de votre marque. Chaque projet débute avec une vision claire de ce que signifie le succès pour vous et votre audience.",
         "point1": "Entretiens approfondis avec les parties prenantes pour comprendre les besoins",
         "point2": "Recherche de marché et d'audience",
@@ -233,7 +244,7 @@
       },
       "creativity": {
         "tab": "Créativité",
-        "title": "Notre Créativité",
+        "title": "Notre créativité",
         "description": "Notre équipe créative combine l'expertise artistique avec la réflexion stratégique pour développer des concepts à la fois innovants et alignés avec vos objectifs.",
         "point1": "Développement de concepts innovants",
         "point2": "Expertise en narration visuelle",
@@ -241,7 +252,7 @@
       },
       "execution": {
         "tab": "Exécution",
-        "title": "Notre Exécution",
+        "title": "Notre exécution",
         "description": "Avec une planification méticuleuse et l'excellence technique, nous donnons vie aux concepts en utilisant des équipements premium et des techniques de production.",
         "point1": "Équipement premium et valeurs de production",
         "point2": "Équipe experte et excellence technique",
@@ -249,7 +260,7 @@
       },
       "results": {
         "tab": "Résultats",
-        "title": "Nos Résultats",
+        "title": "Nos résultats",
         "description": "Nous mesurons le succès à travers l'engagement de l'audience, les changements de perception de marque et les résultats commerciaux, livrant du contenu qui obtient de vrais résultats.",
         "point1": "Suivi des métriques de performance",
         "point2": "Analyse de l'engagement de l'audience",
@@ -343,7 +354,7 @@
       "industry": "Industrie",
       "highlights": "Points forts"
     },
-    "reelsTitle": "Reels pour médias sociaux",
+            "reelsTitle": "Reels pour réseaux sociaux",
     "reelsSubtitle": "Contenu court et engageant conçu pour un impact maximum sur les réseaux sociaux",
     "reels": {
       "instagramReel": "Reel Instagram",
@@ -372,7 +383,7 @@
     "defaultDescription": "Production cinématographique premium réalisée avec attention aux détails et vision artistique.",
     "viewProject": "Voir le projet",
     "testimonials": {
-      "title": "Ce Que Disent Nos Clients",
+      "title": "Ce que disent nos clients",
       "subtitle": "Approuvé par les marques de luxe et les clients exigeants du monde entier",
       "client1": {
         "role": "Immobilier de Luxe",
@@ -598,7 +609,7 @@
         "benefit4Desc": "Avec seulement 38 % des agents utilisant la vidéo, le contenu premium vous positionne comme le choix de référence.",
         "proofTitle": "Impact de ce projet",
         "proofDesc": "Résultats réels de notre campagne penthouse de Zurich",
-        "impactSocialReach": "Portée médias sociaux",
+        "impactSocialReach": "Portée réseaux sociaux",
         "impactSocialReachValue": "50K+ vues",
         "impactEngagement": "Taux d'engagement",
         "impactEngagementValue": "7x au-dessus de la moyenne",

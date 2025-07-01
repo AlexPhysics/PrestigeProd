@@ -112,21 +112,21 @@
       "cta": "Parliamone"
     },
     "faq": {
-      "title": "Domande frequenti",
-      "subtitle": "Ottenete risposte alle domande più comuni sui nostri servizi, processi e consegne.",
-      "clickToExpand": "Clicca su una domanda per vedere la risposta",
-      "moreQuestions": "Avete altre domande? Siamo qui per aiutarvi.",
-      "contactUs": "Contattate il nostro team",
-      "q1": "Cosa è incluso nei vostri pacchetti di produzione video?",
-      "a1": "I nostri pacchetti includono tutto dalla consultazione iniziale e lo sviluppo del concetto creativo fino alla consegna finale. Questo copre la pianificazione pre-produzione, le riprese professionali con attrezzature cinematografiche, post-produzione, color grading, mixaggio audio ed esportazioni ottimizzate per le vostre piattaforme scelte. Forniamo anche gestione del progetto e comunicazione illimitata durante tutto il processo.",
-      "q2": "Quanto tempo richiede un progetto tipico dall'inizio alla fine?",
-      "a2": "I tempi dipendono dall'ambito e dalla complessità del progetto. Per video aziendali standard o presentazioni immobiliari, in genere consegniamo entro 7-10 giorni lavorativi dopo le riprese. Progetti più complessi come documentari di marca o riprese multi-location possono richiedere 2-3 settimane. Forniamo sempre una timeline dettagliata durante la nostra consultazione iniziale per allinearci con il vostro programma di marketing.",
-      "q3": "Lavorate con marchi internazionali e contenuti multilingue?",
-      "a3": "Assolutamente. Siamo specializzati nella creazione di contenuti per pubblici internazionali e lavoriamo regolarmente con marchi in tutta Europa e oltre. Offriamo soluzioni multilingue complete inclusi sottotitolazione, voice-over e servizi di traduzione in inglese, francese, tedesco e italiano. I nostri contenuti sono progettati per risuonare in diversi mercati e contesti culturali.",
-      "q4": "Cosa rende il vostro approccio diverso dalle altre agenzie video?",
-      "a4": "Come team boutique di due persone, offriamo accesso diretto ai creativi che lavorano sul vostro progetto, garantendo che la vostra visione sia perfettamente catturata. Ogni progetto riceve la nostra piena attenzione, senza outsourcing o team junior. Combiniamo la precisione svizzera con la narrazione cinematografica, utilizzando solo attrezzature professionali di livello cinematografico e tecniche di post-produzione avanzate.",
-      "q5": "Potete gestire sia video che fotografia per lo stesso progetto?",
-      "a5": "Sì, siamo uno studio di contenuti visivi a servizio completo. Possiamo realizzare sia video di alta qualità che fotografie nello stesso giorno di produzione, massimizzando l'efficienza e garantendo coerenza visiva in tutti i tuoi contenuti. Questo approccio è particolarmente prezioso per progetti immobiliari, aziendali e di marca in cui hai bisogno di una suite di contenuti completa."
+      "title": "Le tue domande, le nostre risposte",
+      "subtitle": "Curioso di sapere come lavoriamo, cosa offriamo o quanto costa? Sei nel posto giusto!",
+      "clickToExpand": "Basta cliccare su una domanda per scoprire la risposta.",
+      "moreQuestions": "Hai ancora una domanda scottante? Non essere timido!",
+      "contactUs": "Contatta il nostro team",
+      "q1": "Che tipo di magia fotografica e video create?",
+      "a1": "Siamo un duo creativo a servizio completo, specializzato in elementi visivi che elevano progetti aziendali, di branding e immobiliari. Pensa a film aziendali cinematografici, toccanti testimonianze di clienti, scatti professionali nitidi e fotografie architettoniche mozzafiato. Ciò che ci distingue davvero è la nostra abilità nel creare una storia visiva completa, catturando sia video che foto in un'unica ripresa fluida ed efficiente per mantenere il tuo brand coerente e raffinato.",
+      "q2": "Come viene determinato il prezzo di un progetto?",
+      "a2": "Poiché ogni progetto è unico come un'impronta digitale, ti prepariamo un preventivo personalizzato subito dopo la nostra chiacchierata. Il nostro prezzo considera fattori come la complessità della pre-produzione, il numero di giorni di ripresa, la dimensione del nostro team, l'attrezzatura sofisticata di cui avremo bisogno e tutti gli extra di post-produzione (come fantastiche animazioni grafiche o sottotitoli in diverse lingue). Ti forniremo una proposta dettagliata e cristallina, senza sorprese. Chiacchieriamo, senza alcun impegno, per un preventivo su misura per i tuoi obiettivi esatti!",
+      "q3": "Com'è il vostro processo creativo e come vengono gestite le revisioni?",
+      "a3": "Il nostro processo è incentrato sulla collaborazione e su una comunicazione fluida. Tipicamente si svolge così: 1) Ci incontriamo e strategizziamo, 2) Pianifichiamo ogni dettaglio, 3) Luci, telecamera, azione! (giorno delle riprese), e 4) Lavoriamo alla nostra magia di post-produzione. Riceverai una bozza per la revisione e i nostri pacchetti includono solitamente due cicli di revisioni per assicurarci che il risultato finale sia esattamente quello che hai immaginato.",
+      "q4": "Lavorate solo a Zurigo, o potete viaggiare?",
+      "a4": "Assolutamente, siamo pronti a partire ovunque tu sia! Anche se la nostra base è a Zurigo, serviamo felicemente clienti in tutta la Svizzera e in tutta Europa. Per mantenere tutto super chiaro, tutti i costi di trasporto e di viaggio per il nostro team e l'attrezzatura sono sempre elencati separatamente nelle nostre proposte, indipendentemente da dove ci porti il tuo progetto.",
+      "q5": "Cosa distingue il vostro studio boutique da una grande agenzia?",
+      "a5": "In quanto team di due persone focalizzato, il tuo progetto non è solo un altro numero, è la nostra massima priorità. Lavorerai direttamente con noi, i creativi, dall'inizio alla fine, così la tua visione non andrà mai persa nella traduzione. Uniamo la precisione svizzera con uno storytelling cinematografico accattivante, utilizzando attrezzature di livello cinematografico di prim'ordine per offrire una qualità eccezionale senza i costi generali elevati o l'atmosfera impersonale che potresti trovare in una grande agenzia."
     },
     "offerings": {
       "title": "Tipi di contenuto premium",
@@ -142,6 +142,17 @@
       "social": {
         "title": "Contenuti per i social media",
         "description": "Reel e cortometraggi accattivanti, ottimizzati per il massimo coinvolgimento."
+      },
+      "tags": {
+        "fourKResolution": "Risoluzione 4K",
+        "cinemaGrade": "Qualità cinematografica",
+        "colorGraded": "Correzione colore",
+        "highResolution": "Alta risoluzione",
+        "perfectLighting": "Illuminazione perfetta",
+        "professionalEditing": "Editing professionale",
+        "multiPlatform": "Multi-piattaforma",
+        "optimizedFormats": "Formati ottimizzati",
+        "trendAware": "Seguendo le tendenze"
       },
       "hdr": {
         "title": "Fotografia",
@@ -160,20 +171,20 @@
       }
     },
     "gear": {
-      "title": "Attrezzatura di livello professionale",
-      "description": "Investiamo nelle più recenti tecnologie cinematografiche per catturare il tuo marchio, i tuoi prodotti e i tuoi servizi con dettagli, precisione del colore e qualità cinematografica eccezionali.",
-      "sonyAlpha": "Linea cinema Sony Alpha",
-      "sonyAlphaAlt": "Fotocamera Sony Alpha",
-      "sonyAlphaSpec": "Fotocamera cinematografica digitale con capacità 8K e straordinarie prestazioni in condizioni di scarsa illuminazione e gamma dinamica",
-      "sonyAlphaFeature1": "Sensore full-frame per una profondità di campo cinematografica",
-      "sonyAlphaFeature2": "Scienza del colore professionale e capacità di grading",
-      "sonyAlphaFeature3": "Alta frequenza di fotogrammi per slow motion mozzafiato",
-      "djiMavic": "DJI Mavic 3 Pro",
-      "djiMavicAlt": "Drone DJI Mavic 3 Pro",
-      "djiMavicSpec": "Piattaforma aerea professionale con sistema di fotocamere Hasselblad e capacità di volo avanzate",
-      "djiMavicFeature1": "Fotocamera CMOS 4/3 Hasselblad per una qualità d'immagine superiore",
-      "djiMavicFeature2": "46 minuti di autonomia di volo per una copertura aerea estesa",
-      "djiMavicFeature3": "Rilevamento ostacoli omnidirezionale per riprese sicure e complesse"
+      "title": "La tecnologia dietro le immagini straordinarie",
+      "description": "Le nostre attrezzature selezionate con cura garantiscono che ogni fotogramma catturi la vostra storia con chiarezza eccezionale, colori vivaci e impatto cinematografico che risuona con il vostro pubblico.",
+      "sonyAlpha": "Sony a6700",
+      "sonyAlphaAlt": "Fotocamera Sony a6700",
+      "sonyAlphaSpec": "Tecnologia cinematografica avanzata che garantisce risultati professionali in qualsiasi ambiente",
+      "sonyAlphaFeature1": "Chiarezza e dettagli straordinari, anche in condizioni di luce difficili",
+      "sonyAlphaFeature2": "Colori vivaci e fedeli alla realtà che fanno risaltare il vostro marchio",
+      "sonyAlphaFeature3": "Sequenze al rallentatore fluide e coinvolgenti",
+      "djiMavic": "DJI Air 3",
+      "djiMavicAlt": "Drone DJI Air 3",
+      "djiMavicSpec": "Piattaforma aerea avanzata che cattura prospettive mozzafiato con precisione e sicurezza",
+      "djiMavicFeature1": "Prospettive aeree mozzafiato che elevano la vostra storia",
+      "djiMavicFeature2": "Riprese fluide e stabili, dai paesaggi vasti ai dettagli complessi",
+      "djiMavicFeature3": "Operazioni sicure e precise per le riprese più complesse"
     },
     "showcase": {
       "title": "I risultati parlano da soli",
