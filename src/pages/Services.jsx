@@ -201,12 +201,7 @@ const Services = () => {
                 {t('services.hero.highlight', 'Made Simple')}
               </span>
             </h1>
-            <p className='text-white/90 text-xl md:text-2xl mb-10 max-w-2xl mx-auto'>
-              {t(
-                'services.hero.subtitle',
-                'High-quality visual content that showcases your business professionally. Clear pricing, reliable delivery, exceptional results.',
-              )}
-            </p>
+
             <div className='flex flex-col sm:flex-row gap-5 justify-center mb-16'>
               <Link
                 to={`/${currentLang}/contact`}
@@ -807,18 +802,7 @@ const Services = () => {
                     type='video/mp4'
                   />
                 </video>
-                <div className='absolute inset-0 bg-black/30'></div>
-                <div className='absolute bottom-8 left-8'>
-                  <div className='w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:bg-white/30 transition-colors duration-300'>
-                    <svg
-                      className='w-6 h-6 text-white ml-1'
-                      fill='currentColor'
-                      viewBox='0 0 24 24'
-                    >
-                      <path d='M8 5v14l11-7z' />
-                    </svg>
-                  </div>
-                </div>
+                <div className='absolute inset-0 bg-black/30'></div>F
               </div>
               <div className='space-y-6'>
                 <div className='space-y-2'>
@@ -839,11 +823,20 @@ const Services = () => {
                   )}
                 </p>
                 <div className='flex items-center space-x-4 text-sm text-white/50'>
-                  <span>4K Resolution</span>
+                  <span>
+                    {t(
+                      'services.offerings.tags.fourKResolution',
+                      '4K Resolution',
+                    )}
+                  </span>
                   <span>•</span>
-                  <span>Cinema Grade</span>
+                  <span>
+                    {t('services.offerings.tags.cinemaGrade', 'Cinema Grade')}
+                  </span>
                   <span>•</span>
-                  <span>Color Graded</span>
+                  <span>
+                    {t('services.offerings.tags.colorGraded', 'Color Graded')}
+                  </span>
                 </div>
               </div>
             </motion.div>
@@ -874,11 +867,26 @@ const Services = () => {
                   )}
                 </p>
                 <div className='flex items-center space-x-4 text-sm text-white/50'>
-                  <span>High Resolution</span>
+                  <span>
+                    {t(
+                      'services.offerings.tags.highResolution',
+                      'High Resolution',
+                    )}
+                  </span>
                   <span>•</span>
-                  <span>Perfect Lighting</span>
+                  <span>
+                    {t(
+                      'services.offerings.tags.perfectLighting',
+                      'Perfect Lighting',
+                    )}
+                  </span>
                   <span>•</span>
-                  <span>Professional Editing</span>
+                  <span>
+                    {t(
+                      'services.offerings.tags.professionalEditing',
+                      'Professional Editing',
+                    )}
+                  </span>
                 </div>
               </div>
               <div className='relative lg:order-1'>
@@ -1018,7 +1026,7 @@ const Services = () => {
                   muted
                   loop
                   playsInline
-                  className='absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
+                  className='absolute inset-0 w-full h-full object-contain rounded-3xl transition-transform duration-700 group-hover:scale-105'
                 >
                   <source
                     src={`${
@@ -1027,18 +1035,7 @@ const Services = () => {
                     type='video/mp4'
                   />
                 </video>
-                <div className='absolute inset-0 bg-black/30'></div>
-                <div className='absolute bottom-8 left-8'>
-                  <div className='w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:bg-white/30 transition-colors duration-300'>
-                    <svg
-                      className='w-6 h-6 text-white ml-1'
-                      fill='currentColor'
-                      viewBox='0 0 24 24'
-                    >
-                      <path d='M8 5v14l11-7z' />
-                    </svg>
-                  </div>
-                </div>
+                <div className='absolute inset-0 bg-black/30 rounded-3xl'></div>
               </div>
               <div className='space-y-6'>
                 <div className='space-y-2'>
@@ -1059,11 +1056,23 @@ const Services = () => {
                   )}
                 </p>
                 <div className='flex items-center space-x-4 text-sm text-white/50'>
-                  <span>Multi-Platform</span>
+                  <span>
+                    {t(
+                      'services.offerings.tags.multiPlatform',
+                      'Multi-Platform',
+                    )}
+                  </span>
                   <span>•</span>
-                  <span>Optimized Formats</span>
+                  <span>
+                    {t(
+                      'services.offerings.tags.optimizedFormats',
+                      'Optimized Formats',
+                    )}
+                  </span>
                   <span>•</span>
-                  <span>Trend-Aware</span>
+                  <span>
+                    {t('services.offerings.tags.trendAware', 'Trend-Aware')}
+                  </span>
                 </div>
               </div>
             </motion.div>
