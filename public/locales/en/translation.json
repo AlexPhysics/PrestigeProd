@@ -42,7 +42,6 @@
     "hero": {
       "title": "Professional video & photography",
       "highlight": "made simple",
-      "subtitle": "We create high-quality visuals that present your business professionally, with clear pricing and reliable delivery every time.",
       "cta": "Work with us",
       "primaryCta": "Get a custom quote",
       "secondaryCta": "View our packages"
@@ -58,7 +57,7 @@
     "process": {
       "title": "Simple process,",
       "highlight": "exceptional results",
-      "description": "Working with us is straightforward. We handle the complexity so you can focus on what matters—growing your business and impressing your clients.",
+      "description": "Working with us is straightforward. We handle the complexity so you can focus on what matters, growing your business and impressing your clients.",
       "step1Title": "Consultation",
       "step1Desc": "We explore your goals, audience, and strategic objectives.",
       "step2Title": "Planning",
@@ -90,7 +89,6 @@
         "photoFeature1": "Professional photo session",
         "photoFeature2": "Drone photography available",
         "photoFeature3": "High-quality images for all your needs",
-        "photoFeature4": "Commercial rights included",
         "photographyCta": "Select photo plan"
       },
       "completePackage": {
@@ -111,7 +109,7 @@
       "cta": "Let's talk"
     },
           "faq": {
-        "title": "Your Questions, Answered",
+        "title": "Your questions, answered",
         "subtitle": "Curious about how we work, what we offer, or how much it costs? You've come to the right place!",
         "clickToExpand": "Just click a question to reveal the answer.",
         "moreQuestions": "Still have a burning question? Don't be shy!",
@@ -143,7 +141,7 @@
       },
       "tags": {
         "fourKResolution": "4K resolution",
-        "cinemaGrade": "Cinema grade",
+        "cinemaGrade": "Professional grade",
         "colorGraded": "Color graded",
         "highResolution": "High resolution",
         "perfectLighting": "Perfect lighting",
@@ -220,22 +218,22 @@
     "cta": "Let's work together",
     "teamLabel": "Our team",
     "meetThe": "Meet the",
-    "creativeMinus": "Creative minds",
+    "creativeMinus": "creative minds",
     "skills": {
       "dorian": {
-        "0": "Creative direction",
-        "1": "Cinematography",
-        "2": "Brand strategy"
+        "0": "Cinematography",
+        "1": "Visual Storytelling",
+        "2": "Brand Strategy"
       },
       "alex": {
-        "0": "Technical production",
+        "0": "Editing",
         "1": "Post processing",
         "2": "Color grading"
       }
     },
     "approach": {
       "title": "Our",
-      "highlight": "Approach",
+      "highlight": "approach",
       "vision": {
         "tab": "Vision",
         "title": "Our Vision",
@@ -313,8 +311,8 @@
         "role": "Creative Director",
         "description": {
           "dorianDesc1": "Dorian is the creative force behind our cinematic storytelling.",
-          "dorianDesc2": "His passion for architecture and design helps him turn properties into elegant narratives.",
-          "dorianDesc3": "He leads our visual direction, making sure every project feels unique, premium, and strategic."
+          "dorianDesc2": "His passion for visual arts and narrative helps transform ideas into compelling, memorable films.",
+          "dorianDesc3": "He oversees our visual approach, ensuring every project feels unique, premium, and strategic."
         }
       },
       "alex": {
@@ -521,13 +519,20 @@
     "loadingCalendar": "Loading calendar...",
     "pageTitle": "Contact - Prestige Production",
     "calendarLoadError": "Failed to load calendar",
-    "contactDirectly": "Please contact us directly"
+    "contactDirectly": "Please contact us directly",
+    "selectedPackage": "Selected Package:",
+    "prefillCustomProject": "Hello! I'm interested in creating a custom project with Prestige Production. I'd like to discuss my specific requirements and get a tailored quote.",
+    "prefillSelectedPackage": "Hi! I'm interested in the \"{{packageName}}\" package. I'd like to learn more about what's included and discuss my project requirements.",
+    "prefillVideoProduction": "Hi! I'm interested in your video production services. I'd like to discuss my project and get a custom quote.",
+    "prefillPhotography": "Hello! I'd like to learn more about your photography services and get a quote for my project.",
+    "prefillCompletePackage": "Hi! I'm interested in your complete video + photo package. Could we discuss my project requirements and pricing?",
+    "prefillGeneral": "Hello! I'm interested in your services and would like to discuss my project."
   },
   "footer": {
     "description": "Artistry in every pixel, excellence in every frame.",
     "rights": "All rights reserved",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
+    "privacy": "Privacy solicy",
+    "terms": "Terms of service",
     "followUs": "Follow us",
     "connect": "Connect with us",
     "contact": {
@@ -538,21 +543,21 @@
     },
     "services": {
       "title": "Services",
-      "video": "Video Production",
+      "video": "Video production",
       "photography": "Photography",
-      "social": "Social Media Content",
-      "branding": "Brand Content"
+      "social": "Social media content",
+      "branding": "Brand content"
     },
     "company": {
       "title": "Company",
-      "about": "About Us",
+      "about": "About us",
       "portfolio": "Portfolio",
       "contact": "Contact",
       "services": "Services"
     },
     "legal": {
       "copyright": "© 2025 Prestige Production. All rights reserved.",
-      "privacy": "Privacy Policy"
+      "privacy": "Privacy policy"
     }
   },
   "projects": {
@@ -577,7 +582,7 @@
       "partner": "Zurich Sotheby's",
       "stats": {
         "area": "SQM",
-        "days": "Filming Days",
+        "days": "Filming days",
         "views": "Views",
         "likes": "Likes"
       },

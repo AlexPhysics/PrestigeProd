@@ -45,16 +45,28 @@ const Contact = () => {
 
       switch (service) {
         case 'video-production':
-          prefillMessage = `Hi! I'm interested in your video production services. I'd like to discuss my project and get a custom quote.`;
+          prefillMessage = t(
+            'contact.prefillVideoProduction',
+            "Hi! I'm interested in your video production services. I'd like to discuss my project and get a custom quote.",
+          );
           break;
         case 'photography':
-          prefillMessage = `Hello! I'd like to learn more about your photography services and get a quote for my project.`;
+          prefillMessage = t(
+            'contact.prefillPhotography',
+            "Hello! I'd like to learn more about your photography services and get a quote for my project.",
+          );
           break;
         case 'complete-package':
-          prefillMessage = `Hi! I'm interested in your complete video + photo package. Could we discuss my project requirements and pricing?`;
+          prefillMessage = t(
+            'contact.prefillCompletePackage',
+            "Hi! I'm interested in your complete video + photo package. Could we discuss my project requirements and pricing?",
+          );
           break;
         default:
-          prefillMessage = `Hello! I'm interested in your services and would like to discuss my project.`;
+          prefillMessage = t(
+            'contact.prefillGeneral',
+            "Hello! I'm interested in your services and would like to discuss my project.",
+          );
       }
 
       setFormData(prev => ({
@@ -74,8 +86,15 @@ const Contact = () => {
       // Create a personalized message based on the selected package
       const prefillMessage =
         selectedPackage === 'Custom Project'
-          ? `Hello! I'm interested in creating a custom project with Prestige Production. I'd like to discuss my specific requirements and get a tailored quote.`
-          : `Hi! I'm interested in the "${selectedPackage}" package. I'd like to learn more about what's included and discuss my project requirements.`;
+          ? t(
+              'contact.prefillCustomProject',
+              "Hello! I'm interested in creating a custom project with Prestige Production. I'd like to discuss my specific requirements and get a tailored quote.",
+            )
+          : t(
+              'contact.prefillSelectedPackage',
+              "Hi! I'm interested in the \"{packageName}\" package. I'd like to learn more about what's included and discuss my project requirements.",
+              { packageName: selectedPackage },
+            );
 
       setFormData(prev => ({
         ...prev,

@@ -52,12 +52,7 @@ const Services = () => {
       titleKey: 'photography',
       descriptionKey: 'photographyDesc',
       priceKey: 'photographyPrice',
-      featuresKeys: [
-        'photoFeature1',
-        'photoFeature2',
-        'photoFeature3',
-        'photoFeature4',
-      ],
+      featuresKeys: ['photoFeature1', 'photoFeature2', 'photoFeature3'],
       ctaKey: 'photographyCta',
       color: 'sage',
       icon: 'camera',
@@ -110,9 +105,10 @@ const Services = () => {
         {/* Mobile-first approach */}
         <div className='block md:hidden'>
           {/* Mobile Hero - Simplified */}
-          <div className='relative min-h-[100vh] flex flex-col justify-center px-4 py-12'>
+          <div className='relative min-h-screen flex flex-col justify-between px-4 py-8'>
+            {/* Video Background */}
             <div className='absolute inset-0 w-full h-full'>
-              <div className='w-full h-[60vh] max-w-lg mx-auto rounded-xl overflow-hidden'>
+              <div className='w-full h-full'>
                 <video
                   src={highlightSecondVideo}
                   autoPlay
@@ -122,34 +118,32 @@ const Services = () => {
                   className='w-full h-full object-cover'
                 />
               </div>
-              <div className='absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80' />
+              <div className='absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80' />
             </div>
 
+            {/* Content */}
             <motion.div
-              className='relative z-20 text-center max-w-sm mx-auto'
+              className='relative z-20 flex flex-col justify-center flex-1 text-center max-w-sm mx-auto py-12'
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className='text-3xl font-light tracking-tight mb-4'>
-                {t('services.hero.title', 'Professional Video & Photography')}
-                <br />
-                <span
-                  className={`${GRADIENT_CLASS} bg-clip-text text-transparent font-medium`}
-                >
-                  {t('services.hero.highlight', 'Made Simple')}
-                </span>
-              </h1>
-              <p className='text-white/90 text-lg mb-8 leading-relaxed'>
-                {t(
-                  'services.hero.subtitle',
-                  'High-quality visual content that showcases your business professionally.',
-                )}
-              </p>
-              <div className='flex flex-col gap-3 mb-12'>
+              <div className='mb-8'>
+                <h1 className='text-3xl sm:text-4xl font-light tracking-tight mb-4 leading-tight'>
+                  {t('services.hero.title', 'Professional Video & Photography')}
+                  <br />
+                  <span
+                    className={`${GRADIENT_CLASS} bg-clip-text text-transparent font-medium`}
+                  >
+                    {t('services.hero.highlight', 'Made Simple')}
+                  </span>
+                </h1>
+              </div>
+
+              <div className='flex flex-col gap-4 px-4'>
                 <Link
                   to={`/${currentLang}/contact`}
-                  className='bg-white text-black text-base font-medium px-6 py-3 rounded-full hover:bg-gray-200 transition duration-300'
+                  className='bg-white text-black text-base font-medium px-8 py-4 rounded-full hover:bg-gray-200 transition duration-300 shadow-lg'
                 >
                   {t('services.hero.primaryCta', 'Get Custom Quote')}
                 </Link>
@@ -159,7 +153,7 @@ const Services = () => {
                     e.preventDefault();
                     smoothScrollTo('packages');
                   }}
-                  className='bg-transparent border-2 border-white/30 text-white text-base font-medium px-6 py-3 rounded-full hover:bg-white/10 transition duration-300'
+                  className='bg-transparent border-2 border-white/30 text-white text-base font-medium px-8 py-4 rounded-full hover:bg-white/10 transition duration-300'
                 >
                   {t('services.hero.secondaryCta', 'View Packages')}
                 </a>
@@ -169,91 +163,97 @@ const Services = () => {
         </div>
 
         {/* Desktop Hero - Full featured */}
-        <div className='hidden md:flex min-h-[100vh] items-center justify-center py-20'>
+        <div className='hidden md:block relative min-h-[100vh]'>
+          {/* Video Background */}
           <div className='absolute inset-0 w-full h-full'>
-            <div className='w-full h-full max-w-7xl mx-auto px-6 flex items-center justify-center'>
-              <div className='w-full aspect-video max-h-[600px] lg:max-h-[700px] rounded-xl overflow-hidden'>
-                <video
-                  src={highlightSecondVideo}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className='w-full h-full object-cover'
-                />
-              </div>
-            </div>
-            <div className='absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/90 z-10' />
+            <video
+              src={highlightSecondVideo}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className='w-full h-full object-cover'
+            />
+            <div className='absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70' />
           </div>
 
-          <motion.div
-            className='relative z-20 text-center px-6 max-w-4xl mx-auto'
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-          >
-            <h1 className='text-4xl md:text-6xl lg:text-7xl font-light tracking-tight mb-6'>
-              {t('services.hero.title', 'Professional Video & Photography')}{' '}
-              <br />
-              <span
-                className={`${GRADIENT_CLASS} bg-clip-text text-transparent font-medium`}
-              >
-                {t('services.hero.highlight', 'Made Simple')}
-              </span>
-            </h1>
-
-            <div className='flex flex-col sm:flex-row gap-5 justify-center mb-16'>
-              <Link
-                to={`/${currentLang}/contact`}
-                className='bg-white text-black text-base font-medium px-8 py-4 rounded-full hover:bg-gray-200 transition duration-300 shadow-lg hover:shadow-xl'
-              >
-                {t('services.hero.primaryCta', 'Get Custom Quote')}
-              </Link>
-              <a
-                href='#packages'
-                onClick={e => {
-                  e.preventDefault();
-                  smoothScrollTo('packages');
-                }}
-                className='bg-transparent border-2 border-white/30 text-white text-base font-medium px-8 py-4 rounded-full hover:bg-white/10 transition duration-300'
-              >
-                {t('services.hero.secondaryCta', 'View Packages')}
-              </a>
-            </div>
-            {/* Key benefits - Desktop only */}
+          {/* Centered Content */}
+          <div className='relative z-20 flex items-center justify-center min-h-[100vh] px-6'>
             <motion.div
-              className='grid grid-cols-1 md:grid-cols-3 gap-8'
-              initial={{ opacity: 0, y: 20 }}
+              className='text-center max-w-4xl mx-auto'
+              initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
+              transition={{ duration: 1 }}
             >
-              <div className='bg-white/5 backdrop-blur-sm p-5 rounded-xl'>
-                <h3 className='text-xl font-medium mb-2'>
+              <h1 className='text-5xl md:text-6xl lg:text-7xl font-light tracking-tight mb-8 leading-tight'>
+                {t('services.hero.title', 'Professional Video & Photography')}{' '}
+                <br />
+                <span
+                  className={`${GRADIENT_CLASS} bg-clip-text text-transparent font-medium`}
+                >
+                  {t('services.hero.highlight', 'Made Simple')}
+                </span>
+              </h1>
+
+              <div className='flex flex-col sm:flex-row gap-6 justify-center'>
+                <Link
+                  to={`/${currentLang}/contact`}
+                  className='bg-white text-black text-lg font-medium px-10 py-4 rounded-full hover:bg-gray-200 transition duration-300 shadow-lg hover:shadow-xl'
+                >
+                  {t('services.hero.primaryCta', 'Get Custom Quote')}
+                </Link>
+                <a
+                  href='#packages'
+                  onClick={e => {
+                    e.preventDefault();
+                    smoothScrollTo('packages');
+                  }}
+                  className='bg-transparent border-2 border-white/40 text-white text-lg font-medium px-10 py-4 rounded-full hover:bg-white/10 transition duration-300'
+                >
+                  {t('services.hero.secondaryCta', 'View Packages')}
+                </a>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* Desktop Benefits Section - Separate */}
+        <section className='hidden md:block bg-black py-20'>
+          <div className='px-6 max-w-6xl mx-auto'>
+            <motion.div
+              className='grid grid-cols-1 md:grid-cols-3 gap-8 items-start'
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true, margin: '-50px' }}
+            >
+              <div className='bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20'>
+                <h3 className='text-xl font-medium mb-3 text-white'>
                   {t('services.benefits.expertise', 'Swiss Precision')}
                 </h3>
-                <p className='text-white/70 text-sm'>
+                <p className='text-white/80 text-sm leading-relaxed'>
                   {t(
                     'services.benefits.expertiseDesc',
                     'Professional equipment and years of experience ensuring consistent, high-quality results.',
                   )}
                 </p>
               </div>
-              <div className='bg-white/5 backdrop-blur-sm p-5 rounded-xl'>
-                <h3 className='text-xl font-medium mb-2'>
+              <div className='bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20'>
+                <h3 className='text-xl font-medium mb-3 text-white'>
                   {t('services.benefits.efficiency', 'Time Focused')}
                 </h3>
-                <p className='text-white/70 text-sm'>
+                <p className='text-white/80 text-sm leading-relaxed'>
                   {t(
                     'services.benefits.efficiencyDesc',
                     'Streamlined process that respects your schedule and delivers on agreed timelines.',
                   )}
                 </p>
               </div>
-              <div className='bg-white/5 backdrop-blur-sm p-5 rounded-xl'>
-                <h3 className='text-xl font-medium mb-2'>
+              <div className='bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20'>
+                <h3 className='text-xl font-medium mb-3 text-white'>
                   {t('services.benefits.impact', 'Why It Matters')}
                 </h3>
-                <p className='text-white/70 text-sm'>
+                <p className='text-white/80 text-sm leading-relaxed'>
                   {t(
                     'services.benefits.impactDesc',
                     'First impressions shape business success. Professional visuals build trust, attract customers, and set you apart from competitors.',
@@ -261,14 +261,14 @@ const Services = () => {
                 </p>
               </div>
             </motion.div>
-          </motion.div>
-        </div>
+          </div>
+        </section>
 
         {/* Mobile Benefits Section - Separate */}
         <section className='block md:hidden bg-gradient-to-b from-black to-gray-900 py-12'>
           <div className='px-4 max-w-sm mx-auto'>
             <motion.div
-              className='grid grid-cols-1 gap-6'
+              className='grid grid-cols-1 gap-6 items-start'
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6 }}
@@ -547,9 +547,6 @@ const Services = () => {
           </p>
 
           <div className='grid md:grid-cols-3 gap-8 relative'>
-            {/* Connecting line behind packages */}
-            <div className='hidden md:block absolute top-1/2 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-[#205c57]/30 via-[#9eb6a9]/40 to-[#231f20]/30 z-0'></div>
-
             {serviceTypes.map((service, index) => (
               <motion.div
                 key={service.id}
@@ -568,13 +565,7 @@ const Services = () => {
                   } transition-opacity duration-300`}
                 >
                   <div
-                    className={`absolute inset-px rounded-2xl bg-gradient-to-br ${
-                      service.color === 'teal'
-                        ? 'from-[#205c57]/20 to-[#1a4d49]/20 border-[#205c57]/30'
-                        : service.color === 'sage'
-                        ? 'from-[#9eb6a9]/30 to-[#7a9287]/30 border-[#9eb6a9]/40'
-                        : 'from-[#231f20]/20 to-[#1a1617]/20 border-[#231f20]/30'
-                    } border`}
+                    className={`absolute inset-px rounded-2xl bg-gradient-to-br from-[#9eb6a9]/30 to-[#7a9287]/30 border-[#9eb6a9]/40 border`}
                   ></div>
                 </div>
 
@@ -590,15 +581,7 @@ const Services = () => {
                 {/* Content */}
                 <div className='relative z-10 p-8'>
                   {/* Icon at the top */}
-                  <div
-                    className={`w-12 h-12 rounded-full mx-auto mb-6 flex items-center justify-center ${
-                      service.color === 'teal'
-                        ? 'bg-[#205c57]/20 text-[#9eb6a9]'
-                        : service.color === 'sage'
-                        ? 'bg-[#9eb6a9]/20 text-[#205c57]'
-                        : 'bg-[#231f20]/20 text-[#eaebec]'
-                    }`}
-                  >
+                  <div className='w-12 h-12 rounded-full mx-auto mb-6 flex items-center justify-center bg-[#9eb6a9]/20 text-[#9eb6a9]'>
                     {service.icon === 'video-camera' && (
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
@@ -666,15 +649,7 @@ const Services = () => {
                     </motion.div>
                   )}
 
-                  <h3
-                    className={`text-2xl font-medium mb-4 text-center ${
-                      service.color === 'teal'
-                        ? 'group-hover:text-[#9eb6a9]'
-                        : service.color === 'sage'
-                        ? 'group-hover:text-[#205c57]'
-                        : 'group-hover:text-[#eaebec]'
-                    } transition-colors duration-300`}
-                  >
+                  <h3 className='text-2xl font-medium mb-4 text-center group-hover:text-[#9eb6a9] transition-colors duration-300'>
                     {t(
                       `services.types.${service.titleKey}.title`,
                       service.titleKey,
@@ -691,15 +666,7 @@ const Services = () => {
                   <div className='mb-8 space-y-4'>
                     {service.featuresKeys.map((featureKey, idx) => (
                       <div key={idx} className='flex items-start space-x-3'>
-                        <div
-                          className={`flex-shrink-0 p-1 rounded-full ${
-                            service.color === 'teal'
-                              ? 'bg-[#205c57]/20 text-[#9eb6a9]'
-                              : service.color === 'sage'
-                              ? 'bg-[#9eb6a9]/20 text-[#205c57]'
-                              : 'bg-[#231f20]/20 text-[#eaebec]'
-                          }`}
-                        >
+                        <div className='flex-shrink-0 p-1 rounded-full bg-[#9eb6a9]/20 text-[#9eb6a9]'>
                           <CheckCircleIcon className='h-4 w-4' />
                         </div>
                         <span className='text-white/80 text-sm'>
