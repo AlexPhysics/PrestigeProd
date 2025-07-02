@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { trackLanguageChange } from '../utils/analytics';
 
-const LanguageSwitcher = () => {
+const LanguageSwitcher = ({ isMobile = false }) => {
   const { i18n } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
@@ -33,8 +33,10 @@ const LanguageSwitcher = () => {
     setIsOpen(false);
   };
 
-  // Close dropdown when clicking outside
+  // Close dropdown when clicking outside (only for desktop)
   useEffect(() => {
+    if (isMobile) return; // Skip outside click handling for mobile
+
     const handleClickOutside = event => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setIsOpen(false);
@@ -43,7 +45,7 @@ const LanguageSwitcher = () => {
 
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
+  }, [isMobile]);
 
   // Handle keyboard navigation
   const handleKeyDown = event => {
@@ -52,6 +54,36 @@ const LanguageSwitcher = () => {
     }
   };
 
+  // Mobile version - inline language buttons
+  if (isMobile) {
+    return (
+      <div className='w-full max-w-[200px]'>
+        <div className='text-center text-white/70 text-sm mb-2'>Language</div>
+        <div className='grid grid-cols-2 gap-2 w-full'>
+          {languages.map(language => (
+            <button
+              key={language.code}
+              onClick={() => changeLanguage(language.code)}
+              className={`px-3 py-2 text-sm rounded-lg border transition-all duration-200 touch-manipulation ${
+                language.code === i18n.language
+                  ? 'bg-white text-black border-white'
+                  : 'bg-transparent text-white border-white/30 hover:border-white/50 hover:bg-white/10'
+              }`}
+            >
+              <div className='flex flex-col items-center gap-0.5'>
+                <span className='font-medium text-xs'>
+                  {language.short.toUpperCase()}
+                </span>
+                <span className='text-xs opacity-80'>{language.name}</span>
+              </div>
+            </button>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  // Desktop version - dropdown
   return (
     <div className='relative' ref={dropdownRef}>
       {/* Trigger Button */}
