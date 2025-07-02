@@ -42,7 +42,6 @@
     "hero": {
       "title": "Professionelle video- & fotografie",
       "highlight": "einfach gemacht",
-      "subtitle": "Wir erstellen hochwertige visuelle Inhalte, die Ihr Unternehmen professionell präsentieren, mit klaren Preisen und zuverlässiger Lieferung – jedes Mal.",
       "cta": "Arbeiten Sie mit uns",
       "primaryCta": "Individuelles angebot erhalten",
       "secondaryCta": "Unsere pakete ansehen"
@@ -91,7 +90,6 @@
         "photoFeature1": "Professionelle Fotosession",
         "photoFeature2": "Drohnenfotografie verfügbar",
         "photoFeature3": "Hochwertige Bilder für all Ihre Bedürfnisse",
-        "photoFeature4": "Kommerzielle Rechte inklusive",
         "photographyCta": "Fotoplan auswählen"
       },
       "completePackage": {
@@ -145,7 +143,7 @@
       },
       "tags": {
         "fourKResolution": "4K-Auflösung",
-        "cinemaGrade": "Kino-Qualität",
+        "cinemaGrade": "Professionelle Qualität",
         "colorGraded": "Farbkorrigiert",
         "highResolution": "Hohe Auflösung",
         "perfectLighting": "Perfekte Beleuchtung",
@@ -219,13 +217,13 @@
     "meetThe": "Lernen Sie unsere",
     "creativeMinus": "Kreativen Köpfe kennen",
     "skills": {
-      "dorian": {
-        "0": "Kreative Leitung",
-        "1": "Kinematografie", 
+            "dorian": {
+        "0": "Kinematografie",
+        "1": "Visuelles Storytelling",
         "2": "Markenstrategie"
       },
       "alex": {
-        "0": "Technische Produktion",
+        "0": "Videoschnitt",
         "1": "Nachbearbeitung",
         "2": "Farbkorrektur"
       }
@@ -310,8 +308,8 @@
         "role": "Kreativdirektor",
         "description": {
           "dorianDesc1": "Dorian ist die kreative Kraft hinter unserem filmischen Storytelling.",
-          "dorianDesc2": "Seine Leidenschaft für Architektur und Design hilft ihm, Immobilien in elegante Erzählungen zu verwandeln.",
-          "dorianDesc3": "Er leitet unsere visuelle Ausrichtung und stellt sicher, dass sich jedes Projekt einzigartig, hochwertig und strategisch anfühlt."
+          "dorianDesc2": "Seine Leidenschaft für visuelle Kunst und Erzählungen verwandelt Ideen in fesselnde, unvergessliche Filme.",
+          "dorianDesc3": "Er leitet unseren visuellen Ansatz und sorgt dafür, dass jedes Projekt einzigartig, hochwertig und strategisch bleibt."
         }
       },
       "alex": {
@@ -515,7 +513,14 @@
     "loadingCalendar": "Kalender wird geladen...",
     "pageTitle": "Kontakt | Prestige Production",
     "calendarLoadError": "Kalender konnte nicht geladen werden",
-    "contactDirectly": "Bitte kontaktieren Sie uns direkt"
+    "contactDirectly": "Bitte kontaktieren Sie uns direkt",
+    "selectedPackage": "Ausgewähltes Paket:",
+    "prefillCustomProject": "Hallo! Ich interessiere mich für die Erstellung eines individuellen Projekts mit Prestige Production. Ich möchte meine spezifischen Anforderungen besprechen und ein maßgeschneidertes Angebot erhalten.",
+    "prefillSelectedPackage": "Hallo! Ich interessiere mich für das \"{{packageName}}\"-Paket. Ich möchte mehr über die Inhalte erfahren und meine Projektanforderungen besprechen.",
+    "prefillVideoProduction": "Hallo! Ich interessiere mich für Ihre Videoproduktionsdienstleistungen. Ich möchte mein Projekt besprechen und ein individuelles Angebot erhalten.",
+    "prefillPhotography": "Hallo! Ich möchte mehr über Ihre Fotografiedienstleistungen erfahren und ein Angebot für mein Projekt erhalten.",
+    "prefillCompletePackage": "Hallo! Ich interessiere mich für Ihr komplettes Video + Foto-Paket. Könnten wir die Anforderungen meines Projekts und die Preise besprechen?",
+    "prefillGeneral": "Hallo! Ich interessiere mich für Ihre Dienstleistungen und möchte mein Projekt besprechen."
   },
   "footer": {
     "description": "Kunst in jedem Pixel, Exzellenz in jedem Bild.",

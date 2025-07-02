@@ -43,7 +43,6 @@
     "hero": {
       "title": "Vidéo & photographie professionnelles",
       "highlight": "en toute simplicité",
-      "subtitle": "Nous créons des visuels de haute qualité qui présentent votre entreprise de manière professionnelle, avec des prix clairs et une livraison fiable à chaque fois.",
       "cta": "Travaillons ensemble",
       "primaryCta": "Obtenir un devis personnalisé",
       "secondaryCta": "Voir nos forfaits"
@@ -59,7 +58,7 @@
     "process": {
       "title": "Processus simple,",
       "highlight": "résultats exceptionnels",
-      "description": "Travailler avec nous est simple. Nous nous occupons de la complexité pour que vous puissiez vous concentrer sur ce qui compte : développer votre entreprise et impressionner vos clients.",
+      "description": "Travailler avec nous est simple. Nous nous occupons de la complexité pour que vous puissiez vous concentrer sur ce qui compte: développer votre entreprise et impressionner vos clients.",
       "step1Title": "Consultation",
       "step1Desc": "Nous commençons par explorer vos objectifs, votre public et vos objectifs stratégiques.",
       "step2Title": "Planification",
@@ -92,7 +91,6 @@
         "photoFeature1": "Séance photo professionnelle",
         "photoFeature2": "Photographie par drone disponible",
         "photoFeature3": "Images de haute qualité pour tous vos besoins",
-        "photoFeature4": "Droits commerciaux inclus",
         "photographyCta": "Sélectionner le forfait photo"
       },
       "completePackage": {
@@ -146,7 +144,7 @@
       },
       "tags": {
         "fourKResolution": "Résolution 4K",
-        "cinemaGrade": "Qualité cinéma",
+        "cinemaGrade": "Qualité professionnelle",
         "colorGraded": "Étalonnage couleur",
         "highResolution": "Haute résolution",
         "perfectLighting": "Éclairage parfait",
@@ -221,19 +219,19 @@
     "creativeMinus": "esprits créatifs",
     "skills": {
       "dorian": {
-        "0": "Direction créative",
-        "1": "Cinématographie",
+        "0": "Cinématographie",
+        "1": "Narration visuelle",
         "2": "Stratégie de marque"
       },
       "alex": {
-        "0": "Production technique",
+        "0": "Montage",
         "1": "Post-production",
         "2": "Étalonnage"
       }
     },
     "approach": {
       "title": "Notre",
-      "highlight": "Approche",
+      "highlight": "approche",
       "vision": {
         "tab": "Vision",
         "title": "Notre vision",
@@ -310,9 +308,9 @@
         "name": "Dorian",
         "role": "Directeur Créatif",
         "description": {
-          "dorianDesc1": "Dorian est la force créatrice derrière notre narration cinématographique.",
-          "dorianDesc2": "Sa passion pour l'architecture et le design lui permet de transformer des propriétés en récits élégants.",
-          "dorianDesc3": "Il dirige notre orientation visuelle, s'assurant que chaque projet soit unique, premium et stratégique."
+          "dorianDesc1": "Dorian est la force créative derrière nos histoires cinématographiques.",
+          "dorianDesc2": "Sa passion pour l'image et la narration transforme chaque idée en un film captivant et mémorable.",
+          "dorianDesc3": "Il supervise notre approche visuelle, veillant à ce que chaque projet soit unique, haut de gamme et stratégique."
         }
       },
       "alex": {
@@ -520,7 +518,14 @@
     "loadingCalendar": "Chargement du calendrier...",
     "pageTitle": "Contact | Prestige Production",
     "calendarLoadError": "Échec du chargement du calendrier",
-    "contactDirectly": "Veuillez nous contacter directement"
+    "contactDirectly": "Veuillez nous contacter directement",
+    "selectedPackage": "Forfait sélectionné :",
+    "prefillCustomProject": "Bonjour ! Je suis intéressé(e) par la création d'un projet personnalisé avec Prestige Production. J'aimerais discuter de mes exigences spécifiques et obtenir un devis sur mesure.",
+    "prefillSelectedPackage": "Bonjour ! Je suis intéressé(e) par le forfait \"{{packageName}}\". J'aimerais en savoir plus sur ce qui est inclus et discuter des exigences de mon projet.",
+    "prefillVideoProduction": "Bonjour ! Je suis intéressé(e) par vos services de production vidéo. J'aimerais discuter de mon projet et obtenir un devis personnalisé.",
+    "prefillPhotography": "Bonjour ! J'aimerais en savoir plus sur vos services de photographie et obtenir un devis pour mon projet.",
+    "prefillCompletePackage": "Bonjour ! Je suis intéressé(e) par votre forfait complet vidéo + photo. Pourrions-nous discuter des exigences de mon projet et des tarifs ?",
+    "prefillGeneral": "Bonjour ! Je suis intéressé(e) par vos services et j'aimerais discuter de mon projet."
   },
   "footer": {
     "description": "Art dans chaque pixel, excellence dans chaque image.",

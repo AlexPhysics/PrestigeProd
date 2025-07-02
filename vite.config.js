@@ -12,6 +12,10 @@ export default defineConfig({
 
   server: {
     allowedHosts: ['ae45-89-217-11-126.ngrok-free.app'],
+    open: '/en',
+    app: {
+      name: 'default', // or specify a specific browser like 'chrome', 'firefox', etc.
+    },
   },
 
   build: {
