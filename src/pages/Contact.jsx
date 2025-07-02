@@ -12,6 +12,10 @@ import { GRADIENT_CLASS } from '../constants';
 import Particles from '../components/Particles';
 import { useTranslation } from 'react-i18next';
 import { useParams, useLocation } from 'react-router-dom';
+import {
+  trackContactFormSubmit,
+  trackServiceInquiry,
+} from '../utils/analytics';
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -75,13 +79,7 @@ const Contact = () => {
       }));
 
       // Analytics: Track prefilled form views
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'contact_form_prefilled', {
-          event_category: 'Contact',
-          event_label: service,
-          service_type: service,
-        });
-      }
+      trackServiceInquiry(service, currentLang);
     } else if (selectedPackage) {
       // Create a personalized message based on the selected package
       const prefillMessage =
@@ -102,13 +100,7 @@ const Contact = () => {
       }));
 
       // Analytics: Track package selection
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'package_inquiry', {
-          event_category: 'Contact',
-          event_label: selectedPackage,
-          package_type: selectedPackage,
-        });
-      }
+      trackServiceInquiry(selectedPackage, currentLang);
     }
   }, [location.search, selectedPackage]);
 
@@ -290,14 +282,7 @@ const Contact = () => {
         setFormData({ name: '', email: '', message: '' });
 
         // Analytics: Track successful form submission
-        if (typeof gtag !== 'undefined') {
-          gtag('event', 'contact_form_submit', {
-            event_category: 'Contact',
-            event_label: service || 'general',
-            service_type: service || 'general',
-            value: 1,
-          });
-        }
+        trackContactFormSubmit(service || 'general', currentLang);
 
         // Announce success to screen readers
         setTimeout(() => {

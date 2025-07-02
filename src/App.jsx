@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollProgress from './components/ScrollProgress';
 import Particles from './components/Particles';
+import Analytics from './components/Analytics';
 import { useTranslation } from 'react-i18next';
 
 // pages
@@ -47,6 +48,7 @@ const AppContent = () => {
 
   return (
     <>
+      <Analytics />
       <ScrollProgress />
       <Navbar />
       <Background />
