@@ -7,6 +7,7 @@ import { projects } from '../constants';
 import SplitText from '../components/SplitText';
 import TrueFocus from '../components/TrueFocus';
 import { useTranslation } from 'react-i18next';
+import { trackPortfolioView } from '../utils/analytics';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,10 +44,11 @@ const Portfolio = () => {
       title: t('portfolio.reels.smi.title', 'SMI Event Highlight'),
       category: 'social',
       type: t('portfolio.reels.instagramReel', 'Instagram Reel'),
-      description: t('portfolio.reels.smi.description', 'Dynamic event coverage for social media'),
-      tags: [
-        t('portfolio.tags.event', 'Event')
-      ],
+      description: t(
+        'portfolio.reels.smi.description',
+        'Dynamic event coverage for social media',
+      ),
+      tags: [t('portfolio.tags.event', 'Event')],
       views: '32k+',
     },
     {
@@ -57,11 +59,14 @@ const Portfolio = () => {
       title: t('portfolio.reels.penthouseSpeech.title', 'Penthouse Experience'),
       category: 'social',
       type: t('portfolio.reels.instagramReel', 'Instagram Reel'),
-      description: t('portfolio.reels.penthouseSpeech.description', 'Luxury real estate social content'),
+      description: t(
+        'portfolio.reels.penthouseSpeech.description',
+        'Luxury real estate social content',
+      ),
       tags: [
         t('portfolio.tags.realEstate', 'Real estate'),
         t('portfolio.tags.luxury', 'Luxury'),
-        t('portfolio.tags.socialMedia', 'Social media')
+        t('portfolio.tags.socialMedia', 'Social media'),
       ],
       views: '50k+',
     },
@@ -73,11 +78,14 @@ const Portfolio = () => {
       title: t('portfolio.reels.penthouseViews.title', 'Penthouse Views'),
       category: 'social',
       type: t('portfolio.reels.instagramReel', 'Instagram Reel'),
-      description: t('portfolio.reels.penthouseViews.description', 'Stunning property views for social platforms'),
+      description: t(
+        'portfolio.reels.penthouseViews.description',
+        'Stunning property views for social platforms',
+      ),
       tags: [
         t('portfolio.tags.property', 'Property'),
         t('portfolio.tags.views', 'Views'),
-        t('portfolio.tags.socialMedia', 'Social media')
+        t('portfolio.tags.socialMedia', 'Social media'),
       ],
       views: '28k+',
     },
@@ -168,6 +176,10 @@ const Portfolio = () => {
     return () => ctx.revert();
   }, []);
 
+  const handleProjectClick = projectTitle => {
+    trackPortfolioView(projectTitle, currentLang);
+  };
+
   return (
     <section
       ref={containerRef}
@@ -193,7 +205,10 @@ const Portfolio = () => {
           className='text-4xl sm:text-5xl md:text-6xl font-extralight tracking-tight leading-tight mb-6'
           style={{ color: '#eaebec' }}
         >
-          {t('portfolio.ourText', 'Our')} <span style={{ color: '#9eb6a9' }}>{t('portfolio.portfolioText', 'portfolio')}</span>
+          {t('portfolio.ourText', 'Our')}{' '}
+          <span style={{ color: '#9eb6a9' }}>
+            {t('portfolio.portfolioText', 'portfolio')}
+          </span>
         </h1>
 
         <p className='text-xl text-white/70 font-light max-w-2xl mx-auto leading-relaxed mb-12'>
@@ -251,6 +266,7 @@ const Portfolio = () => {
           >
             <Link
               to={`/${currentLang}${proj.link}`}
+              onClick={() => handleProjectClick(proj.title)}
               className='block rounded-3xl overflow-hidden relative shadow-2xl bg-gradient-to-br from-white/5 to-transparent backdrop-blur-sm border border-white/10 hover:border-[#2d5f59]/50 transition-all duration-500'
               ref={el => (cardsRef.current[idx] = el)}
             >
@@ -329,7 +345,12 @@ const Portfolio = () => {
                 {/* Project type badge */}
                 <div className='absolute top-4 left-4'>
                   <span className='px-3 py-1 bg-black/50 backdrop-blur-sm text-white text-xs rounded-full border border-white/20'>
-                    {proj.typeKey ? t(proj.typeKey, proj.type || 'Video production') : t('portfolio.types.videoProduction', 'Video production')}
+                    {proj.typeKey
+                      ? t(proj.typeKey, proj.type || 'Video production')
+                      : t(
+                          'portfolio.types.videoProduction',
+                          'Video production',
+                        )}
                   </span>
                 </div>
               </div>

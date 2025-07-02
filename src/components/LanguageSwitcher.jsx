@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { trackLanguageChange } from '../utils/analytics';
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
@@ -21,6 +22,9 @@ const LanguageSwitcher = () => {
 
   const changeLanguage = lng => {
     i18n.changeLanguage(lng);
+
+    // Track language change
+    trackLanguageChange(lng);
 
     // Update URL to reflect new language
     const currentPath = location.pathname.split('/').slice(2).join('/');
