@@ -10,7 +10,10 @@ const Home = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
-    document.title = t('home.pageTitle', 'Prestige Production | Premium Video & Photography Services');
+    document.title = t(
+      'home.pageTitle',
+      'Prestige Production - Video Production Agency, Zurich, Switzerland',
+    );
   }, [t]);
 
   return (
