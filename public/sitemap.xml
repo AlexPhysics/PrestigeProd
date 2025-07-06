@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xsi:schemaLocation="
+            http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+            http://www.w3.org/1999/xhtml
+            http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
+
+<!-- Homepage -->
+<url>
+  <loc>https://prestigeproduction.ch/en/</loc>
+  <lastmod>2025-07-06</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.0</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://prestigeproduction.ch/de/"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://prestigeproduction.ch/fr/"/>
+  <xhtml:link rel="alternate" hreflang="it" href="https://prestigeproduction.ch/it/"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://prestigeproduction.ch/en/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://prestigeproduction.ch/en/"/>
+</url>
+
+<!-- Portfolio Page -->
+<url>
+  <loc>https://prestigeproduction.ch/en/portfolio</loc>
+  <lastmod>2024-05-22</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://prestigeproduction.ch/de/portfolio"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://prestigeproduction.ch/fr/portfolio"/>
+  <xhtml:link rel="alternate" hreflang="it" href="https://prestigeproduction.ch/it/portfolio"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://prestigeproduction.ch/en/portfolio"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://prestigeproduction.ch/en/portfolio"/>
+</url>
+
+<!-- Services Page -->
+<url>
+  <loc>https://prestigeproduction.ch/en/services</loc>
+  <lastmod>2024-05-22</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://prestigeproduction.ch/de/services"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://prestigeproduction.ch/fr/services"/>
+  <xhtml:link rel="alternate" hreflang="it" href="https://prestigeproduction.ch/it/services"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://prestigeproduction.ch/en/services"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://prestigeproduction.ch/en/services"/>
+</url>
+
+<!-- Why Us Page -->
+<url>
+  <loc>https://prestigeproduction.ch/en/why-us</loc>
+  <lastmod>2024-05-22</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://prestigeproduction.ch/de/why-us"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://prestigeproduction.ch/fr/why-us"/>
+  <xhtml:link rel="alternate" hreflang="it" href="https://prestigeproduction.ch/it/why-us"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://prestigeproduction.ch/en/why-us"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://prestigeproduction.ch/en/why-us"/>
+</url>
+
+<!-- Contact Page -->
+<url>
+  <loc>https://prestigeproduction.ch/en/contact</loc>
+  <lastmod>2024-05-22</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://prestigeproduction.ch/de/contact"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://prestigeproduction.ch/fr/contact"/>
+  <xhtml:link rel="alternate" hreflang="it" href="https://prestigeproduction.ch/it/contact"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://prestigeproduction.ch/en/contact"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://prestigeproduction.ch/en/contact"/>
+</url>
+
+<!-- SMI Project Page -->
+<url>
+  <loc>https://prestigeproduction.ch/en/portfolio/smi-project</loc>
+  <lastmod>2024-05-22</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://prestigeproduction.ch/de/portfolio/smi-project"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://prestigeproduction.ch/fr/portfolio/smi-project"/>
+  <xhtml:link rel="alternate" hreflang="it" href="https://prestigeproduction.ch/it/portfolio/smi-project"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://prestigeproduction.ch/en/portfolio/smi-project"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://prestigeproduction.ch/en/portfolio/smi-project"/>
+</url>
+
+<!-- Penthouse Zurich Project Page -->
+<url>
+  <loc>https://prestigeproduction.ch/en/portfolio/penthouse-zurich</loc>
+  <lastmod>2024-05-22</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://prestigeproduction.ch/de/portfolio/penthouse-zurich"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://prestigeproduction.ch/fr/portfolio/penthouse-zurich"/>
+  <xhtml:link rel="alternate" hreflang="it" href="https://prestigeproduction.ch/it/portfolio/penthouse-zurich"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://prestigeproduction.ch/en/portfolio/penthouse-zurich"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://prestigeproduction.ch/en/portfolio/penthouse-zurich"/>
+</url>
+
+<!-- Privacy Policy Page -->
+<url>
+  <loc>https://prestigeproduction.ch/en/privacy</loc>
+  <lastmod>2024-05-22</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.3</priority>
+  <xhtml:link rel="alternate" hreflang="de" href="https://prestigeproduction.ch/de/privacy"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://prestigeproduction.ch/fr/privacy"/>
+  <xhtml:link rel="alternate" hreflang="it" href="https://prestigeproduction.ch/it/privacy"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://prestigeproduction.ch/en/privacy"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://prestigeproduction.ch/en/privacy"/>
+</url>
+
+</urlset> 
