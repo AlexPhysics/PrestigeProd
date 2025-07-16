@@ -52,7 +52,7 @@ const Navbar = () => {
             );
           })}
 
-          {/* Ajouter le sélecteur de langue ici */}
+          {/* Desktop Language Switcher */}
           <LanguageSwitcher />
         </div>
 
@@ -69,7 +69,7 @@ const Navbar = () => {
         {/* Hamburger for mobile */}
         <button
           onClick={() => setMenuOpen(open => !open)}
-          className='md:hidden flex items-center justify-center p-2 z-50 active:bg-white/10 rounded-md transition-colors'
+          className='md:hidden flex items-center justify-center p-2 z-50 active:bg-white/10 rounded-md transition-colors touch-manipulation'
           aria-label='Toggle menu'
           aria-expanded={menuOpen}
         >
@@ -92,15 +92,13 @@ const Navbar = () => {
           </div>
         </button>
 
-        {/* Mobile dropdown */}
+        {/* Mobile dropdown - Increased height to accommodate inline language selector */}
         <div
           className={`fixed top-[70px] left-0 right-0 w-full bg-black/95 backdrop-blur-md border-t border-white/10 md:hidden transition-all duration-300 ease-in-out ${
-            menuOpen
-              ? 'opacity-100 visible h-auto max-h-[500px]'
-              : 'opacity-0 invisible max-h-0'
+            menuOpen ? 'opacity-100 visible h-auto' : 'opacity-0 invisible h-0'
           } overflow-hidden z-50`}
         >
-          <div className='flex flex-col items-center py-6 gap-4 w-full px-6'>
+          <div className='flex flex-col items-center py-6 gap-4 w-full px-6 max-h-[80vh] overflow-y-auto'>
             {navItems.map(({ label, path }) => {
               // Extraire le chemin relatif sans le préfixe de langue
               const relativePath = path.split('/').slice(2).join('/');
@@ -110,7 +108,7 @@ const Navbar = () => {
                   key={path}
                   to={path}
                   onClick={() => setMenuOpen(false)}
-                  className={`text-base text-gray hover:text-white transition px-4 py-2 w-full max-w-[200px] text-center ${
+                  className={`text-base text-gray hover:text-white transition px-4 py-2 w-full max-w-[200px] text-center touch-manipulation ${
                     formattedCurrentPath === relativePath
                       ? 'text-white font-normal'
                       : ''
@@ -123,17 +121,25 @@ const Navbar = () => {
             <Link
               to={`/${currentLang}/contact`}
               onClick={() => setMenuOpen(false)}
-              className='mt-2 border border-white px-8 py-2 rounded-full text-base text-white font-medium hover:bg-white hover:text-black transition-all duration-300 w-full max-w-[200px] text-center'
+              className='mt-2 border border-white px-8 py-2 rounded-full text-base text-white font-medium hover:bg-white hover:text-black transition-all duration-300 w-full max-w-[200px] text-center touch-manipulation'
             >
               {t('nav.contact')}
             </Link>
-            <div className='pt-3 border-t border-white/10 w-full flex justify-center mt-2'>
-              <div className='max-w-[200px] w-full flex justify-center'>
-                <LanguageSwitcher />
-              </div>
+
+            {/* Mobile Language Switcher - Inline version */}
+            <div className='pt-4 border-t border-white/10 w-full flex justify-center mt-4'>
+              <LanguageSwitcher isMobile={true} />
             </div>
           </div>
         </div>
+
+        {/* Mobile menu backdrop */}
+        {menuOpen && (
+          <div
+            className='fixed inset-0 bg-black/20 z-40 md:hidden'
+            onClick={() => setMenuOpen(false)}
+          />
+        )}
       </nav>
     </header>
   );

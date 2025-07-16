@@ -67,12 +67,11 @@ const WhyUs = () => {
   const teamRef = useRef(null);
   const individualSectionRef = useRef(null);
   const approachSectionRef = useRef(null);
-  const testimonialsSectionRef = useRef(null);
+  const ctaSectionRef = useRef(null);
   const [activeSkill, setActiveSkill] = useState(null);
   const [activeTab, setActiveTab] = useState('vision');
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
-  const [touchStart, setTouchStart] = useState(null);
-  const [touchEnd, setTouchEnd] = useState(null);
+
+  const [activeSection, setActiveSection] = useState('team');
 
   // Team member skills to showcase expertise
   const skills = {
@@ -140,96 +139,9 @@ const WhyUs = () => {
     { id: 'results', icon: ResultsIcon },
   ];
 
-  // Testimonials data
-  const testimonials = [
-    {
-      id: 1,
-      name: t('whyUs.testimonials.clients.sothebys.name', 'Soroush Efati'),
-      role: t(
-        'whyUs.testimonials.clients.sothebys.role',
-        "Partner, Zurich Sotheby's International Realty",
-      ),
-      content: t(
-        'whyUs.testimonials.clients.sothebys.content',
-        'Prestige Production delivered an outstanding video for a beautiful penthouse. Their work captured the essence of luxury, and their social media reels drove significant engagement. A truly professional team.',
-      ),
-      image: '/assets/logos/zurich_sothebys_logo.png',
-    },
-    {
-      id: 2,
-      name: t('whyUs.testimonials.clients.smi.name', 'Manuel Bally'),
-      role: t(
-        'whyUs.testimonials.clients.smi.role',
-        'Organizer, Swiss Mining Institute',
-      ),
-      content: t(
-        'whyUs.testimonials.clients.smi.content',
-        'The aftermovie and interviews Prestige Production created for our event were exceptional. They perfectly captured the energy and provided us with fantastic content for our channels, including multiple high-impact reels.',
-      ),
-      image: '/assets/logos/smi_logo.png',
-    },
-  ];
-
   useEffect(() => {
     document.title = t('whyUs.pageTitle', 'Why Us | Prestige Production');
   }, [t]);
-
-  // Handle touch events for mobile swipe
-  const minSwipeDistance = 50;
-
-  const onTouchStart = e => {
-    setTouchEnd(null);
-    setTouchStart(e.targetTouches[0].clientX);
-  };
-
-  const onTouchMove = e => {
-    setTouchEnd(e.targetTouches[0].clientX);
-  };
-
-  const onTouchEnd = () => {
-    if (!touchStart || !touchEnd) return;
-
-    const distance = touchStart - touchEnd;
-    const isLeftSwipe = distance > minSwipeDistance;
-    const isRightSwipe = distance < -minSwipeDistance;
-
-    if (isLeftSwipe) {
-      // Swipe left - next testimonial
-      setCurrentTestimonial(prev =>
-        prev === testimonials.length - 1 ? 0 : prev + 1,
-      );
-    }
-
-    if (isRightSwipe) {
-      // Swipe right - previous testimonial
-      setCurrentTestimonial(prev =>
-        prev === 0 ? testimonials.length - 1 : prev - 1,
-      );
-    }
-  };
-
-  // Ensure testimonial is shown when scrolling to that section
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      entries => {
-        if (entries[0].isIntersecting) {
-          // Reset to first testimonial for better user experience
-          setCurrentTestimonial(0);
-        }
-      },
-      { threshold: 0.3 },
-    );
-
-    if (testimonialsSectionRef.current) {
-      observer.observe(testimonialsSectionRef.current);
-    }
-
-    return () => {
-      if (testimonialsSectionRef.current) {
-        observer.unobserve(testimonialsSectionRef.current);
-      }
-    };
-  }, []);
 
   // Function to smoothly scroll to sections
   const scrollToSection = ref => {
@@ -294,13 +206,24 @@ const WhyUs = () => {
 
     // We removed testimonial cards GSAP animation to avoid conflicts with Framer Motion
 
-    // Testimonial navigation dots
-    gsap.from('.testimonial-dot', {
-      scale: 0,
-      stagger: 0.1,
-      duration: 0.4,
-      ease: 'back.out(2)',
-      delay: 1,
+    // Set up ScrollTrigger for navigation dots
+    const sections = [
+      { ref: teamRef, name: 'team' },
+      { ref: individualSectionRef, name: 'individuals' },
+      { ref: approachSectionRef, name: 'approach' },
+      { ref: ctaSectionRef, name: 'cta' },
+    ];
+
+    sections.forEach(section => {
+      if (section.ref.current) {
+        ScrollTrigger.create({
+          trigger: section.ref.current,
+          start: 'top 60%',
+          end: 'bottom 40%',
+          onEnter: () => setActiveSection(section.name),
+          onEnterBack: () => setActiveSection(section.name),
+        });
+      }
     });
   }, []);
 
@@ -343,30 +266,46 @@ const WhyUs = () => {
         <div className='flex flex-col items-center gap-1'>
           <motion.button
             onClick={() => scrollToSection(teamRef)}
-            className='w-3 h-3 rounded-full bg-white/40 hover:bg-[#F4FF78] transition-all duration-300'
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              activeSection === 'team'
+                ? 'bg-[#2d5f59] shadow-lg shadow-[#2d5f59]/50'
+                : 'bg-white/40 hover:bg-[#2d5f59]/80'
+            }`}
             whileHover={{ scale: 1.5 }}
             aria-label='Go to Team section'
           />
           <div className='h-10 w-px bg-white/20'></div>
           <motion.button
             onClick={() => scrollToSection(individualSectionRef)}
-            className='w-3 h-3 rounded-full bg-white/40 hover:bg-[#F4FF78] transition-all duration-300'
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              activeSection === 'individuals'
+                ? 'bg-[#2d5f59] shadow-lg shadow-[#2d5f59]/50'
+                : 'bg-white/40 hover:bg-[#2d5f59]/80'
+            }`}
             whileHover={{ scale: 1.5 }}
             aria-label='Go to Team Members section'
           />
           <div className='h-10 w-px bg-white/20'></div>
           <motion.button
             onClick={() => scrollToSection(approachSectionRef)}
-            className='w-3 h-3 rounded-full bg-white/40 hover:bg-[#F4FF78] transition-all duration-300'
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              activeSection === 'approach'
+                ? 'bg-[#2d5f59] shadow-lg shadow-[#2d5f59]/50'
+                : 'bg-white/40 hover:bg-[#2d5f59]/80'
+            }`}
             whileHover={{ scale: 1.5 }}
             aria-label='Go to Approach section'
           />
           <div className='h-10 w-px bg-white/20'></div>
           <motion.button
-            onClick={() => scrollToSection(testimonialsSectionRef)}
-            className='w-3 h-3 rounded-full bg-white/40 hover:bg-[#F4FF78] transition-all duration-300'
+            onClick={() => scrollToSection(ctaSectionRef)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              activeSection === 'cta'
+                ? 'bg-[#2d5f59] shadow-lg shadow-[#2d5f59]/50'
+                : 'bg-white/40 hover:bg-[#2d5f59]/80'
+            }`}
             whileHover={{ scale: 1.5 }}
-            aria-label='Go to Testimonials section'
+            aria-label='Go to CTA section'
           />
         </div>
       </motion.div>
@@ -688,7 +627,7 @@ const WhyUs = () => {
                   transition={{ duration: 0.5 }}
                   className='relative'
                 >
-                  <div className='aspect-square w-full rounded-2xl flex items-center justify-center bg-pp-charcoal border border-pp-grey/20'>
+                  <div className='aspect-square w-full rounded-2xl flex items-center justify-center bg-gradient-to-b from-pp-charcoal/20 to-black/10 border border-pp-grey/10'>
                     <motion.div
                       key={activeTab}
                       initial={{ scale: 0.5, opacity: 0, rotate: -30 }}
@@ -707,135 +646,9 @@ const WhyUs = () => {
           </div>
         </div>
 
-        {/* Testimonials Section */}
-        <div ref={testimonialsSectionRef} className='mb-32'>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className='text-center mb-16'
-          >
-            <h2 className='text-3xl md:text-5xl font-light mb-4'>
-              <span>{t('whyUs.testimonials.titlePrefix', 'Client ')} </span>
-              <span
-                className={`${GRADIENT_CLASS} bg-clip-text text-transparent`}
-              >
-                {t('whyUs.testimonials.title', 'Testimonials')}
-              </span>
-            </h2>
-            <div className='w-24 h-0.5 mx-auto bg-gradient-to-r from-transparent via-[#2d5f59]/50 to-transparent'></div>
-          </motion.div>
-
-          <div className='max-w-4xl mx-auto px-6'>
-            <div
-              className='relative min-h-[350px]'
-              onTouchStart={onTouchStart}
-              onTouchMove={onTouchMove}
-              onTouchEnd={onTouchEnd}
-            >
-              <AnimatePresence mode='wait' initial={false}>
-                <motion.div
-                  key={currentTestimonial}
-                  initial={{ opacity: 0, x: 50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -50 }}
-                  transition={{ duration: 0.5 }}
-                  className='testimonial-card bg-gradient-to-br from-white/5 to-transparent backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-white/10 shadow-xl'
-                >
-                  <div className='flex flex-col md:flex-row gap-6 items-center'>
-                    <motion.div
-                      whileHover={{ scale: 1.05 }}
-                      className='flex-shrink-0 w-32 h-24 bg-white/10 p-2 rounded-xl flex items-center justify-center overflow-hidden border-2 border-white/20 shadow-lg'
-                    >
-                      <img
-                        src={testimonials[currentTestimonial].image}
-                        alt={`${testimonials[currentTestimonial].name} logo`}
-                        className='w-full h-full object-contain'
-                      />
-                    </motion.div>
-
-                    <div className='flex-grow text-center md:text-left'>
-                      <div className='text-amber-300 mb-4 text-lg'>★★★★★</div>
-                      <blockquote className='text-white/80 text-lg italic mb-4'>
-                        "{testimonials[currentTestimonial].content}"
-                      </blockquote>
-                      <div>
-                        <p className='text-white font-medium text-lg'>
-                          {testimonials[currentTestimonial].name}
-                        </p>
-                        <p className='text-white/60 text-sm'>
-                          {testimonials[currentTestimonial].role}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
-
-              {/* Navigation buttons */}
-              <div className='flex justify-center mt-4 md:mt-8 gap-3'>
-                {testimonials.map((_, idx) => (
-                  <motion.button
-                    key={idx}
-                    onClick={() => setCurrentTestimonial(idx)}
-                    className={`testimonial-dot w-3 h-3 rounded-full ${
-                      currentTestimonial === idx
-                        ? 'bg-[#2d5f59] scale-125'
-                        : 'bg-white/30 hover:bg-white/50'
-                    } transition-all duration-300`}
-                    whileHover={{ scale: 1.2 }}
-                    whileTap={{ scale: 0.9 }}
-                  />
-                ))}
-              </div>
-
-              {/* Mobile swipe hint */}
-              <div className='flex md:hidden justify-center items-center mt-3 text-white/40 text-xs'>
-                <span className='animate-pulse'>
-                  {t('whyUs.testimonials.swipeHint', '← Swipe to navigate →')}
-                </span>
-              </div>
-
-              {/* Prev/Next buttons */}
-              <div className='hidden md:flex justify-between absolute top-1/2 left-0 right-0 -mx-10 transform -translate-y-1/2 pointer-events-none'>
-                <motion.button
-                  onClick={() =>
-                    setCurrentTestimonial(prev =>
-                      prev === 0 ? testimonials.length - 1 : prev - 1,
-                    )
-                  }
-                  className='w-10 h-10 rounded-full bg-black/30 backdrop-blur-sm text-white/70 hover:text-white flex items-center justify-center border border-white/10 pointer-events-auto'
-                  whileHover={{
-                    scale: 1.1,
-                    backgroundColor: 'rgba(255,255,255,0.1)',
-                  }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  ‹
-                </motion.button>
-                <motion.button
-                  onClick={() =>
-                    setCurrentTestimonial(prev =>
-                      prev === testimonials.length - 1 ? 0 : prev + 1,
-                    )
-                  }
-                  className='w-10 h-10 rounded-full bg-black/30 backdrop-blur-sm text-white/70 hover:text-white flex items-center justify-center border border-white/10 pointer-events-auto'
-                  whileHover={{
-                    scale: 1.1,
-                    backgroundColor: 'rgba(255,255,255,0.1)',
-                  }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  ›
-                </motion.button>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Enhanced CTA Section */}
         <motion.div
+          ref={ctaSectionRef}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
